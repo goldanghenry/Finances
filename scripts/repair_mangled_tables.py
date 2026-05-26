@@ -86,20 +86,30 @@ def split_merged_lines(text: str) -> str:
     return "\n".join(dedupe_var_tables(new_lines))
 
 
+def _is_display_open(line: str) -> bool:
+    s = line.strip()
+    return s in ("\\[", "\\\\[")
+
+
+def _is_display_close(line: str) -> bool:
+    s = line.strip()
+    return s in ("\\]", "\\\\]")
+
+
 def remove_orphan_display_math(text: str) -> str:
     """Remove \\[ blocks that never close and contain table markers."""
     lines = text.splitlines()
     out: list[str] = []
     i = 0
     while i < len(lines):
-        if lines[i].strip() == "\\[":
+        if _is_display_open(lines[i]):
             j = i + 1
             found_close = False
             while j < len(lines):
-                if lines[j].strip() == "\\]":
+                if _is_display_close(lines[j]):
                     found_close = True
                     break
-                if lines[j].strip() == "\\[":
+                if _is_display_open(lines[j]):
                     break
                 j += 1
             if not found_close:
@@ -107,11 +117,14 @@ def remove_orphan_display_math(text: str) -> str:
                 if "|" in chunk or "기호" in chunk or "\\lamb" in chunk:
                     i = j
                     continue
-        # single-line \[ ... without \] on same or following lines
-        if lines[i].strip().startswith("\\[") and "\\]" not in lines[i]:
+        s = lines[i].strip()
+        if s.startswith("\\[") and not _is_display_close(lines[i]):
             if "|" in lines[i] or "기호" in lines[i]:
                 i += 1
                 continue
+        if s == "\\":
+            i += 1
+            continue
         out.append(lines[i])
         i += 1
     return "\n".join(out)
@@ -224,6 +237,7 @@ def fix_unbalanced_display_math(text: str) -> str:
 
 def repair(text: str) -> tuple[str, bool]:
     orig = text
+    orig_len = len(orig)
     text = split_merged_lines(text)
     text = remove_orphan_display_math(text)
     text = remove_fragment_lines(text)
@@ -243,6 +257,8 @@ def repair(text: str) -> tuple[str, bool]:
         lambda m: (m.group("before").rstrip() + "\n\n" + VAR_HDR) if m.group("before").strip() else VAR_HDR,
         text,
     )
+    if orig_len > 0 and len(text) < orig_len * 0.85:
+        return orig, False
     return text, text != orig
 
 
