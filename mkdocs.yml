@@ -209,6 +209,9 @@ validation:
 extra:
   generator: false
 
+extra_css:
+  - stylesheets/headings.css
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

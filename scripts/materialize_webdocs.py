@@ -45,16 +45,18 @@ def main() -> None:
             continue
         materialize_entry(child)
 
-    # MkDocs extra_javascript (not a content symlink)
-    js_src = ROOT / "docs" / "javascripts"
-    js_dst = WEBDOCS / "javascripts"
-    if js_src.is_dir():
-        if js_dst.exists():
-            if js_dst.is_symlink():
-                js_dst.unlink()
-            elif js_dst.is_dir():
-                shutil.rmtree(js_dst)
-        shutil.copytree(js_src, js_dst)
+    # MkDocs assets under docs/ (not content symlinks)
+    for asset_dir in ("javascripts", "stylesheets"):
+        src = ROOT / "docs" / asset_dir
+        dst = WEBDOCS / asset_dir
+        if not src.is_dir():
+            continue
+        if dst.exists():
+            if dst.is_symlink():
+                dst.unlink()
+            elif dst.is_dir():
+                shutil.rmtree(dst)
+        shutil.copytree(src, dst)
 
     synced = 0
     for dirname in SYNC_DIRS:
