@@ -166,7 +166,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.top
-    - navigation.expand
+    # navigation.expand 제거 → Phase/섹션 메뉴가 처음엔 모두 접힌 상태
     - navigation.indexes
     - search.suggest
     - search.highlight
