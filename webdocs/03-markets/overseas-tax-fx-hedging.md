@@ -240,11 +240,10 @@ flowchart TD
 ### 6.1 비헷지 — 원화 총수익 (교육 근사)
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(\R_\text{KRW, unhedged}\) | R  KRW,unhedged | 본문 §4·위 식 맥락 참고 |
-| \(\R_\text{USD asset}\) | R  USDasset | 본문 §4·위 식 맥락 참고 |
-| \(\R_\text{FX}\) | R  FX | 본문 §4·위 식 맥락 참고 |
-
+|   ------   | ------ | 위 식의 ------ |
+|  \(\R_\text{KRW, unhedged}\)  |  R  KRW,unhedged  | §4 용어·식 맥락에서 확인 |
+|  \(\R_\text{USD asset}\)  |  R  USDasset  | §4 용어·식 맥락에서 확인 |
+|  \(\R_\text{FX}\)  |  R  FX  | §4 용어·식 맥락에서 확인 |
 \[
 R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) - 1
 \]
@@ -263,11 +262,10 @@ R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) -
 **분해**(1차 근사):
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(\R_\text{KRW}\) | R  KRW | 본문 §4·위 식 맥락 참고 |
-| \(\R_\text{USD asset}\) | R  USDasset | 본문 §4·위 식 맥락 참고 |
-| \(\R_\text{FX}\) | R  FX | 본문 §4·위 식 맥락 참고 |
-
+|   ------   | ------ | 위 식의 ------ |
+|  \(\R_\text{KRW}\)  |  R  KRW  | §4 용어·식 맥락에서 확인 |
+|  \(\R_\text{USD asset}\)  |  R  USDasset  | §4 용어·식 맥락에서 확인 |
+|  \(\R_\text{FX}\)  |  R  FX  | §4 용어·식 맥락에서 확인 |
 \[
 R_{\text{KRW}} \approx R_{\text{USD asset}} + R_{\text{FX}} + R_{\text{USD asset}} \cdot R_{\text{FX}}
 \]
@@ -284,21 +282,20 @@ R_{\text{KRW}} \approx R_{\text{USD asset}} + R_{\text{FX}} + R_{\text{USD asset
 ### 6.2 헷지 ETF — 교육용 분해
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(R_\text{KRW, hedged}\) | R textKRW, hedged | 본문 §4·식 맥락 참고 |
-| \(R_\text{USD asset}\) | R textUSD asset | 본문 §4·식 맥락 참고 |
-| \(c_\text{hedge}\) | c texthedge | 본문 §4·식 맥락 참고 |
-| \(f_\text{TER}\) | f textTER | 본문 §4·식 맥락 참고 |
-| \(delta_\text{repl}\) | delta textrepl | 본문 §4·식 맥락 참고 |
+|    ------    | ------ | 위 식의 ------ |
+|  \(R_\text{KRW, hedged}\)  |  R textKRW, hedged  | §4 용어·식 맥락에서 확인 |
+|  \(R_\text{USD asset}\)  |  R textUSD asset  | §4 용어·식 맥락에서 확인 |
+|  \(c_\text{hedge}\)  |  c texthedge  | §4 용어·식 맥락에서 확인 |
+|  \(f_\text{TER}\)  |  f textTER  | §4 용어·식 맥락에서 확인 |
+|  \(delta_\text{repl}\)  |  delta textrepl  | §4 용어·식 맥락에서 확인 |
 | \(TER\) | 총보수율 | 헷지·운용 비용(연) |
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(\P_\text{buy,KRW}\) | P  buy,KRW | 본문 §4·위 식 맥락 참고 |
-| \(\e_\text{buy}\) | e  buy | 본문 §4·위 식 맥락 참고 |
-| \(\P_\text{sell,KRW}\) | P  sell,KRW | 본문 §4·위 식 맥락 참고 |
-| \(\e_\text{sell}\) | e  sell | 본문 §4·위 식 맥락 참고 |
-
+|   ------   | ------ | 위 식의 ------ |
+|  \(\P_\text{buy,KRW}\)  |  P  buy,KRW  | §4 용어·식 맥락에서 확인 |
+|  \(\e_\text{buy}\)  |  e  buy  | §4 용어·식 맥락에서 확인 |
+|  \(\P_\text{sell,KRW}\)  |  P  sell,KRW  | §4 용어·식 맥락에서 확인 |
+|  \(\e_\text{sell}\)  |  e  sell  | §4 용어·식 맥락에서 확인 |
 \[
 P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sell,KRW}} = \text{USD amount} \times e_{\text{sell}}
 \]
@@ -316,7 +313,7 @@ P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sel
 ---
 
 -------|
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 ETF가 **비헷지보다 TER 높은** 경우 多
 - \(\delta_{\text{repl}}\): 복제·샘플링·원천 — [etf-index-funds-deep](etf-index-funds-deep.md)
 
@@ -325,12 +322,12 @@ ETF가 **비헷지보다 TER 높은** 경우 多
 ### 6.3 W-8BEN — 배당 세후 (교육, 단순)
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 \[
 D_
-| 이름 | 이 식에서 의미 | |
+|   이름   |   이 식에서 의미   | §4 용어·식 맥락에서 확인 |
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 {\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 \]
 
@@ -342,9 +339,9 @@ D_
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
 3. **해석**: 부호·크기가 경제 직관과 맞는지 확인한다. — 극단값에서 단조성·한계를 점검한다.
 - \(\tau_{\text{WHT}} = 15\%\) (W-8BEN·조약 자격, 교육) vs \(30
-| 이름 | 이 식에서 의미 | |
+|   이름   |   이 식에서 의미   | §4 용어·식 맥락에서 확인 |
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
 | \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
 | \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
@@ -370,7 +367,7 @@ D_
 ### 6.4 양도차익 — 환율 (Part1 연결)
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 \[
 \text{차익}_{\text{원화}} = P_{\text{sell,KRW}} - P_{\text{buy,KRW}} - \text{비용}
 \]
@@ -383,7 +380,7 @@ D_
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
 3. **해석**: 부호·크기가 경제 직관과 맞는지 확인한다. — 극단값에서 단조성·한계를 점검한다.
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 \[
 P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sell,KRW}} = \text{USD amount} \times e_{\text{sell}}
 \]
@@ -404,12 +401,16 @@ verseas-stocks-tax-part1-cgt.md).
 
 ---
 
+-tax-part1-cgt.md).
+
+---
+
 ## 7. 한국 적용
 
 ### 7.1 2025년 기준 — 확정·교육 맥락
 
 | 영역 | 요약 | 상세 문서 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | **해외주 양도** | 연 250만 공제 후 **22%** 분리, **5월** 신고 | [Part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) |
 | **배당·이자** | 금융소득 **2,000만** 경계, 원천·종합 | [Part2](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md) |
 | **W-8BEN** | 미국 배당 **15%** vs **30%** | Part2 §7.7, 본 문서 §5.1 |
@@ -430,7 +431,7 @@ verseas-stocks-tax-part1-cgt.md).
 ### 7.3 2026년 — 확인 필요 (교육 프레임)
 
 | 항목 | 2025 | 2026 (개편 시) |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | ISA 비과세·납입 | 200만/400만, 2,000만, 1억 | **500만/1,000만, 4,000만, 2억** 등 — [isa](../06-korea-policy/isa.md) |
 | 해외주 양도 | 현행 | 국세청 **연간** 확인 |
 | W-8BEN | IRS 양식 | **갱신 주기** 동일 원칙 |
@@ -668,7 +669,7 @@ verseas-stocks-tax-part1-cgt.md).
 ## 부록 D — Part1~3·ISA·본 문서 매핑
 
 | 문서 | 역할 | 본 문서 연결 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | [Part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) | 해외 **양도**·250만·5월 | §5.2, §6.4, 예제 3·4 |
 | [Part2](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md) | **배당**·금융소득·W-8BEN | §5.1, 예제 1·6 |
 | [Part3](../06-korea-policy/tax/overseas-stocks-tax-part3-scenarios.md) | ISA·손익통산·케이스 | §5.5, 예제 3 |
@@ -699,7 +700,7 @@ verseas-stocks-tax-part1-cgt.md).
 ## 부록 G — 코어 설계 워크시트 (교육, 가상)
 
 | 단계 | 질문 | 기록 예시(가상) |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | 1 | 코어 **계좌**? | ISA 70% + 일반 30% |
 | 2 | **직접 vs 래핑**? | ISA=QQQ, 일반=헷지 래핑 |
 | 3 | **헷지 O/X**? | 일반 슬롯 **환헷지** |

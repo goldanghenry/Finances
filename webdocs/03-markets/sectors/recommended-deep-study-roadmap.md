@@ -185,12 +185,11 @@ flowchart LR
 **주간 시간 예산**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(\T_\text{week}\) | T  week | 본문 §4·위 식 맥락 참고 |
-| \(\T_\text{read}\) | T  read | 본문 §4·위 식 맥락 참고 |
-| \(\T_\text{note}\) | T  note | 본문 §4·위 식 맥락 참고 |
-| \(\T_\text{quiz}\) | T  quiz | 본문 §4·위 식 맥락 참고 |
-
+|   ------   | ------ | 위 식의 ------ |
+|  \(\T_\text{week}\)  |  T  week  | §4 용어·식 맥락에서 확인 |
+|  \(\T_\text{read}\)  |  T  read  | §4 용어·식 맥락에서 확인 |
+|  \(\T_\text{note}\)  |  T  note  | §4 용어·식 맥락에서 확인 |
+|  \(\T_\text{quiz}\)  |  T  quiz  | §4 용어·식 맥락에서 확인 |
 \[
 T_{\text{week}} = T_{\text{read}} + T_{\text{note}} + T_{\text{quiz}} \approx 5\text{~}8\ \text{시간}
 \]
@@ -201,7 +200,7 @@ T_{\text{week}} = T_{\text{read}} + T_{\text{note}} + T_{\text{quiz}} \approx 5\
 **9주 총**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
 | \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
 | \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
@@ -213,9 +212,9 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.*
-| 이름 | 이 식에서 의미 | |
+|   이름   |   이 식에서 의미   | §4 용어·식 맥락에서 확인 |
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | \(C\) | 지출 | 기간 총 현금 유출 |
 
 *포트 배분 (교육, Week 9 산출)**:
@@ -253,6 +252,10 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 ---
 
+**.
+
+---
+
 ## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
@@ -269,7 +272,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 ### 7.2 2026년 개편·시행 예정 (해당 시)
 
 | 항목 | 2025 | 2026 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | ISA 비과세 | 200만 | **500만** — Week 1 **갱신** |
 | ISA 납입 | 2,000만 | **4,000만** |
 | 코스닥 승강제 | 도입 | Week 3·7 **필수** |
@@ -427,7 +430,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 | 2 | [time-horizon-and-buckets.md](../../04-portfolio/time-horizon-and-buckets.md) | Bucket |
 | 3 | DB/ISA — [db-pension.md](../../06-korea-policy/db-pension.md), [isa.md](../../06-korea-policy/isa.md) | 2a/2b |
 | 4 | [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md) | 3/4 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 ### Week 2 — 반도체
 
 | 체크 | 내용 |

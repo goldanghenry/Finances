@@ -98,7 +98,10 @@ def lookup_meaning(sym: str, terms4: dict[str, str]) -> str:
     for k, (_, meaning) in SYMBOL_GLOSS.items():
         if k.upper() == bare.upper():
             return meaning
-    return terms4.get(bare, terms4.get(bare.upper(), "본문 §4·위 식 맥락 참고"))
+    name = lookup_name(sym)
+    if name and name.replace("_", " ") != bare.replace("_", " "):
+        return f"위 식의 {name}"
+    return terms4.get(bare, terms4.get(bare.upper(), f"위 식의 {bare}"))
 
 
 def lookup_name(sym: str) -> str:

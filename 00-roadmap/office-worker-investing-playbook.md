@@ -157,7 +157,7 @@ flowchart LR
 > **가상 시나리오**: 세후 월 실수령 **M**(만 원). 독자는 **본인 M**으로 치환. DB 재직(개인 ETF는 DB 밖). 기호 정의: [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md).
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | \(\alpha_\text{ISA}\) | ISA 적립 비율 | 세후 월 실수령 **M** 중 ISA로 보내는 비율 (0~1) |
 | \(\alpha_\text{P}\) | 연금 적립 비율 | IRP·연금저축 등 연금 슬롯 비율 |
 | \(\alpha_\text{G}\) | 일반 계좌 비율 | 한도 초과분·위성·환전 여유 비율 |
@@ -215,7 +215,7 @@ Pay --> Pen[연금_alpha_P_IRP등]
 ### 7.2 2026년 개편·시행 예정 (해당 시)
 
 | 항목 | 2025 | 2026 (시행 여부 **직접 확인**) |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | ISA 비과세 | 200만/400만 | 500만/1,000만 (안) |
 | 연 납입 | 2,000만 | 4,000만 (안) |
 
@@ -271,7 +271,7 @@ Pay --> Pen[연금_alpha_P_IRP등]
 > **책 없이**: [required-reading-guide.md](required-reading-guide.md) — 챕터별 **읽을 부분·★ 우선순위·KB 링크** 압축.
 
 | 도서 | 초점 | 플레이북 연결 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | **돈의 심리학** (Morgan Housel) | 복리·행동·역사 | DCA·인내 — [behavioral-finance-complete](../05-behavioral/behavioral-finance-complete.md) |
 | **부의 인문학** (인문·거시 계열) | 자본·불평등·제도 | 거시·정책 맥락 — [macroeconomics-basics](../02-economics/macroeconomics-basics.md) |
 | **Little Book** 시리즈 (Greenblatt, Bogle 등) | 가치·인덱스·시장 | [passive-vs-active](../04-portfolio/passive-vs-active.md), [equity-valuation-fundamentals](../03-markets/equity-valuation-fundamentals.md) |

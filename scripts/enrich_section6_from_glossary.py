@@ -8,7 +8,7 @@ import sys
 
 from _corpus import iter_corpus_md
 from _gold_polish import fix_variable_row, is_placeholder_meaning, section6_body
-from repair_corpus_mechanical import parse_section4_terms
+from repair_corpus_mechanical import lookup_meaning, parse_section4_terms
 
 
 def enrich(text: str) -> tuple[str, bool]:
@@ -26,7 +26,7 @@ def enrich(text: str) -> tuple[str, bool]:
             return m.group(0)
         ns, nn, nm = fix_variable_row(sym, name, mean, terms4)
         if is_placeholder_meaning(nm):
-            nm = "[TODO:meaning]"
+            nm = lookup_meaning(ns, terms4)
         if (ns, nn, nm) != (sym, name, mean):
             changed = True
         return f"| {ns} | {nn} | {nm} |"

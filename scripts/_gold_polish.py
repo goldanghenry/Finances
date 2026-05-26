@@ -15,6 +15,7 @@ from repair_corpus_mechanical import (
 PLACEHOLDER_MEANINGS = (
     "§4·본문 정의 참고",
     "본문 §4·위 식 맥락 참고",
+    "본문 §4·식 맥락 참고",
     "§4·본문 정의",
     "위 식 맥락 참고",
 )

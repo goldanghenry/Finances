@@ -20,6 +20,7 @@ from _gold_polish import (
 FORBIDDEN = (
     "§4·본문 정의 참고",
     "본문 §4·위 식 맥락 참고",
+    "본문 §4·식 맥락 참고",
     TEMPLATE_READING,
     "[TODO:meaning]",
 )

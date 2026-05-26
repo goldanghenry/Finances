@@ -29,6 +29,7 @@ def main() -> None:
         "add_info_boxes.py",
         "repair_tables_split_by_info.py",
         "repair_section4a.py",
+        "enrich_section6_from_glossary.py",
     ]
     for step in steps:
         run(step)

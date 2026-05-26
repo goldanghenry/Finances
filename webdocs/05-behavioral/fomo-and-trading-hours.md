@@ -105,10 +105,9 @@ flowchart LR
 **거래 빈도와 비용**(교육):
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(\R_\text{net}\) | R  net | 본문 §4·위 식 맥락 참고 |
-| \(\R_\text{gross}\) | R  gross | 본문 §4·위 식 맥락 참고 |
-
+|   ------   | ------ | 위 식의 ------ |
+|  \(\R_\text{net}\)  |  R  net  | §4 용어·식 맥락에서 확인 |
+|  \(\R_\text{gross}\)  |  R  gross  | §4 용어·식 맥락에서 확인 |
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 \]
@@ -133,6 +132,9 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 - \(N\): **초과** 매매 횟수, \(f\): 수수료, \(\tau\): 세금(해외·단기)
 
 **FOMO 없을 때** \(N \downarrow\).
+
+---
+
 
 ---
 

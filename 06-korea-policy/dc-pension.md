@@ -127,11 +127,10 @@ flowchart LR
 **70/30** (교육):
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(\w_\text{risk}\) | w  risk | 본문 §4·위 식 맥락 참고 |
-| \(\V_\text{stock ETF}\) | V  stockETF | 본문 §4·위 식 맥락 참고 |
-| \(\V_\text{total}\) | V  total | 본문 §4·위 식 맥락 참고 |
-
+|   ------   | ------ | 위 식의 ------ |
+|  \(\w_\text{risk}\)  |  w  risk  | §4 용어·식 맥락에서 확인 |
+|  \(\V_\text{stock ETF}\)  |  V  stockETF  | §4 용어·식 맥락에서 확인 |
+|  \(\V_\text{total}\)  |  V  total  | §4 용어·식 맥락에서 확인 |
 \[
 w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 \]
@@ -142,10 +141,9 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 **추가납입 절세**(2026 보도, 가상):
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(\P_\text{add}\) | P  add | 본문 §4·위 식 맥락 참고 |
-| \(\r_\text{deduction}\) | r  deduction | 본문 §4·위 식 맥락 참고 |
-
+|   ------   | ------ | 위 식의 ------ |
+|  \(\P_\text{add}\)  |  P  add  | §4 용어·식 맥락에서 확인 |
+|  \(\r_\text{deduction}\)  |  r  deduction  | §4 용어·식 맥락에서 확인 |
 \[
 \text{절세} \approx \min(P_{\text{add}}, 3{,}000{,}000) \times r_{\text{deduction}}
 \]
@@ -153,6 +151,10 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 
 
 **읽는 법**: **P_**와 **r_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+---
+
+제를 맞춘다.
 
 ---
 
@@ -169,7 +171,7 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 ### 7.2 2026년 (보도)
 
 | 항목 | 2025 | 2026 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | DC 추가납입 세액공제 | 기존 한도 | **+300만 원** (DC만) |
 | DB | — | **해당 없음** |
 
@@ -194,7 +196,7 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 ### 7.5 DC 운용 월간·연간 루틴 (교육)
 
 | 주기 | 체크 | 도구 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | 매월 | 목표 비중 vs **70%** 위험자산 | 퇴직연금 앱·엑셀 |
 | 분기 | QQQ·국내주식형 **상관** — 한쪽만 급등 시 리밸런싱 | [rebalancing-and-dca.md](../04-portfolio/rebalancing-and-dca.md) |
 | 반기 | 해외 ETF **배당** 현금흐름 — 2025~ 선환급 폐지 | [part2](tax/overseas-stocks-tax-part2-dividend.md) |
@@ -240,7 +242,7 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 ### 예제 1: 70/30 (가상)
 
 | 자산 | 금액 | 비중 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | QQQ+국내주식형 | **M** | 70% |
 | 채권·예금 | **M** | 30% |
 | **합계** | **M** | 100% |

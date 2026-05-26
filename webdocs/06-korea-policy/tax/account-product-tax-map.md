@@ -131,10 +131,19 @@ flowchart TD
 **10년 실질**(교육, 가상 수익 \(R\), 세율 차 \(\Delta\tau\)):
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(\R_\text{after}\) | R  after | 본문 §4·위 식 맥락 참고 |
-| \(\u_\text{eff}\) | u  eff | 본문 §4·위 식 맥락 참고 |
-
+|    ------    | ------ | 위 식의 ------ |
+|   \(\R_\text{after}\)   |   R  after   | §4 용어·식 맥락에서 확인 |
+|   \(\u_\text{eff}\)   |   u  eff   | §4 용어·식 맥락에서 확인 |
+| 기호 | 이름 | 이 식에서 의미 |
+|   ------   | ------ | 위 식의 ------ |
+|     R     | R | 기간당 이자·요구수익률 |
+|     Delta     | Delta | 위 식의 Delta |
+|     tau     | tau | 위 식의 tau |
+|     after     | after | 위 식의 after |
+|     u     | u | 위 식의 u |
+|     eff     | eff | 위 식의 eff |
+|     approx     | approx | 위 식의 approx |
+|     times     | times | 위 식의 times |
 \[
 R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 \]
@@ -224,7 +233,7 @@ R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 ### 예제 1: DB 가입자 Z
 
 | 슬롯 | 상품 | 계좌 |
-|------|------|----------------|
+|    ------    | ------ | 위 식의 ------ |
 | 2a | (없음) | DB만 |
 | 2b | QQQ | ISA+IRP |
 | 4 | 코스닥 | 일반 |
