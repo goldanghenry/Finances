@@ -165,10 +165,6 @@ r_i = \alpha_i + \beta_i r_m + \varepsilon_i
 **읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
 
 
-
-
-
-
 **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 **유도 (L4)**:
 1. **정의**: **r**, **i**, **alpha**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
@@ -184,15 +180,11 @@ r_i = \alpha_i + \beta_i r_m + \varepsilon_i
 | **FV** | 미래가치 | 미래 시점의 목표·결과 금액 |
 
 \[
-Var(r_i) = \beta_i^2 Var(r_m) + Var(\varepsilon_i)
+Var(r_i) = \beta_i^{2} Var(r_m) + Var(\varepsilon_i)
 \]
 
 
 **읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
-
-
-
-
 
 
 **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
@@ -214,10 +206,6 @@ Var(r_i) = \beta_i^2 Var(r_m) + Var(\varepsilon_i)
 
 
 **읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
-
-
-
-
 
 
 **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
@@ -471,7 +459,6 @@ VaR **분위수**·기간; MDD **실제 경로** 최악 — **둘 다** 참고.
 | Bucket 4 무한 | **하드 캡** |
 
 ---
-
 
 
 **Q. 실무에서는?**  

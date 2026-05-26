@@ -74,7 +74,6 @@
 | 종부세 | 보유 세금 | §4 | [glossary](../00-roadmap/glossary.md#종부세) |
 
 
-
 ## 5. 메커니즘
 
 ```mermaid
@@ -216,7 +215,6 @@ flowchart TD
 **10억 목표**를 부동산 **직접**만으로 맞추려면 LTV·금리·공실 리스크가 큽니다. [asset-allocation.md](../04-portfolio/asset-allocation.md)에서 **주식·연금·REIT** 비중을 함께 설계하세요.
 
 
-
 ## 8. 숫자 예제 (가상)
 
 > 가상 인물·금액.
@@ -289,9 +287,6 @@ flowchart TD
 ---
 
 
-
-
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -331,7 +326,6 @@ flowchart TD
 | NXT 종목·거래중단 | [nextrade.co.kr](https://www.nextrade.co.kr) |
 
 **면책 재확인**: 가상 예제·보도 수치는 **시점별 개정**됩니다. 실행·신고 전 공식 출처를 확인하세요.
-
 
 
 ## 11. 심화 읽기

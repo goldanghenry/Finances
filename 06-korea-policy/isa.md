@@ -142,12 +142,12 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|              ISA              | ISA | 개인종합자산관리계좌 슬롯 |
+|               ISA               | ISA | 개인종합자산관리계좌 슬롯 |
 |  M  | 월 실수령 | 가계 교육용 월 세후 소득 기호 |
-|              approx              | approx | 위 식의 approx |
-|              H              | H | 위 식의 H |
-|              times              | times | 위 식의 times |
-|              DEPTH              | DEPTH | 위 식의 DEPTH |
+|               approx               | approx | 위 식의 approx |
+|               H               | H | 위 식의 H |
+|               times               | times | 위 식의 times |
+|               DEPTH               | DEPTH | 위 식의 DEPTH |
 
 \[
 \text{절세액} \approx \min(\text{누적순이익}, H) \times \tau_{\text{일반}} + \max(0, \text{누적순이익} - H) \times (\tau_{\text{일반}} - 0.099)
@@ -241,7 +241,6 @@ flowchart TD
 **2026 개편 시**: 비과세 **500만**·연납입 **4,000만**이 시행되면, 가상 A는 **납입만** 상향하고 **3년 유지·손익통산** 원칙은 동일합니다. 시행 전에는 2025 한도로 계획하고, 확정 시 [investment-tax-overview.md](tax/investment-tax-overview.md)를 갱신하세요.
 
 
-
 ## 8. 숫자 예제 (가상)
 
 > 모든 인물·금액은 가상입니다.
@@ -316,8 +315,6 @@ flowchart TD
 - 금융투자소득세 **유예**와 별개 개념
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

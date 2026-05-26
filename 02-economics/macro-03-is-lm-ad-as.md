@@ -75,7 +75,6 @@
 ---
 
 
-
 **이 모형이 말하는 것**: 수식은 계산 절차이고, 경제 직관은 「누가 이득·손해를 보는가」「어떤 가정이 깨지면 결론이 뒤집히는가」다. 유도 각 단계마다 **가정**을 한 줄로 적어 본다.
 ## 4. 정식 개념·용어
 
@@ -91,7 +90,7 @@
 | AD | 총수요 | Aggregate demand | \(P\)–\(Y\) 평면에서 IS-LM에서 유도된 **수요** |
 | SRAS | 단기 총공급 | Short-run AS | **우상향** — 명목경직·기대 가격 |
 | LRAS | 장기 총공급 | Long-run AS | \(Y=Y_n\) **수직** — 잠재산출 |
-| \(Y_n\) | 잠재산출 | Potential output | **완전고용·정상 가동** 실물 산출 |
+| **Y_n** | 잠재산출 | Potential output | **완전고용·정상 가동** 실물 산출 |
 | 크라우딩아웃 | Crowding out | Crowding out | 재정 확대가 \(r\uparrow\) 로 **민간 I(·C) 감소** |
 | 유동성 함정 | Liquidity trap | Liquidity trap | \(r\) 하한에서 LM **수평**, 통화정책 **약화** |
 | 중립성 | Neutrality | Neutrality | 장기적으로 통화가 **실물**에 무관하다는 명제(논쟁) |
@@ -113,7 +112,7 @@
 | AD | 총수요 | §4 | [glossary](../00-roadmap/glossary.md#ad) |
 | SRAS | 단기 총공급 | §4 | [glossary](../00-roadmap/glossary.md#sras) |
 | LRAS | 장기 총공급 | §4 | [glossary](../00-roadmap/glossary.md#lras) |
-| \(Y_n\) | 잠재산출 | §4 | [glossary](../00-roadmap/glossary.md#\) |
+| **Y_n** | 잠재산출 | §4 | [glossary](../00-roadmap/glossary.md#\) |
 | 크라우딩아웃 | Crowding out | §4 | [glossary](../00-roadmap/glossary.md#크라우딩아웃) |
 | 유동성 함정 | Liquidity trap | §4 | [glossary](../00-roadmap/glossary.md#유동성-함정) |
 | 중립성 | Neutrality | §4 | [glossary](../00-roadmap/glossary.md#중립성) |
@@ -252,14 +251,10 @@ cY = \bar{C} - cT + \bar{I} + G
 | **FV** | 미래가치 | 미래 시점의 목표·결과 금액 |
 
 \[
-P = P^e + \alpha (Y - Y_n), \quad \alpha > 0
+P = P^{e} + \alpha (Y - Y_n), \quad \alpha > 0
 \]
 
 **읽는 법**: **P**는 **Y**가 **Y_n**에서 벗어날수록 **P^e**에서 이탈한다. 
-
-
-
-
 
 
 균형에서는 \(Y = Y_n\)이다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -400,10 +395,6 @@ Y^* = \frac{1}{1-c}\left(\bar{C} - cT + \bar{I} + G - br\right)
 **읽는 법**: **G**·**I**·**c**가 바뀌면 **Y***가 이동한다 — IS 곡선 이동의 대수형(교육).
 
 
-
-
-
-
 **유도 (L4)**:
 1. **정의**: **Y**, **C**, **I**, **G**를 동일 시점·동일 통화로 맞춘다.
 2. **식 변형**: IS와 LM을 연립해 **Y***·**r***을 한쪽에 둔다.
@@ -427,10 +418,6 @@ P \uparrow \Rightarrow \frac{M}{P} \downarrow \Rightarrow Y \downarrow
 **읽는 법**: **P**가 오르면 **M/P**가 줄어 **LM**이 좌측으로 — **AD**가 **우하향**인 이유(교육).
 
 
-
-
-
-
 **유도 (L4)**:
 1. **정의**: **Y**, **P**, **M**를 동일 시점·동일 통화로 맞춘다.
 2. **식 변형**: LM을 **P**에 대해 풀어 **Y(P)** 관계를 본다.
@@ -449,14 +436,10 @@ P \uparrow \Rightarrow \frac{M}{P} \downarrow \Rightarrow Y \downarrow
 **단기 SRAS** (선형 예):
 
 \[
-P = P^e + \alpha (Y - Y_n), \quad \alpha > 0
+P = P^{e} + \alpha (Y - Y_n), \quad \alpha > 0
 \]
 
 **읽는 법**: **P**는 **Y**가 **Y_n**에서 벗어날수록 **P^e**에서 이탈한다. 
-
-
-
-
 
 
 균형에서는 \(Y = Y_n\)이다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -761,8 +744,6 @@ Y^* = \frac{1}{1-0.75}(50+150+100) = 4 \times 300 = 1200
 - 본문 수치·전망 **가상·비약정**
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

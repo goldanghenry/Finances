@@ -92,7 +92,6 @@ DB는 **회사가 약속한 퇴직금 “목표액”을 채우기 위해 저축
 | IRP | 퇴직금 이전·추가 납입 개인 계좌 | §4 | [glossary](../00-roadmap/glossary.md#irp) |
 
 
-
 ## 5. 메커니즘
 
 ```mermaid
@@ -145,7 +144,6 @@ flowchart TB
 \[
 \text{퇴직금} \approx \text{평균임금} \times \text{근속연수} \times \text{지급률}
 \]
-
 
 
 **읽는 법**: **퇴직금**와 **평균임금**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -258,8 +256,6 @@ flowchart TB
 - 문서의 산출식·기관 수는 **시점별 개정** 가능
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

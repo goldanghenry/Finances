@@ -22,7 +22,6 @@
 | **복습 한 줄** | — |
 
 
-
 > **가상 사례 회사**: 본 Phase 재무제표 심화 편은 **「가상 주식회사 한빛전자」** (가상의 코스피 제조·전자 부품) 숫자로 3표·DART·FCF를 **같은 스레드**로 읽는다. 실제 종목·실적이 아니다.
 ## TL;DR
 
@@ -93,7 +92,6 @@
 | MD&A | 9~10 | §4 | [glossary](../00-roadmap/glossary.md#md&a) |
 | DART | 9~11 | §4 | [glossary](../00-roadmap/glossary.md#dart) |
 | P/E, P/B | 11~12 | §4 | [glossary](../00-roadmap/glossary.md#p/e,-p/b) |
-
 
 
 ## 5. 메커니즘 — 12주 전체 맵
@@ -268,7 +266,6 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -290,7 +287,6 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 ??? note "정답 힌트"
 
     1. FCF=OCF−CapEx · 2. 9~11 · 3. cash-flow-statement-fcf.md · 4. 이익률·회전율·레버리지 · 5. 약 36~48h
-
 
 
 ## 부록 A. 주차별 체크박스

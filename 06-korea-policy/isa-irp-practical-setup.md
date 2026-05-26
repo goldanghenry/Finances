@@ -97,7 +97,6 @@
 | 자동이체 | ISA **정기 납입** | §4 | [glossary](../00-roadmap/glossary.md#자동이체) |
 
 
-
 ## 5. 메커니즘 — DB 가입자 전체 플로우
 
 ```mermaid
@@ -154,13 +153,13 @@ sequenceDiagram
 **가상 예** (2025 일반형 \(L_\text{ISA}=2{,}000\)만):
 
 - **안전 상한(월)**: \(T_\text{ISA} \leq L_\text{ISA}/12\).
-- 플레이북 \(\alpha_\text{ISA}=0.50\)이면 \(T_\text{ISA}=\alpha_\text{ISA} M\). **\(12\alpha_\text{ISA} M > L_\text{ISA}\)** 이면 초과 \(12\alpha_\text{ISA}M - L_\text{ISA}\)는 ISA 밖(일반·연금) **우회**.
+- 플레이북 \(\alpha_{ISA}=0.50\)이면 \(T_\text{ISA}=\alpha_{ISA} M\). **\(12\alpha_{ISA} M > L_\text{ISA}\)** 이면 초과 \(12\alpha_{ISA}M - L_\text{ISA}\)는 ISA 밖(일반·연금) **우회**.
 
 | 월 ISA 납입 \(T_\text{ISA}\) | 연 누적 \(12 T_\text{ISA}\) | 판정 |
 |------|------|----------------|
 | \(0.75\,L_\text{ISA}/12\) | \(0.75\,L_\text{ISA}\) | OK |
-| \(L_\text{ISA}/12\) | \(L_\text{ISA}\) | OK (경계) |
-| \(\alpha_\text{ISA} M\) | \(12\alpha_\text{ISA}M\) | **\(>L_\text{ISA}\)이면 조정** |
+| \(L_\text{ISA}/12\) | **L_ISA** | OK (경계) |
+| \(\alpha_{ISA} M\) | \(12\alpha_{ISA}M\) | **\(>L_\text{ISA}\)이면 조정** |
 
 ### 5.4 3년 유지·만기
 
@@ -204,7 +203,7 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(S_t\) | t연도 금융투자소득 | ISA 통산 소득 |
+| **S_t** | t연도 금융투자소득 | ISA 통산 소득 |
 | \(T_{\text{free}}\) | 비과세 누적액 | 3년 한도 200만 원 이내 |
 
 **3년 누적 비과세(일반형, 2025 교육용)**:
@@ -321,7 +320,6 @@ ght)
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -353,14 +351,13 @@ ght)
     1. ISA·IRP·일반( DC 제외 ) · 2. 동일 ISA · 3. 2,000만 · 4. 3·6 등 · 5. ISA(중개형)
 
 
-
 ## 부록 A. IRP·연금저축 병행 매트릭스 (DB 가입자)
 
 | 계좌 | 가상 월 배분(플레이북 30%) | 세제 핵심 | 유동성 | 문서 |
 |------|------|------|------|----------------|
-| **IRP** | \(\alpha_\text{P} \cdot M\) 중 일부 | **과세이연**·퇴직금 수령 | 낮음(연금화) | [irp.md](irp.md) |
+| **IRP** | \(\alpha_{P} \cdot M\) 중 일부 | **과세이연**·퇴직금 수령 | 낮음(연금화) | [irp.md](irp.md) |
 | **연금저축** | 잔여 | **세액공제** 12~15% 구간 | 중간 | [pension-savings-account.md](pension-savings-account.md) |
-| **ISA** | \(\alpha_\text{ISA} \cdot M\) | **3년·비과세·통산** | 중간(3년) | [isa.md](isa.md) |
+| **ISA** | \(\alpha_{ISA} \cdot M\) | **3년·비과세·통산** | 중간(3년) | [isa.md](isa.md) |
 
 **우선순위 가이드(교육용, 가상)**:
 

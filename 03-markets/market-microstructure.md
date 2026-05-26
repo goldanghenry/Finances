@@ -69,7 +69,7 @@
 | HFT | High-frequency trading | **ms** **단위** **전략** |
 | ATS | 대체거래소 | **KRX** **외** **장소** |
 | 슬리피지 | Slippage | **기대** **vs** **체결** |
-|               VWAP               | VWAP | **거래량** **가중** **평균** |
+|                VWAP                | VWAP | **거래량** **가중** **평균** |
 ### 4a. 핵심 용어 (본문 등장 순)
 
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
@@ -86,7 +86,6 @@
 | ATS | **KRX** **외** **장소** | §4 | [glossary](../00-roadmap/glossary.md#ats) |
 | 슬리피지 | **기대** **vs** **체결** | §4 | [glossary](../00-roadmap/glossary.md#슬리피지) |
 | VWAP | **거래량** **가중** **평균** | §4 | [glossary](../00-roadmap/glossary.md#vwap) |
-
 
 
 ## 5. 메커니즘
@@ -245,7 +244,6 @@ flowchart TD
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -288,7 +286,6 @@ flowchart TD
     6. 유동성·스프레드  
     7. 속도·비용  
     8. 순 MoS 감소
-
 
 
 ## 부록 A — 주문 유형

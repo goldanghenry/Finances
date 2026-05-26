@@ -150,7 +150,7 @@ flowchart TD
 |------|------|----------------|
 
 \[
-P = \sum_{t=1}^{T} \frac{C}{(1+y)^t} + \frac{F}{(1+y)^T}
+P = \sum_{t=1}^{T} \frac{C}{(1+y)^{t}} + \frac{F}{(1+y)^T}
 \]
 
 
@@ -188,7 +188,7 @@ D_{Mac} = \frac{\sum t \cdot PV(CF_t)}{P}, \quad D_{mod} = \frac{D_{Mac}}{1+y}
 | **FV** | 미래가치 | 미래 시점의 목표·결과 금액 |
 
 \[
-\frac{\Delta P}{P} \approx -D_{mod}\Delta y + \frac{1}{2} C_x (\Delta y)^2
+\frac{\Delta P}{P} \approx -D_{mod}\Delta y + \frac{1}{2} C_x (\Delta y)^{2}
 \]
 
 
@@ -292,7 +292,6 @@ Spread \approx YTM_{corp} - YTM_{gov}
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -335,7 +334,6 @@ Spread \approx YTM_{corp} - YTM_{gov}
     6. D·신용·비용  
     7. 듀레이션·인플레  
     8. 국채 YTM
-
 
 
 ## 부록 A — 등급사·신용분석

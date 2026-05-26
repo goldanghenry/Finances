@@ -62,7 +62,6 @@
 **DB**: 구내식당 메뉴 — **패시브·액티브 선택권 없음**. 집(ISA)에서 **패시브 ETF** 도시락.
 
 
-
 한국 **DB·ISA·2026 개편** 환경에서 포트폴리오 문서는 **실행 순서**가 핵심입니다. 비중 % 논쟁 이전에 **운용 가능 계좌**와 **bucket 채우기**를 확정하고, QQQ·글로벌·채권 **코어**를 [etf-index-funds.md](../03-markets/etf-index-funds.md) 기준 **저비용**으로 유지하세요. 위성·레버리지·단타는 **0~20%**와 **손실 한도**로 격리하고, [references/sources.md](../references/sources.md)로 제도 변경을 **분기 1회** 확인합니다.
 
 
@@ -99,7 +98,6 @@
 | 추적 오차 | 패시브의 벤치 이탈 | §4 | [glossary](../00-roadmap/glossary.md#추적-오차) |
 | TER | ETF 연간 비용 | §4 | [glossary](../00-roadmap/glossary.md#ter) |
 | 정보 비율 | 액티브 위험 대비 알파 | §4 | [glossary](../00-roadmap/glossary.md#정보-비율) |
-
 
 
 ## 5. 메커니즘
@@ -244,7 +242,6 @@ E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 **A10.** **예** — DC 앱에서 QQQ·채권 ETF — [dc-pension.md](../06-korea-policy/dc-pension.md).
 
 
-
 ## 8. 숫자 예제 (가상)
 
 > 모든 인물·금액은 가상입니다.
@@ -318,7 +315,6 @@ E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 - [ ] DB → ISA [db-pension.md](../06-korea-policy/db-pension.md)
 
 
-
 ## 10. 함정·리스크·한계
 
 - **업 종사 = 투자 유리** 착각  
@@ -329,8 +325,6 @@ E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 - **성공 사례**만 기억(생존자 편향)
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

@@ -61,7 +61,6 @@
 **환헷지**: **환율 보험**을 든 ETF — 보험료(**비용**). **언헷지**: 환율 **그대로** 노출.
 
 
-
 한국 **DB·ISA·2026 개편** 환경에서 포트폴리오 문서는 **실행 순서**가 핵심입니다. 비중 % 논쟁 이전에 **운용 가능 계좌**와 **bucket 채우기**를 확정하고, QQQ·글로벌·채권 **코어**를 [etf-index-funds.md](../03-markets/etf-index-funds.md) 기준 **저비용**으로 유지하세요. 위성·레버리지·단타는 **0~20%**와 **손실 한도**로 격리하고, [references/sources.md](../references/sources.md)로 제도 변경을 **분기 1회** 확인합니다.
 
 
@@ -110,7 +109,6 @@
 | 언헷지 | 환 노출 유지 | §4 | [glossary](../00-roadmap/glossary.md#언헷지) |
 | DM / EM | 지역 분류 | §4 | [glossary](../00-roadmap/glossary.md#dm-/-em) |
 | 통화 노출 | 원화·달러 등 | §4 | [glossary](../00-roadmap/glossary.md#통화-노출) |
-
 
 
 ## 5. 메커니즘
@@ -329,7 +327,6 @@ R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 - [ ] DB → ISA [db-pension.md](../06-korea-policy/db-pension.md)
 
 
-
 ## 10. 함정·리스크·한계
 
 - **홈 바이어스** — 코스피+부동산+원화 **삼중**  
@@ -340,8 +337,6 @@ R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 - **DB** 해외 **착각**
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

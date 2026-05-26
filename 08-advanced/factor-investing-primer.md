@@ -79,7 +79,6 @@
 | 저변동 | 역사적 변동성 | §4 | [glossary](../00-roadmap/glossary.md#저변동) |
 
 
-
 ## 5. 메커니즘
 
 ```mermaid
@@ -107,12 +106,12 @@ flowchart LR
 | \(\R_f\) | 무위험금리 | 국채·예금 등 기준 금리 |
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|          Fama          | Fama | 위 식의 Fama |
-|          French          | French | 위 식의 French |
-|          R          | R | 기간당 이자·요구수익률 |
-|          f          | f | 위 식의 f |
-|          i          | i | 위 식의 i |
-|          mkt          | mkt | 위 식의 mkt |
+|           Fama           | Fama | 위 식의 Fama |
+|           French           | French | 위 식의 French |
+|           R           | R | 기간당 이자·요구수익률 |
+|           f           | f | 위 식의 f |
+|           i           | i | 위 식의 i |
+|           mkt           | mkt | 위 식의 mkt |
 |  m  | 월 실수령 | 가계 교육용 월 세후 소득 기호 |
 
 \[
@@ -121,23 +120,6 @@ R_i - R_f = \alpha + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}}\text{SMB
 
 
 **읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
@@ -222,7 +204,6 @@ flowchart TD
 | QMJ | 이후 | 퀄리티 |
 
 **한국 시장**: 팩터 프리미엄은 **미국과 동일하지 않을** 수 있습니다. 소액·개인은 **시장 ETF 코어 + 팩터 1~2개**로 단순화하고, [passive-vs-active.md](../04-portfolio/passive-vs-active.md)와 대조하세요.
-
 
 
 ## 8. 숫자 예제 (가상)
@@ -312,9 +293,6 @@ flowchart TD
 ---
 
 
-
-
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -354,7 +332,6 @@ flowchart TD
 | NXT 종목·거래중단 | [nextrade.co.kr](https://www.nextrade.co.kr) |
 
 **면책 재확인**: 가상 예제·보도 수치는 **시점별 개정**됩니다. 실행·신고 전 공식 출처를 확인하세요.
-
 
 
 ## 11. 심화 읽기

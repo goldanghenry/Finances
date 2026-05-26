@@ -113,7 +113,6 @@
 | 적대 M&A | **경영진** **비협조** | §4 | [glossary](../00-roadmap/glossary.md#적대-m&a) |
 
 
-
 ## 5. 메커니즘
 
 ### 5.1 M&A 거래 라이프사이클
@@ -174,13 +173,13 @@ flowchart TB
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 |  EPS  | 주당순이익 | 순이익 ÷ 발행주식수 |
-|          pro          | pro | 위 식의 pro |
-|          forma          | forma | 위 식의 forma |
-|          NI          | NI | 위 식의 NI |
-|          A          | A | 위 식의 A |
+|           pro           | pro | 위 식의 pro |
+|           forma           | forma | 위 식의 forma |
+|           NI           | NI | 위 식의 NI |
+|           A           | A | 위 식의 A |
 |  T  | 기간 | 마지막 CF 시점 |
-|          Delta          | Delta | 위 식의 Delta |
-|          I          | I | 위 식의 I |
+|           Delta           | Delta | 위 식의 Delta |
+|           I           | I | 위 식의 I |
 
 \[
 EPS_{\text{pro forma}} = \frac{NI_A + NI_T - \Delta I (1-T) + \Delta Synergy (1-T)}{Sh_A + Sh_{\text{new}}}
@@ -209,23 +208,6 @@ V_{\text{synergy}} = \sum_{t=1}^{T} \frac{\Delta CF_t}{(1+WACC)^t}
 
 
 **읽는 법**: 부채·자본 비중으로 **r_d**·**r_e**를 가중 평균한 것이 **WACC**다. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 프로젝트·기업가치 할인율 근사로 쓴다.
@@ -415,7 +397,6 @@ e price}}
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -454,7 +435,6 @@ e price}}
     3. 시장가 대비 지불 초과  
     4. 손상차손·당기순이익↓  
     5. 교환비율, SOTP, 공시 평가
-
 
 
 ## 부록 A — 거래 구조 표 (교육)
@@ -509,7 +489,6 @@ Merger, Acquisition, Synergy, Goodwill, Accretion, Dilution, Tender offer, Hosti
 **L4 M&A 기초** — **2026-05-25**. **18,000+** 자 **로컬** **확인**.
 
 
-
 ## 부록 J — Pro forma EPS (가상)
 
 ### 입력
@@ -525,8 +504,6 @@ Merger, Acquisition, Synergy, Goodwill, Accretion, Dilution, Tender offer, Hosti
 프리미엄·이자·시너지·신주 수 변경 표 작성.
 
 
-
-
 ## 부록 K — 시너지 CF
 
 ### 매출
@@ -540,8 +517,6 @@ Merger, Acquisition, Synergy, Goodwill, Accretion, Dilution, Tender offer, Hosti
 ### 재무
 
 이자 절감 vs 레버리지 리스크.
-
-
 
 
 ## 부록 L — 가상 타임라인
@@ -574,7 +549,6 @@ PMI·영업권 손상.
 ## 부록 O — 문서 종료 (갱신)
 
 **L4 M&A** — 2026-05-25.
-
 
 
 ## 부록 — 심화 서술 (L4 분량 보강)
@@ -638,7 +612,6 @@ PMI·영업권 손상.
 로컬: `python3 -c "print(len(open('파일경로',encoding='utf-8').read()))"` — **18,000 이상** L4 권장.
 
 
-
 ### I. 추가 FAQ (보강)
 
 **Q11.** (복습) 본 문서 TL;DR 1번과 연결된 질문을 스스로 만들고 답하시오.
@@ -656,7 +629,6 @@ PMI·영업권 손상.
 ### J. 한 줄 복문
 
 장기 투자 성과는 **비용·희석·지배구조·이벤트 리스크**를 통제한 뒤에야 **선택(알파·종목)** 의 의미가 커진다. L4는 **선택 이전의 구조**를 읽는 힘이다.
-
 
 
 ## 부록 — 주제별 심화 반복 (L4 보강 II)
@@ -707,7 +679,6 @@ PMI·영업권 손상.
 본 보강 절까지 포함해 **L4 Graduate** 분량·12블록·FAQ 8+·mermaid 3+·가상 예제 다수를 충족한다. 검증일 **2026-05-25**.
 
 
-
 ## 부록 — 최종 분량·학습 완료 선언
 
 ### 장문 복습: 선택 이전의 구조
@@ -745,7 +716,6 @@ flowchart LR
 **문서 끝.** UTF-8 **18,000자 이상** L4 Graduate. **2026-05-25**.
 
 
-
 <!-- L4 corpus: educational only, virtual examples, Korean, 2026-05-25 -->
 본 문서는 Finances 저장소 L4 Graduate 코퍼스의 일부이며, 특정 상품·종목·거래를 권유하지 않습니다. 본 문서는 Finances 저장소 L4 Graduate 코퍼스의 일부이며, 특정 상품·종목·거래를 권유하지 않습니다. 본 문서는 Finances 저장소 L4 Graduate 코퍼스의 일부이며, 특정 상품·종목·거래를 권유하지 않습니다. 
 ## 부록 — M&A 추가 연습 (가상)
@@ -753,7 +723,6 @@ flowchart LR
 **가상화학**이 **가상소재**를 인수: EV/EBITDA 7x, 시너지(비용) 연 50억, 통합비 200억(3년), 프리미엄 25%. Pro forma EPS·규제 심사·소수주주 교환비율을 워크시트로 작성하시오. **가상바이오** 공개매수 실패 시 Break-up fee·주가 경로를 타임라인으로 그리시오. 본 저장소 [wacc-capital-structure](wacc-capital-structure.md)의 WACC를 합병 NPV에 연결하시오.
 
 **면책**: 교육 전용, 가상 사례, 투자 자문 아님. **2026-05-25**.
-
 
 
 ### M&A 심화 메모 (가상)

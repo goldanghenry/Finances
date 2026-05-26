@@ -127,7 +127,6 @@
 | 우발부채·약정 | 소송·보증·**미래** 지출 가능성 | §4 | [glossary](../00-roadmap/glossary.md#우발부채·약정) |
 
 
-
 ## 5. 메커니즘
 
 ### 5.1 한국 공시 계층 (DART 중심)
@@ -690,8 +689,6 @@ m_i = \frac{OP_i}{Rev_i}
 - DART **기술 장애·지연** 시 **거래소 공시** 보조 — [references/sources.md](../references/sources.md)
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

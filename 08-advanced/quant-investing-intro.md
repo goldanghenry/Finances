@@ -362,7 +362,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -465,7 +464,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 ??? note "정답 힌트"
 
     1. 산업 vs 공통 특성 · 2. 미래 정보 사용 · 3. 과최적화 검출 · 4. 접수일 후 매수 등 · 5. 초과/TE · 6. 과최적화 의심 · 7. MKT SMB HML · 8. 클린징·조정
-
 
 
 ## 부록 A. 백테스트 체크리스트 (인쇄용)

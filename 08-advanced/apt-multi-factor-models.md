@@ -95,7 +95,6 @@
 | APT vs CAPM | CAPM은 **단일 균형요인** | §4 | [glossary](../00-roadmap/glossary.md#apt-vs-capm) |
 
 
-
 ## 5. 메커니즘
 
 ```mermaid
@@ -140,28 +139,11 @@ flowchart LR
 | **FV** | 미래가치 | 미래 시점의 목표·결과 금액 |
 
 \[
- r_{i,t}^e = \alpha_i + \sum_{k=1}^K \beta_{i,k} f_{k,t} + \varepsilon_{i,t}
+ r_{i,t}^{e} = \alpha_i + \sum_{k=1}^{K} \beta_{i,k} f_{k,t} + \varepsilon_{i,t}
 \]
 
 
 **읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
@@ -181,9 +163,9 @@ flowchart LR
 | **FV** | 미래가치 | 미래 시점의 목표·결과 금액 |
 
 \[
- SSR = \sum_t \hat{\varepsilon}_{i,t}^2,\quad
- SST = \sum_t (r_{i,t}^e - \bar{r}_i^e)^2,\quad
- R^2_i = 1 - \frac{SSR}{SST}
+ SSR = \sum_t \hat{\varepsilon}_{i,t}^{2},\quad
+ SST = \sum_t (r_{i,t}^{e} - \bar{r}_i^{e})^{2},\quad
+ R^{2}_i = 1 - \frac{SSR}{SST}
 \]
 
 
@@ -286,7 +268,6 @@ flowchart LR
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -320,7 +301,6 @@ flowchart LR
     - 힌트 1: **요인 목록 명세**(이론이 자동으로 고정 안 함) 대 **단일 균형요인·유도**(CAPM)·**실증 규칙 고정**(FF) 대비 관점  
     - 힌트 2: **공분산·조건부 노출**(그리고 단위통일)·**표본 시간 변동 허용** 여부까지 엮어 말하면 만점 근처  
     - 힌트 3: 과적합, 비용, 구조변화, 데이터 채굴, 생존편향 등 **현실 장애 요소** 포함
-
 
 
 ## 부록 A. 표: CAPM vs APT vs 파마–프랜치(FF류) 비교 학습 매트릭스

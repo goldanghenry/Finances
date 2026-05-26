@@ -121,7 +121,6 @@
 | Premium/Discount | 괴리 | §4 | [glossary](../00-roadmap/glossary.md#premium/discount) |
 
 
-
 ## 5. 메커니즘
 
 ### 5.1 지수 산술 레이어와 펀드 운용 레이어 분리
@@ -318,7 +317,6 @@ r_{\mathrm{ETF}} \approx r_{\mathrm{index}}^{\mathrm{(TR 또는 PR 규격)}}
 - 본 교육은 투자 권유 아님— **공식 간이설명** 선행 교육
 
 ---
-
 
 
 **Q. 실무에서는?**  

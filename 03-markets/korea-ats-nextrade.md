@@ -94,7 +94,6 @@ NXT는 **같은 상품(종목)을 파는 두 번째 매장**입니다. 본점(KR
 | 스프레드 | 매수·매도 호가 차이 | §4 | [glossary](../00-roadmap/glossary.md#스프레드) |
 
 
-
 ## 5. 메커니즘
 
 ### 5.1 주문·체결 흐름
@@ -153,13 +152,13 @@ flowchart LR
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 |  P  | 포트 규모 | 가상 포트폴리오 규모(만 원) |
-|          fill          | fill | 위 식의 fill |
-|          approx          | approx | 위 식의 approx |
-|          NXT          | NXT | 위 식의 NXT |
-|          KRX          | KRX | 위 식의 KRX |
-|          quad          | quad | 위 식의 quad |
-|          DEPTH          | DEPTH | 위 식의 DEPTH |
-|          STANDARD          | STANDARD | 위 식의 STANDARD |
+|           fill           | fill | 위 식의 fill |
+|           approx           | approx | 위 식의 approx |
+|           NXT           | NXT | 위 식의 NXT |
+|           KRX           | KRX | 위 식의 KRX |
+|           quad           | quad | 위 식의 quad |
+|           DEPTH           | DEPTH | 위 식의 DEPTH |
+|           STANDARD           | STANDARD | 위 식의 STANDARD |
 
 \[
 P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수 시, 호가에 따라)}
@@ -314,8 +313,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 - 본 문서의 시간·한도·종목은 **개정·공지**에 따름
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

@@ -40,11 +40,33 @@ STRAY_FENCE_AFTER_HR = re.compile(
     re.M,
 )
 
-# §6 variable table: | \(PV\) | → | **PV** | (MkDocs tables often hide inline math)
+# §6 variable table: inline LaTeX in symbol column → bold (MkDocs tables hide math)
+VAR_TABLE_SUBSCRIPT = re.compile(
+    r"^\| \\\(([a-zA-Z])_\{([^}]+)\}\\\) \|",
+    re.M,
+)
+VAR_TABLE_SUB = re.compile(
+    r"^\| \\\(([a-zA-Z])_([a-zA-Z0-9])\\\) \|",
+    re.M,
+)
+VAR_TABLE_SUB_LONG = re.compile(
+    r"^\| \\\(([A-Za-z]+)_([A-Za-z0-9]+)\\\) \|",
+    re.M,
+)
+VAR_TABLE_SUB_BRACE = re.compile(
+    r"^\| \\\(([A-Za-z]+)_\{([^}]+)\}\\\) \|",
+    re.M,
+)
+VAR_TABLE_GREEK_PI = re.compile(r"^\| \\\(\\pi\\\) \|", re.M)
+VAR_TABLE_GREEK_PI_CAP = re.compile(r"^\| \\\(\\Pi\\\) \|", re.M)
+VAR_TABLE_GREEK_DELTA = re.compile(r"^\| \\\(\\Delta\\\) \|", re.M)
 VAR_TABLE_INLINE_SYM = re.compile(
     r"^\| \\\(([^\\)\n]{1,24})\\\) \|",
     re.M,
 )
+
+DISPLAY_BLOCK = re.compile(r"\\\[(.*?)\\\]", re.DOTALL)
+UNBRACED_CARET = re.compile(r"(?<!\{)\^([a-zA-Z0-9]+)(?!\})")
 
 # | \(\alpha_\text{ISA}\) | or | ISA | \(\alpha_\text{ISA}\) | — tables strip inline LaTeX
 ALPHA_TEXT_CELL = re.compile(
@@ -63,14 +85,57 @@ SLOT_TO_SUB = {"ISA": "ISA", "연금": "P", "일반": "G"}
 # \alpha_\text{ISA} → \alpha_{ISA} (display / inline outside tables)
 ALPHA_TEXT_ANYWHERE = re.compile(r"\\alpha_\\text\{([^}]+)\}")
 
-# Footnote clash when display math is misparsed as a table row: (1+r)^n
+# Footnote clash: (1+r)^n / (1+i)^n → braced exponents (inline + display)
 DISPLAY_EXPONENT = re.compile(
-    r"(\(1\s*\+\s*r\))\^n\b",
+    r"(\(1\s*\+\s*[a-z])\)\^([a-z])\b",
 )
+
+# Stray junk before ## 7 (debt-and-interest enrich artifact)
+STRAY_DOT_BEFORE_H7 = re.compile(
+    r"\n---\n\n\.\n\([^\n]+\)\n\n(## 7\.)",
+)
+
+# Collapse 4+ blank lines inside §6 reading blocks
+EXCESS_BLANK_IN_S6 = re.compile(r"\n{4,}")
 
 
 def normalize_var_table_symbols(text: str) -> tuple[str, int]:
     changes = 0
+    new = VAR_TABLE_SUBSCRIPT.sub(
+        lambda m: f"| **{m.group(1)}_{m.group(2)}** |", text
+    )
+    if new != text:
+        changes += len(VAR_TABLE_SUBSCRIPT.findall(text))
+        text = new
+
+    new2 = VAR_TABLE_SUB.sub(lambda m: f"| **{m.group(1)}_{m.group(2)}** |", text)
+    if new2 != text:
+        changes += len(VAR_TABLE_SUB.findall(text))
+        text = new2
+
+    new2b = VAR_TABLE_SUB_LONG.sub(
+        lambda m: f"| **{m.group(1)}_{m.group(2)}** |", text
+    )
+    if new2b != text:
+        changes += len(VAR_TABLE_SUB_LONG.findall(text))
+        text = new2b
+
+    new2c = VAR_TABLE_SUB_BRACE.sub(
+        lambda m: f"| **{m.group(1)}_{m.group(2)}** |", text
+    )
+    if new2c != text:
+        changes += len(VAR_TABLE_SUB_BRACE.findall(text))
+        text = new2c
+
+    for pat, sym in (
+        (VAR_TABLE_GREEK_PI, "π"),
+        (VAR_TABLE_GREEK_PI_CAP, "Π"),
+        (VAR_TABLE_GREEK_DELTA, "Δ"),
+    ):
+        new_g = pat.sub(f"| **{sym}** |", text)
+        if new_g != text:
+            changes += len(pat.findall(text))
+            text = new_g
 
     def repl(m: re.Match[str]) -> str:
         sym = m.group(1).strip()
@@ -78,11 +143,27 @@ def normalize_var_table_symbols(text: str) -> tuple[str, int]:
             return m.group(0)
         return f"| **{sym}** |"
 
-    new = VAR_TABLE_INLINE_SYM.sub(repl, text)
-    if new != text:
+    new4 = VAR_TABLE_INLINE_SYM.sub(repl, text)
+    if new4 != text:
         changes += len(VAR_TABLE_INLINE_SYM.findall(text))
-        text = new
+        text = new4
     return text, changes
+
+
+def brace_carets_in_display_blocks(text: str) -> tuple[str, int]:
+    changes = 0
+
+    def fix_block(m: re.Match[str]) -> str:
+        nonlocal changes
+        body = m.group(1)
+        new_body = UNBRACED_CARET.sub(r"^{\1}", body)
+        if new_body == body:
+            return m.group(0)
+        changes += len(UNBRACED_CARET.findall(body))
+        return "\\[" + new_body + "\\]"
+
+    new = DISPLAY_BLOCK.sub(fix_block, text)
+    return new, changes
 
 
 def normalize_alpha_latex(text: str) -> tuple[str, int]:
@@ -131,7 +212,7 @@ def brace_display_exponents(text: str) -> tuple[str, int]:
     n = len(DISPLAY_EXPONENT.findall(text))
     if not n:
         return text, 0
-    return DISPLAY_EXPONENT.sub(r"\1^{n}", text), n
+    return DISPLAY_EXPONENT.sub(r"\1)^{\2}", text), n
 
 
 def fix_text(text: str) -> tuple[str, int]:
@@ -180,6 +261,19 @@ def fix_text(text: str) -> tuple[str, int]:
 
     text, n_exp = brace_display_exponents(text)
     changes += n_exp
+
+    text, n_disp = brace_carets_in_display_blocks(text)
+    changes += n_disp
+
+    new = STRAY_DOT_BEFORE_H7.sub(r"\n---\n\n\1", text)
+    if new != text:
+        changes += 1
+        text = new
+
+    new = EXCESS_BLANK_IN_S6.sub("\n\n\n", text)
+    if new != text:
+        changes += len(EXCESS_BLANK_IN_S6.findall(text))
+        text = new
 
     return text, changes
 

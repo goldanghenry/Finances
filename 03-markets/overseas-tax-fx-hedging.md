@@ -127,7 +127,6 @@
 | Withholding overlay | 원천 레이어 | §4 | [glossary](../00-roadmap/glossary.md#withholding-overlay) |
 
 
-
 ## 5. 메커니즘
 
 ### 5.1 W-8BEN — 미국 원천징수 레이어
@@ -236,14 +235,14 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|          R          | R | 기간당 이자·요구수익률 |
-|          KRW          | KRW | 위 식의 KRW |
-|          unhedged          | unhedged | 위 식의 unhedged |
-|          approx          | approx | 위 식의 approx |
-|          USD          | USD | 위 식의 USD |
-|          asset          | asset | 위 식의 asset |
-|          FX          | FX | 위 식의 FX |
-|          DEPTH          | DEPTH | 위 식의 DEPTH |
+|           R           | R | 기간당 이자·요구수익률 |
+|           KRW           | KRW | 위 식의 KRW |
+|           unhedged           | unhedged | 위 식의 unhedged |
+|           approx           | approx | 위 식의 approx |
+|           USD           | USD | 위 식의 USD |
+|           asset           | asset | 위 식의 asset |
+|           FX           | FX | 위 식의 FX |
+|           DEPTH           | DEPTH | 위 식의 DEPTH |
 
 \[
 R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) - 1
@@ -528,7 +527,6 @@ verseas-stocks-tax-part1-cgt.md).
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -575,7 +573,6 @@ verseas-stocks-tax-part1-cgt.md).
     6. Part1 양도, Part2 배당·금융, Part3 ISA·시나리오  
     7. 원화 약세+주가↑ 구간(사후) 비헷지 상대 우위 가능  
     8. 동일 팩터·세금·환 **중복**
-
 
 
 ## 부록 A — W-8BEN 제출 체크리스트 (교육)

@@ -99,14 +99,14 @@ flowchart LR
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|          R          | R | 기간당 이자·요구수익률 |
-|          net          | net | 위 식의 net |
-|          approx          | approx | 위 식의 approx |
-|          gross          | gross | 위 식의 gross |
-|          f          | f | 위 식의 f |
-|          tau          | tau | 위 식의 tau |
-|          times          | times | 위 식의 times |
-|          N          | N | 연·월 등 복리·할인에 쓰는 횟수 |
+|           R           | R | 기간당 이자·요구수익률 |
+|           net           | net | 위 식의 net |
+|           approx           | approx | 위 식의 approx |
+|           gross           | gross | 위 식의 gross |
+|           f           | f | 위 식의 f |
+|           tau           | tau | 위 식의 tau |
+|           times           | times | 위 식의 times |
+|           N           | N | 연·월 등 복리·할인에 쓰는 횟수 |
 
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
@@ -201,7 +201,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 [passive-vs-active.md](../04-portfolio/passive-vs-active.md) — 코어는 **패시브 DCA**가 FOMO 비용을 구조적으로 낮춥니다.
 
 
-
 ## 8. 숫자 예제 (가상)
 
 > 가상 인물.
@@ -263,9 +262,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 ---
 
 
-
-
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -305,7 +301,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 | NXT 종목·거래중단 | [nextrade.co.kr](https://www.nextrade.co.kr) |
 
 **면책 재확인**: 가상 예제·보도 수치는 **시점별 개정**됩니다. 실행·신고 전 공식 출처를 확인하세요.
-
 
 
 ## 11. 심화 읽기

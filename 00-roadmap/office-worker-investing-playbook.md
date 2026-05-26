@@ -160,7 +160,10 @@ M_{P}=\alpha_{P}\cdot M,\quad
 M_{G}=\alpha_{G}\cdot M
 \]
 
-**읽는 법**: 세후 **M**을 **α_ISA+α_P+α_G=1**로 나눈다. **ISA 월** **M_ISA** = **α_ISA·M**, **연금 월** **M_P** = **α_P·M**, **일반 월** **M_G** = **α_G·M**. **L_ISA**와 **12·α_ISA·M**으로 연 한도 초과 여부를 점검한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
+**읽는 법**: 세후 **M**을 **α_ISA+α_P+α_G=1**로 나눈다. 
+
+
+**ISA 월** **M_ISA** = **α_ISA·M**, **연금 월** **M_P** = **α_P·M**, **일반 월** **M_G** = **α_G·M**. **L_ISA**와 **12·α_ISA·M**으로 연 한도 초과 여부를 점검한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
 
 **교육용 비율(고정 아님)**: **α_ISA=0.50**, **α_P=0.30**, **α_G=0.20**.
 
@@ -256,8 +259,6 @@ flowchart TD
 **읽기 순서 제안**: 1~2월 **돈의 심리학** → 3~4월 **Little Book (Bogle 편)** → 5~6월 공시 실습 병행 → 7월~ **부의 인문학** (주말). **요약만**: [required-reading-guide.md](required-reading-guide.md) §1-2 → §2-1 → §3-1.
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

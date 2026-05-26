@@ -66,7 +66,6 @@
 **DB 가입자**: 회사 구내식당(DB) 밥은 그대로 두고, **집 냉장고(ISA)에 QQQ**를 사 두는 그림 — [db-pension.md](../06-korea-policy/db-pension.md).
 
 
-
 한국 **DB·ISA·2026 개편** 환경에서 포트폴리오 문서는 **실행 순서**가 핵심입니다. 비중 % 논쟁 이전에 **운용 가능 계좌**와 **bucket 채우기**를 확정하고, QQQ·글로벌·채권 **코어**를 [etf-index-funds.md](../03-markets/etf-index-funds.md) 기준 **저비용**으로 유지하세요. 위성·레버리지·단타는 **0~20%**와 **손실 한도**로 격리하고, [references/sources.md](../references/sources.md)로 제도 변경을 **분기 1회** 확인합니다.
 
 ## 4. 정식 개념·용어
@@ -96,7 +95,6 @@
 | Tracking error | 벤치마크 대비 편차 | §4 | [glossary](../00-roadmap/glossary.md#tracking-error) |
 | Volatility drag | 레버리지 ETF 장기 괴리 | §4 | [glossary](../00-roadmap/glossary.md#volatility-drag) |
 | Mental account | 코어·위성 **분리 인식** | §4 | [glossary](../00-roadmap/glossary.md#mental-account) |
-
 
 
 ## 5. 메커니즘
@@ -217,23 +215,6 @@ FV_{core} = PMT \times \frac{(1+r)^{n} - 1}{r}
 **읽는 법**: 매 기간 **PMT**가 **r**로 **n**번 복리·누적되면 **FV**가 된다. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 월·연 단위는 **r**·**n** 정의와 맞춘다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 위성 손실은 **별도 한도** \(L_{sat}\) (예: 연간 위성 원금의 30%)로 관리.
 
@@ -343,7 +324,6 @@ FV_{core} = PMT \times \frac{(1+r)^{n} - 1}{r}
 - [ ] DB → ISA [db-pension.md](../06-korea-policy/db-pension.md)
 
 
-
 ## 10. 함정·리스크·한계
 
 - **수익 좋은 위성** → 비중 확대 → 코어 잠식  
@@ -354,8 +334,6 @@ FV_{core} = PMT \times \frac{(1+r)^{n} - 1}{r}
 - 코어·위성 **같은 앱 탭** — FOMO 시 구분 실패
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

@@ -101,7 +101,6 @@
 | DoF | 관절 **수** | §4 | [glossary](../../00-roadmap/glossary.md#dof) |
 
 
-
 ## 5. 메커니즘
 
 ### 5.1 피지컬 AI 스택
@@ -384,8 +383,6 @@ quadrantChart
 | **VLA** **데모** **only** | **sim2real** **미검증** |
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

@@ -391,8 +391,6 @@ w_{\text{주식 코어}} = w_{\text{KOSPI ETF}} + w_{\text{S&P}} + w_{\text{QQQ}
 ---
 
 
-
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 

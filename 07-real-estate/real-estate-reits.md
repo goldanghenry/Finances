@@ -102,7 +102,6 @@
 | 유효듀레이션(직관) | 금리 100bp 움직일 때 주가(or ETF) 평균 반응 **회귀로 추정**(시기·표본 | §4 | [glossary](../00-roadmap/glossary.md#유효듀레이션) |
 
 
-
 ## 5. 메커니즘
 
 ```mermaid
@@ -168,23 +167,6 @@ sequenceDiagram
 **읽는 법**: **NOI**를 **V**로 나눈 비율이 Cap rate이다. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 요구수익률이 오르면 Cap이 **상승**하고, 동일 NOI면 **V**는 **하락**하는 방향으로 읽는다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
 
 **유도 (L4)**:
@@ -211,23 +193,6 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 **읽는 법**: 분모 \(\mathrm{required\_yield}-g\)가 커질수록 **V**는 작아진다. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 **금리 상승**이 요구수익률로 전이되고 \(g\)가 즉시 따라가지 못하면 \(\downarrow V\) 직관이 생긴다.
 
 **유도 (L4)**:
@@ -239,7 +204,7 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(V_j\) | 건별 자산가치 | j번째 부동산·지분 평가 |
+| **V_j** | 건별 자산가치 | j번째 부동산·지분 평가 |
 | \(\mathrm{NAV}_{\mathrm{portfolio}}\) | 순자산가치 | 자산합 − 금융·기타 순부채 |
 
 \[
@@ -247,23 +212,6 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 \]
 
 **읽는 법**: 포트폴리오 **NAV**는 건별 가치 합에서 부채를 뺀 순자산이다. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 주가는 NAV 대비 **프리미엄·디스카운트**로 거래될 수 있다.
@@ -288,23 +236,6 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 \]
 
 **읽는 법**: **금리↑**이면 보통 \(D_{\mathrm{eff}}>0\) 가정 하 **P↓** 방향이지만, NOI·스프레드 항이 상쇄할 수 있다. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 **금리 헤지는 리츠 증분이 아니라 채권·현금 채널**에서 조절하는 것이 교육용 순서이다.
@@ -419,7 +350,6 @@ V_1 \\approx \\frac{18}{0.063} \\approx 285.7\\mathrm{억 원}
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -456,7 +386,6 @@ V_1 \\approx \\frac{18}{0.063} \\approx 285.7\\mathrm{억 원}
     3. (재평가된 건물·건자산·금융자산 등 합계 − 순부채 등의 근사) ÷ 발행단위 또는 주식 수.
     4. 업종 비중 스냅·편출입으로 패턴 변형·턴오버 교육.
     5. 채권은 쿠폰·만기가 명확해 듀레이션 정식이 성립하지만, 리츠는 NOI 성장 불확실성과 외생적 Cap 재평가 때문에 동일 $\\partial P/P\\approx -D\\partial r$를 그대로 이식하면 왜곡됩니다.
-
 
 
 ## 부록 A — 공식 요약 카드(L4 교육)

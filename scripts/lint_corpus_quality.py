@@ -174,6 +174,16 @@ def check_section6(text: str) -> list[str]:
         )
     if re.search(r"\|[^\n]+\|\n\\\[", s6_no_code):
         issues.append("§6 display math glued to table row (need blank line before \\[)")
+    if re.search(
+        r"^\| \\\([A-Za-z][A-Za-z0-9]*(?:_\{[^}]+\}|_[A-Za-z0-9]+)?\\\)\s*\|",
+        s6_no_code,
+        re.M,
+    ):
+        issues.append("§6 variable table has inline LaTeX in symbol column (use **symbol**)")
+    for m in re.finditer(r"\\\[(.*?)\\\]", s6_no_code, re.DOTALL):
+        if re.search(r"(?<!\{)\^[a-zA-Z0-9]+(?!\})", m.group(1)):
+            issues.append("§6 display math has unbraced exponent (use ^{n} not ^n)")
+            break
     return issues
 
 

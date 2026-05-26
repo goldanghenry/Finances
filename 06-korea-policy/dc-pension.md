@@ -87,7 +87,6 @@ DC는 “**회사가 매달 정해진 돈을 넣어 주고, 본인이 그 통장
 | 과세이연 | 운용 중 과세 유예 | §4 | [glossary](../00-roadmap/glossary.md#과세이연) |
 
 
-
 ## 5. 메커니즘
 
 ```mermaid
@@ -123,14 +122,14 @@ flowchart LR
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|          w          | w | 위 식의 w |
-|          risk          | risk | 위 식의 risk |
-|          V          | V | 위 식의 V |
-|          stock          | stock | 위 식의 stock |
-|          ETF          | ETF | 위 식의 ETF |
-|          total          | total | 위 식의 total |
-|          DEPTH          | DEPTH | 위 식의 DEPTH |
-|          STANDARD          | STANDARD | 위 식의 STANDARD |
+|           w           | w | 위 식의 w |
+|           risk           | risk | 위 식의 risk |
+|           V           | V | 위 식의 V |
+|           stock           | stock | 위 식의 stock |
+|           ETF           | ETF | 위 식의 ETF |
+|           total           | total | 위 식의 total |
+|           DEPTH           | DEPTH | 위 식의 DEPTH |
+|           STANDARD           | STANDARD | 위 식의 STANDARD |
 
 \[
 w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
@@ -225,7 +224,6 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 해외 ETF **배당**은 DC에서 **이연**되나 2025~ **선환급 폐지**로 현금흐름이 달라질 수 있습니다. 배당 중심 ETF는 DC 비중을 낮추고 ISA·IRP와 **역할 분담**을 검토하세요.
 
 
-
 ## 8. 숫자 예제 (가상)
 
 > 가상 인물·금액.
@@ -300,9 +298,6 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 ---
 
 
-
-
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -342,7 +337,6 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 | NXT 종목·거래중단 | [nextrade.co.kr](https://www.nextrade.co.kr) |
 
 **면책 재확인**: 가상 예제·보도 수치는 **시점별 개정**됩니다. 실행·신고 전 공식 출처를 확인하세요.
-
 
 
 ## 11. 심화 읽기

@@ -55,8 +55,8 @@
 | 용어 | English | 정의 |
 |------|------|----------------|
 | WACC | Weighted avg cost of capital | 가중 자본비용 |
-| \(R_e\) | Cost of equity | 주주 요구수익 |
-| \(R_d\) | Cost of debt | 부채 비용 |
+| **R_e** | Cost of equity | 주주 요구수익 |
+| **R_d** | Cost of debt | 부채 비용 |
 | **T** | Tax rate | 법인세율 |
 | D/V, E/V | Capital weights | 부채·자본 비중 |
 | β_L, β_U | Levered/unlevered beta | 부채 반영 여부 |
@@ -73,8 +73,8 @@
 | 용어 | 한 줄 | 관련 이론 | glossary |
 |------|------|------|----------------|
 | WACC | 가중 자본비용 | §4 | [glossary](../00-roadmap/glossary.md#wacc) |
-| \(R_e\) | 주주 요구수익 | §4 | [glossary](../00-roadmap/glossary.md#\) |
-| \(R_d\) | 부채 비용 | §4 | [glossary](../00-roadmap/glossary.md#\) |
+| **R_e** | 주주 요구수익 | §4 | [glossary](../00-roadmap/glossary.md#\) |
+| **R_d** | 부채 비용 | §4 | [glossary](../00-roadmap/glossary.md#\) |
 | **T** | 법인세율 | §4 | [glossary](../00-roadmap/glossary.md#\) |
 | D/V, E/V | 부채·자본 비중 | §4 | [glossary](../00-roadmap/glossary.md#d/v,-e/v) |
 | β_L, β_U | 부채 반영 여부 | §4 | [glossary](../00-roadmap/glossary.md#β_l,-β_u) |
@@ -276,8 +276,8 @@ TV = \frac{FCF_{T+1}}{WACC - g}
 |------|------|
 | E/V | 70% |
 | D/V | 30% |
-| \(R_e\) | 10% |
-| \(R_d\) | 5% |
+| **R_e** | 10% |
+| **R_d** | 5% |
 | T | 25% |
 
 \[
@@ -303,7 +303,6 @@ V = \frac{100}{0.08-0.02} = 1{,}667 \quad \text{(가상 교육)}
 **WACC** **9%** → **1,429** — **1%** **↑** **가치** **14%** **↓**.
 
 ---
-
 
 
 **Q. 실무에서는?**  
@@ -492,7 +491,6 @@ V = \frac{100}{0.08-0.02} = 1{,}667 \quad \text{(가상 교육)}
 1. WACC 식? 2. 세후 \(R_d\)? 3. M&M I 무세? 4. Trade-off? 5. β_L↑ 원인? 6. TV 민감? 7. 한국 낮은 D/E? 8. Pecking order? 9. APV vs WACC? 10. 고부채 저PBR?
 
 
-
 ## 부록 AA — DCF 단계별 체크리스트 (15단계)
 
 1. **FCF** **정의** **일관** 2. **WACC** **시장** **가중** 3. **β** **출처** 4. **ERP** **가정** 5. **\(R_d\)** **YTM** 6. **T** **법인세** 7. **예측기** **5~10년** 8. **TV** **g<WACC** 9. **민감도** **표** 10. **순차입** **현금** 11. **비영업** **자산** 12. **지분** **가치** 13. **주당** **가치** 14. **시장** **비교** 15. **결론** **범위**
@@ -511,7 +509,6 @@ V = \frac{100}{0.08-0.02} = 1{,}667 \quad \text{(가상 교육)}
 ## 부록 AD — 투자자용 WACC 오해 10가지
 
 1. WACC↓=좋은 주식 2. 장부 D/E 3. β 고정 4. ERP 임의 5. TV g=GDP 6. M&M 만능 7. 배당=WACC 8. PER=WACC 9. 현금 무시 10. 지배할인 무시
-
 
 
 ## 부록 AE — 밸류에이션·자본구조 통합 워크숍 (교육 장문)

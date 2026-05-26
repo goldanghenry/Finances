@@ -103,7 +103,6 @@
 | CAPEX cycle | AI·배터리·전력 | §4 | [glossary](../../00-roadmap/glossary.md#capex-cycle) |
 
 
-
 ## 5. 메커니즘
 
 ### 5.1 A/B/C 티어 의존성
@@ -353,7 +352,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 ---
 
 
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -391,7 +389,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
     8. **A티어 퀴즈 80% + 밸류체인 4장**  
     9. **사이버·바이오·원전** (선택)  
     10. **아니오** — **리스크 인지·의사결정**
-
 
 
 ## 부록: 주차별 상세 체크리스트

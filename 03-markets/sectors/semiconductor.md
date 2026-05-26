@@ -210,10 +210,6 @@ flowchart TB
 **읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 
 
 
-
-
-
-
 정밀식은 본문 또는 §4 표를 따른다.
 - **bit growth** ↑ + **ASP** ↓ = **허위 성장** — [financial-statements-intro.md](../../01-foundations/financial-statements-intro.md)
 
@@ -396,8 +392,6 @@ flowchart TB
 → **“한 시나리오만”** **베팅** **금지** — **5단계** **매 분기** **갱신**.
 
 ---
-
-
 
 
 **Q. 실무에서는?**  
