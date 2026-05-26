@@ -46,6 +46,23 @@ VAR_TABLE_INLINE_SYM = re.compile(
     re.M,
 )
 
+# | \(\alpha_\text{ISA}\) | or | ISA | \(\alpha_\text{ISA}\) | — tables strip inline LaTeX
+ALPHA_TEXT_CELL = re.compile(
+    r"\\\(\s*\\alpha_\\text\{([^}]+)\}\s*\\\)",
+)
+L_TEXT_CELL = re.compile(
+    r"\\\(\s*L_\\text\{([^}]+)\}\s*\\\)",
+)
+
+# Display math: \text{연금}_\text{월} → M_{P} (MathJax partial-fail → "월연금월일반월")
+DISPLAY_KOREAN_SLOT = re.compile(
+    r"\\text\{([^}]+)\}_\\text\{월\}=\\alpha_\\text\{([^}]+)\}\\cdot M",
+)
+SLOT_TO_SUB = {"ISA": "ISA", "연금": "P", "일반": "G"}
+
+# \alpha_\text{ISA} → \alpha_{ISA} (display / inline outside tables)
+ALPHA_TEXT_ANYWHERE = re.compile(r"\\alpha_\\text\{([^}]+)\}")
+
 # Footnote clash when display math is misparsed as a table row: (1+r)^n
 DISPLAY_EXPONENT = re.compile(
     r"(\(1\s*\+\s*r\))\^n\b",
@@ -66,6 +83,48 @@ def normalize_var_table_symbols(text: str) -> tuple[str, int]:
         changes += len(VAR_TABLE_INLINE_SYM.findall(text))
         text = new
     return text, changes
+
+
+def normalize_alpha_latex(text: str) -> tuple[str, int]:
+    changes = 0
+
+    def alpha_repl(m: re.Match[str]) -> str:
+        return f"**α_{m.group(1)}**"
+
+    def l_repl(m: re.Match[str]) -> str:
+        return f"**L_{m.group(1)}**"
+
+    new = ALPHA_TEXT_CELL.sub(alpha_repl, text)
+    if new != text:
+        changes += len(ALPHA_TEXT_CELL.findall(text))
+        text = new
+
+    new2 = L_TEXT_CELL.sub(l_repl, text)
+    if new2 != text:
+        changes += len(L_TEXT_CELL.findall(text))
+        text = new2
+    return text, changes
+
+
+def brace_alpha_text(text: str) -> tuple[str, int]:
+    n = len(ALPHA_TEXT_ANYWHERE.findall(text))
+    if not n:
+        return text, 0
+    return ALPHA_TEXT_ANYWHERE.sub(r"\\alpha_{\1}", text), n
+
+
+def simplify_korean_display_slots(text: str) -> tuple[str, int]:
+    changes = 0
+
+    def repl(m: re.Match[str]) -> str:
+        label, alpha_key = m.group(1), m.group(2)
+        sub = SLOT_TO_SUB.get(label, alpha_key)
+        return f"M_{{{sub}}}=\\alpha_{{{alpha_key}}}\\cdot M"
+
+    new = DISPLAY_KOREAN_SLOT.sub(repl, text)
+    if new != text:
+        changes += len(DISPLAY_KOREAN_SLOT.findall(text))
+    return new, changes
 
 
 def brace_display_exponents(text: str) -> tuple[str, int]:
@@ -109,6 +168,15 @@ def fix_text(text: str) -> tuple[str, int]:
 
     text, n_sym = normalize_var_table_symbols(text)
     changes += n_sym
+
+    text, n_alpha = normalize_alpha_latex(text)
+    changes += n_alpha
+
+    text, n_brace = brace_alpha_text(text)
+    changes += n_brace
+
+    text, n_ko = simplify_korean_display_slots(text)
+    changes += n_ko
 
     text, n_exp = brace_display_exponents(text)
     changes += n_exp
