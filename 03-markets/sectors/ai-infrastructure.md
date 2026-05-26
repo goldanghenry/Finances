@@ -34,9 +34,18 @@
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
+!!! info "GPU (Graphics Processing Unit)"
+    AI 학습·추론 가속 칩.
+
+!!! info "HBM (High Bandwidth Memory)"
+    GPU 옆 고대역폭 메모리.
+
 **정의**: **AI 인프라(AI Infrastructure)** 는 대규모 언어·멀티모달 모델 **학습·추론**에 필요한 **하드웨어·시설·전력** 투자 전체를 말합니다. 핵심 레이어는 **가속기(GPU/TPU/ASIC)**, **고대역폭 메모리(HBM)**, **데이터센터(DC)**, **전력·그리드**, **네트워킹**입니다.
 
 **왜 중요한가** (장기 자산 형성·bucket 연결):
+
+!!! info "CAPEX (Capital Expenditure)"
+    설비·데이터센터 등 자본 지출.
 
 AI 내러티브만 보면 “모든 AI 주”가 같이 오를 것 같지만, **실제 현금 흐름**은 **Microsoft·Amazon·Google·Meta** 등 **CAPEX**와 **NVIDIA·TSMC·전력 유틸**로 **분배**됩니다. CAPEX **cut** 한 분기에 GPU·HBM·장비가 **동반 조정**할 수 있습니다. 한국 투자자는 **HBM·반도체·전력**에 **이중 노출** — [sector-investing-framework.md](sector-investing-framework.md) 5단계로 **“모델 hype vs DC brick”** 을 구분하고, [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md)에서 **QQQ(매그7 포함)** vs **위성(HBM·전력)** 을 나눠야 합니다.
 

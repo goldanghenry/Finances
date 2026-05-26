@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Insert !!! info boxes at first abbreviation occurrence in §1."""
+"""Insert !!! info boxes at first acronym occurrence in §1."""
 
 from __future__ import annotations
 
@@ -7,136 +7,193 @@ import re
 import sys
 from pathlib import Path
 
-from _corpus import iter_corpus_md
+ROOT = Path(__file__).resolve().parents[1]
+SKIP_DIRS = {"scripts", ".tmp_l3", "site", "webdocs", ".venv", "private", ".git", ".github", "docs", "references"}
+SKIP_NAMES = {"README.md", "sources.md", "TEMPLATE.md", "required-reading-guide.md"}
 
-PHASE_ABBREVS: dict[str, list[tuple[str, str, str]]] = {
-    "0": [
-        ("PV", "PV (Present Value)", "오늘 시점 가치 — 미래 현금을 **할인**할 때 씀"),
-        ("FV", "FV (Future Value)", "미래 시점 가치 — 저축·투자 **목표액** 설계에 씀"),
-        ("PMT", "PMT (Payment)", "매기간 **같은 금액** 납입(연금·DCA)"),
-        ("M", "M (월지출)", "월 **세후 실수령**·지출 기준액(교육용 기호)"),
-        ("Bucket", "Bucket", "시간·목적별 **자금 슬롯**(0 비상금 → 3 코어 등)"),
-    ],
-    "1": [
-        ("OCF", "OCF (Operating Cash Flow)", "영업활동 **현금유입−유출**"),
-        ("FCF", "FCF (Free Cash Flow)", "기업·가치평가의 **잉여 현금**"),
-        ("PER", "PER (P/E)", "주가 ÷ **주당순이익(EPS)**"),
-        ("ROE", "ROE", "순이익 ÷ **자기자본** — 수익성 지표"),
-    ],
-    "2": [
-        ("GDP", "GDP", "국내총생산 — **경기 규모**"),
-        ("CPI", "CPI", "소비자물가지수 — **인플레** 척도"),
-        ("β", "베타 (β)", "시장 대비 **민감도**"),
-        ("IS-LM", "IS-LM", "거시 **수요·금리** 균형 모형"),
-    ],
-    "3": [
-        ("ETF", "ETF", "지수·자산 **바구니**를 한 종목처럼 거래"),
-        ("TER", "TER", "연간 **총보수율** — 장기 복리에 영향"),
-        ("YTM", "YTM", "채권 **만기수익률**(시장 할인율)"),
-    ],
-    "5": [
-        ("ISA", "ISA", "개인종합자산관리계좌 — **비과세·한도**"),
-        ("IRP", "IRP", "개인형 퇴직연금 — **세액공제·이연**"),
-        ("CGT", "CGT", "양도소득세 — **매매차익** 과세"),
-    ],
-    "8": [
-        ("CAPM", "CAPM", "위험 대비 **기대수익** 모형"),
-        ("WACC", "WACC", "부채·자본 **가중 평균** 자본비용"),
-        ("NPV", "NPV", "할인 현금흐름 **순현재가치**"),
-        ("IRR", "IRR", "NPV=0이 되는 **내부수익률**"),
-    ],
+# term -> (English, one-line Korean)
+TERM_DEFS: dict[str, tuple[str, str]] = {
+    "PV": ("Present Value", "미래·과거 CF를 오늘 가치로 환산한 금액"),
+    "FV": ("Future Value", "오늘 PV를 이자·수익률로 굴린 미래 금액"),
+    "PMT": ("Payment", "매 기간 같은 금액의 납입·수령"),
+    "NPV": ("Net Present Value", "할인 CF 합 − 초기 투자"),
+    "IRR": ("Internal Rate of Return", "NPV=0이 되는 할인율"),
+    "TVM": ("Time Value of Money", "시점이 다르면 돈의 가치가 다름"),
+    "M": ("Monthly take-home", "월 실수령·가계 기준 금액(기호 M)"),
+    "Bucket": ("Time bucket", "목적·기간별 자금 슬롯"),
+    "OCF": ("Operating Cash Flow", "영업활동 현금흐름"),
+    "FCF": ("Free Cash Flow", "투자자에게 가용한 잉여현금흐름"),
+    "PER": ("Price-Earnings Ratio", "주가 ÷ 주당순이익"),
+    "ROE": ("Return on Equity", "순이익 ÷ 자기자본"),
+    "ROIC": ("Return on Invested Capital", "세후영업이익 ÷ 투하자본"),
+    "GDP": ("Gross Domestic Product", "일정 기간 국내 총생산"),
+    "CPI": ("Consumer Price Index", "소비자물가지수·인플레 근사"),
+    "ETF": ("Exchange-Traded Fund", "거래소 상장 지수·섹터 펀드"),
+    "TER": ("Total Expense Ratio", "펀드·ETF 총보수율"),
+    "ISA": ("Individual Savings Account", "개인종합자산관리계좌"),
+    "IRP": ("Individual Retirement Pension", "개인형 퇴직연금"),
+    "DB": ("Defined Benefit", "확정급여형 퇴직연금"),
+    "DC": ("Defined Contribution", "확정기여형 퇴직연금"),
+    "CGT": ("Capital Gains Tax", "자산 매각 차익에 대한 세금"),
+    "YTM": ("Yield to Maturity", "채권 만기수익률(IRR 근사)"),
+    "CAPM": ("Capital Asset Pricing Model", "β로 기대수익 설명하는 단일요인 모형"),
+    "WACC": ("Weighted Avg Cost of Capital", "부채·자기자본 가중 할인율"),
+    "ERP": ("Equity Risk Premium", "주식위험프리미엄 E[Rm]−Rf"),
+    "β": ("Beta", "시장 수익률 1% 변화에 대한 민감도"),
+    "IS-LM": ("IS-LM model", "총수요·통화시장 균형 거시 모형"),
+    "QE": ("Quantitative Easing", "중앙은행의 양적완화"),
+    "MPT": ("Modern Portfolio Theory", "분산·효율 프론티어 포트 이론"),
+    "DCA": ("Dollar-Cost Averaging", "정기·정액 분할 매입"),
+    "EMH": ("Efficient Market Hypothesis", "가격이 정보를 반영한다는 가설"),
+    "APT": ("Arbitrage Pricing Theory", "다요인 자산가격 모형"),
+    "SMB": ("Small Minus Big", "소형−대형 규모 팩터"),
+    "HML": ("High Minus Low", "가치−성장 B/M 팩터"),
+    "REIT": ("Real Estate Investment Trust", "부동산 수익증권"),
+    "FOMO": ("Fear Of Missing Out", "소외 불안·충동 매매"),
+    "GPU": ("Graphics Processing Unit", "AI 학습·추론 가속 칩"),
+    "HBM": ("High Bandwidth Memory", "GPU 옆 고대역폭 메모리"),
+    "CAPEX": ("Capital Expenditure", "설비·데이터센터 등 자본 지출"),
+    "DCF": ("Discounted Cash Flow", "미래 CF 할인해 기업가치 추정"),
+}
+
+PHASE_TERMS: dict[str, list[str]] = {
+    "01-foundations": ["PV", "FV", "PMT", "M", "Bucket", "NPV", "IRR", "TVM"],
+    "02-economics": ["GDP", "CPI", "β", "IS-LM", "QE"],
+    "03-markets": ["ETF", "TER", "PER", "YTM", "PV", "FV"],
+    "04-portfolio": ["Bucket", "DCA", "MPT", "β", "ERP"],
+    "05-behavioral": ["FOMO", "Bucket"],
+    "06-korea-policy": ["ISA", "IRP", "DB", "DC", "CGT"],
+    "07-real-estate": ["REIT", "PV", "IRR"],
+    "08-advanced": ["CAPM", "WACC", "NPV", "IRR", "APT", "EMH", "SMB", "HML"],
+    "09-corporate-finance": ["WACC", "NPV", "IRR", "FCF", "ROIC"],
+    "00-roadmap": ["M", "ISA", "Bucket", "NPV"],
 }
 
 
-def phase_key(path: Path) -> str:
-    top = path.parts[0] if path.parts else ""
-    name = path.name
-    if top == "02-economics":
-        return "2"
-    if top == "03-markets":
-        return "3"
-    if top == "04-portfolio":
-        return "3"
-    if top == "06-korea-policy":
-        return "5"
-    if top in ("08-advanced", "09-corporate-finance"):
-        return "8"
-    if top == "01-foundations" and "financial-statement" in name:
-        return "1"
-    return "0"
+def is_corpus_md(path: Path) -> bool:
+    rel = path.relative_to(ROOT)
+    if rel.suffix != ".md" or rel.name in SKIP_NAMES:
+        return False
+    if any(p in SKIP_DIRS for p in rel.parts):
+        return False
+    return rel.parts[0] in PHASE_TERMS
 
 
-def section1_bounds(text: str) -> tuple[int, int] | None:
-    m1 = re.search(r"^## 1\.[^\n]*\n", text, re.M)
-    if not m1:
-        return None
-    start = m1.end()
-    m2 = re.search(r"^## 2\.[^\n]*\n", text[start:], re.M)
+def terms_for_path(path: Path) -> list[str]:
+    folder = path.parts[0]
+    base = PHASE_TERMS.get(folder, [])
+    name = path.name.lower()
+    extra: list[str] = []
+    if "tax" in name or "tax" in path.parts:
+        extra = ["CGT", "ISA"]
+    if "bond" in name:
+        extra = ["YTM", "PV"]
+    if "pension" in name or "irp" in name or "db" in name or "dc" in name:
+        extra = ["DB", "DC", "IRP"]
+    if "factor" in name:
+        extra = ["SMB", "HML", "APT"]
+    if "sectors" in path.parts:
+        extra = ["GPU", "HBM", "CAPEX", "ETF", "TER"]
+    if "reits" in name or "alternatives" in name:
+        extra = ["REIT", "ETF"]
+    if "valuation" in name:
+        extra = ["PER", "DCF", "FCF"]
+    if "monetary" in name or "qe" in name:
+        extra = ["QE", "GDP", "CPI"]
+    if "asset-prices" in name or "macro-06" in name:
+        extra = ["ERP", "β", "CAPM"]
+    out: list[str] = []
+    for t in base + extra:
+        if t not in out and t in TERM_DEFS:
+            out.append(t)
+    return out[:5]
+
+
+def already_has_box(text: str, term: str) -> bool:
+    if f'!!! info "{term}' in text:
+        return True
+    if f'!!! info "{term} (' in text:
+        return True
+    pat = re.compile(rf'!!! info[^\n]*{re.escape(term)}', re.I)
+    return bool(pat.search(text))
+
+
+def section1_body(text: str) -> tuple[int, int, str]:
+    m = re.search(r"^## 1\.[^\n]*\n", text, re.M)
+    if not m:
+        m = re.search(r"^## TL;DR[^\n]*\n", text, re.M)
+    if not m:
+        return 0, 0, ""
+    start = m.end()
+    m2 = re.search(r"^## [^1T]", text[start:], re.M)
+    if not m2:
+        m2 = re.search(r"^## 2[\.\s]", text[start:], re.M)
     end = start + m2.start() if m2 else len(text)
-    return start, end
+    return start, end, text[start:end]
 
 
-def already_defined(text: str, sym: str) -> bool:
-    pat = re.compile(
-        rf"!!! info[^\n]*{re.escape(sym)}|§0[^\n]*{re.escape(sym)}|\*\*{re.escape(sym)}\*\*",
-        re.I,
-    )
-    return bool(pat.search(text[:2500]))
+def make_box(term: str) -> str:
+    eng, ko = TERM_DEFS[term]
+    return f'!!! info "{term} ({eng})"\n    {ko}.\n\n'
 
 
-def insert_boxes(text: str, path: Path, max_boxes: int = 5) -> str:
-    bounds = section1_bounds(text)
-    if not bounds:
-        return text
-    s1_start, s1_end = bounds
-    s1 = text[s1_start:s1_end]
-    pk = phase_key(path)
-    candidates = PHASE_ABBREVS.get(pk, []) + PHASE_ABBREVS.get("3", [])
+def insert_boxes(text: str, path: Path) -> tuple[str, bool]:
+    start, end, body = section1_body(text)
+    if not body:
+        return text, False
+    terms = terms_for_path(path)
+    new_body = body
     inserted = 0
-    offset = 0
-    for sym, title, body in candidates:
-        if inserted >= max_boxes:
+    for term in terms:
+        if inserted >= 5:
             break
-        if already_defined(text, sym):
+        if already_has_box(text, term):
             continue
-        # word boundary for Latin; literal for symbols like β
-        if sym == "β":
-            m = re.search(r"(?<![A-Za-z])β(?![A-Za-z])", s1)
-        elif sym == "IS-LM":
-            m = re.search(r"IS-LM", s1)
-        else:
-            m = re.search(rf"(?<![A-Za-z0-9_]){re.escape(sym)}(?![A-Za-z0-9_])", s1)
+        escaped = re.escape(term)
+        pattern = re.compile(rf"(?<![A-Za-z0-9_])({escaped})(?![A-Za-z0-9_])", re.I)
+        m = pattern.search(new_body)
+        if not m and "/" in term:
+            continue
+        if not m:
+            m = re.search(escaped, new_body, re.I)
         if not m:
             continue
-        pos = s1_start + m.start() + offset
-        line_start = text.rfind("\n", 0, pos) + 1
-        if text[line_start:pos].strip().startswith("!!!"):
+        pos = m.start()
+        line_start = new_body.rfind("\n", 0, pos) + 1
+        prefix = new_body[line_start:pos]
+        if prefix.strip().startswith("!") or prefix.strip().startswith("|"):
             continue
-        box = f'\n!!! info "{title}"\n    {body}\n\n'
-        text = text[:line_start] + box + text[line_start:]
-        offset += len(box)
+        box = make_box(term)
+        new_body = new_body[:line_start] + box + new_body[line_start:]
         inserted += 1
-    return text
+    if inserted == 0 and terms:
+        first = terms[0]
+        if not already_has_box(text, first):
+            new_body = make_box(first) + new_body.lstrip("\n")
+            inserted = 1
+    if inserted == 0:
+        return text, False
+    return text[:start] + new_body + text[end:], True
 
 
-def main() -> None:
+def main() -> int:
     n = 0
-    for path in iter_corpus_md():
+    no_info = 0
+    for path in sorted(ROOT.rglob("*.md")):
+        if not is_corpus_md(path):
+            continue
         text = path.read_text(encoding="utf-8")
-        if "!!! info" in text and path.name not in ("compound-interest-and-time-value.md",):
-            # still add if missing for this phase
-            pass
-        new = insert_boxes(text, path)
-        if new != text:
-            path.write_text(new, encoding="utf-8")
+        if "## 메타" not in text:
+            continue
+        new_text, changed = insert_boxes(text, path)
+        if changed:
+            path.write_text(new_text, encoding="utf-8")
             n += 1
-    with_info = sum(
-        1 for p in iter_corpus_md() if "!!! info" in p.read_text(encoding="utf-8")
-    )
-    total = len(iter_corpus_md())
-    print(f"Added/updated info boxes in {n} files")
-    print(f"Files with !!! info: {with_info}/{total} ({100*with_info//max(total,1)}%)")
+        if "!!! info" not in new_text:
+            no_info += 1
+    print(f"Added info boxes in {n} files; {no_info} corpus files still without info")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -34,6 +34,14 @@
 ---
 
 ## 1. 한 줄 정의 + 왜 중요한가
+!!! info "DB (Defined Benefit)"
+    확정급여형 퇴직연금.
+
+!!! info "DC (Defined Contribution)"
+    확정기여형 퇴직연금.
+
+!!! info "IRP (Individual Retirement Pension)"
+    개인형 퇴직연금.
 
 **정의**: ISA는 **매매 단계 세제**, IRP·연금·DC는 **납입 공제·과세이연·수령 과세**가 핵심인 **연금·종합계좌** 세제입니다.
 

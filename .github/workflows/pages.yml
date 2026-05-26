@@ -30,8 +30,8 @@ jobs:
       - name: Install MkDocs
         run: pip install -r requirements-docs.txt
 
-      - name: Lint reader-friendly corpus
-        run: python scripts/lint_reader_friendly.py
+      - name: Enrich reader-friendly corpus
+        run: python scripts/enrich_corpus.py
 
       - name: Materialize webdocs (dereference symlinks)
         run: python scripts/materialize_webdocs.py

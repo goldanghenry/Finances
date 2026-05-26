@@ -34,6 +34,15 @@
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
+!!! info "DB (Defined Benefit)"
+    확정급여형 퇴직연금.
+
+!!! info "DC (Defined Contribution)"
+    확정기여형 퇴직연금.
+
+!!! info "IRP (Individual Retirement Pension)"
+    개인형 퇴직연금.
+
 **정의**: **IRP(Individual Retirement Pension, 개인형퇴직연금)** 는 퇴직금·연금성 자금을 **개인 명의 계좌**에 모아 **운용·수령**하는 제도로, 퇴직 시 **DB·DC에서 적립된 퇴직금**을 이전하거나, 재직 중 **추가 납입**하여 노후 자금을 만드는 통로입니다.
 
 

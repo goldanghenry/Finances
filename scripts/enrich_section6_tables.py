@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replace generic §6 variable tables with symbols from equations + §4 glossary."""
+"""Replace generic §6 variable tables with symbols from math + §4 glossary."""
 
 from __future__ import annotations
 
@@ -7,163 +7,178 @@ import re
 import sys
 from pathlib import Path
 
-from _corpus import iter_corpus_md
-from populate_section4a import TABLE4_PATTERNS, find_table4
+ROOT = Path(__file__).resolve().parents[1]
+SKIP_DIRS = {"scripts", ".tmp_l3", "site", "webdocs", ".venv", "private", ".git", ".github", "docs", "references"}
+SKIP_NAMES = {"README.md", "sources.md"}
 
-GENERIC_ROW = re.compile(
-    r"\| \(아래 식 참고\) \| — \| §4 본표·§0 기호 열 확인 \|\n?",
+GENERIC_ROW = re.compile(r"\| \(아래 식 참고\) \|[^\n]+\|\n")
+GENERIC_TABLE = re.compile(
+    r"\| 기호 \| 이름 \| 이 식에서 의미 \|\n\|[-| ]+\|\n\| \(아래 식 참고\) \|[^\n]+\|\n\n",
+    re.M,
 )
-GENERIC_BLOCK = re.compile(
-    r"\n\n\| 기호 \| 이름 \| 이 식에서 의미 \|\n"
-    r"\|[-| ]+\|\n"
-    r"\| \(아래 식 참고\) \| — \| §4 본표·§0 기호 열 확인 \|\n\n",
+SYMBOL_IN_MATH = re.compile(
+    r"\\(?:alpha|beta|gamma|delta|sigma|tau|pi|epsilon)_\{?\\?text\{([^}]+)\}|([A-Za-z]+)\}?|"
+    r"\\?(?:alpha|beta|gamma|delta|sigma|tau|pi|epsilon)_\{?([A-Za-z_]+)\}?|"
+    r"\b(NPV|IRR|PV|FV|PMT|WACC|CAPM|ERP|YTM|FCF|OCF|TER|ISA|IRP|DB|DC|GDP|CPI|MRR|ROE|ROIC|PER|P/E|EPS|DDM|APT|SMB|HML|RMW|CMA|MKT)\b|"
+    r"\b([A-Z][a-z]?_\{?\\?text\{[^}]+\}\}?|[A-Z][a-z]?)_\{?\\?text\{([^}]+)\}\}?|"
+    r"([CFS]_[0-9a-zA-Z_]+|R_f|E\[R_m\]|T_\{[^}]+\}|L_\{[^}]+\})",
+    re.I,
 )
-DISPLAY_MATH = re.compile(r"\\\[\s*\n([\s\S]*?)\\\]", re.M)
-LATEX_SYM = re.compile(
-    r"\\(?:text|mathrm)\{([^}]+)\}"
-    r"|\\([a-zA-Z]+)"
-    r"|(?<![a-zA-Z])([A-Z][A-Z0-9_]*(?:_\{[^}]+\}|_[0-9]+)?)"
-    r"|([a-z][a-z0-9]*(?:_\{[^}]+\}|_[0-9]+)?)",
+SECTION4_TERMS = re.compile(
+    r"^## 4\.[^\n]*\n+?(?:\|[^\n]+\|\n)+((?:\|[^\n]+\|\n)+)",
+    re.M,
 )
-SKIP_SYMS = {
-    "frac",
-    "sum",
-    "times",
-    "quad",
-    "qquad",
-    "text",
-    "mathrm",
-    "left",
-    "right",
-    "approx",
-    "Rightarrow",
-    "uparrow",
-    "downarrow",
-    "perp",
-    "annuity",
-    "bond",
-    "firm",
-    "per",
-    "the",
-    "and",
-    "or",
-    "vs",
-    "max",
-    "min",
-}
 
 
-def parse_section4_symbols(text: str) -> dict[str, tuple[str, str]]:
-    m4 = find_table4(text)
-    if not m4:
-        return {}
-    block = m4.group(1) if hasattr(m4, "group") else ""
-    out: dict[str, tuple[str, str]] = {}
-    for line in block.strip().splitlines():
+def is_corpus_md(path: Path) -> bool:
+    rel = path.relative_to(ROOT)
+    if rel.suffix != ".md" or rel.name in SKIP_NAMES:
+        return False
+    if any(p in SKIP_DIRS for p in rel.parts):
+        return False
+    return rel.parts[0] in {
+        "00-roadmap",
+        "01-foundations",
+        "02-economics",
+        "03-markets",
+        "04-portfolio",
+        "05-behavioral",
+        "06-korea-policy",
+        "07-real-estate",
+        "08-advanced",
+        "09-corporate-finance",
+    }
+
+
+def parse_section4_terms(text: str) -> dict[str, str]:
+    terms: dict[str, str] = {}
+    m = SECTION4_TERMS.search(text)
+    if not m:
+        return terms
+    for line in m.group(1).splitlines():
         if not line.startswith("|"):
             continue
         cells = [c.strip() for c in line.strip("|").split("|")]
-        if len(cells) < 2 or cells[0] in ("용어", "------", "약어"):
+        if len(cells) < 2 or cells[0] in ("용어", "약어", "------"):
             continue
-        term = re.sub(r"\\[a-zA-Z_{}\s\d^().]+", "", cells[0]).strip()
-        if not term or term.startswith("("):
-            continue
-        if len(cells) >= 4:
-            ko, definition = cells[1], cells[3]
-        elif len(cells) == 3:
-            ko, definition = cells[1], cells[2]
-        else:
-            ko, definition = cells[0], cells[1]
-        meaning = (definition or ko).split("—")[0].split("(")[0].strip()
-        if len(meaning) > 64:
-            meaning = meaning[:61] + "…"
-        key = term.upper().replace(" ", "")
-        out[key] = (ko or term, meaning)
-        out[term] = (ko or term, meaning)
-    return out
+        key = re.sub(r"\\[a-zA-Z_{}\s\d^().]+", "", cells[0]).strip()
+        key = key.split("(")[0].strip()
+        if not key:
+            key = cells[0].strip()
+        desc = cells[-1] if cells else ""
+        if len(desc) > 60:
+            desc = desc[:57] + "…"
+        terms[key.upper()] = desc
+        terms[key] = desc
+        if len(cells) >= 3:
+            eng = cells[1].strip()
+            if eng and len(eng) < 20:
+                terms[eng.upper()] = desc
+    return terms
 
 
-def symbols_in_latex(body: str) -> list[str]:
+def extract_symbols(section6: str) -> list[str]:
     found: list[str] = []
     seen: set[str] = set()
-    for m in LATEX_SYM.finditer(body):
-        raw = next(g for g in m.groups() if g)
-        if raw in SKIP_SYMS or raw.isdigit():
-            continue
-        sym = raw.strip()
-        if sym in seen:
-            continue
+
+    def add(sym: str) -> None:
+        sym = sym.strip().replace(" ", "")
+        if not sym or sym in seen or len(sym) > 24:
+            return
+        if sym in ("text", "frac", "sum", "min", "max", "cdot", "leq", "geq", "stackrel"):
+            return
         seen.add(sym)
         found.append(sym)
+
+    for m in SYMBOL_IN_MATH.finditer(section6):
+        for g in m.groups():
+            if g:
+                add(g)
+    for m in re.finditer(r"\\?([A-Za-z]+)_\{?\\?text\{([^}]+)\}\}?", section6):
+        add(f"{m.group(1)}_{{{m.group(2)}}}")
+    for m in re.finditer(r"\b([A-Z][a-z]?)_([A-Za-z0-9]+)\b", section6):
+        add(f"{m.group(1)}_{m.group(2)}")
     return found[:8]
 
 
-def build_table(symbols: list[str], lookup: dict[str, tuple[str, str]]) -> str:
-    rows = [
-        "",
+def build_table(symbols: list[str], terms4: dict[str, str]) -> str:
+    lines = [
         "| 기호 | 이름 | 이 식에서 의미 |",
         "|------|------|----------------|",
     ]
-    for sym in symbols[:8]:
-        key = sym.upper().replace(" ", "")
-        ko, meaning = lookup.get(sym, lookup.get(key, (sym, "§4·본문 정의 참고")))
-        rows.append(f"| \\({sym}\\) | {ko} | {meaning} |")
-    return "\n".join(rows) + "\n\n"
+    for sym in symbols:
+        key = sym.upper().replace("{", "").replace("}", "")
+        desc = terms4.get(sym, terms4.get(key, "§4·본문 정의 참고"))
+        name = sym.replace("_", " ").replace("\\", "")
+        lines.append(f"| {sym} | {name} | {desc} |")
+    return "\n".join(lines) + "\n\n"
 
 
-def process(text: str) -> str:
-    if "(아래 식 참고)" not in text:
-        return text
-    lookup = parse_section4_symbols(text)
+def has_quality_table(chunk: str) -> bool:
+    if GENERIC_ROW.search(chunk):
+        return False
+    rows = [ln for ln in chunk.splitlines() if ln.startswith("|") and "---" not in ln]
+    data_rows = [r for r in rows if "기호" not in r and "(아래 식 참고)" not in r]
+    return len(data_rows) >= 3
+
+
+def enrich_section6(text: str) -> tuple[str, bool]:
     m6 = re.search(r"^## 6[\.\s]", text, re.M)
     if not m6:
-        return text
-    head, s6 = text[: m6.start()], text[m6.start() :]
+        return text, False
+    tail = text[m6.start() :]
+    m_end = re.search(r"^## [^6]", tail[10:], re.M)
+    section6 = tail[: m_end.start() + 10] if m_end else tail
+    if "해당 없음" in section6[:400] and "\\[" not in section6:
+        return text, False
 
-    def repl_block(match: re.Match[str]) -> str:
-        after = s6[match.end() :]
-        dm = DISPLAY_MATH.search(after)
-        if not dm:
-            return match.group(0)
-        syms = symbols_in_latex(dm.group(1))
-        if not syms:
-            return match.group(0)
-        return build_table(syms, lookup)
+    terms4 = parse_section4_terms(text)
+    symbols = extract_symbols(section6)
+    if len(symbols) < 2:
+        symbols = list(terms4.keys())[:6]
+    if len(symbols) < 2:
+        return text, False
 
-    new_s6 = GENERIC_BLOCK.sub(repl_block, s6)
-    if new_s6 == s6:
-        # single-row generic without leading double newline
-        pos = 0
-        while True:
-            gm = GENERIC_ROW.search(new_s6, pos)
-            if not gm:
-                break
-            after = new_s6[gm.end() :]
-            dm = DISPLAY_MATH.search(after)
-            if dm:
-                syms = symbols_in_latex(dm.group(1))
-                if syms:
-                    table = build_table(syms, lookup).rstrip() + "\n"
-                    new_s6 = new_s6[: gm.start()] + table + new_s6[gm.end() :]
-                    pos = gm.start() + len(table)
-                    continue
-            pos = gm.end()
-    return head + new_s6
+    table = build_table(symbols, terms4)
+    new_section6 = GENERIC_TABLE.sub(table, section6, count=1)
+    if new_section6 == section6 and GENERIC_ROW.search(section6):
+        new_section6 = GENERIC_ROW.sub("", section6)
+        dm = re.search(r"\\\[\s*\n", new_section6)
+        if dm:
+            pos = dm.start()
+            new_section6 = new_section6[:pos] + table + new_section6[pos:]
+    if new_section6 == section6:
+        if has_quality_table(section6[:1200]):
+            return text, False
+        dm = re.search(r"\\\[\s*\n", section6)
+        if dm and not has_quality_table(section6[: dm.start()]):
+            pos = dm.start()
+            new_section6 = section6[:pos] + table + section6[pos:]
+        else:
+            return text, False
+
+    return text[: m6.start()] + new_section6 + text[m6.start() + len(section6) :], True
 
 
 def main() -> int:
     n = 0
-    for path in iter_corpus_md():
+    for path in sorted(ROOT.rglob("*.md")):
+        if not is_corpus_md(path):
+            continue
         text = path.read_text(encoding="utf-8")
-        new = process(text)
-        if new != text:
-            path.write_text(new, encoding="utf-8")
+        if "## 6" not in text:
+            continue
+        new_text, changed = enrich_section6(text)
+        if changed:
+            path.write_text(new_text, encoding="utf-8")
             n += 1
-    print(f"Enhanced §6 tables in {n} files")
+    print(f"Enriched §6 tables in {n} files")
     remaining = sum(
-        1 for p in iter_corpus_md() if "(아래 식 참고)" in p.read_text(encoding="utf-8")
+        1
+        for p in ROOT.rglob("*.md")
+        if is_corpus_md(p) and "(아래 식 참고)" in p.read_text(encoding="utf-8")
     )
-    print(f"Remaining generic rows: {remaining}")
+    print(f"Remaining generic §6 rows: {remaining}")
     return 1 if remaining else 0
 
 

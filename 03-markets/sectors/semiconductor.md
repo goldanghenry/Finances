@@ -46,6 +46,12 @@
 !!! info "ETF"
     지수·자산 **바구니**를 한 종목처럼 거래
 
+!!! info "HBM (High Bandwidth Memory)"
+    GPU 옆 고대역폭 메모리.
+
+!!! info "CAPEX (Capital Expenditure)"
+    설비·데이터센터 등 자본 지출.
+
 반도체 없는 산업이 거의 없고, **2023~ AI 데이터센터 CAPEX**가 **HBM·先進 공정** 수요를 재구성했습니다. 한국은 **메모리·파운드리** 글로벌 top tier — KOSPI·수출·고용과 연결. **반도체 ETF**는 [etf-index-funds.md](../etf-index-funds.md) · [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md)에서 **Bucket 3 코어**로 넣기 **쉬운** 섹터입니다. 반면 **HBM 1종·코스닥 장비**는 **위성** — 메모리 **재고 폭탄**·**미·중 수출통제**·**CAPEX cut** 리스크를 [sector-investing-framework.md](sector-investing-framework.md) 5단계로 읽어야 합니다.
 
 ---

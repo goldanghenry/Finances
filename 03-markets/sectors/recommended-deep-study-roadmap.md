@@ -33,6 +33,8 @@
 ---
 
 ## 1. 한 줄 정의 + 왜 중요한가
+!!! info "GPU (Graphics Processing Unit)"
+    AI 학습·추론 가속 칩.
 
 **정의**: **recommended-deep-study-roadmap** 은 Finances 저장소 **03-markets/sectors** L3 문서를 **우선순위(A/B/C)·9주 캘린더·주간 산출물**로 묶은 **학습 운영 체계**입니다.
 

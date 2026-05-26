@@ -39,6 +39,12 @@
 !!! info "ETF"
     지수·자산 **바구니**를 한 종목처럼 거래
 
+!!! info "DB (Defined Benefit)"
+    확정급여형 퇴직연금.
+
+!!! info "IRP (Individual Retirement Pension)"
+    개인형 퇴직연금.
+
 **정의**: **ISA·IRP 실무 셋업**은 확정급여형(DB) 퇴직연금 가입자가 **직접 운용 가능한 계좌**를 개설·자동적립·상품(ETF) 경로까지 **실행 순서**로 정리한 운영 가이드다.
 
 **왜 중요한가**: DB만 이해하고 ISA를 **미개설**하면 해외 ETF **양도소득세·5월 신고** 부담이 커진다. “ISA 들었다”와 “**3년·손익통산·한도**를 지킨다”는 다르다. [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md)의 가상 50% ISA 슬롯은 **이 문서의 실행부**에 해당한다.
@@ -209,6 +215,17 @@ flowchart LR
 | \(T_{\text{free}}\) | 비과세 누적액 | 3년 한도 200만 원 이내 |
 
 **3년 누적 비과세(일반형, 2025 교육용)**:
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| S | S | §4·본문 정의 참고 |
+| t | t | §4·본문 정의 참고 |
+| ISA | ISA | §4·본문 정의 참고 |
+| T | T | §4·본문 정의 참고 |
+| free | free | §4·본문 정의 참고 |
+| left | left | §4·본문 정의 참고 |
+| right | right | §4·본문 정의 참고 |
+| isa | isa | §4·본문 정의 참고 |
 
 \[
 T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)

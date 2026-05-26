@@ -179,6 +179,17 @@ flowchart LR
 
 **장기 순수익** (개념):
 
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| TER | TER | §4·본문 정의 참고 |
+| ETF | ETF | §4·본문 정의 참고 |
+| approx | approx | §4·본문 정의 참고 |
+| E | E | §4·본문 정의 참고 |
+| alpha | alpha | §4·본문 정의 참고 |
+| quad | quad | §4·본문 정의 참고 |
+| leveraged | leveraged | §4·본문 정의 참고 |
+| etf | etf | §4·본문 정의 참고 |
+
 \[
 \text{순수익} \approx \text{시장수익} - \text{비용(TER+세금+수수료)} - \text{행동 오류}
 \]

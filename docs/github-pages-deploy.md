@@ -31,7 +31,7 @@ python scripts/lint_reader_friendly.py  # CI와 동일 게이트 (0 warnings)
 SITE_URL=https://goldanghenry.github.io/Finances/ mkdocs build   # 또는 mkdocs serve
 ```
 
-CI([pages.yml](../.github/workflows/pages.yml))는 **lint → materialize → nav → build → gh-pages** 순입니다.
+CI([pages.yml](../.github/workflows/pages.yml))는 **enrich_corpus → materialize → nav → build → gh-pages** 순입니다.
 
 **수식(LaTeX)**: `pymdownx.arithmatex` + [`docs/javascripts/mathjax.js`](javascripts/mathjax.js). 퀴즈 정답은 `??? note "정답 힌트"` 형식(HTML `<details>`는 수식이 깨질 수 있음).
 

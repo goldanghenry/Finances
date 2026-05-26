@@ -2,7 +2,8 @@
 
 경제학·금융 수준의 **교재급(L3+)** 장문 학습 자료입니다. 개인 급여·잔고·회사명은 포함하지 않습니다.
 
-> **처음이신가요?** [독자 가이드](docs/READER-GUIDE.md)에서 **L1~L4 난이도**, Phase 읽기 순서, FV·PMT 같은 약어 읽는 법을 먼저 보세요.
+> **처음이신가요?** [독자 가이드](docs/READER-GUIDE.md)에서 **L1~L4 난이도**, Phase 읽기 순서, FV·PMT 같은 약어 읽는 법을 먼저 보세요.  
+> **읽기 권장**: [GitHub Pages 사이트](https://goldanghenry.github.io/Finances/) (수식·Phase 메뉴). 이 저장소의 `.md` 원문만 보면 LaTeX가 그대로 보일 수 있습니다.
 
 ## 면책
 

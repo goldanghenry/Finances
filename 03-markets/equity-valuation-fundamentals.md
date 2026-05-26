@@ -38,6 +38,12 @@
 
 **정의**: **주식 밸류에이션(Equity Valuation)** 은 기업이 투자자에게 돌려줄 **현금(배당·환원·청산 잔여)** 의 **현재가치**를 추정하고, 시장 **주가**와 비교해 **고평가·저평가·적정**을 판단하는 분석 틀이다.
 
+!!! info "PER (Price-Earnings Ratio)"
+    주가 ÷ 주당순이익.
+
+!!! info "DCF (Discounted Cash Flow)"
+    미래 CF 할인해 기업가치 추정.
+
 **왜 중요한가**: “PER 낮으니 싸다”만으로 매수하면 **이익 급락·일회성·지배주주 리스크**에 걸린다. 반대로 “성장주라 PER 무시”는 **터미널 가치·금리**를 무시한다. L4에서는 **절대가치(DCF·DDM)** 와 **상대가치(멀티플)** 를 **교차 검증**하고, [재무제표](../01-foundations/financial-statements-intro.md)·[거시](../02-economics/macroeconomics-basics.md)·[한국 시장 규칙](korea-ats-nextrade.md)을 함께 둔다.
 
 ---

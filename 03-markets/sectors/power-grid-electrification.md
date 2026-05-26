@@ -42,6 +42,12 @@
 !!! info "ETF"
     지수·자산 **바구니**를 한 종목처럼 거래
 
+!!! info "GPU (Graphics Processing Unit)"
+    AI 학습·추론 가속 칩.
+
+!!! info "CAPEX (Capital Expenditure)"
+    설비·데이터센터 등 자본 지출.
+
 AI·EV·재생에너지가 **같은 그리드**를 씁니다. **변압器 lead time 2~3년**, **송전 허가 지연**은 **AI DC 증설**을 **물리적으로** 막습니다 — “GPU만 사면 된다”는 [ai-infrastructure.md](ai-infrastructure.md) 내러티브의 **반대편**입니다. 한국은 **수출(변압기·ESS)** · **국내 RE100·RPS** · **AI DC 전력** **삼중** 노출. [sector-investing-framework.md](sector-investing-framework.md) 5단계로 **유틸(규제)** vs **설비(CAPEX)** vs **ESS(배터리 사이클)** 를 **분리**하지 않으면 **“전기화 ETF”** 하나로 **올인**하는 함정에 빠집니다.
 
 ---
