@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
 ## TL;DR
 
 1. **완전경쟁 장기균형**에서 **\(P = MC = \min LAC\)**, **\(\pi = 0\)** — [생산·비용](micro-02-production-cost-supply.md)의 \(P=MC\)가 **시장**까지 확장된다.
@@ -31,7 +30,6 @@
 5. **한국 재벌·수출 과점** — 메모리·디스플레이·조선 **소수 oligopoly**; **HBM**은 **2~3사** + **고정 CAPEX** → **Cournot + capacity**.
 6. **죄수의 딜레마** — 카르텔 **불안정**: 각자 **이탈 유인** → **\(P\downarrow\)** ; DRAM **사이클**의 게임이론적 해석.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -39,7 +37,6 @@
 
 **왜 중요한가**: 동일한 “AI 붐”도 **완전경쟁 LFP 셀**과 **HBM oligopoly**에서는 **마진·주가 민감도**가 다르다. [microeconomics-basics](microeconomics-basics.md) L3의 “과점=마진”을 **MR=MC, Cournot, Nash**로 **정량화**한다. 한국 투자자에게 **수출 재벌·반도체**는 **국가 포트폴리오** 핵심 — [코어-위성](../04-portfolio/core-satellite-framework.md) **위성**의 **집중·변동성**은 IO 리스크와 맞물린다. [반도체](../03-markets/sectors/semiconductor.md), [섹터 프레임](../03-markets/sectors/sector-investing-framework.md) 심화의 **이론 축**.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -53,7 +50,6 @@
 - [반도체](../03-markets/sectors/semiconductor.md), [AI 인프라](../03-markets/sectors/ai-infrastructure.md)
 - [지역 분산](../04-portfolio/geographic-diversification.md), [리밸런싱](../04-portfolio/rebalancing-and-dca.md)
 
----
 
 ## 3. 직관·비유
 
@@ -106,9 +102,6 @@
 | 카르텔 | 카르텔 | §4 | [glossary](../00-roadmap/glossary.md#카르텔) |
 | Lerner index | L 지수 | §4 | [glossary](../00-roadmap/glossary.md#lerner-index) |
 
-
----
-
 ## 5. 메커니즘
 
 ### 5.1 시장구조 스펙트럼
@@ -152,7 +145,6 @@ flowchart TB
   HBM[HBM_2to3사_용량제약] -.-> firms
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -212,6 +204,7 @@ MR(Q) = P(Q) + Q \cdot P'(Q) < P
 ### 6.4 1·2·3차 가격차별
 
 | 차수 | 조건 | 효과 |
+|------|------|----------------|
 | 1차 | 완벽 정보 | **\(CS\)** 전부 → **\(P=MC\)** 수준 |
 | 2차 | self-selection | **버전·묶음** |
 | 3차 | 그룹별 \(\varepsilon\) | **학생·기업** 요금 |
@@ -253,7 +246,12 @@ Follower: \(q_2 = \frac{a-c-bq_1}{2b}\). Leader anticipates → **\(q_1^{Stack} 
 \]
 
 
-**읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 정밀식은 본문 또는 §4 표를 따른다.
+**읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 
+
+
+
+
+정밀식은 본문 또는 §4 표를 따른다.
 **유도 (L4)**:
 1. **정의**: **r**, **n**, **PV**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
@@ -274,7 +272,7 @@ Follower: \(q_2 = \frac{a-c-bq_1}{2b}\). Leader anticipates → **\(q_1^{Stack} 
 
 진입** = **\(N\uparrow\)** → **\(P\downarrow\)** 장기 압력.
 
----## 7. 한국 적용
+## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
 
@@ -317,7 +315,6 @@ Follower: \(q_2 = \frac{a-c-bq_1}{2b}\). Leader anticipates → **\(q_1^{Stack} 
 - **조선**: **backlog** = **선행 \(q\)** — **Stackelberg** 유사 **선주 발注**
 - **포트폴리오**:  [geographic-diversification](../04-portfolio/geographic-diversification.md) — **한국 IO 집중** **위성** 리스크
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -359,7 +356,6 @@ Leader **\(q\)** > Cournot **40 vs 26.7** — **first-mover**.
 
 **Nash**: (증산,증산) — **DRAM** **cut** 실패 **논리**.
 
----
 
 ## 9. FAQ
 
@@ -399,7 +395,6 @@ Leader **\(q\)** > Cournot **40 vs 26.7** — **first-mover**.
 **Q12. 포트폴리오 **과점** **overweight**?**  
 **A12.** **Cycle** **peak** **\(P\)** — [rebalancing](../04-portfolio/rebalancing-and-dca.md).
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -432,8 +427,6 @@ Leader **\(q\)** > Cournot **40 vs 26.7** — **first-mover**.
   - [microeconomics-basics](microeconomics-basics.md), [micro-01](micro-01-consumer-theory.md), [micro-02](micro-02-production-cost-supply.md)
   - [semiconductor](../03-markets/sectors/semiconductor.md), [battery](../03-markets/sectors/battery-lfp-ncm-ess.md)
   - [core-satellite](../04-portfolio/core-satellite-framework.md), [sector framework](../03-markets/sectors/sector-investing-framework.md)
-
----
 
 
 ## 연습문제 (L4, 기호)

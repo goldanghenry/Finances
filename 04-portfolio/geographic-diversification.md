@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **지역 분산**은 한국·미국·선진·신흥 등 **국가·지역** 노출을 나누고, **통화 분산**은 원화·달러·기타 **환율** 노출을 인식하는 것입니다.
@@ -30,7 +29,6 @@
 4. **환헷지 ETF** vs **언헷지** — 장기 **논쟁**; **환율 예측**보다 **의도적 노출 선택**과 **비용** 비교.
 5. **DB 가입자** 해외 노출은 **ISA·IRP** — [overseas-equities-intro.md](../03-markets/overseas-equities-intro.md), [asset-allocation.md](asset-allocation.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -38,7 +36,6 @@
 
 **왜 중요한가**: 한국 거주·원화 소득·국내 부동산(있다면)만으로도 **한국·원화 베팅**이 큽니다. **QQQ 100%**는 추가로 **미국·달러·대형 기술**에 올인합니다. [geographic-diversification.md](geographic-diversification.md)는 [asset-allocation.md](asset-allocation.md) **주식군 내부** 레이어입니다. **섹터**(반도체·배터리)는 한·미 **중복** 가능 — [sector-investing-framework.md](../03-markets/sectors/sector-investing-framework.md).
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -52,7 +49,6 @@
 - [overseas-stocks-tax-part1-cgt.md](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md)
 - [core-satellite-framework.md](core-satellite-framework.md)
 
----
 
 ## 3. 직관·비유
 
@@ -88,7 +84,6 @@
 
 
 한국 **DB·ISA·2026 개편** 환경에서 포트폴리오 문서는 **실행 순서**가 핵심입니다. 비중 % 논쟁 이전에 **운용 가능 계좌**와 **bucket 채우기**를 확정하고, QQQ·글로벌·채권 **코어**를 [etf-index-funds.md](../03-markets/etf-index-funds.md) 기준 **저비용**으로 유지하세요. 위성·레버리지·단타는 **0~20%**와 **손실 한도**로 격리하고, [references/sources.md](../references/sources.md)로 제도 변경을 **분기 1회** 확인합니다.
----
 
 ## 4. 정식 개념·용어
 
@@ -117,7 +112,6 @@
 | 통화 노출 | 원화·달러 등 | §4 | [glossary](../00-roadmap/glossary.md#통화-노출) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -190,7 +184,6 @@ flowchart LR
 
 금리·달러 강세·한국 수출 — **QQQ(미국)** vs **KODEX(한국)** **상대** 수익에 영향. **예측**보다 **둘 다 보유**가 교육 프레임. **2025~2026** 금리 경로는 [references/sources.md](../references/sources.md) — 배분 **자주** 바꾸지 않음.
 
----
 
 ## 6. 수식·모델
 
@@ -223,16 +216,20 @@ R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 \]
 
 
-**읽는 법**: **R_p**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**해당 없음**: 레버리지 환 — [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md).
+**읽는 법**: **R_p**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+**해당 없음**: 레버리지 환 — [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md).
 
 ---
 
 역할(§4·본문 참고) |
 
 
-**읽는 법**: **R_p**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**해당 없음**: 레버리지 환 — [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md).
+**읽는 법**: **R_p**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 
----
+**해당 없음**: 레버리지 환 — [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md).
+
+
 ## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
@@ -258,7 +255,6 @@ R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 - 코어 **QQQ+글로벌** → **ISA·IRP**  
 - 국내주식 **비과세** vs 해외 **양도세** — [domestic-stocks-tax.md](../06-korea-policy/tax/domestic-stocks-tax.md)
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -288,7 +284,6 @@ R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 | DB | **본인 조정 불가** |
 | ISA 코어 | QQQ 35% + VWCE 래핑 35% + 국채 30% |
 
----
 
 ## 9. FAQ
 
@@ -334,7 +329,6 @@ R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 - [ ] DB → ISA [db-pension.md](../06-korea-policy/db-pension.md)
 
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -359,7 +353,6 @@ R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 - [overseas-equities-intro.md](../03-markets/overseas-equities-intro.md)
 - [stocks-equities-intro.md](../03-markets/stocks-equities-intro.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 

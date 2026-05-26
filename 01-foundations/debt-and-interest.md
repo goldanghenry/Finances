@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **부채**는 미래에 갚을 의무이고, **이자**는 돈의 시간가치 + 신용 리스크에 대한 대가다 — [compound-interest-and-time-value](compound-interest-and-time-value.md)의 **반대 방향** 복리다.
@@ -30,7 +29,6 @@
 4. **레버리지 ETF·마진**은 은행 대출과 다르지만 **손실·변동성 확대** 메커니즘이 유사 — [leveraged-etf-qqq-qld](../04-portfolio/leveraged-etf-qqq-qld.md).
 5. 부채·비상금 미정리 상태에서 Bucket 4 **위성**은 **이중 레버리지** 함정이다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -45,8 +43,6 @@
 | **투자 순서** | [emergency-fund](emergency-fund.md) 후에도 **고금리 부채**가 Bucket 3보다 앞설 수 있음 |
 | **행동** | 손실 포지션에서 **추가 차입 매수**는 심리·수학 모두 불리 |
 
----
-
 ## 2. 선수 지식 / 이후 읽을 것
 
 **선수**:
@@ -59,7 +55,6 @@
 - [real-estate-basics.md](../07-real-estate/real-estate-basics.md) — 주택·전세 대출
 - [core-satellite-framework.md](../04-portfolio/core-satellite-framework.md)
 
----
 
 ## 3. 직관·비유
 
@@ -75,7 +70,6 @@
 
 **가계 파산 리스크**: 극단적 연체는 신용뿐 아니라 **가처분 소득**·채무 조정 절차로 이어질 수 있다. 본 문서는 투자 전 **고금리 소액**을 막는 것이 목적이며, 이미 다중 채무가 있으면 **공식 상담**이 우선이다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -104,9 +98,6 @@
 | APR | 연 환산 비용 | §4 | [glossary](../00-roadmap/glossary.md#apr) |
 | LTV | 담보 대비 대출 비율 | §4 | [glossary](../00-roadmap/glossary.md#ltv) |
 | 신용점수 | 연체·부채 이력 반영 지표 | §4 | [glossary](../00-roadmap/glossary.md#신용점수) |
-
-
----
 
 ## 5. 메커니즘
 
@@ -144,8 +135,6 @@ flowchart LR
 | 원금균등 | 높음 | 낮음 | 소득 증가 예상 |
 | 만기일시 | 낮음(이자만) | 높음 | **만기 리스크** 인지 필수 |
 
----
-
 ## 6. 수식·모델
 
 **1년 이자 (단순, 교육용)**:
@@ -178,9 +167,12 @@ flowchart LR
 \]
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**상환 vs 투자 비교 (세후, 교육용)**:
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+**상환 vs 투자 비교 (세후, 교육용)**:
 
 | 선택 | 확실성 | 적합 조건 |
+|------|------|----------------|
 | **상환** | 이자 절감 **확실** | \(i_{부채} > r_{투자,기대}\) (세후) |
 | **투자** | 불확실 | \(i_{부채}\) 낮고, 비상금·장기 n 충분 |
 
@@ -208,7 +200,7 @@ PMT = P \times \frac{i(1+i)^n}{(1+i)^n - 1}
 .
 (월 \(i\) = 연/12)
 
----## 7. 한국 적용
+## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정) — 부채 유형별
 
@@ -254,7 +246,6 @@ flowchart TD
 
 주식 **미수·신용**은 부채다. [leveraged-etf-qqq-qld](../04-portfolio/leveraged-etf-qqq-qld.md)와 합치면 **3중 레버리지**에 가깝다. 코어는 **현금 결제·ISA** 중심 — [passive-vs-active](../04-portfolio/passive-vs-active.md).
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -322,7 +313,7 @@ flowchart TD
 
 **카드 포인트·할인**: 포인트 적립을 위해 **추가 소비**하면 현금흐름이 악화된다. 부채 상환·비상금이 충족된 뒤에만 **의도적**으로 사용한다([cash-flow-basics](cash-flow-basics.md)).
 
----
+
 ## 9. FAQ
 
 **Q1. 최소 상환만 하면 되나요?**  
@@ -361,7 +352,6 @@ flowchart TD
 **Q12. 마이너스 통장 한도를 투자에 쓰면?**  
 **A12.** **고금리·상환 촉구** 가능 — 투자 레버리지로 쓰지 않는다. 한도는 **비상 유동성** 검토 후 최소화.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -403,7 +393,6 @@ flowchart TD
 
 고금리 부채를 정리한 뒤에는 해제된 **월 이자 부담**을 [emergency-fund](emergency-fund.md) 보강 또는 [isa](../06-korea-policy/isa.md) PMT로 **재배정**해 복리 슬롯으로 전환한다. “부채 제로”가 목표가 아니라 **비용 대비 통제 가능한 부채**가 목표인 경우(저금리 주택 등)는 별도 프레임을 쓴다. 매월 **이자만 내고 원금을 안 줄이는** 습관은 [compound-interest-and-time-value](compound-interest-and-time-value.md)에서 말한 **역복리**와 같다. — 상세 출처는 [references/sources.md](../references/sources.md)를 참고한다.
 
----
 
 ## 12. 스스로 점검 퀴즈
 

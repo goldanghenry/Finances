@@ -20,7 +20,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **NXT 12시간** ≠ 더 많이 매매해야 함 — **기회 증가**이지 **의무** 아님.
@@ -29,7 +28,6 @@
 4. **알림·앱** 끄기 — 거래시간 확대와 **싸움**.
 5. DB·ISA **장기** 설계와 **단타** 분리.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -41,20 +39,17 @@
 
 **왜 중요한가**: 10년 목표는 **Bucket 3 코어**인데, NXT 장후 **5분 차트**는 **Bucket 4** 유혹입니다. 세금·수수료·실수만 **늘어날** 수 있습니다.
 
----
 
 ## 2. 선수 / 이후
 
 **선수**: [time-horizon-and-buckets.md](../04-portfolio/time-horizon-and-buckets.md)  
 **이후**: [korea-ats-nextrade.md](../03-markets/korea-ats-nextrade.md), [core-satellite-framework.md](../04-portfolio/core-satellite-framework.md)
 
----
 
 ## 3. 직관·비유
 
 **코어 포트폴리오**는 “**매년 같은 날 물 주기**”인 화분이고, **FOMO 매매**는 “비 온다고 **10분마다** 물 붓기”입니다. **NXT 야간**은 화분 옆에 **네온 간판**을 켠 것과 같습니다 — 물이 필요한 밤이 **아닐 수** 있습니다.
 
----
 
 ## 4. 정식 용어
 
@@ -78,9 +73,6 @@
 | Bucket 4 | 위성·실험·단기 | §4 | [glossary](../00-roadmap/glossary.md#bucket-4) |
 | 행동 편향 | 감정적 **의사결정** | §4 | [glossary](../00-roadmap/glossary.md#행동-편향) |
 
-
----
-
 ## 5. 메커니즘
 
 ```mermaid
@@ -98,7 +90,6 @@ flowchart LR
   FOMO2[FOMO] -.->|차단| Ignore
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -106,6 +97,17 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+|        R        | R | 기간당 이자·요구수익률 |
+|        net        | net | 위 식의 net |
+|        approx        | approx | 위 식의 approx |
+|        gross        | gross | 위 식의 gross |
+|        f        | f | 위 식의 f |
+|        tau        | tau | 위 식의 tau |
+|        times        | times | 위 식의 times |
+|        N        | N | 연·월 등 복리·할인에 쓰는 횟수 |
+
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 \]
@@ -119,6 +121,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 ---
 
 | 연·월 등 복리·할인에 쓰는 횟수 |
+
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 \]
@@ -129,10 +132,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 
 **FOMO 없을 때** \(N \downarrow\).
 
----
 
-
----
 ## 7. 한국 적용
 
 ### 7.1 NXT·장후
@@ -188,9 +188,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 
 **법·정책 근거**: 해당 없음(행동). NXT·과세는 [korea-ats-nextrade](../03-markets/korea-ats-nextrade.md), [domestic-stocks-tax](../06-korea-policy/tax/domestic-stocks-tax.md).
 
----
-
-
 
 ### 7.7 심리·시장 구조 — NXT와의 관계
 
@@ -204,7 +201,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 [passive-vs-active.md](../04-portfolio/passive-vs-active.md) — 코어는 **패시브 DCA**가 FOMO 비용을 구조적으로 낮춥니다.
 
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -231,8 +227,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 |--|-----------|
 | QQQ 장중 급등 추격 | 양도세 **5월** 누적 |
 
----
-
 ## 9. FAQ
 
 **Q1.** NXT 쓰면 안 되나? — **사용 가능**, **과매매** 주의.  
@@ -243,9 +237,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 **Q6.** 뉴스·텔레그램? — **알림 제한**.  
 **Q7.** B4 상한? — [time-horizon](../04-portfolio/time-horizon-and-buckets.md).  
 **Q8.** QLD? — **FOMO 증폭** — 비권장.
-
----
-
 
 
 ### 실행 워크숍 체크리스트 (교육)
@@ -322,7 +313,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 - [korea-ats-nextrade.md](../03-markets/korea-ats-nextrade.md)  
 - [passive-vs-active.md](../04-portfolio/passive-vs-active.md)
 
----
 
 ## 12. 퀴즈
 

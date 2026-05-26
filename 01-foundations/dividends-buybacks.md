@@ -33,7 +33,6 @@
 5. 한국 거주 개인에게 배당·이자는 원칙적으로 **금융소득 누적**(연 2,000만 원 기준선)과 연결될 여지가 있고, 증평은 별축이다.[financial-investment-income-tax.md](../06-korea-policy/tax/financial-investment-income-tax.md)
 6. Bucket 3에서는 배당 입금이 소액 리밸런싱 재료가 될 수 있으나 과세·증빙 업무량이 늘어 **시간 패키지 비용**과 동시에 존재한다.[time-horizon-and-buckets.md](../04-portfolio/time-horizon-and-buckets.md)·[isa-irp-pension-tax.md](../06-korea-policy/tax/isa-irp-pension-tax.md)
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -49,7 +48,6 @@
 
 **왜 중요한가**: Bucket 3는 코어 장기 슬롯인데, 같은 ETF라도 **배당 캘린더**가 많으면 현금 유입이 규칙적이어서 리밸런싱이 쉬울 수 있다. 그러나 현금 유입이 늘어나면 **금융소득 누적**(특히 다른 이자·배당까지 합하면)이 커져 종합소득세 설계·5월 절차까지 같이 커질 수 있다. 자사 프로그램이 큰 회사는 배당이 작아 보여도 **주가 패스·주당 지표(EPS)·보상 프로그램**과 얽혀 코어 버킷의 무게 패스 조정 규칙이 달라질 수 있으므로 “배당 없음 단순” 가정만으로 시간축 학습 설계가 완결되지 않는다.[time-horizon-and-buckets.md](../04-portfolio/time-horizon-and-buckets.md)
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -67,7 +65,6 @@
 - [domestic-stocks-tax.md](../06-korea-policy/tax/domestic-stocks-tax.md)·[overseas-stocks-tax-part2-dividend.md](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md)
 - [core-satellite-framework.md](../04-portfolio/core-satellite-framework.md)·[rebalancing-and-dca.md](../04-portfolio/rebalancing-and-dca.md)·[asset-allocation.md](../04-portfolio/asset-allocation.md)
 
----
 
 ## 3. 직관·비유
 
@@ -77,7 +74,6 @@
 
 **한국과 미국**(거버넌스만의 비유): 미국 대형주는 기관·행동주주 문화와 자사 매입 결합이 잘 관찰되는 경우가 많고, 한국은 지주·연결·순환 구조가 같이 읽혀야 **현금이 주주 지갑까지 오는 패스**를 판단할 수 있다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -114,7 +110,6 @@
 | 과세 축 분리 | 배당=금융소득 축, 증평=국내외·계좌 축 | §4 | [glossary](../00-roadmap/glossary.md#과세-축-분리) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -142,7 +137,6 @@ flowchart LR
   DIV --> FIN["연간_금융소득_누적"]
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -204,6 +198,20 @@ EPS \approx \frac{\Pi}{S-\Delta}
 
 **읽는 법**: 분모 **S−Δ**가 줄면 같은 **Π**에서 **EPS**는 올라간다 — **기계적** 효과이며, **현금**·**성장**과 분리해 본다.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **유도 (L4)**:
 1. **정의**: **EPS**, **Pi**, **S**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
@@ -214,7 +222,6 @@ EPS \approx \frac{\Pi}{S-\Delta}
 
 내부 수익률이 떨어지면 유보를 늘리고 환류를 줄이는 경향이 생길 수 있고, 금리가 오르면 배당주 상대 매력이 약해질 수 있으며, 환율은 해외 매출 비중이 큰 기업의 원화 기준 이익·배당 변동성을 키운다. 규제·정책 논의는 섹터별로 환류 제약이 달라질 수 있고, 지배주주 구조는 공시상 배당과 실제 주주 현금 귀속 사이의 간극을 읽게 만드는 주석 요인이 된다.
 
----
 
 ## 7. 한국 적용
 
@@ -246,7 +253,6 @@ ISA 비과세·납입, DC 추가납입 논의, 금융투자소득세 보도는 [
 
 연말 전: 금융소득 게이트 접근 시 [financial-investment-income-tax.md](../06-korea-policy/tax/financial-investment-income-tax.md) 재검토.
 
----
 
 ## 8. 숫자 예제(가상)
 
@@ -277,7 +283,7 @@ ISA 비과세·납입, DC 추가납입 논의, 금융투자소득세 보도는 [
 
 배당이 크면 현금 문자는 장점이지만, 동시에 같은 섹터·같은 스타일에 묶여 **코어 버킷의 변동성 부담**이 커질 위험이 있다.[sector-investing-framework.md](../03-markets/sectors/sector-investing-framework.md)
 
----
+
 ## 9. FAQ (12쌍 — L4)
 
 **Q1.** 배당 규모만 보고 회사 판단해도 되나요?  
@@ -318,7 +324,6 @@ ISA 비과세·납입, DC 추가납입 논의, 금융투자소득세 보도는 [
 **A12.** 단일 규칙은 없습니다. 우선 코어·위성 프레임부터 고정합니다.[core-satellite-framework.md](../04-portfolio/core-satellite-framework.md)·[asset-allocation.md](../04-portfolio/asset-allocation.md)
 
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -348,8 +353,6 @@ ISA 비과세·납입, DC 추가납입 논의, 금융투자소득세 보도는 [
 - Brealey·Myers·Allen *Principles of Corporate Finance* 의 주주환류·자본비용 교차 구간.[wacc-capital-structure.md](../09-corporate-finance/wacc-capital-structure.md)·[equity-valuation-fundamentals.md](../03-markets/equity-valuation-fundamentals.md)
 - [references/sources.md](../references/sources.md) — 법령·국세청·금융위 공식 링크
 - 한국 과세 라우팅 지도 재확인: [investment-tax-overview.md](../06-korea-policy/tax/investment-tax-overview.md)·[financial-investment-income-tax.md](../06-korea-policy/tax/financial-investment-income-tax.md)·[isa-irp-pension-tax.md](../06-korea-policy/tax/isa-irp-pension-tax.md)
-
----
 
 
 ## 연습문제 (L4, 기호)
@@ -386,8 +389,6 @@ ISA 비과세·납입, DC 추가납입 논의, 금융투자소득세 보도는 [
     
     8. 연간 입금 문자가 늘어날수록 금융소득 누적·명세 검증 시간이 들고 5월 이전 종합설계 패키지로 연결된다.
 
-
----
 
 
 ## L4 보충 — 비교정태·행위·증빙·버킷을 한 줄기로 묶기

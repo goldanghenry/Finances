@@ -20,7 +20,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **부동산** = **거주(소비)** vs **투자**(임대·시세) — 목적이 다르면 회계·세금도 다름.
@@ -29,7 +28,6 @@
 4. 주식 포트(**ISA·IRP·QQQ**)와 **상관·비중** 별도 설계.
 5. 10년 자산 목표에 **부동산 필수 아님** — 청년 정책·주식과 **트레이드오프**.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -37,20 +35,17 @@
 
 **왜 중요한가**: “집 사야 성공” 서사와 **장기 주식·연금** 목표가 충돌할 수 있습니다. **금리·유동성**을 모르면 **레버리지**가 은퇴 설계를 무너뜨립니다.
 
----
 
 ## 2. 선수 / 이후
 
 **선수**: [cash-flow-basics.md](../01-foundations/cash-flow-basics.md), [macroeconomics-basics.md](../02-economics/macroeconomics-basics.md), [debt-and-interest.md](../01-foundations/debt-and-interest.md)  
 **이후**: REIT ETF 심화, 지역별 규제(별도 문서)
 
----
 
 ## 3. 직관·비유
 
 부동산은 **무거운 가구** — 옮기기 어렵고(유동성), **할부(대출)** 로 크게 살 수 있습니다. 주식 ETF는 **바퀴 달린 서랍** — 내일 팔 수 있습니다(세금·규칙은 별도). **전세**는 “큰 보증금을 맡기고 사는 **임시 거주권**”입니다.
 
----
 
 ## 4. 정식 용어
 
@@ -79,7 +74,6 @@
 | 종부세 | 보유 세금 | §4 | [glossary](../00-roadmap/glossary.md#종부세) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -98,7 +92,6 @@ flowchart LR
   Inv[투자_임대_REIT] --> Ret[수익_성격]
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -126,7 +119,6 @@ flowchart LR
 \]
 
 
-
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **현금흐름**(단순):
 
@@ -139,7 +131,6 @@ flowchart LR
 \[
 CF = \text{임대료} - \text{이자} - \text{운영비} - \text{원금상환}
 \]
-
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
@@ -213,9 +204,6 @@ flowchart TD
 
 **법·정책 근거**: 소득세법(양도·보유), 지방세(취득·종부), 주택법·전세 관련 규정 — **개요만**.
 
----
-
-
 
 ### 7.7 REIT·부동산 ETF — 주식 포트 연동
 
@@ -228,7 +216,6 @@ flowchart TD
 **10억 목표**를 부동산 **직접**만으로 맞추려면 LTV·금리·공실 리스크가 큽니다. [asset-allocation.md](../04-portfolio/asset-allocation.md)에서 **주식·연금·REIT** 비중을 함께 설계하세요.
 
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -265,7 +252,7 @@ flowchart TD
 | 금리 +2%p | 월 상환 +**M** |
 | 임대료 고정 | CF **악화** |
 
----
+
 ## 9. FAQ
 
 **Q1.** 20대에 집 필수? — **아니오**.  
@@ -276,9 +263,6 @@ flowchart TD
 **Q6.** 전세=투자? — **거주** 소비.  
 **Q7.** AI·전력 섹터? — [power-grid](../03-markets/sectors/power-grid-electrification.md) — 주식 노출.  
 **Q8.** 10억 목표? — 부동산 **선택**.
-
----
-
 
 
 ### 실행 워크숍 체크리스트 (교육)
@@ -355,7 +339,6 @@ flowchart TD
 - [asset-allocation.md](../04-portfolio/asset-allocation.md)  
 - [time-horizon-and-buckets.md](../04-portfolio/time-horizon-and-buckets.md)
 
----
 
 ## 12. 퀴즈
 

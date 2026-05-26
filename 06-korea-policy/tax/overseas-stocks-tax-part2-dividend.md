@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | L_ISA, ISA, IRP, DB, DC (해당 시) |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **배당**은 양도세와 **별도** — **금융소득**(이자·배당).
@@ -30,7 +29,6 @@
 4. **외국납부세액공제**(§57)로 이중과세 완화.
 5. QQQ **재투자 ETF**도 배당 발생 시 규칙 적용 — DC·IRP **선환급 폐지**(2025~).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "CGT (Capital Gains Tax)"
@@ -43,20 +41,17 @@
 
 **왜 중요한가**: “팔지 않았으니 세금 없다”가 **틀립니다**. QQQ·고배당 ETF·개별주는 **연간 금융소득 합계**가 2,000만을 넘으면 **5월 부담**이 커집니다.
 
----
 
 ## 2. 선수 / 이후
 
 **선수**: [part1-cgt](overseas-stocks-tax-part1-cgt.md), [investment-tax-overview.md](investment-tax-overview.md)  
 **이후**: [part3-scenarios](overseas-stocks-tax-part3-scenarios.md), [isa-irp-pension-tax.md](isa-irp-pension-tax.md)
 
----
 
 ## 3. 직관·비유
 
 **양도세**는 “집을 **팔 때** 낸 세금”, **배당**은 “살아 있는 동안 받는 **월세**”입니다. 월세와 매매 이익은 **서로 깎아 주지 않습니다**(유형이 다름).
 
----
 
 ## 4. 정식 용어
 
@@ -81,7 +76,6 @@
 | 과세이연 | IRP·DC·ISA **계좌 내** | §4 | [glossary](../../00-roadmap/glossary.md#과세이연) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -110,12 +104,12 @@ flowchart LR
 | ISA | **통산** |
 | IRP/DC | **이연** (2025~ 해외 **선환급 폐지**) |
 
----
 
 ## 6. 수식·모델
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 Fin = I + D_{\text{dom}} + D_{\text{for}} + \cdots
 \]
@@ -167,6 +161,7 @@ T_{\text{KR}} - \text{FTC} \leq T_{\text{KR}}
 s/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 
 .---
+
 ## 7. 한국 적용
 
 ### 7.1 2025
@@ -217,9 +212,6 @@ s/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 
 **법·정책 근거**: 소득세법 §16·§57, 국세청 해외주식·배당 안내.
 
----
-
-
 
 ### 7.7 W-8BEN·원천징수 실무 (교육)
 
@@ -233,7 +225,6 @@ s/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 미제출·만료 시 **30%** 원천 등으로 **실효 수익**이 떨어질 수 있습니다. DC·IRP도 **선환급 폐지** 후 현금흐름을 재검토하세요.
 
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -276,7 +267,7 @@ s/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 | 해외 ETF 배당 | **이연**이나 선환급 **없음** |
 | 실효 | 현금흐름 악화 — 상품·비중 재검토 |
 
----
+
 ## 9. FAQ
 
 **Q1.** 양도손실·배당 상쇄? — **불가**.  
@@ -293,9 +284,6 @@ s/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 
 **Q10. DC·IRP 배당 현금흐름이 달라진 이유?**  
 **A10.** 2025~ **선환급 폐지** — [dc-pension.md](../dc-pension.md)·[isa-irp-pension-tax.md](isa-irp-pension-tax.md).
-
----
-
 
 
 ### 실행 워크숍 체크리스트 (교육)
@@ -372,7 +360,6 @@ s/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 - [part1](overseas-stocks-tax-part1-cgt.md), [part3](overseas-stocks-tax-part3-scenarios.md)  
 - 국세청 해외주식 안내
 
----
 
 ## 12. 퀴즈
 

@@ -31,7 +31,6 @@
 4. 한국 상장사는 **K-IFRS**, **DART** 전자공시 — [semiconductor](../03-markets/sectors/semiconductor.md) 등 섹터 문서와 연계.
 5. 다음 단계: [stocks-equities-intro](../03-markets/stocks-equities-intro.md), [kosdaq-tier-system](../03-markets/kosdaq-tier-system.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -46,7 +45,6 @@
 | **사이클 산업** | 반도체·2차전지 — 정점 실적을 **런레이트**로 착각 방지 — [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md) |
 | **가계와 연결** | [cash-flow-basics](cash-flow-basics.md)의 개인 현금흐름과 **동형** |
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -66,7 +64,6 @@
 - [core-satellite-framework.md](../04-portfolio/core-satellite-framework.md)
 - [semiconductor.md](../03-markets/sectors/semiconductor.md)
 
----
 
 ## 3. 직관·비유
 
@@ -80,7 +77,6 @@
 
 **ETF 투자자**: Bucket 3에서 [etf-index-funds](../03-markets/etf-index-funds.md)만 보유해도, 보유 ETF의 **Top 10 종목** 실적이 섹터 내러티브를 움직인다. 반도체 ETF라면 [semiconductor](../03-markets/sectors/semiconductor.md) 공시 습관이 **간접** 필수가 된다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -126,7 +122,6 @@
 | PER | 주가 ÷ EPS | §4 | [glossary](../00-roadmap/glossary.md#per) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -160,7 +155,6 @@ flowchart LR
 | **재무상태** | 부채·유동성? | **부채비율**, 이자보상배율 |
 | **현금흐름** | 현금 창출? | **영업CF ≥ 순이익** 지속 여부 |
 
----
 
 ## 6. 수식·모델
 
@@ -223,9 +217,10 @@ PER = \frac{\text{주가}}{\text{EPS}}, \quad EPS = \frac{\text{당기순이익}
 
 
 
-**읽는 법**: **PER**와 **EPS**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**한계**: 일회성 이익·사이클 정점·비GAAP 조정 시 **EPS 왜곡** — PER만으로 “싸다” 판단 금지.
+**읽는 법**: **PER**와 **EPS**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 
----
+**한계**: 일회성 이익·사이클 정점·비GAAP 조정 시 **EPS 왜곡** — PER만으로 “싸다” 판단 금지.
+
 
 ## 7. 한국 적용
 
@@ -274,7 +269,6 @@ PER = \frac{\text{주가}}{\text{EPS}}, \quad EPS = \frac{\text{당기순이익}
 
 순이익 **−** → **+** 전환 시 PER이 무의미해지고 주가가 먼저 오를 수 있다. 이때는 **매출 성장·마진·현금잔고·희석**(전환사채·신주) 주석을 본다. 코스닥 **상장 유지** 조건은 [kosdaq-tier-system](../03-markets/kosdaq-tier-system.md).
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -356,7 +350,6 @@ PER = \frac{\text{주가}}{\text{EPS}}, \quad EPS = \frac{\text{당기순이익}
 | 재무상태 | 순자산 = 자산−부채 |
 | 현금흐름 | 통장 입출금 — [cash-flow-basics](cash-flow-basics.md) |
 
----
 
 ## 9. FAQ
 
@@ -390,7 +383,6 @@ PER = \frac{\text{주가}}{\text{EPS}}, \quad EPS = \frac{\text{당기순이익}
 **Q10. 해외 ADR은?**  
 **A10.** 20-F·10-K (미국) 등 — 환율·회계 기준 차이. 코어는 [overseas-equities-intro](../03-markets/overseas-equities-intro.md).
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -429,7 +421,6 @@ PER = \frac{\text{주가}}{\text{EPS}}, \quad EPS = \frac{\text{당기순이익}
 5. IR 슬라이드 **가이던스**와 대조  
 6. [core-satellite-framework](../04-portfolio/core-satellite-framework.md)에서 **위성 % 상한** 안인지 확인  
 
----
 
 ## 12. 스스로 점검 퀴즈
 

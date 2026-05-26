@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **피지컬 AI(Physical AI / Embodied AI)** 는 클라우드 모델이 **센서·액추에이터·로봇**을 통해 **물리 세계**에서 행동하는 것 — **데이터·안전·비용** 장벽이 큽니다.
@@ -30,7 +29,6 @@
 4. **휴머노이드**는 **내러티브·CAPEX 실험** 비중이 크고, **산업·협동로봇**이 **단기 commercialization**에 가깝습니다.
 5. 투자: **코어 = 로봇·산업 ETF**(Bucket 3), **위성 = 감속기·휴머노이드·코스닥**(Bucket 4, **0~20%**) — [kosdaq-tier-system.md](../kosdaq-tier-system.md) 필수.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "GPU (Graphics Processing Unit)"
@@ -46,7 +44,6 @@
 
 2024~ **휴머노이드·Figure·Tesla Optimus** 등 **내러티브**가 폭발했지만, **단위 경제성·안전·규제·데이터**는 **클라우드 AI**보다 **느립니다**. “AI = 전부 오른다”에 **피지컬 AI 테마주**를 **코어급**으로 넣으면 **Bucket 4 상한·코스닥 승강제** 리스크에 노출됩니다. 반대로 **장기 10년+** 관점에서 **노동·물류·제조** TAM은 크므로, [sector-investing-framework.md](sector-investing-framework.md) 5단계로 **산업로봇 vs 휴머노이드**를 **분리**하고 **학습·실험** 슬롯(Bucket 4)에 두는 것이 [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md)와 맞습니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -61,7 +58,6 @@
 - [recommended-deep-study-roadmap.md](recommended-deep-study-roadmap.md)
 - [kosdaq-tier-system.md](../kosdaq-tier-system.md)
 
----
 
 ## 3. 직관·비유
 
@@ -71,7 +67,6 @@
 
 **휴머노이드 vs 협동로봇**: **휴머노이드** = **범용 실험실** — 멋지지만 **비쌈**; **협동로봇(cobot)** = **공장 한 셀** — **ROI** 계산 가능. 투자도 **내러티브(4)** vs **실적(3 ETF)** 분리.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -106,7 +101,6 @@
 | DoF | 관절 **수** | §4 | [glossary](../../00-roadmap/glossary.md#dof) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -172,7 +166,6 @@ quadrantChart
 | **bucket** | ETF **3** | 개별 **4** |
 | **한국** | 로봇·감속기 | **테마 코스닥** 주의 |
 
----
 
 ## 6. 수식·모델
 
@@ -188,7 +181,6 @@ quadrantChart
 \[
 \text{ROI} \approx \frac{\text{절감 인건비} + \text{품질·가동 이득} - \text{유지·전력}}{\text{로봇·설치 CAPEX}}
 \]
-
 
 
 **읽는 법**: **ROI**와 **절감 인건비**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -207,7 +199,6 @@ quadrantChart
 \]
 
 
-
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- DoF **30**, 감속기 **200만 원×30** = **6,000만 원** (가상) — **양산** 전 **단가** 불확실
 
 **위성 상한**:
@@ -223,7 +214,6 @@ quadrantChart
 \]
 
 
-
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 - **휴머노이드 pure-play** = **내러티브 β** 극대
 
@@ -236,11 +226,9 @@ quadrantChart
 \]
 
 
-
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 - **휴머노이드 pure-play** = **내러티브 β** 극대
 
----
 
 ## 7. 한국 적용
 
@@ -283,7 +271,6 @@ quadrantChart
 
 **배터리**: **AMR·휴머노이드** **소형** **팩**은 [battery-lfp-ncm-ess.md](battery-lfp-ncm-ess.md) **LFP** **비중** **↑** **가능**.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -332,7 +319,7 @@ quadrantChart
 
 → **성장률** **만** **보면** **S** **선호** — **4. 재무** **역전**.
 
----
+
 ## 9. FAQ
 
 **Q1. 피지컬 AI = 휴머노이드?**  
@@ -371,7 +358,6 @@ quadrantChart
 **Q12. [recommended-deep-study-roadmap.md](recommended-deep-study-roadmap.md) Week 7 **건너뛰기**?**  
 **A.** **가능** — **A티어** **만** **해도** **됨**. **휴머노이드** **FOMO** **만** **줄어듦**.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -427,7 +413,6 @@ quadrantChart
 
 **rebalancing**: 로봇 ETF **코어** **비중**은 [rebalancing-and-dca.md](../../04-portfolio/rebalancing-and-dca.md) — **위성** **휴머노이드** **급등** **시** **20%** **초과** **방지**.
 
----
 
 ## 12. 스스로 점검 퀴즈
 

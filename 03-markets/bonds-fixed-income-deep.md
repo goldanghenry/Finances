@@ -21,8 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
-
 ## TL;DR
 
 1. **채권 가격**은 **시장금리(수익률)** 와 **반대**로 움직인다 — [입문](bonds-fixed-income.md)을 넘어 **듀레이션·컨벡시티**로 **민감도**를 정량화한다.
@@ -32,7 +30,6 @@
 5. **수익률 곡선** 전략(불·플랫·스티프닝)은 [거시](../02-economics/macro-02-money-inflation.md)·[자산배분](../04-portfolio/asset-allocation.md)과 **연결** — L4는 **개념·리스크** 중심.
 6. **한국** 국채·회사채·**채권 ETF**·**ISA** — [세금](../06-korea-policy/tax/account-product-tax-map.md)과 **포트 역할**을 분리해 본다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "YTM (Yield to Maturity)"
@@ -46,7 +43,6 @@
 
 **왜 중요한가**: 2022형 **주식·채권 동반 하락**은 “채권=안전” **과잉 일반화**의 반증이다. **듀레이션 관리**·**신용 분산**·**금리 시나리오** 없이 채권 ETF 비중만 키우면 **변동성 완충**이 실패할 수 있다. [밸류에이션](equity-valuation-fundamentals.md)의 **\(r_f\)** 도 여기서 나온다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -54,7 +50,6 @@
 
 **이후**: [수익률 곡선 전략](yield-curve-strategies.md), [자산배분](../04-portfolio/asset-allocation.md), [리밸런싱](../04-portfolio/rebalancing-and-dca.md), [ETF](etf-index-funds.md)
 
----
 
 ## 3. 직관·비유
 
@@ -66,7 +61,6 @@
 
 **컨벡시티 = 바닥 쿠션**: 금리 **급락** 시 가격 상승이 **선형(듀레이션)** 예상보다 **클** 수 있다(양의 컨벡시티).
 
----
 
 ## 4. 정식 개념·용어
 
@@ -108,7 +102,6 @@
 - **[수익률 곡선 전략](yield-curve-strategies.md)** — 스티프·플랫·롤다운
 - **[자산배분](../04-portfolio/asset-allocation.md)** — 채권 코어·변동성 완충 역할
 
----
 
 ## 5. 메커니즘
 
@@ -142,7 +135,6 @@ flowchart TD
   Stock[주식] --> Port
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -156,6 +148,7 @@ flowchart TD
 |   \(C\)   | 지출 | 기간 총 현금 유출 |
 |   \(y\)   | 소득 | 기간 총 실수령·매출 등 |
 |------|------|----------------|
+
 \[
 P = \sum_{t=1}^{T} \frac{C}{(1+y)^t} + \frac{F}{(1+y)^T}
 \]
@@ -240,9 +233,7 @@ Spread \approx YTM_{corp} - YTM_{gov}
 - **ISA·IRP** — 채권 ETF **보유 가능**, **세제** 별도
 - **개인 직접 회사채** — **호가·최소금액** 두꺼움 → **ETF** 우세
 
----
 
----
 ## 8. 숫자 예제 (가상)
 
 ### 예제 1 — 가격·YTM
@@ -261,7 +252,6 @@ Spread \approx YTM_{corp} - YTM_{gov}
 
 60/40 주식/채권, 채권 D=6, 금리 +1%p → 채권 -6%, 주식 -3% 가정 → 포트 **-4.2%** (단순).
 
----
 
 ## 9. FAQ
 
@@ -289,7 +279,6 @@ Spread \approx YTM_{corp} - YTM_{gov}
 **Q8. 채권 비중 얼마?**  
 **A8.** **고정 % 아님** — **듀레이션·목표·거시**.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -312,8 +301,6 @@ Spread \approx YTM_{corp} - YTM_{gov}
 - Fabozzi — *Bond Markets*  
 - Tuckman — *Fixed Income Securities*  
 - [bonds-fixed-income.md](bonds-fixed-income.md)
-
----
 
 
 ## 연습문제 (L4, 기호)
@@ -349,8 +336,6 @@ Spread \approx YTM_{corp} - YTM_{gov}
     7. 듀레이션·인플레  
     8. 국채 YTM
 
-
----
 
 
 ## 부록 A — 등급사·신용분석

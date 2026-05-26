@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
 ## TL;DR
 
 1. **리츠(REIT)** 는 **부동산·부동산 관련 자산**을 집합투자하도록 설계된 **직접 거주 분리 가능한 간접 투자 채널**이며, 상장이라도 **변동성·금리민감·세목**은 주식 단순 종목과 다를 수 있습니다.
@@ -31,7 +30,6 @@
 4. **국내 리츠 ETF**(가칭 교육용: “리츠지수추종·TOP10·종합테마” 형태 등)는 **지수 방법론·괴리·배당캘린더·종목별 비중 한도·거래 규모**가 성과 패턴을 좌우하므로, “부동산 = 리츠 ETF” 라는 과단순 매핑을 피해야 합니다.
 5. 학습 목표는 **수익률 예언**이 아니라 **[real-estate-basics.md](real-estate-basics.md)·[bonds](../03-markets/bonds-fixed-income.md)·[macro](../02-economics/macro-02-money-inflation.md)·ETF 규격** 간 **개념 정합성**과 **포지션 상한 규칙**을 세우는 것입니다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "REIT (Real Estate Investment Trust)"
@@ -49,7 +47,6 @@
 
 - 세번째로, 포트폴리오에서는 **직접 부동산**과 다른 **변동·특성·배당캘린더**를 갖추었는지 검토해야 합니다. 따라서 코어 채권의 **듀레이션**([bonds-fixed-income-deep](../03-markets/bonds-fixed-income-deep.md)), 코어 ETF의 추적 규격([etf-index-funds-deep](../03-markets/etf-index-funds-deep.md)), **그리고** 리츠 **위성** 한도 규칙을 동일한 장표에 놓습니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -66,7 +63,6 @@
 - [asset-allocation](../04-portfolio/asset-allocation.md), [risk-management-portfolio](../04-portfolio/risk-management-portfolio.md)
 - 참고 레퍼런스 디렉터리: [sources.md](../../references/sources.md)
 
----
 
 ## 3. 직관·비유
 
@@ -76,7 +72,6 @@
 
 세 번째: **방수 레이어**. ETF로 리츠에 들어간다면, 투명한 방수 레이어 3중 — (1)**지수 제공자 방법론** (Free-float? 부채·개발 노출 포함?) → (2)**ETF 포트 증량·복제**(실물복제 불가 현실) → (3)**거래 시간·통화 헤지** — 순으로 누수가 발생할 수 있습니다. 위 계층을 인지해야 “왜 채권 ETF와 패턴 다르지?” 질문에 학술 레벨로 답변합니다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -107,7 +102,6 @@
 | 유효듀레이션(직관) | 금리 100bp 움직일 때 주가(or ETF) 평균 반응 **회귀로 추정**(시기·표본 | §4 | [glossary](../00-roadmap/glossary.md#유효듀레이션) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -155,7 +149,6 @@ sequenceDiagram
 - **도식 2**는 종목 간 **상이한 민감 매트릭스**가 ETF에서는 **평균화**된다는 교육용 메시지를 담습니다.
 - **시퀀스** 도식은 “운용사 회계 일정 보다 빠르게 시장 반응”할 수 있는 **전방경기 국면**에서 자주 회자되는 패턴입니다(과거 데이터로 확정 명제화 금지 — L4는 직관).
 
----
 
 ## 6. 수식·모델
 
@@ -172,7 +165,21 @@ sequenceDiagram
 \mathrm{Cap}=\frac{\mathrm{NOI}}{V}
 \]
 
-**읽는 법**: **NOI**를 **V**로 나눈 비율이 Cap rate이다. 요구수익률이 오르면 Cap이 **상승**하고, 동일 NOI면 **V**는 **하락**하는 방향으로 읽는다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
+**읽는 법**: **NOI**를 **V**로 나눈 비율이 Cap rate이다. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+요구수익률이 오르면 Cap이 **상승**하고, 동일 NOI면 **V**는 **하락**하는 방향으로 읽는다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
 
 **유도 (L4)**:
 1. **정의**: **NOI**, **V**를 동일 시점·동일 통화로 맞춘다.
@@ -195,7 +202,21 @@ sequenceDiagram
 V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield}-g>0)
 \]
 
-**읽는 법**: 분모 \(\mathrm{required\_yield}-g\)가 커질수록 **V**는 작아진다. **금리 상승**이 요구수익률로 전이되고 \(g\)가 즉시 따라가지 못하면 \(\downarrow V\) 직관이 생긴다.
+**읽는 법**: 분모 \(\mathrm{required\_yield}-g\)가 커질수록 **V**는 작아진다. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+**금리 상승**이 요구수익률로 전이되고 \(g\)가 즉시 따라가지 못하면 \(\downarrow V\) 직관이 생긴다.
 
 **유도 (L4)**:
 1. **정의**: \(\mathrm{NOI}_1\), \(g\), \(\mathrm{required\_yield}\)의 단위·시점을 맞춘다.
@@ -213,7 +234,21 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 \mathrm{NAV}_{\mathrm{portfolio}}=\sum_j V_j(\mathrm{건자산}_j)-\mathrm{금융\_순부채}-(\mathrm{기타\ 순부채})
 \]
 
-**읽는 법**: 포트폴리오 **NAV**는 건별 가치 합에서 부채를 뺀 순자산이다. 주가는 NAV 대비 **프리미엄·디스카운트**로 거래될 수 있다.
+**읽는 법**: 포트폴리오 **NAV**는 건별 가치 합에서 부채를 뺀 순자산이다. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+주가는 NAV 대비 **프리미엄·디스카운트**로 거래될 수 있다.
 
 **유도 (L4)**:
 1. **정의**: 건별 \(V_j\)와 부채 항목의 회계 기준을 통일한다.
@@ -234,7 +269,21 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 \frac{\partial P}{P}\approx-D_{\mathrm{eff}}\,\partial r+(\text{NOI 성장항})+(\text{스프레드 항})
 \]
 
-**읽는 법**: **금리↑**이면 보통 \(D_{\mathrm{eff}}>0\) 가정 하 **P↓** 방향이지만, NOI·스프레드 항이 상쇄할 수 있다. **금리 헤지는 리츠 증분이 아니라 채권·현금 채널**에서 조절하는 것이 교육용 순서이다.
+**읽는 법**: **금리↑**이면 보통 \(D_{\mathrm{eff}}>0\) 가정 하 **P↓** 방향이지만, NOI·스프레드 항이 상쇄할 수 있다. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+**금리 헤지는 리츠 증분이 아니라 채권·현금 채널**에서 조절하는 것이 교육용 순서이다.
 
 **유도 (L4)**:
 1. **정의**: \(\partial r\)을 어떤 금리(국채·회사채·실질)로 둘지 명시한다.
@@ -245,7 +294,6 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 
 이 문서에서는 **복리 레버 ETF 일중 리셋**과 같은 순수 장내파생 교육은 다룹니다([leveraged ETF](../04-portfolio/leveraged-etf-qqq-qld.md)). 리츠는 직접적으로 동일 레버 구조 묶음이 아닙니다.
 
----
 
 ## 7. 한국 적용
 
@@ -267,7 +315,6 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 
 **법·정책 근거(교육용 안내)** : 소득세법·조세특례제한법 관련 규정, 금융투자업규정, 금융위원회·금융투자협회 보도·유의사항 및 거래소 시장설명 자료 등 — 신고·매매 실행 전 **항상 최근 개정·공식 Q&A**를 확인하세요.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -302,7 +349,7 @@ V_1 \\approx \\frac{18}{0.063} \\approx 285.7\\mathrm{억 원}
 
 **가상 교육 결론**: 동일 이름의 “리츠 ETF”라도 용도·지역·통화 헤지 구성에 따라 표반이 다른 **건축·임대 포트 레이더**를 가지므로, [macro-01 GDP](../02-economics/macro-01-gdp-accounts-growth.md)에서 말하는 **사이클 전이와 단순 일대일 매핑되지 않을 수 있습니다**.
 
----
+
 ## 9. FAQ
 
 **Q1.** 리츠는 채권인가 주식인가?  
@@ -335,7 +382,6 @@ V_1 \\approx \\frac{18}{0.063} \\approx 285.7\\mathrm{억 원}
 **Q10.** 리츠는 인플레이션 헷지인가요?  
 **A10.** 장기 계약 구조에는 **임대료 인덱스 연동**처럼 인플 패스스루가 있기도 하나, 금리·건설 비용·공실 패턴 때문에 **항상 헷지**가 된다고 말하기 어렵습니다. 교육용으로는 [macro-02-money-inflation](../02-economics/macro-02-money-inflation.md)의 **실질금리·기대물가** 채널과 연결하여 읽습니다.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -358,8 +404,6 @@ V_1 \\approx \\frac{18}{0.063} \\approx 285.7\\mathrm{억 원}
 - [references/sources.md](../../references/sources.md) — 출처 허브
 - 교재·기관 레퍼런스(영문): CFA Institute 재테크·부동산 모듈, BIS 금융안정 브리프(부동산·신용 순환 교육)
 - 본 저장소 거시 계열 연쇄: [macro-01 GDP](../02-economics/macro-01-gdp-accounts-growth.md) · [macro-02-money-inflation](../02-economics/macro-02-money-inflation.md) · [macro-04-monetary-policy-qe](../02-economics/macro-04-monetary-policy-qe.md)
-
----
 
 
 ## 연습문제 (L4, 기호)
@@ -389,8 +433,6 @@ V_1 \\approx \\frac{18}{0.063} \\approx 285.7\\mathrm{억 원}
     4. 업종 비중 스냅·편출입으로 패턴 변형·턴오버 교육.
     5. 채권은 쿠폰·만기가 명확해 듀레이션 정식이 성립하지만, 리츠는 NOI 성장 불확실성과 외생적 Cap 재평가 때문에 동일 $\\partial P/P\\approx -D\\partial r$를 그대로 이식하면 왜곡됩니다.
 
-
----
 
 
 ## 부록 A — 공식 요약 카드(L4 교육)

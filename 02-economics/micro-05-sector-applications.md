@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
 ## TL;DR
 
 1. **미시경제는 섹터 리포트의 문법**이다 — 수요·공급·한계비용·과점·외부성·사이클을 [배터리](../03-markets/sectors/battery-lfp-ncm-ess.md)·[반도체](../03-markets/sectors/semiconductor.md)·[전력망](../03-markets/sectors/power-grid-electrification.md)·[Physical AI](../03-markets/sectors/physical-ai.md)에 **동일 템플릿**으로 대입한다.
@@ -30,7 +29,6 @@
 4. **송배전·유틸리티**는 **자연독점** + 규제 — ROE·요금·투자 승인이 **공급곡선**을 움직인다.
 5. **Physical AI**는 **노동 대체·보완**의 한계비용·수요 탄력성 문제 — [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md) 5단계 **엄격 적용** 후 Bucket 3/4 배치.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -44,7 +42,6 @@
 
 한국 투자자 포트폴리오는 **반도체·2차전지·전력 인프라·로봇/AI** 노출이 크다. 뉴스의 “TAM 2030 2배”는 **미시 검증** 없이는 [core-satellite](../04-portfolio/core-satellite-framework.md) **Bucket 4 상한**을 넘기는 **내러티브 매수**로 이어지기 쉽다. 본 장은 L4 미시 시리즈의 **종합**이며, [03-markets/sectors/](../03-markets/sectors/README.md) 심화 문서를 읽을 때 **공통 질문 리스트**를 제공한다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -60,7 +57,6 @@
 - [stocks-equities-intro](../03-markets/stocks-equities-intro.md)
 - 섹터 심화: [battery-lfp-ncm-ess](../03-markets/sectors/battery-lfp-ncm-ess.md), [semiconductor](../03-markets/sectors/semiconductor.md), [ai-infrastructure](../03-markets/sectors/ai-infrastructure.md), [power-grid-electrification](../03-markets/sectors/power-grid-electrification.md), [physical-ai](../03-markets/sectors/physical-ai.md), [recommended-deep-study-roadmap](../03-markets/sectors/recommended-deep-study-roadmap.md)
 
----
 
 ## 3. 직관·비유
 
@@ -110,7 +106,6 @@
 | TAM | 수요 **상한** | §4 | [glossary](../00-roadmap/glossary.md#tam) |
 
 
----
 
 ## 5. 메커니즘 — 섹터 합성 프레임
 
@@ -216,7 +211,6 @@ flowchart LR
 
 **Bucket 규칙**: 코어(Bucket 3) = **분산 ETF**; 위성(Bucket 4) = **≤20%** — 미시가 “좋은 산업”을 확인해도 **집중 한도**는 별도.
 
----
 
 ## 6. 수식·모델
 
@@ -234,7 +228,21 @@ flowchart LR
 \]
 
 
-**읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 정밀식은 본문 또는 §4 표를 따른다.
+**읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+정밀식은 본문 또는 §4 표를 따른다.
 **유도 (L4)**:
 1. **정의**: **pi**, **P**, **MC**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
@@ -256,6 +264,7 @@ flowchart LR
 ### 6.5 비교정태 — 정책 1줄
 
 | 충격 | 배터리 | 반도체 | 전력 | Physical AI |
+|------|------|------|------|----------------|
 | EV 보조금↑ | D↑ | 간접 | D(피크)↑ | — |
 | 중국 공급↑ | P↓ | 일부 장비 | — | 로봇 가격↓ |
 | 금리↑ | Capex↓ | Capex↓ | 투자 지연 | 수주 지연 |
@@ -289,7 +298,8 @@ ESS 수요는 **입찰·피크·재생 연계** — 가격 **P**가 **전력 spo
 
 ESS 수요는 **입찰·피크·재생 연계** — 가격 **P**가 **전력 spot·용량 시장**에 연동. EV는 **소비자·보조금·OEM** 가격. **동일 셀 기술**이라도 **D 곡선·탄력성**이 달라 **LFP ESS**는 LFP EV와 **상관≠1**. [battery-lfp-ncm-ess](../03-markets/sectors/battery-lfp-ncm-ess.md) §ESS 필수.
 
----## 7. 한국 적용
+
+## 7. 한국 적용
 
 ### 7.1 2025년 기준
 
@@ -312,7 +322,6 @@ ESS 수요는 **입찰·피크·재생 연계** — 가격 **P**가 **전력 spo
 
 **법·정책**: 전기사업법, 산업기술보호, K-배터리·반도체 관련 법령 — [law.go.kr](https://www.law.go.kr).
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -332,7 +341,6 @@ ESS 수요는 **입찰·피크·재생 연계** — 가격 **P**가 **전력 spo
 
 가상 공장: 임금 4천만/년 vs 로봇 TCO 3천만/년, **설치 2년**. **MB>MC** → 도입; 금리↑ → **할인율**↑ → 도입 **지연**.
 
----
 
 ## 9. FAQ
 
@@ -360,7 +368,6 @@ ESS 수요는 **입찰·피크·재생 연계** — 가격 **P**가 **전력 spo
 **Q8. DB 연금으로 섹터 ETF?**  
 **A8.** 대부분 **불가** — [isa](../06-korea-policy/isa.md)·Bucket 3에서 **코어** 설계.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -436,8 +443,6 @@ ESS 수요는 **입찰·피크·재생 연계** — 가격 **P**가 **전력 spo
 - [recommended-deep-study-roadmap](../03-markets/sectors/recommended-deep-study-roadmap.md)
 - [references/sources.md](../references/sources.md)
 
----
-
 
 ## 연습문제 (L4, 기호)
 
@@ -472,8 +477,6 @@ ESS 수요는 **입찰·피크·재생 연계** — 가격 **P**가 **전력 spo
     7. 보조금 만료·과잉 CAPEX  
     8. 위성 **≤20%** 등 포트폴리오 규칙
 
-
----
 
 
 ## 부록 A — 배터리 밸류체인 미시 맵 (교육용)
@@ -543,7 +546,6 @@ flowchart TD
 | 7~8 | physical-ai | 노동·TCO |
 | 9 | framework | 32항 **총괄** |
 
----
 
 ## 부록 G — 코어·위성·미시 (Bucket 연계)
 

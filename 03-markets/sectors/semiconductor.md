@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. 반도체는 **전자·AI·자동차·산업 전반 TAM** — “성숙”해도 **사이클·기술 전환**은 지속; **한국 수출·시총**과 직결됩니다.
@@ -30,7 +29,6 @@
 4. **한국**: 메모리·파운드리·장비·소재 — **코스피 비중** 큼 → **반도체 ETF = Bucket 3 코어** 후보; HBM·소형 장비 = **Bucket 4 위성**.
 5. “안정적 코어” = **변동성 0**이 아니라 **분산·장기·ETF** 의미 — [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "GPU (Graphics Processing Unit)"
@@ -56,7 +54,6 @@
 
 반도체 없는 산업이 거의 없고, **2023~ AI 데이터센터 CAPEX**가 **HBM·先進 공정** 수요를 재구성했습니다. 한국은 **메모리·파운드리** 글로벌 top tier — KOSPI·수출·고용과 연결. **반도체 ETF**는 [etf-index-funds.md](../etf-index-funds.md) · [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md)에서 **Bucket 3 코어**로 넣기 **쉬운** 섹터입니다. 반면 **HBM 1종·코스닥 장비**는 **위성** — 메모리 **재고 폭탄**·**미·중 수출통제**·**CAPEX cut** 리스크를 [sector-investing-framework.md](sector-investing-framework.md) 5단계로 읽어야 합니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -72,7 +69,6 @@
 - [overseas-equities-intro.md](../overseas-equities-intro.md) — NVDA·TSMC 노출
 - [recommended-deep-study-roadmap.md](recommended-deep-study-roadmap.md)
 
----
 
 ## 3. 직관·비유
 
@@ -82,7 +78,6 @@
 
 **코어 vs 위성**: **KOSPI 반도체 ETF** = **전체 고속도로 지분**; **HBM 순수 플레이** = **특정 톨게이트** 베팅. 톨게이트는 **통행료(HBM ASP)** 가 오르면 폭등, **GPU CAPEX cut**이면 **급락**합니다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -125,7 +120,6 @@
 - **[미시·시장구조](../../02-economics/micro-03-market-structures-io.md)** — 독점·수출통제
 - **[ETF·코어](../../03-markets/etf-index-funds.md)** — 반도체 ETF Bucket 3
 
----
 
 ## 5. 메커니즘
 
@@ -196,7 +190,6 @@ flowchart TB
 
 **수출통제**: 장비·先進 공정 **미·중** — 한국 **중간** 위치, **허가·고객 mix** 리스크.
 
----
 
 ## 6. 수식·모델
 
@@ -214,7 +207,12 @@ flowchart TB
 \]
 
 
-**읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 정밀식은 본문 또는 §4 표를 따른다.
+**읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 
+
+
+
+
+정밀식은 본문 또는 §4 표를 따른다.
 - **bit growth** ↑ + **ASP** ↓ = **허위 성장** — [financial-statements-intro.md](../../01-foundations/financial-statements-intro.md)
 
 **HBM attach rate (교육)**:
@@ -239,6 +237,7 @@ flowchart TB
 **코어·위성 배분 (교육)**:
 
 | | Bucket 3 | Bucket 4 |
+|------|------|----------------|
 | **도구** | KRX 반도체 ETF, SOXX, SMH | HBM·장비 개별 |
 | **비중** | 10~40% of equity (개인) | **≤20%** total port |
 
@@ -247,10 +246,11 @@ flowchart TB
 *코어·위성 배분 (교육)**:
 
 | | Bucket 3 | Bucket 4 |
+|------|------|----------------|
 | **도구** | KRX 반도체 ETF, SOXX, SMH | HBM·장비 개별 |
 | **비중** | 10~40% of equity (개인) | **≤20%** total port |
 
----## 7. 한국 적용
+## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
 
@@ -293,7 +293,6 @@ flowchart TB
 
 **NXT·장후 매매**: 반도체 **테마 급등일** KRX 본장 마감 후 NXT에서 추격 매수는 **Bucket 4** 행동입니다. 코어 ETF와 **계좌·규칙**을 분리하지 않으면 [fomo-and-trading-hours.md](../../05-behavioral/fomo-and-trading-hours.md)에 기술된 **FOMO** 패턴과 겹칩니다.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -328,7 +327,7 @@ flowchart TB
 
 **GPU CAPEX cut** (가상): ETF -12%, 장비 -35% → **위성 상한** 의미.
 
----
+
 ## 9. FAQ
 
 **Q1. 반도체는 성숙 산업인데 왜 변동성이 큰가요?**  
@@ -367,7 +366,6 @@ flowchart TB
 **Q12. 메모리 3사만 알면 반도체 공부 끝인가요?**  
 **A.** **아니오**. **장비(EUV)** · **팹리스(NVDA)** · **파운드리(TSMC)** · **전력 PMIC**가 **AI·EV**와 **연결** — §5.1 **세그먼트 맵** **전체**.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -410,7 +408,6 @@ flowchart TB
 - SEMI World Forecast, TrendForce (교차)
 - [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 

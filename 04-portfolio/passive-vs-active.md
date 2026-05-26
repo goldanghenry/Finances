@@ -30,7 +30,6 @@
 4. **DB 가입자** 코어는 **ISA·IRP** 인덱스 ETF — 회사 DB는 패시브/액티브 **선택 불가**.
 5. **QLD·코스닥 단타·NXT 장후**는 **액티브/투기** 성격 — Bucket 4, [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -38,7 +37,6 @@
 
 **왜 중요한가**: AI·반도체 뉴스를 **매일** 접하는 직군은 **액티브 착각**에 취약합니다. “공부했으니 직접 골라야 한다”는 논리는 **비용·시간·행동 오류**를 키웁니다. [sector-investing-framework.md](../03-markets/sectors/sector-investing-framework.md)의 5단계 공부는 **리스크 인지·위성 근거**용이지, **코어 전량 액티브화** 명분이 아닙니다. [passive-vs-active.md](passive-vs-active.md)와 [core-satellite-framework.md](core-satellite-framework.md)를 함께 읽으면 **공부는 깊게, 매매는 얕게**가 가능합니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -52,7 +50,6 @@
 - [sectors/README.md](../03-markets/sectors/README.md)
 - [fomo-and-trading-hours.md](../05-behavioral/fomo-and-trading-hours.md)
 
----
 
 ## 3. 직관·비유
 
@@ -76,7 +73,6 @@
 
 
 한국 **DB·ISA·2026 개편** 환경에서 포트폴리오 문서는 **실행 순서**가 핵심입니다. 비중 % 논쟁 이전에 **운용 가능 계좌**와 **bucket 채우기**를 확정하고, QQQ·글로벌·채권 **코어**를 [etf-index-funds.md](../03-markets/etf-index-funds.md) 기준 **저비용**으로 유지하세요. 위성·레버리지·단타는 **0~20%**와 **손실 한도**로 격리하고, [references/sources.md](../references/sources.md)로 제도 변경을 **분기 1회** 확인합니다.
----
 
 ## 4. 정식 개념·용어
 
@@ -105,7 +101,6 @@
 | 정보 비율 | 액티브 위험 대비 알파 | §4 | [glossary](../00-roadmap/glossary.md#정보-비율) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -168,7 +163,6 @@ flowchart LR
 | 시간 | 월 2h | 주 10h+ |
 | 행동 | 낮음 | **FOMO** — [fomo-and-trading-hours.md](../05-behavioral/fomo-and-trading-hours.md) |
 
----
 
 ## 6. 수식·모델
 
@@ -209,7 +203,6 @@ E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 
 **해당 없음**: 일일 리셋 레버리지 — [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md).
 
----
 
 ## 7. 한국 적용
 
@@ -251,7 +244,6 @@ E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 **A10.** **예** — DC 앱에서 QQQ·채권 ETF — [dc-pension.md](../06-korea-policy/dc-pension.md).
 
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -281,7 +273,6 @@ E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 | ISA | QQQ+ACWI **패시브** 85% |
 | 위성 | 배터리 ETF 15% |
 
----
 
 ## 9. FAQ
 
@@ -327,7 +318,6 @@ E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 - [ ] DB → ISA [db-pension.md](../06-korea-policy/db-pension.md)
 
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -352,7 +342,6 @@ E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 - [factor-investing-primer.md](../08-advanced/factor-investing-primer.md)
 - [recommended-deep-study-roadmap.md](../03-markets/sectors/recommended-deep-study-roadmap.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 

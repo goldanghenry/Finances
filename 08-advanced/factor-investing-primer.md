@@ -20,7 +20,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **팩터** = 수익을 설명하는 **공통 특성**(가치·규모·모멘텀 등).
@@ -29,7 +28,6 @@
 4. **섹터 테마**(AI·반도체) ≠ 팩터 — **목적** 다름.
 5. [passive-vs-active](../04-portfolio/passive-vs-active.md) — **시장 ETF만**으로도 충분.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "SMB (Small Minus Big)"
@@ -43,20 +41,17 @@
 
 **왜 중요한가**: “QQQ vs 가치 ETF vs 코스닥 소형”을 **같은 말**로 비교하지 않게 합니다. **섹터 베팅**과 **팩터**를 분리하면 포트 설계가 선명해집니다.
 
----
 
 ## 2. 선수 / 이후
 
 **선수**: [capm-and-risk-return.md](capm-and-risk-return.md)  
 **이후**: Fama-French 3/5 factor 논문, [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md)
 
----
 
 ## 3. 직관·비유
 
 **시장 베타** = “**전체 경기**에 베팅”. **가치 팩터** = “**싸게 파는 팀**”에 베팅. **모멘텀** = “**최근 잘하는 팀**”에 베팅. **섹터(AI)** = “**특정 리그**”만 보는 것 — 팩터와 **다른 질문**입니다.
 
----
 
 ## 4. 정식 용어
 
@@ -84,7 +79,6 @@
 | 저변동 | 역사적 변동성 | §4 | [glossary](../00-roadmap/glossary.md#저변동) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -103,7 +97,6 @@ flowchart LR
   Sat --> Risk[과최적화_주의]
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -112,12 +105,36 @@ flowchart LR
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 | \(\R_f\) | 무위험금리 | 국채·예금 등 기준 금리 |
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+|        Fama        | Fama | 위 식의 Fama |
+|        French        | French | 위 식의 French |
+|        R        | R | 기간당 이자·요구수익률 |
+|        f        | f | 위 식의 f |
+|        i        | i | 위 식의 i |
+|        mkt        | mkt | 위 식의 mkt |
+|  m  | 월 실수령 | 가계 교육용 월 세후 소득 기호 |
+
 \[
 R_i - R_f = \alpha + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}}\text{SMB} + \beta_{\text{HML}}\text{HML} + \epsilon
 \]
 
 
-**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
+**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+**R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 **해당 없음** 심화: 5요인·Carhart 모멘텀.
 
 ---
@@ -134,7 +151,7 @@ RP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPT
 
  모멘텀.
 
----
+
 ## 7. 한국 적용
 
 ### 7.1 국면별 팩터 성과 (교육, 역사적 경향 — 미래 보장 X)
@@ -188,9 +205,6 @@ flowchart TD
 
 **법·정책 근거**: 해당 없음(전략). 상장 ETF는 금융투자업규정·투자설명서·KRX 공시.
 
----
-
-
 
 ### 7.6 학술·실무 연결 (교육)
 
@@ -204,7 +218,6 @@ flowchart TD
 **한국 시장**: 팩터 프리미엄은 **미국과 동일하지 않을** 수 있습니다. 소액·개인은 **시장 ETF 코어 + 팩터 1~2개**로 단순화하고, [passive-vs-active.md](../04-portfolio/passive-vs-active.md)와 대조하세요.
 
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -247,7 +260,6 @@ flowchart TD
 | DB | 팩터 **통제 불가** |
 | IRP | 시장+가치 **단순 2팩터** |
 
----
 
 ## 9. FAQ
 
@@ -268,9 +280,6 @@ flowchart TD
 
 **Q11. 팩터만으로 10년 10억?**  
 **A11.** **보장 없음** — 납입·세제·β·운이 복합. 코어 **시장 ETF**가 기본, 팩터는 **보조**.
-
----
-
 
 
 ### 실행 워크숍 체크리스트 (교육)
@@ -348,7 +357,6 @@ flowchart TD
 - [capm-and-risk-return.md](capm-and-risk-return.md)  
 - [core-satellite-framework.md](../04-portfolio/core-satellite-framework.md)
 
----
 
 ## 12. 퀴즈
 

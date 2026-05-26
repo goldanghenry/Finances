@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **ATS(Alternative Trading System)** 는 KRX 외 금융당국 인가 **대체 거래 장소**이며, 국내 1호 운영사가 **넥스트레이드(NXT)** 입니다(2025.3.4 출범).
@@ -30,7 +29,6 @@
 4. **15%(ATS 전체) / 30%(종목별)** 거래량 한도 초과 시 해당 종목 **거래 중단**이 발생할 수 있습니다(2025~ 사례 다수).
 5. 국내 상장주식 **세금 원칙은 KRX와 동일**(개인 매매차익 비과세, 배당은 금융소득) — DB 재직자는 **본인 NXT 주문 불가**.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -46,7 +44,6 @@
 
 **왜 중요한가**: 거래시간·수수료·유동성 분산이 바뀌면 **체결 가격·스프레드·행동(FOMO)** 에 영향을 줍니다. “NXT라서 세금이 다르다” “DB 연금도 NXT로 단타한다” 같은 **오해**를 막고, **장기 코어(ISA·IRP·DCA)** 와 **단기 위성(Bucket 4)** 을 분리하는 데 필요합니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -60,7 +57,6 @@
 - [kosdaq-tier-system.md](kosdaq-tier-system.md) — 코스닥 유동성·변동성
 - [db-pension.md](../06-korea-policy/db-pension.md) — DB와 NXT 무관
 
----
 
 ## 3. 직관·비유
 
@@ -68,7 +64,6 @@ NXT는 **같은 상품(종목)을 파는 두 번째 매장**입니다. 본점(KR
 
 **DB 퇴직연금**은 “회사가 맡긴 창고”라서 본인이 NXT 앱에서 주문하지 않습니다. **ISA·일반 계좌**가 “본인 지갑”입니다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -99,7 +94,6 @@ NXT는 **같은 상품(종목)을 파는 두 번째 매장**입니다. 본점(KR
 | 스프레드 | 매수·매도 호가 차이 | §4 | [glossary](../00-roadmap/glossary.md#스프레드) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -149,7 +143,6 @@ flowchart LR
 | 종목별 | 동 기간 ≤ KRX 대비 **30%** | 해당 종목 **거래 중단** |
 | 투자자 영향 | 인기 대형주도 **NXT만** 거래 불가 기간 발생 | HTS 공지·대체 KRX |
 
----
 
 ## 6. 수식·모델
 
@@ -157,6 +150,17 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+|  P  | 포트 규모 | 가상 포트폴리오 규모(만 원) |
+|        fill        | fill | 위 식의 fill |
+|        approx        | approx | 위 식의 approx |
+|        NXT        | NXT | 위 식의 NXT |
+|        KRX        | KRX | 위 식의 KRX |
+|        quad        | quad | 위 식의 quad |
+|        DEPTH        | DEPTH | 위 식의 DEPTH |
+|        STANDARD        | STANDARD | 위 식의 STANDARD |
+
 \[
 P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수 시, 호가에 따라)}
 \]
@@ -167,6 +171,7 @@ P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 \]
@@ -188,7 +193,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 
 서 범위 밖.
 
----
+
 ## 7. 한국 적용
 
 ### 7.1 2025년 (확정·운영 초기)
@@ -233,7 +238,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 
 **법·정책 근거**: 자본시장법·시행령(ATS), 금융위·금감원 시장 안내, 넥스트레이드 공식.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -265,7 +269,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 | ISA | 국내 대형주 ETF **월 1회** DCA (KRX·NXT 무관) |
 | 행동 | 장후 급등 **알림 OFF** — [fomo-and-trading-hours.md](../05-behavioral/fomo-and-trading-hours.md) |
 
----
 
 ## 9. FAQ
 
@@ -299,7 +302,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 **Q10. 해외주식·QQQ도 NXT에서 사나요?**  
 **A10.** **아니오.** NXT는 **국내 상장** 중심입니다. QQQ는 해외 — [overseas-stocks-tax-part1-cgt.md](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md).
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -326,7 +328,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 - [domestic-stocks-tax.md](../06-korea-policy/tax/domestic-stocks-tax.md)  
 - [fomo-and-trading-hours.md](../05-behavioral/fomo-and-trading-hours.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 

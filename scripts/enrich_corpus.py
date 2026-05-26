@@ -33,6 +33,7 @@ def main() -> None:
         "enrich_section6_from_glossary.py",
         "fix_table_separator_columns.py",
         "fix_unbalanced_display_math.py",
+        "fix_markdown_structure.py",
     ]
     for step in steps:
         run(step)

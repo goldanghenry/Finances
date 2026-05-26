@@ -16,7 +16,7 @@ ORPHAN_NAME_HDR = re.compile(
 )
 PLACEHOLDER_ROW = re.compile(r"§4 용어·식 맥락에서 확인")
 JUNK_ROW = re.compile(
-    r"^\|\s*\\?\(?\\?(alpha|cdot|text|월|연금|일반)\b", re.I
+    r"^\|\s*\\(?:\(?\\?)?(alpha|cdot|text|frac)\b", re.I
 )
 
 
@@ -206,7 +206,7 @@ def fix_split_prose(lines: list[str]) -> int:
         a = lines[i].rstrip()
         if (
             not a
-            or a.startswith("|")
+            or is_table_line(a)
             or is_sep_line(a)
             or a.startswith("#")
             or a.startswith("```")

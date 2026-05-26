@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
 ## TL;DR
 
 1. **재무제표 분석**은 3표([financial-statements-intro](financial-statements-intro.md))를 **유동성·레버리지·수익성·활동** 비율과 **DuPont**로 분해해, **지속 가능한 현금 창출**과 **자본 배분**을 판단하는 과정이다.
@@ -30,7 +29,6 @@
 4. **레드 플래그**: 매출만 성장·OCF 악화, 재고·매출채권 급증, 급격한 **비GAAP 조정**, 감사의견·계속기업 주석, **관계자·특수관계** 거래 — [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md) 체크리스트와 병행.
 5. **한국**은 **K-IFRS·DART 연결재무제표** 기준으로 읽고, **반도체·2차전지** 등 사이클 섹터는 [semiconductor](../03-markets/sectors/semiconductor.md)·[macro-01](../02-economics/macro-01-gdp-accounts-growth.md)와 함께 **런레이트·CAPEX**를 해석한다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -48,7 +46,6 @@
 
 **한계**: 분석은 **과거·공시 시점** 데이터다. 주가는 **기대·밸류에이션**을 반영한다 — “좋은 재무”와 “오를 주가”는 동치가 아니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -67,7 +64,6 @@
 - [passive-vs-active](../04-portfolio/passive-vs-active.md), [asset-allocation](../04-portfolio/asset-allocation.md), [rebalancing-and-dca](../04-portfolio/rebalancing-and-dca.md)
 - [macro-02-money-inflation](../02-economics/macro-02-money-inflation.md), [macro-06-asset-prices-macro](../02-economics/macro-06-asset-prices-macro.md)
 
----
 
 ## 3. 직관·비유
 
@@ -79,7 +75,6 @@
 
 **섹터 → 종목**: [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md)에서 **TAM·사이클·밸류체인**을 정한 뒤, 후보 종목의 **마진·부채·OCF**로 **생존·지분 확대**를 걸러낸다. 거시는 [macro-01](../02-economics/macro-01-gdp-accounts-growth.md)의 **I·NX**가 해당 섹터 **매출**로 전이되는지 확인한다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -129,7 +124,6 @@
 - **[섹터 투자](../03-markets/sectors/sector-investing-framework.md)** — TAM·사이클 후 종목 필터
 - **[자산가격 거시](../02-economics/macro-06-asset-prices-macro.md)** — 이익·레버리지와 할인율
 
----
 
 ## 5. 메커니즘
 
@@ -186,7 +180,6 @@ flowchart TB
 
 **활동성 비율**(재고회전율, 매출채권회전율, 매입채무회전율, **현금전환주기 CCC**)은 제조·유통에서 **운전자본** 압박을 읽는다. 사이클 정점에서 **재고회전 둔화**는 [semiconductor](../03-markets/sectors/semiconductor.md) **재고 조정** 신호와 맞물릴 수 있다.
 
----
 
 ## 6. 수식·모델
 
@@ -228,15 +221,26 @@ flowchart TB
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(\text{EBIT}\) | 영업이익 | 이자보상 분자 |
-| \(\text{이자비용}\) | 이자비용 | 이자보상 분모 |
 
 \[
 \text{이자보상배율} = \frac{\text{EBIT}}{\text{이자비용}}
-\quad \text{(또는 } \frac{\text{영업이익}}{\text{이자비용}}\text{)}
-\]
 
+\]
 **읽는 법**: **EBIT**이 **이자비용**을 몇 배 덮는지로 **이자 지급 능력**을 본다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **Net debt / EBITDA** (실무 근사): \((\text{이자부부채} - \text{현금}) / \text{EBITDA}\) — 사이클 하강기에 EBITDA가 급락하면 **레버리지 지표 악화**가 비선형으로 나타난다.
 
@@ -267,6 +271,20 @@ ROE = \frac{\text{당기순이익}}{\text{평균자본}}
 
 **읽는 법**: **ROA**·**ROE**로 **수익성**과 **자본 효율**을 본다.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **세후 ROIC** (심화, 교육용 근사):
 
 | 기호 | 이름 | 이 식에서 의미 |
@@ -281,10 +299,24 @@ NOPAT \approx \text{영업이익} \times (1 - \text{유효세율})
 
 **읽는 법**: **NOPAT**를 **투하자본**으로 나누면 **ROIC** 근사가 된다.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **3단**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+
 ### 6.4 DuPont (ROE 분해)
 
 | 기호 | 이름 | 이 식에서 의미 |
@@ -311,12 +343,25 @@ ROE = ROA \times \frac{\text{평균자산}}{\text{평균자본}} = ROA \times \t
 
 **읽는 법**: **ROA**에 **자본배수**를 곱하면 **ROE**로 연결된다.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 6.5 이익의 질·FCF (근사)
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 | \(OCF\) | 영업현금흐름 | 영업활동 현금 |
-| \(\text{당기순이익}\) | 순이익 | 발생주의 이익 |
 | \(CAPEX\) | 자본지출 | 투자활동 유출(교육) |
 
 \[
@@ -333,20 +378,38 @@ ROE = ROA \times \frac{\text{평균자산}}{\text{평균자본}} = ROA \times \t
 FCF \approx OCF - CAPEX
 \]
 
-**읽는 법**: **OCF**에서 **CAPEX**를 빼면 **FCF** 근사가 된다. 배당·상환 여력은 [cash-flow-basics](cash-flow-basics.md)와 연계한다.
+**읽는 법**: **OCF**에서 **CAPEX**를 빼면 **FCF** 근사가 된다. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+배당·상환 여력은 [cash-flow-basics](cash-flow-basics.md)와 연계한다.
 
 ### 6.6 활동성·현금전환주기
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(\text{재고회전율}\) | 재고회전 | 매출원가 대 평균재고 |
-| \(\text{매출채권회전율}\) | 매출채권회전 | 매출 대 평균매출채권 |
 | \(CCC\) | 현금전환주기 | 재고+매출채권−매입채무 일수 |
 
 \[
 \text{재고회전율} = \frac{\text{매출원가}}{\text{평균재고}}, \quad
 \text{매출채권회전율} = \frac{\text{매출}}{\text{평균매출채권}}
 \]
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
+| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
 
 \[
 CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수}
@@ -360,7 +423,7 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
 **CCC 확대** = 운전자본 **현금 흡수** → OCF 압박.
 
----
+
 ## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
@@ -393,7 +456,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 
 **법·정책 근거**: 자본시장법 공시 규정, K-IFRS 제·개정, 금융위·회계기준원 해석 — **본 문서는 교육 요약**이며 최신 개정은 공식 출처 우선.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -449,7 +511,7 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 
 **정점 분기 ROE·마진**을 연율화해 “저평가” 판단 금지 — [semiconductor](../03-markets/sectors/semiconductor.md), [macro-01](../02-economics/macro-01-gdp-accounts-growth.md) **I·재고** 연계. FCF ≈ \(200 - 900 = -700\)억 — **투자 국면** 해석 필요.
 
----
+
 ## 9. FAQ
 
 **Q1. ROE가 높으면 무조건 좋은 주식인가?**  
@@ -476,7 +538,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 **Q8. 한국과 미국 재무를 같은 비율로 비교해도 되나?**  
 **A8.** **회계·세금·자사주·배당** 관행이 다르다. [overseas-equities-intro](../03-markets/overseas-equities-intro.md) — **동일 시장·동종** 우선, 국제 비교는 **정의 통일** 후.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -509,8 +570,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 - [macro-01-gdp-accounts-growth](../02-economics/macro-01-gdp-accounts-growth.md), [macro-06-asset-prices-macro](../02-economics/macro-06-asset-prices-macro.md)  
 - [passive-vs-active](../04-portfolio/passive-vs-active.md), [asset-allocation](../04-portfolio/asset-allocation.md), [time-horizon-and-buckets](../04-portfolio/time-horizon-and-buckets.md)  
 - 교재·논문: Penman, *Financial Statement Analysis and Security Valuation*; Palepu & Healy, *Business Analysis and Valuation*; Sloan (1996), accruals anomaly  
-
----
 
 
 ## 연습문제 (L4, 기호)
@@ -555,8 +614,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
     12. 예: 반도체 테제 → **OCF/부채/재고** → [core-satellite-framework](../04-portfolio/core-satellite-framework.md) 비중 상한.
 
 
----
-
 
 ## 부록 A — 비율 표준 분류 (참고)
 
@@ -570,7 +627,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 
 **교차**: 시장 비율은 **주가** 포함 — 재무 **품질**과 **밸류에이션**을 분리한다.
 
----
 
 ## 부록 B — 레드 플래그 체크리스트 (15항)
 
@@ -592,7 +648,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 
 [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md) **Stage-Gate**와 합치면 **위성** 진입 전 **필터**가 된다.
 
----
 
 ## 부록 C — 섹터별 비율 “정상” 착시 (교육)
 
@@ -605,7 +660,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 | 지주사 | ROE·자산회전 왜곡 | **개별·종속** 분해 |
 | 금융 | 레버리지·유동 비율 **다른 문법** | 은행·보험 **전용** 지표 — 본 문서 일반 제조 기준 |
 
----
 
 ## 부록 D — 이익의 질 심화: 발생주의 vs 현금
 
@@ -619,7 +673,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 
 **주가 연결**: [macro-06](../02-economics/macro-06-asset-prices-macro.md) — **실질 금리** 상승 시 **고레버리지·장기 성장** 주식의 **할인율** 민감도↑; **OCF 확실**한 현금흐름은 상대적 **방어** 논의 가능(단정 금지).
 
----
 
 ## 부록 E — 동종 비교·시계열 절차 (8단)
 
@@ -632,7 +685,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 7. **거시 레짌** 분리 — [macro-02](../02-economics/macro-02-money-inflation.md)  
 8. **내러티브**와 **숫자** 불일치 시 **공시 우선**  
 
----
 
 ## 부록 F — 주식 선택 연결 (Bucket 4)
 
@@ -644,7 +696,6 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 
 **코어 only** 투자자: [etf-index-funds](../03-markets/etf-index-funds.md) 보유 ETF **fact sheet** Top 10에 부록 B **일부** 적용.
 
----
 
 ## 부록 G — 가상 통합 사례 “한국 종합 전자 그룹” (교육)
 
@@ -658,13 +709,11 @@ CCC = \text{재고일수} + \text{매출채권일수} - \text{매입채무일수
 
 **해석**: “이익·OCF 좋다”와 “주주 **잉여 현금** 풍부”는 다르다 — [cash-flow-basics](cash-flow-basics.md). **반도체** CAPEX 사이클과 [macro-01](../02-economics/macro-01-gdp-accounts-growth.md) **I** 연동.
 
----
 
 ## 부록 H — 채권·신용 관점 교차 ([bonds-fixed-income](../03-markets/bonds-fixed-income.md))
 
 **이자보상배율** 하락 → **스프레드** 확대·등급 **강등** 가능. **만기 벽(wall)** — 단기 차입 비중↑는 **리파이낸싱** 리스크. 주식 투자자도 **회사채·CP** 공시가 있으면 **교차 검증**.
 
----
 
 ## 부록 I — 5단 DuPont 확장 (교육)
 
@@ -678,7 +727,6 @@ ROE = \underbrace{\frac{EBIT}{\text{매출}}}_{\text{영업이익률}} \times
 
 금리 상승기: **EBT/EBIT** ↓ → ROE **직접** 압박 — 레버리지 **축소** 필요 여부를 **MD&A**에서 확인.
 
----
 
 ## 부록 J — 학습 로드맵
 

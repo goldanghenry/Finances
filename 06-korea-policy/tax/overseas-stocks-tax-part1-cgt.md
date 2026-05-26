@@ -32,7 +32,6 @@
 4. **환율**: 취득·양도 시점 **실지거래가액**, 선입선출 등 방법 일관 적용.
 5. **ISA·IRP** 안에서는 다른 규칙 — [Part3](overseas-stocks-tax-part3-scenarios.md), [account-product-tax-map](account-product-tax-map.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "CGT (Capital Gains Tax)"
@@ -48,14 +47,12 @@
 
 **왜 중요한가**: QQQ·미국 개별주를 **일반 계좌**에서만 거래하면 매년 신고 부담·실효 세율이 설계에 들어갑니다. **250만 원 공제**와 **계좌 유형(ISA/IRP)** 선택이 장기 수익에 직결됩니다.
 
----
 
 ## 2. 선수 / 이후
 
 **선수**: [investment-tax-overview.md](investment-tax-overview.md), [domestic-stocks-tax.md](domestic-stocks-tax.md)  
 **이후**: [part2-dividend](overseas-stocks-tax-part2-dividend.md), [part3-scenarios](overseas-stocks-tax-part3-scenarios.md)
 
----
 
 ## 3. 직관·비유
 
@@ -63,7 +60,6 @@
 
 **배당**은 Part 2 — 양도세와 **통산되지 않습니다**.
 
----
 
 ## 4. 정식 용어
 
@@ -88,7 +84,6 @@
 | 분리과세 | 종합소득 합산 없이 **고정 세율** | §4 | [glossary](../../00-roadmap/glossary.md#분리과세) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -111,7 +106,6 @@ flowchart TD
 | ④ | − **기본공제 250만 원** | §103 |
 | ⑤ | × **20%** (+ 지방 2%) | §104 |
 
----
 
 ## 6. 수식·모델
 
@@ -151,7 +145,6 @@ flowchart TD
 \]
 
 
-
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **금융투자소득세**: 별도 제도는 **유예** 보도가 많았으나, 학습 시점에는 **기존 양도소득세 체계**를 기준으로 이해하고, 개정 시 [sources.md](../../../references/sources.md) 갱신.
 
@@ -159,7 +152,6 @@ flowchart TD
 
 유예** 보도가 많았으나, 학습 시점에는 **기존 양도소득세 체계**를 기준으로 이해하고, 개정 시 [sources.md](../../../references/sources.md) 갱신.
 
----
 
 ## 7. 한국 적용
 
@@ -209,9 +201,6 @@ flowchart TD
 
 **법·정책 근거**: 소득세법 §118의3~6, §103, §104, 국세청 「해외주식과 세금」.
 
----
-
-
 
 ### 7.6 양도손실·이월 (개요)
 
@@ -220,7 +209,6 @@ flowchart TD
 **펀드 vs ETF**: 해외 **상장 ETF**(QQQ)는 본 Part1. 해외 **펀드**는 배당·과세 구조가 다를 수 있어 편입 전 설명서·국세청 분류를 확인하세요.
 
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -252,7 +240,7 @@ flowchart TD
 | 종목 B | −**M** |
 | **합계** | +**M** → 공제 후 과세표준 **M** → 세액 **M** (가상)
 
----
+
 ## 9. FAQ
 
 **Q1. QQQ 팔면 세금?**  
@@ -270,7 +258,6 @@ flowchart TD
 **Q5. 환율은 언제?**  
 **A.** **실지거래가액** 기준, 입금·출금일 등 **일관된 방법** (국세청 안내).
 
----
 
 ## 10. 함정·리스크
 
@@ -332,7 +319,6 @@ flowchart TD
 - 국세청 「해외주식과 세금」  
 - [sources.md](../../../references/sources.md)
 
----
 
 ## 12. 퀴즈
 

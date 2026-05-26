@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **DCA(Dollar-Cost Averaging)** 는 일정 금액을 **시간에 나눠 매수**해 **타이밍 리스크**와 **행동 편향**을 줄이는 적립식 방법입니다.
@@ -30,7 +29,6 @@
 4. **한국**: 청년도약·ISA 납입 **정책 우선** → 코어 ETF DCA. **해외 ETF 매도** 시 **양도세** — [overseas-stocks-tax-part1-cgt.md](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md).
 5. **위성 20% 상한** 초과 시 **리밸런싱 = 위성 축소** — QLD는 코어 리밸런싱 대상 **아님**.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "DB (Defined Benefit)"
@@ -43,7 +41,6 @@
 
 **왜 중요한가**: “QQQ 샀다”로 끝나면 **1년 후 QQQ 85%** 같은 **드리프트**가 옵니다. DCA만 하고 리밸런싱이 없으면 **위험 집중**, 리밸런싱만 잦으면 **해외 양도세·수수료**가 누적됩니다. [core-satellite-framework.md](core-satellite-framework.md) 80/20과 [asset-allocation.md](asset-allocation.md) 60/40을 **실제로 지키는** 실행 계층입니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -57,7 +54,6 @@
 - [overseas-stocks-tax-part3-scenarios.md](../06-korea-policy/tax/overseas-stocks-tax-part3-scenarios.md)
 - [isa-irp-pension-tax.md](../06-korea-policy/tax/isa-irp-pension-tax.md)
 
----
 
 ## 3. 직관·비유
 
@@ -84,7 +80,6 @@
 
 
 한국 **DB·ISA·2026 개편** 환경에서 포트폴리오 문서는 **실행 순서**가 핵심입니다. 비중 % 논쟁 이전에 **운용 가능 계좌**와 **bucket 채우기**를 확정하고, QQQ·글로벌·채권 **코어**를 [etf-index-funds.md](../03-markets/etf-index-funds.md) 기준 **저비용**으로 유지하세요. 위성·레버리지·단타는 **0~20%**와 **손실 한도**로 격리하고, [references/sources.md](../references/sources.md)로 제도 변경을 **분기 1회** 확인합니다.
----
 
 ## 4. 정식 개념·용어
 
@@ -111,9 +106,6 @@
 | Lump sum | 한 번에 투입 | §4 | [glossary](../00-roadmap/glossary.md#lump-sum) |
 | Calendar rebal | 분기·연 1회 | §4 | [glossary](../00-roadmap/glossary.md#calendar-rebal) |
 | Threshold rebal | 밴드 이탈 시 | §4 | [glossary](../00-roadmap/glossary.md#threshold-rebal) |
-
-
----
 
 ## 5. 메커니즘
 
@@ -170,7 +162,6 @@ flowchart TD
 
 일반계좌 QQQ **100%→60%** 리밸 시 **이익분 양도세**. **완화**: (1) **ISA** 코어. (2) **밴드 넓히기** (±10%p) — 매매 ↓. (3) **신규 DCA**를 채권 쪽으로 — **매도 없이** 비중 조정 (느리지만 세금 ↓). (4) **손실 종목**과 **이익 종목** 상계는 **종목별** — ISA **손익통산** 활용.
 
----
 
 ## 6. 수식·모델
 
@@ -202,13 +193,16 @@ flowchart TD
 \]
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**DCA vs Lump sum**: 통계적 우열 **혼재** — **심리·유동성**으로 DCA 선택 합리적.
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+**DCA vs Lump sum**: 통계적 우열 **혼재** — **심리·유동성**으로 DCA 선택 합리적.
 
 ---
 
  2025년 기준 (확정)
 
 | 항목 | DCA | 리밸런싱 |
+|------|------|----------------|
 | **ISA** | 월 적립 **유리** | 3년+ 손익통산 — [isa.md](../06-korea-policy/isa.md) |
 | **IRP** | 장기 DCA | 과세이연 |
 | **일반 해외** | 가능 | **매도 시 양도세 22%** |
@@ -218,6 +212,7 @@ flowchart TD
 ### 7.2 2026년 개편·시행 예정 (해당 시)
 
 | 항목 | 2025 | 2026 (안) |
+|------|------|----------------|
 | ISA 연 납입 | 2,000만 | 4,000만 |
 
 → **DCA 금액** 상향 가능. **리밸런싱 규칙**은 유지.
@@ -228,6 +223,7 @@ flowchart TD
 ### 7.3 해외 양도세·리밸런싱 시나리오 (2025)
 
 | 계좌 | QQQ 매도 리밸 | 배당 재투자 | 5월 신고 |
+|------|------|------|----------------|
 | ISA 3년+ | **통산·한도** | 통산 | **간소** |
 | IRP | **이연** | 이연 | 수령 시 |
 
@@ -239,8 +235,7 @@ flowchart TD
 **Q10. 85/15와 60/40 동시?**  
 **A10.** **가능** — 60/40 **자산군**, 85/15 **코어·위성** — [core-satellite-framework.md](core-satellite-framework.md).
 
-
----## 8. 숫자 예제 (가상)
+## 8. 숫자 예제 (가상)
 
 > 모든 인물·금액은 가상입니다.
 
@@ -268,7 +263,6 @@ flowchart TD
 | 위성 | **M** (28%) | **M** (20%) |
 | 행동 | 코스닥·QLD **M** 매도** | 코어 채권·글로벌 **추가** |
 
----
 ## 9. FAQ
 
 **Q1. DCA vs 일시 lump sum?**  
@@ -313,7 +307,6 @@ flowchart TD
 - [ ] DB → ISA [db-pension.md](../06-korea-policy/db-pension.md)
 
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -338,7 +331,6 @@ flowchart TD
 - [overseas-stocks-tax-part2-dividend.md](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md)
 - [core-satellite-framework.md](core-satellite-framework.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 
