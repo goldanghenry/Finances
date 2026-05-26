@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add short '읽는 법' after display math in §6 when missing."""
+"""DEPRECATED: template reading notes — use polish_chapter_to_gold.py instead."""
 
 from __future__ import annotations
 
@@ -9,6 +9,7 @@ from pathlib import Path
 
 from _corpus import ROOT, iter_corpus_md
 
+# Disabled by default (re-contaminates gold §6). Run with --force to apply legacy template.
 NOTE = "\n**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.\n"
 
 
@@ -47,6 +48,12 @@ def enrich(text: str) -> tuple[str, bool]:
 
 
 def main() -> int:
+    if "--force" not in sys.argv:
+        print(
+            "add_section6_reading_notes.py is disabled (gold standard). "
+            "Use: python scripts/polish_chapter_to_gold.py"
+        )
+        return 0
     n = 0
     for path in iter_corpus_md():
         text = path.read_text(encoding="utf-8")

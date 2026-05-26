@@ -37,6 +37,7 @@ jobs:
         run: |
           python scripts/lint_reader_friendly.py
           python scripts/lint_corpus_quality.py
+          python scripts/lint_gold_chapter.py
 
       - name: Materialize webdocs (dereference symlinks)
         run: python scripts/materialize_webdocs.py

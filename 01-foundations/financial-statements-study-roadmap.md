@@ -157,22 +157,23 @@ flowchart LR
 **DuPont (Week 4)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-|  \(ROE\)  |  ROE  | 본문 §4·위 식 맥락 참고 |
-|  \(Net Income\)  |  Net Income  | 본문 §4·위 식 맥락 참고 |
-|  \(Sales\)  |  Sales  | 본문 §4·위 식 맥락 참고 |
-|  \(Assets\)  |  Assets  | 본문 §4·위 식 맥락 참고 |
-|  \(Equity\)  |  Equity  | 본문 §4·위 식 맥락 참고 |
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             \(ROE\)             | ROE | ROE이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|   \(Net Income\)   |   Net Income   | \(Net Income\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             \(Sales\)             | Sales | Sales이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             \(Assets\)             | Assets | Assets이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             \(Equity\)             | Equity | Equity이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 \[
 ROE = \frac{\text{Net Income}}{\text{Sales}} \times \frac{\text{Sales}}{\text{Assets}} \times \frac{\text{Assets}}{\text{Equity}}
 \]
 
 
-**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
+
+**읽는 법**: **ROE**와 **Net**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **FCF (Week 7)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 | \(FCF\) | 잉여현금흐름 | 투자자에게 가용한 현금 |
 | \(OCF\) | 영업현금흐름 | 영업활동에서 발생한 현금 |
 
@@ -181,22 +182,22 @@ FCF = OCF - CapEx
 \]
 
 
-**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
-**상대밸류 (Week 12, 교육용)**:
+
+**읽는 법**: **FCF**와 **OCF**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**상대밸류 (Week 12, 교육용)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 | \(EPS\) | 주당순이익 | 순이익 ÷ 발행주식수 |
 | \(P\) | 포트 규모 | 가상 포트폴리오 규모(만 원) |
-| \(E\) | E | 본문 §4·위 식 맥락 참고 |
-| \(B\) | B | 본문 §4·위 식 맥락 참고 |
-
+|            \(E\)            | E | E이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|            \(B\)            | B | B이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 \[
 P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 \]
 
 
-**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
+
+**읽는 법**: **EPS**와 **P**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 해당 없음: 복잡 DCF는 [time-value-npv-irr](time-value-npv-irr.md) 이후.
 
 ---
@@ -276,6 +277,11 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 
 ---
 
+
+
+**Q. 실무에서는?**  
+교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
+
 ## 11. 심화 읽기
 
 - [STUDY-START.md](../00-roadmap/STUDY-START.md) Phase 1  
@@ -298,6 +304,7 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 
 
 ---
+
 
 ## 부록 A. 주차별 체크박스
 
