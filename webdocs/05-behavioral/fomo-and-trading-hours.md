@@ -71,7 +71,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|-------|-----------|----------|
+|------|------|----------------|
 | FOMO | 놓칠까 하는 **불안** | §4 | [glossary](../00-roadmap/glossary.md#fomo) |
 | 거래시간 확대 | NXT·장후 등 **체결 가능 시간** 증가 | §4 | [glossary](../00-roadmap/glossary.md#거래시간-확대) |
 | DCA | 정기 **정액** 매수 | §4 | [glossary](../00-roadmap/glossary.md#dca) |
@@ -105,7 +105,7 @@ flowchart LR
 **거래 빈도와 비용**(교육):
 
 | 기호 | 이름 | 이 식에서 의미 |
-|   ------   | ------ | 위 식의 ------ |
+|------|------|----------------|
 |  \(\R_\text{net}\)  |  R  net  | §4 용어·식 맥락에서 확인 |
 |  \(\R_\text{gross}\)  |  R  gross  | §4 용어·식 맥락에서 확인 |
 \[
@@ -151,7 +151,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 ### 7.2 계좌·bucket
 
 | | 코어 B3 | FOMO B4 |
-|--|---------|---------|
+|------|------|----------------|
 | QQQ | ISA·IRP DCA | **비권장** 단타 |
 | 국내 위성 | 규칙 리밸런싱 | NXT 장후 |
 | DB | **매매 없음** | 해당 없음 |
@@ -169,7 +169,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 ### 7.4 2025 vs 2026
 
 | | 2025 | 2026 |
-|--|------|------|
+|------|------|----------------|
 | NXT | 도입·**12시간** | 종목·규제 **지속** |
 | ISA | 비과세 200만 | **500만** 보도 — 코어 **납입**↑ 가능 |
 | 행동 | FOMO·장후 | **규칙**은 동일 — 시간≠의무 |
@@ -177,7 +177,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 ### 7.5 코어·위성 규칙 카드 (교육용)
 
 | Bucket | 자산 | 거래 창 | NXT |
-|--------|------|---------|-----|
+|------|------|----------------|
 | 3 코어 | QQQ·채권 ETF | **월 1회** DCA일만 | 선택 |
 | 4 위성 | 코스닥·테마 | 규칙 **상한 20%** | 장후 **자제** |
 | 0~1 | 비상금·도약 | **매매 없음** | — |
@@ -200,7 +200,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 ### 7.7 심리·시장 구조 — NXT와의 관계
 
 | 요인 | 메커니즘 | 대응 |
-|------|----------|------|
+|------|------|----------------|
 | 가용성 편향 | 장후 **뉴스·급등** 노출 ↑ | 알림 OFF |
 | 손실 회피 | 손절 지연·추격 매수 | **사전 규칙** |
 | 과신 | NXT **저수수료** = 더 매매 | 월 **N** 상한 |
@@ -256,7 +256,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 ### 실행 워크숍 체크리스트 (교육)
 
 | # | 질문 | Yes 시 다음 문서 |
-|---|------|------------------|
+|------|------|----------------|
 | 1 | 해외 ETF·주식을 보유 중인가? | [../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) |
 | 2 | 해외 배당이 연 500만 이상인가? | [../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md](overseas-stocks-tax-../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md.md) |
 | 3 | DB 재직인가? | [../06-korea-policy/db-pension.md](../../06-korea-policy/db-pension.md) + IRP·ISA |
@@ -290,7 +290,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 ### Bucket·현금흐름 연결
 
 | Bucket | 대표 제도·자산 | 본 문서와의 관계 |
-|--------|----------------|------------------|
+|------|------|----------------|
 | 0 | 비상금 MMDA | 세금·투자 **전** 우선 |
 | 1 | [청년도약](../06-korea-policy/youth-leap-account.md)·[미래적금](../06-korea-policy/youth-future-savings.md) | 정책 적금 — 주식 **대체 아님** |
 | 2a | DB·DC | [db-vs-dc-pension.md](../06-korea-policy/db-vs-dc-pension.md) |

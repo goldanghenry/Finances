@@ -20,6 +20,10 @@ BAD_SEP = re.compile(
     r"^\|(?:[^|\n]*\|){2}[^|\n]*이\(가\) 이 식에서 맡는 역할[^|\n]*\|\s*$",
     re.M,
 )
+BAD_SEP_GLOSS = re.compile(
+    r"^\|\s*[-:\s|]+\|\s*[-:\s|]+\|\s*(?:위\s*식의\s*)?[-:\s|]+\|\s*$",
+    re.M,
+)
 JUNK_SYMBOL = re.compile(
     r"^\\?\(?\\?(alpha|cdot|월|연금|일반|text)\b",
     re.I,
@@ -223,6 +227,17 @@ def repair(text: str) -> tuple[str, bool]:
     if BAD_SEP.search(text):
         text = BAD_SEP.sub(GOOD_SEP, text)
         changed = True
+    if BAD_SEP_GLOSS.search(text) or "위 식의 ------" in text:
+        text2 = BAD_SEP_GLOSS.sub(GOOD_SEP, text)
+        text2 = re.sub(
+            r"^\|\s*------\s*\|\s*------\s*\|\s*위\s*식의\s*------\s*\|\s*$",
+            GOOD_SEP,
+            text2,
+            flags=re.M,
+        )
+        if text2 != text:
+            text = text2
+            changed = True
     t2, c2 = repair_section6_tables(text)
     if c2:
         text, changed = t2, True

@@ -7,7 +7,13 @@ import re
 import sys
 
 from _corpus import iter_corpus_md
-from _gold_polish import fix_variable_row, is_placeholder_meaning, section6_body
+from _gold_polish import (
+    VAR_SEP_ROW,
+    fix_variable_row,
+    is_placeholder_meaning,
+    is_table_separator_row,
+    section6_body,
+)
 from repair_corpus_mechanical import lookup_meaning, parse_section4_terms
 
 
@@ -22,6 +28,8 @@ def enrich(text: str) -> tuple[str, bool]:
         sym, name, mean = m.group(1), m.group(2), m.group(3)
         if "이 식에서 의미" in sym:
             return m.group(0)
+        if is_table_separator_row(sym, name, mean):
+            return VAR_SEP_ROW
         if not is_placeholder_meaning(mean) and name.strip() not in ("", sym.strip()):
             return m.group(0)
         ns, nn, nm = fix_variable_row(sym, name, mean, terms4)

@@ -73,7 +73,7 @@
 ## 4. 정식 개념·용어
 
 | 용어 | English | 주차 |
-|------|---------|------|
+|------|------|----------------|
 | IS | Income Statement | 1~3 |
 | BS | Balance Sheet | 2~4 |
 | CF | Cash Flow Statement | 5~7 |
@@ -88,7 +88,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|-------|-----------|----------|
+|------|------|----------------|
 | IS | 1~3 | §4 | [glossary](../00-roadmap/glossary.md#is) |
 | BS | 2~4 | §4 | [glossary](../00-roadmap/glossary.md#bs) |
 | CF | 5~7 | §4 | [glossary](../00-roadmap/glossary.md#cf) |
@@ -114,7 +114,7 @@ flowchart TD
 ### 5.1 주차별 상세 스케줄
 
 | 주 | 주제 | 필수 문서 | 실습(가상) | 산출물 |
-|----|------|-----------|------------|--------|
+|------|------|----------------|
 | **1** | 3표 역할·연결 | [financial-statements-intro](financial-statements-intro.md) §1~4 | 가상 **제조사 X** IS 한 줄 읽기 | 3표 질문 카드 |
 | **2** | IS 심화·마진 | intro §5~7 | 매출·영업이익·당기순이익 **2년 비교** | 마진 표 |
 | **3** | BS·유동성 | intro 나머지 | 유동비율·부채비율 **손계산** | BS 스냅샷 |
@@ -157,7 +157,7 @@ flowchart LR
 **DuPont (Week 4)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|    ------    | ------ | 위 식의 ------ |
+|------|------|----------------|
 | \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
 | \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
 | \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
@@ -173,7 +173,7 @@ ROE = \frac{\text{Net Income}}{\text{Sales}} \times \frac{\text{Sales}}{\text{As
 **FCF (Week 7)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|    ------    | ------ | 위 식의 ------ |
+|------|------|----------------|
 | \(FCF\) | 잉여현금흐름 | 투자자에게 가용한 현금 |
 | \(OCF\) | 영업현금흐름 | 영업활동에서 발생한 현금 |
 
@@ -188,7 +188,7 @@ FCF = OCF - CapEx
 **상대밸류 (Week 12, 교육용)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|    ------    | ------ | 위 식의 ------ |
+|------|------|----------------|
 | \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
 | \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
 | \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
@@ -224,7 +224,7 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 ### 예제 1 — Week 2 제조사 X
 
 | | Y1 | Y2 |
-|---|-----|-----|
+|------|------|----------------|
 | 매출 | 1,000 | 1,200 |
 | 영업이익 | 100 | 90 |
 | 당기순이익 | 80 | 70 |
@@ -329,7 +329,7 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 ## 부록 B. 8주 압축 트랙 (코어 ETF 전용)
 
 | 압축 주 | 통합 내용 | 필수 문서 |
-|---------|-----------|-----------|
+|------|------|----------------|
 | 1~2 | 3표 + IS·BS | [financial-statements-intro](financial-statements-intro.md) 전편 요약 |
 | 3~4 | 비율 + OCF | intro + [financial-statements-analysis](financial-statements-analysis.md) 핵심 § |
 | 5~6 | FCF + DART 입문 | [cash-flow-statement-fcf](cash-flow-statement-fcf.md) + [reading-annual-reports-dart](reading-annual-reports-dart.md) §1~5 |
@@ -342,7 +342,7 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 ## 부록 C. 섹터·AI 엔지니어 연계 (Week 7~12 병행)
 
 | 섹터 문서 | 재무제표 초점 | 주차 |
-|-----------|---------------|------|
+|------|------|----------------|
 | [semiconductor](../03-markets/sectors/semiconductor.md) | CapEx·재고·감가 | 7~8 |
 | [ai-infrastructure](../03-markets/sectors/ai-infrastructure.md) | 매출 인식·장기계약 | 9~10 |
 | [power-grid-electrification](../03-markets/sectors/power-grid-electrification.md) | 부채·이자보상 | 10~11 |
@@ -362,7 +362,7 @@ flowchart LR
 ## 부록 D. 주차별 DART 검색 키워드 (가상)
 
 | 주 | DART 메뉴 | 검색·열람 |
-|----|-----------|-----------|
+|------|------|----------------|
 | 9 | 공시검색 | 사업보고서 **목차** |
 | 10 | 재무제표 | **주석 2·12·28** (산업·우발·특수관계) |
 | 11 | 분기보고서 | **최근 분기** vs 전년 동기 |
@@ -395,7 +395,7 @@ flowchart LR
 ## 부록 F. 문서별 예상 읽기 시간
 
 | 문서 | 난이도 | 시간 |
-|------|--------|------|
+|------|------|----------------|
 | [financial-statements-intro](financial-statements-intro.md) | L3 | 55~70m |
 | [financial-statements-analysis](financial-statements-analysis.md) | L4 | 150~180m |
 | [cash-flow-statement-fcf](cash-flow-statement-fcf.md) | L4 | 150~180m |

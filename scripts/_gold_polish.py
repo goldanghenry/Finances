@@ -102,6 +102,20 @@ def parse_var_table_before(text: str, pos: int) -> list[tuple[str, str, str]]:
     return rows[-8:] if rows else []
 
 
+VAR_SEP_ROW = "|------|------|----------------|"
+
+
+def is_table_separator_row(sym: str, name: str, mean: str) -> bool:
+    """Markdown table header separator (must not get glossary meanings)."""
+    for cell in (sym.strip(), name.strip()):
+        c = cell.replace(" ", "")
+        if c and re.fullmatch(r"-+", c):
+            return True
+    if "위 식의" in mean and re.search(r"-{3,}", mean):
+        return True
+    return False
+
+
 def is_placeholder_meaning(s: str) -> bool:
     t = s.strip()
     if not t or t == "\\":
@@ -112,6 +126,8 @@ def is_placeholder_meaning(s: str) -> bool:
 
 
 def fix_variable_row(sym: str, name: str, mean: str, terms4: dict[str, str]) -> tuple[str, str, str]:
+    if is_table_separator_row(sym, name, mean):
+        return sym, name, mean
     bs = bare_symbol(sym)
     if is_placeholder_meaning(mean) or name.strip() in ("", bs, sym.strip()):
         mean = lookup_meaning(sym, terms4)
@@ -340,8 +356,10 @@ def polish_section6(text: str) -> tuple[str, bool]:
         sym, name, mean = m.group(1), m.group(2), m.group(3)
         if "이 식에서 의미" in sym:
             return m.group(0)
+        if is_table_separator_row(sym, name, mean):
+            return VAR_SEP_ROW
         if re.fullmatch(r"[\s\-]+", sym.strip()) or re.fullmatch(r"[\s\-]+", name.strip()):
-            return m.group(0)
+            return VAR_SEP_ROW
         if "이 식에서 맡는 역할" in mean and re.fullmatch(r"[\s\-]+", sym.strip()):
             return "|------|------|----------------|"
         if not is_placeholder_meaning(mean) and name.strip() not in ("", bare_symbol(sym)):

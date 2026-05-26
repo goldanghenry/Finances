@@ -91,6 +91,8 @@ def lookup_meaning(sym: str, terms4: dict[str, str]) -> str:
             return terms4[key]
     bare = re.sub(r"^\\?\(?\\?([A-Za-z0-9_]+)\\?\)?$", r"\1", raw)
     bare = bare.replace("{", "").replace("}", "")
+    if re.fullmatch(r"-+", bare.replace(" ", "")):
+        return "—"
     if bare in SYMBOL_GLOSS:
         return SYMBOL_GLOSS[bare][1]
     if bare.upper() in SYMBOL_GLOSS:
