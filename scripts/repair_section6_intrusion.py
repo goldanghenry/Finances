@@ -7,6 +7,7 @@ import re
 import sys
 
 from _corpus import iter_corpus_md
+from lint_corpus_quality import split_table_row
 
 VAR_HDR = "| 기호 | 이름 | 이 식에서 의미 |"
 VAR_SEP = "|------|------|----------------|"
@@ -80,8 +81,30 @@ def remove_placeholder_rows(lines: list[str]) -> int:
     return n
 
 
+def is_table_data_row(line: str) -> bool:
+    if not is_table_line(line) or is_sep_line(line):
+        return False
+    if line.strip() == VAR_HDR:
+        return False
+    first = split_table_row(line)[0].strip() if split_table_row(line) else ""
+    if first in ("기호", "Bucket", "항목", "용어", "열1", "이름"):
+        return False
+    return True
+
+
+def split_separator_glued_to_heading(lines: list[str]) -> int:
+    n = 0
+    for i, ln in enumerate(lines):
+        m = re.match(r"^(\|.*\|)\s*(#{1,6}\s.+)$", ln.strip())
+        if m and is_sep_line(m.group(1)):
+            lines[i] = m.group(1)
+            lines.insert(i + 1, m.group(2))
+            n += 1
+    return n
+
+
 def remove_intratable_separators(lines: list[str]) -> int:
-    """Delete separator-only rows sandwiched between data rows (same table)."""
+    """Delete duplicate separator rows between two data rows (same table)."""
     n = 0
     i = 0
     while i < len(lines):
@@ -97,12 +120,8 @@ def remove_intratable_separators(lines: list[str]) -> int:
         if (
             prev >= 0
             and nxt < len(lines)
-            and is_table_line(lines[prev])
-            and not is_sep_line(lines[prev])
-            and is_table_line(lines[nxt])
-            and not is_sep_line(lines[nxt])
-            and lines[prev].strip() != VAR_HDR
-            and lines[nxt].strip() != VAR_HDR
+            and is_table_data_row(lines[prev])
+            and is_table_data_row(lines[nxt])
         ):
             del lines[i]
             n += 1
@@ -171,9 +190,12 @@ def fix_split_prose(lines: list[str]) -> int:
         if (
             not a
             or a.startswith("|")
+            or is_sep_line(a)
             or a.startswith("#")
             or a.startswith("```")
             or a.startswith("\\")
+            or a.startswith("- ")
+            or a.startswith("* ")
         ):
             i += 1
             continue
@@ -192,6 +214,9 @@ def fix_split_prose(lines: list[str]) -> int:
                 j += 1
             if intruded and j < len(lines):
                 b = lines[j].strip()
+                if b in ("\\[", "\\]") or b.startswith("\\["):
+                    i += 1
+                    continue
                 if b and not b.startswith("|") and not b.startswith("#"):
                     merged = a + b
                     lines[i] = merged
@@ -236,7 +261,8 @@ def remove_fragment_blocks(lines: list[str]) -> int:
 
 def fix_glued_display_math_openers(text: str) -> str:
     """Prose ending with \\[ on same line -> newline before display math."""
-    return re.sub(r"([^\n\\])\\\[\s*\n", r"\1\n\n\\[\n", text)
+    text = re.sub(r"([^\n\\])\\\[\s*\n", r"\1\n\n\\[\n", text)
+    return re.sub(r"([^\n\\])\\\[\s*$", r"\1\n\n\\[", text, flags=re.M)
 
 
 def close_unterminated_display_blocks(text: str) -> str:
@@ -301,13 +327,22 @@ def repair_section6(text: str) -> tuple[str, int]:
         fix_split_prose,
         fix_rd_garbage,
         remove_fragment_blocks,
+        split_separator_glued_to_heading,
     ):
         changes += fn(lines)
 
     s6 = "\n".join(lines)
     s6 = clean_display_math(s6)
+    s6 = fix_glued_display_math_openers(s6)
+    s6 = close_unterminated_display_blocks(s6)
     s6 = re.sub(r"\n{4,}", "\n\n\n", s6)
-    return head + s6 + tail, changes
+    result = head + s6 + tail
+    result = re.sub(
+        r"(\|(?:[^|\n]*\|)+)\s*(#{1,6}\s)",
+        r"\1\n\n\2",
+        result,
+    )
+    return result, changes
 
 
 def main() -> int:

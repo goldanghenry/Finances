@@ -9,11 +9,43 @@ import sys
 from _corpus import iter_corpus_md
 
 
+def close_unterminated_display_blocks(text: str) -> tuple[str, int]:
+    """Insert \\] before **읽는 법** / ### when a display block was left open."""
+    lines = text.splitlines()
+    out: list[str] = []
+    open_block = False
+    changes = 0
+    for ln in lines:
+        st = ln.strip()
+        if st == "\\[":
+            open_block = True
+            out.append(ln)
+            continue
+        if st == "\\]":
+            open_block = False
+            out.append(ln)
+            continue
+        if open_block and (
+            st.startswith("**읽는 법**")
+            or st.startswith("### ")
+        ):
+            out.append("\\]")
+            open_block = False
+            changes += 1
+        out.append(ln)
+    if open_block:
+        out.append("\\]")
+        changes += 1
+    return "\n".join(out), changes
+
+
 def fix_text(text: str) -> tuple[str, int]:
     changes = 0
-    text = re.sub(r"([^\n\\])\\\[\s*\n", r"\1\n\n\\[\n", text)
-    if text != text:
+    new_text = re.sub(r"([^\n\\])\\\[\s*\n", r"\1\n\n\\[\n", text)
+    new_text = re.sub(r"([^\n\\])\\\[\s*$", r"\1\n\n\\[", new_text, flags=re.M)
+    if new_text != text:
         changes += 1
+    text = new_text
 
     lines = text.splitlines()
     out: list[str] = []
@@ -46,13 +78,22 @@ def fix_text(text: str) -> tuple[str, int]:
         i += 1
 
     text = "\n".join(out)
-    # drop duplicate consecutive **읽는 법** blocks (keep first)
     text = re.sub(
         r"(\*\*읽는 법\*\*:[^\n]+\n)(\*\*유도 \(L4\)\*\*:[\s\S]*?)(\n\*\*읽는 법\*\*:[^\n]+\n\*\*유도 \(L4\)\*\*)",
         r"\1\2",
         text,
         count=0,
     )
+    text, n_close = close_unterminated_display_blocks(text)
+    changes += n_close
+    text = re.sub(r"\\\[\s*\n\s*\\\]", "", text)
+    # Drop orphan closers when enrich left more \\] than \\[.
+    while text.count("\\[") < text.count("\\]"):
+        text2 = re.sub(r"(?m)^\s*\\\]\s*$\n?", "", text, count=1)
+        if text2 == text:
+            break
+        text = text2
+        changes += 1
     return text, changes
 
 

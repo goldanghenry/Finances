@@ -139,6 +139,36 @@ def fix_orphan_leading_separators(lines: list[str]) -> int:
     return changed
 
 
+def split_separator_glued_to_heading(lines: list[str]) -> int:
+    changed = 0
+    for i, ln in enumerate(list(lines)):
+        m = re.match(r"^(\|.*\|)\s*(#{1,6}\s.+)$", ln.strip())
+        if not m:
+            continue
+        lines[i] = m.group(1)
+        lines.insert(i + 1, m.group(2))
+        changed += 1
+    return changed
+
+
+def remove_orphan_trailing_table_separators(lines: list[str]) -> int:
+    changed = 0
+    i = 0
+    while i < len(lines):
+        if not is_separator_line(lines[i]):
+            i += 1
+            continue
+        j = i + 1
+        while j < len(lines) and not lines[j].strip():
+            j += 1
+        if j < len(lines) and re.match(r"^#{1,6}\s", lines[j].strip()):
+            del lines[i]
+            changed += 1
+            continue
+        i += 1
+    return changed
+
+
 def fix_merged_table_after_prose(lines: list[str]) -> int:
     """Unstick '| table' glued to end of a prose line (common enrich glitch)."""
     changed = 0
@@ -190,7 +220,9 @@ def fix_separator_widths(lines: list[str]) -> int:
 
 def fix_file(text: str) -> tuple[str, int]:
     lines = text.splitlines()
-    changed = fix_merged_table_after_prose(lines)
+    changed = split_separator_glued_to_heading(lines)
+    changed += remove_orphan_trailing_table_separators(lines)
+    changed += fix_merged_table_after_prose(lines)
     changed += remove_orphan_headers(lines)
     changed += fix_orphan_leading_separators(lines)
     changed += insert_missing_separators(lines)
