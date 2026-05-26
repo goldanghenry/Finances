@@ -1,0 +1,156 @@
+# Phase 읽기 순서 — mkdocs 사이드바 단일 소스
+# generate_phase_nav.py → webdocs/.pages
+
+nav:
+  - title: 시작
+    items:
+      - README.md
+      - docs/READER-GUIDE.md
+      - 00-roadmap/STUDY-START.md
+      - 00-roadmap/master-roadmap.md
+      - 00-roadmap/CURRICULUM-MAP.md
+      - 00-roadmap/ai-engineer-investing-playbook.md
+      - 00-roadmap/required-reading-guide.md
+      - 00-roadmap/glossary.md
+
+  - title: "Phase 0 — 돈·가계 기초"
+    items:
+      - 01-foundations/compound-interest-and-time-value.md
+      - 01-foundations/emergency-fund.md
+      - 01-foundations/cash-flow-basics.md
+      - 01-foundations/household-ledger-practical.md
+      - 01-foundations/debt-and-interest.md
+      - 01-foundations/financial-products-short-term.md
+      - 01-foundations/insurance-risk-transfer.md
+      - 01-foundations/time-value-npv-irr.md
+
+  - title: "Phase 1 — 재무제표"
+    items:
+      - 01-foundations/financial-statements-study-roadmap.md
+      - 01-foundations/financial-statements-intro.md
+      - 01-foundations/financial-statements-analysis.md
+      - 01-foundations/cash-flow-statement-fcf.md
+      - 01-foundations/reading-annual-reports-dart.md
+      - 01-foundations/dividends-buybacks.md
+
+  - title: "Phase 2 — 경제학 L4"
+    items:
+      - 02-economics/microeconomics-basics.md
+      - 02-economics/micro-01-consumer-theory.md
+      - 02-economics/micro-02-production-cost-supply.md
+      - 02-economics/micro-03-market-structures-io.md
+      - 02-economics/micro-04-welfare-externalities.md
+      - 02-economics/micro-05-sector-applications.md
+      - 02-economics/macroeconomics-basics.md
+      - 02-economics/macro-01-gdp-accounts-growth.md
+      - 02-economics/macro-02-money-inflation.md
+      - 02-economics/macro-03-is-lm-ad-as.md
+      - 02-economics/macro-04-monetary-policy-qe.md
+      - 02-economics/macro-05-open-economy-fx.md
+      - 02-economics/macro-06-asset-prices-macro.md
+
+  - title: "Phase 3 — 시장·상품"
+    items:
+      - 03-markets/korea-ats-nextrade.md
+      - 03-markets/korea-equity-market-structure.md
+      - 03-markets/stocks-equities-intro.md
+      - 03-markets/kosdaq-tier-system.md
+      - 03-markets/bonds-fixed-income.md
+      - 03-markets/etf-index-funds.md
+      - 03-markets/us-equity-indices-etf.md
+      - 03-markets/korea-vs-us-equities.md
+      - 03-markets/overseas-equities-intro.md
+      - 03-markets/overseas-tax-fx-hedging.md
+      - 03-markets/equity-valuation-fundamentals.md
+      - 03-markets/bonds-fixed-income-deep.md
+      - 03-markets/etf-index-funds-deep.md
+      - 03-markets/market-microstructure.md
+      - 03-markets/order-types-execution.md
+      - 03-markets/mutual-funds-active.md
+      - 03-markets/corporate-governance-minority.md
+      - 03-markets/alternatives-reits-commodities.md
+      - 03-markets/yield-curve-strategies.md
+      - 03-markets/korea-ats-primer.md
+      - 03-markets/kosdaq-tier-system-primer.md
+
+  - title: "Phase 3b — 섹터"
+    items:
+      - 03-markets/sectors/sector-investing-framework.md
+      - 03-markets/sectors/recommended-deep-study-roadmap.md
+      - 03-markets/sectors/battery-lfp-ncm-ess.md
+      - 03-markets/sectors/semiconductor.md
+      - 03-markets/sectors/ai-infrastructure.md
+      - 03-markets/sectors/physical-ai.md
+      - 03-markets/sectors/power-grid-electrification.md
+
+  - title: "Phase 4 — 포트폴리오"
+    items:
+      - 04-portfolio/time-horizon-and-buckets.md
+      - 04-portfolio/core-satellite-framework.md
+      - 04-portfolio/asset-allocation.md
+      - 04-portfolio/geographic-diversification.md
+      - 04-portfolio/rebalancing-and-dca.md
+      - 04-portfolio/passive-vs-active.md
+      - 04-portfolio/portfolio-theory-mpt.md
+      - 04-portfolio/leveraged-etf-qqq-qld.md
+      - 04-portfolio/risk-management-portfolio.md
+      - 04-portfolio/performance-measurement.md
+
+  - title: "Phase 5 — 한국 제도·세금"
+    items:
+      - 06-korea-policy/tax/investment-tax-overview.md
+      - 06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md
+      - 06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md
+      - 06-korea-policy/tax/overseas-stocks-tax-part3-scenarios.md
+      - 06-korea-policy/tax/account-product-tax-map.md
+      - 06-korea-policy/tax/domestic-stocks-tax.md
+      - 06-korea-policy/tax/isa-irp-pension-tax.md
+      - 06-korea-policy/tax/financial-investment-income-tax.md
+      - 06-korea-policy/db-pension.md
+      - 06-korea-policy/irp.md
+      - 06-korea-policy/db-vs-dc-pension.md
+      - 06-korea-policy/dc-pension.md
+      - 06-korea-policy/isa.md
+      - 06-korea-policy/isa-irp-practical-setup.md
+      - 06-korea-policy/pension-savings-account.md
+      - 06-korea-policy/youth-leap-account.md
+      - 06-korea-policy/youth-future-savings.md
+
+  - title: "Phase 6 — 행동금융"
+    items:
+      - 05-behavioral/investment-journal-psychology.md
+      - 05-behavioral/behavioral-finance-complete.md
+      - 05-behavioral/fomo-and-trading-hours.md
+
+  - title: "Phase 7 — 부동산"
+    items:
+      - 07-real-estate/real-estate-basics.md
+      - 07-real-estate/real-estate-reits.md
+
+  - title: "Phase 8 — 심화"
+    items:
+      - 08-advanced/market-efficiency-emh.md
+      - 08-advanced/capm-and-risk-return.md
+      - 08-advanced/factor-investing-primer.md
+      - 08-advanced/factor-investing-fama-french.md
+      - 08-advanced/apt-multi-factor-models.md
+      - 08-advanced/derivatives-options-intro.md
+      - 08-advanced/technical-analysis-critical.md
+      - 08-advanced/quant-investing-intro.md
+
+  - title: "Phase 9 — 기업재무"
+    items:
+      - 09-corporate-finance/wacc-capital-structure.md
+      - 09-corporate-finance/ma-basics.md
+      - 09-corporate-finance/startup-valuation-vc.md
+
+  - title: 부록 — 표준·출처
+    items:
+      - docs/DEPTH-STANDARD.md
+      - docs/TERMINOLOGY-STANDARD.md
+      - docs/TEMPLATE.md
+      - docs/L3-CORPUS-STATUS.md
+      - docs/L4-ECONOMICS-STATUS.md
+      - docs/private-notes.md
+      - docs/github-pages-deploy.md
+      - references/sources.md

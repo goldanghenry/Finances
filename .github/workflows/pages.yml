@@ -30,6 +30,15 @@ jobs:
       - name: Install MkDocs
         run: pip install -r requirements-docs.txt
 
+      - name: Lint reader-friendly corpus
+        run: python scripts/lint_reader_friendly.py
+
+      - name: Materialize webdocs (dereference symlinks)
+        run: python scripts/materialize_webdocs.py
+
+      - name: Generate Phase navigation
+        run: python scripts/generate_phase_nav.py
+
       - name: Build site
         env:
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/

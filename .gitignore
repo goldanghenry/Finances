@@ -15,7 +15,9 @@ __pycache__/
 
 # --- 빌드·작업용 ---
 .tmp_l3/
-scripts/
+scripts/_yield*
+scripts/yield_frag*
+scripts/__pycache__/
 
 # --- OS / IDE ---
 .DS_Store

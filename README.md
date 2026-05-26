@@ -2,18 +2,21 @@
 
 경제학·금융 수준의 **교재급(L3+)** 장문 학습 자료입니다. 개인 급여·잔고·회사명은 포함하지 않습니다.
 
+> **처음이신가요?** [독자 가이드](docs/READER-GUIDE.md)에서 **L1~L4 난이도**, Phase 읽기 순서, FV·PMT 같은 약어 읽는 법을 먼저 보세요.
+
 ## 면책
 
 교육 목적이며 투자·세무·법률 자문이 아닙니다. 제도·세율·상품은 수시로 변경됩니다.
 
 ## 공부 시작
 
+0. **[READER-GUIDE](docs/READER-GUIDE.md)** — **L1~L4** · Phase 순서 · 약어·수식  
 1. **[CURRICULUM-MAP](00-roadmap/CURRICULUM-MAP.md)** — **전체 과목 지도** (~89과목 ✅)  
 2. **[STUDY-START](00-roadmap/STUDY-START.md)** — Day 1·1주차  
 3. **[ai-engineer-investing-playbook](00-roadmap/ai-engineer-investing-playbook.md)** — 가상 1년 실행  
 4. **[required-reading-guide](00-roadmap/required-reading-guide.md)** — 필독서 **챕터별 요약** (책 없이)  
 5. **[master-roadmap](00-roadmap/master-roadmap.md)** — Phase 0~9  
-6. [DEPTH-STANDARD](docs/DEPTH-STANDARD.md) · [glossary](00-roadmap/glossary.md) · [TERMINOLOGY-STANDARD](docs/TERMINOLOGY-STANDARD.md)
+6. [glossary](00-roadmap/glossary.md) · [DEPTH-STANDARD](docs/DEPTH-STANDARD.md)(저자용) · [TERMINOLOGY-STANDARD](docs/TERMINOLOGY-STANDARD.md)
 
 ## Phase 맵
 
@@ -59,13 +62,14 @@ flowchart TB
 
 ## 웹으로 읽기 (GitHub Pages)
 
-- **배포**: `main` 브랜치 push 시 [GitHub Actions](.github/workflows/pages.yml)가 MkDocs Material 사이트를 빌드합니다.
-- **URL**: [https://goldanghenry.github.io/Finances/](https://goldanghenry.github.io/Finances/)
+- **배포**: `main` 브랜치 push 시 [GitHub Actions](.github/workflows/pages.yml)가 린트 후 MkDocs Material 사이트를 빌드합니다.
+- **URL**: [https://goldanghenry.github.io/Finances/](https://goldanghenry.github.io/Finances/) — 수식·Phase 메뉴·`!!! info` 박스는 **사이트**에서 확인 ([READER-GUIDE](docs/READER-GUIDE.md) §GitHub vs Pages).
 - **로컬 미리보기**:
   ```bash
   python3 -m venv .venv && source .venv/bin/activate
   pip install -r requirements-docs.txt
-  mkdocs serve
+  python scripts/materialize_webdocs.py && python scripts/generate_phase_nav.py
+  SITE_URL=https://goldanghenry.github.io/Finances/ mkdocs serve
   ```
 - **비공개 노트**: `private/` 폴더는 [`.gitignore`](.gitignore) 대상 — [설명](docs/private-notes.md)
 - **최초 배포 절차**: [github-pages-deploy.md](docs/github-pages-deploy.md)
