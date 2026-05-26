@@ -1,5 +1,7 @@
 # GitHub Pages 최초 배포
 
+> **저자·배포용** — 일반 독자는 [사이트](https://goldanghenry.github.io/Finances/)만 이용하면 됩니다.
+
 ## 1. GitHub 저장소
 
 [goldanghenry/Finances](https://github.com/goldanghenry/Finances)

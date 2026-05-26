@@ -1,7 +1,7 @@
 # 마스터 학습 로드맵
 
-> **가정**: 주당 15시간+, 약 12~18개월. **L3+ 코퍼스** ([L3-CORPUS-STATUS](../docs/L3-CORPUS-STATUS.md)).  
-> **시작**: [STUDY-START.md](STUDY-START.md) · **1년 실행**: [ai-engineer-investing-playbook.md](ai-engineer-investing-playbook.md)
+> **가정**: 주당 15시간+, 약 12~18개월.  
+> **시작**: [공부 시작](STUDY-START.md) · **1년 실행(선택)**: [ai-engineer-investing-playbook.md](ai-engineer-investing-playbook.md)
 
 ## Phase 개요
 
@@ -27,7 +27,7 @@
 
 | 일 | 문서 | 예상 |
 |----|------|------|
-| 1 | [STUDY-START](STUDY-START.md), [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) | 1h |
+| 1 | [읽는 법](../docs/READER-GUIDE.md), [공부 시작](STUDY-START.md) | 1h |
 | 2 | [cash-flow-basics](../01-foundations/cash-flow-basics.md), [household-ledger-practical](../01-foundations/household-ledger-practical.md) | 3h |
 | 3 | [db-pension.md](../06-korea-policy/db-pension.md) | 3h |
 | 4 | [overseas-stocks-tax-part1-cgt.md](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) | 2h |

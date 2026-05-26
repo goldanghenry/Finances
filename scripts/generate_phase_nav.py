@@ -27,7 +27,13 @@ def build_nav_block(nav: list[dict]) -> str:
         items = section.get("items", [])
         lines.append(f'  - "{title}":')
         for item in items:
-            lines.append(f"    - {item}")
+            if isinstance(item, str):
+                lines.append(f"    - {item}")
+            elif isinstance(item, dict):
+                for label, path in item.items():
+                    lines.append(f'    - "{label}": {path}')
+            else:
+                raise TypeError(f"nav item must be str or dict, got {type(item)}")
     lines.append(MARKER_END)
     return "\n".join(lines) + "\n"
 

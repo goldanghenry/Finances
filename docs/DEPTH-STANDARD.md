@@ -1,5 +1,7 @@
 # 문서 깊이 표준 (DEPTH-STANDARD)
 
+> **저자·편집용** — 일반 독자는 [읽는 법](READER-GUIDE.md)만 보시면 됩니다. GitHub Pages 사이트 메뉴에는 없습니다.
+
 본 저장소의 모든 학습 문서는 아래 등급·품질 게이트를 따릅니다.
 
 > **현황**: Phase 0~8 **본문**은 [L3-CORPUS-STATUS.md](L3-CORPUS-STATUS.md) 기준 **L3(≥10,000자)**. `*-primer.md`·폴더 `README.md`는 L1 인덱스.

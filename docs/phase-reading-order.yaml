@@ -5,13 +5,13 @@ nav:
   - title: 시작
     items:
       - README.md
-      - docs/READER-GUIDE.md
-      - 00-roadmap/STUDY-START.md
-      - 00-roadmap/master-roadmap.md
-      - 00-roadmap/CURRICULUM-MAP.md
-      - 00-roadmap/ai-engineer-investing-playbook.md
-      - 00-roadmap/required-reading-guide.md
-      - 00-roadmap/glossary.md
+      - "읽는 법": docs/READER-GUIDE.md
+      - "공부 시작": 00-roadmap/STUDY-START.md
+      - "학습 로드맵": 00-roadmap/master-roadmap.md
+      - "용어 사전": 00-roadmap/glossary.md
+      - "참고 — 필독서 요약": 00-roadmap/required-reading-guide.md
+      - "참고 — 1년 플레이북": 00-roadmap/ai-engineer-investing-playbook.md
+      - "출처·공식 링크": references/sources.md
 
   - title: "Phase 0 — 돈·가계 기초"
     items:
@@ -143,14 +143,3 @@ nav:
       - 09-corporate-finance/wacc-capital-structure.md
       - 09-corporate-finance/ma-basics.md
       - 09-corporate-finance/startup-valuation-vc.md
-
-  - title: 부록 — 표준·출처
-    items:
-      - docs/DEPTH-STANDARD.md
-      - docs/TERMINOLOGY-STANDARD.md
-      - docs/TEMPLATE.md
-      - docs/L3-CORPUS-STATUS.md
-      - docs/L4-ECONOMICS-STATUS.md
-      - docs/private-notes.md
-      - docs/github-pages-deploy.md
-      - references/sources.md

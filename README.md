@@ -1,50 +1,47 @@
-# 금융·투자 학습 지식 베이스 (L3 코퍼스)
+# 금융·투자 학습 지식 베이스
 
-경제학·금융 수준의 **교재급(L3+)** 장문 학습 자료입니다. 개인 급여·잔고·회사명은 포함하지 않습니다.
+경제·금융을 **교재처럼** 차근차근 읽을 수 있는 무료 학습 자료입니다. 개인 급여·잔고·회사명은 넣지 않았습니다.
 
-> **처음이신가요?** [독자 가이드](docs/READER-GUIDE.md)에서 **L1~L4 난이도**, Phase 읽기 순서, FV·PMT 같은 약어 읽는 법을 먼저 보세요.  
-> **읽기 권장**: [GitHub Pages 사이트](https://goldanghenry.github.io/Finances/) (수식·Phase 메뉴). 이 저장소의 `.md` 원문만 보면 LaTeX가 그대로 보일 수 있습니다.
+> **처음이신가요**  
+> 1. [읽는 법](docs/READER-GUIDE.md) — 난이도·Phase 순서·PV·PMT 같은 기호  
+> 2. [공부 시작](00-roadmap/STUDY-START.md) — 1주차 일정  
+> 3. 왼쪽 메뉴 **Phase 0**부터 읽기
 
 ## 면책
 
-교육 목적이며 투자·세무·법률 자문이 아닙니다. 제도·세율·상품은 수시로 변경됩니다.
+교육 목적이며 투자·세무·법률 자문이 아닙니다. 제도·세율·상품은 수시로 바뀝니다.
 
-## 공부 시작
+## 추천 읽기 순서
 
-0. **[READER-GUIDE](docs/READER-GUIDE.md)** — **L1~L4** · Phase 순서 · 약어·수식  
-1. **[CURRICULUM-MAP](00-roadmap/CURRICULUM-MAP.md)** — **전체 과목 지도** (~89과목 ✅)  
-2. **[STUDY-START](00-roadmap/STUDY-START.md)** — Day 1·1주차  
-3. **[ai-engineer-investing-playbook](00-roadmap/ai-engineer-investing-playbook.md)** — 가상 1년 실행  
-4. **[required-reading-guide](00-roadmap/required-reading-guide.md)** — 필독서 **챕터별 요약** (책 없이)  
-5. **[master-roadmap](00-roadmap/master-roadmap.md)** — Phase 0~9  
-6. [glossary](00-roadmap/glossary.md) · [DEPTH-STANDARD](docs/DEPTH-STANDARD.md)(저자용) · [TERMINOLOGY-STANDARD](docs/TERMINOLOGY-STANDARD.md)
+| 순서 | 문서 | 설명 |
+|------|------|------|
+| 1 | [읽는 법](docs/READER-GUIDE.md) | L3/L4 뜻, 한 편 읽는 법, 약어 |
+| 2 | [공부 시작](00-roadmap/STUDY-START.md) | 첫 주·Day 1 |
+| 3 | [학습 로드맵](00-roadmap/master-roadmap.md) | Phase 0~9 전체 |
+| 4 | [용어 사전](00-roadmap/glossary.md) | 막히면 검색 |
 
-## Phase 맵
+**선택**
 
-| Phase | 경로 | 핵심 |
-|-------|------|------|
-| 0~1 | [01-foundations/](01-foundations/) | 복리·**가계부**·보험·**재무제표 L4** |
-| 2 | [02-economics/](02-economics/) | 미시·거시 **L4 11편** |
-| 3 | [03-markets/](03-markets/) | **미국 ETF·Mag7**·밸류·채권·대안 |
-| 3b | [sectors/](03-markets/sectors/) | 배터리·반도체·AI·피지컬 AI |
-| 4 | [04-portfolio/](04-portfolio/) | **MPT·리스크·성과**·bucket |
-| 5 | [06-korea-policy/](06-korea-policy/) | DB·ISA·**실전 세팅**·세금 |
-| 6~9 | [05](05-behavioral/) · [07](07-real-estate/) · [08](08-advanced/) · [09](09-corporate-finance/) | 행동·REIT·**퀀트**·M&A |
+- [1년 실행 플레이북](00-roadmap/ai-engineer-investing-playbook.md) — 월별 체크리스트  
+- [필독서 요약](00-roadmap/required-reading-guide.md) — 책 없이 핵심만  
+- [출처·공식 링크](references/sources.md) — 법령·기관 URL  
 
-## Bucket
+## Phase 한눈에
 
-```mermaid
-flowchart TB
-  B0[Bucket0] --> B1[Bucket1_정책]
-  B1 --> B2a[DB]
-  B1 --> B2b[ISA_IRP]
-  B2b --> B3[코어]
-  B3 --> B4[위성]
-```
+| Phase | 무엇을 배우나 |
+|-------|----------------|
+| **0** | 복리·비상금·가계·부채 |
+| **1** | 재무제표 |
+| **2** | 미시·거시 경제 (심화) |
+| **3** | 주식·채권·ETF |
+| **3b** | 섹터·테마 |
+| **4** | 포트폴리오·자금 통 |
+| **5** | 한국 세금·ISA·퇴직연금 |
+| **6~9** | 행동·부동산·퀀트·M&A (선택) |
 
-[time-horizon-and-buckets.md](04-portfolio/time-horizon-and-buckets.md)
+자세한 일정은 [학습 로드맵](00-roadmap/master-roadmap.md)을 보세요.
 
-## DB 가입자 우선 5편
+## DB 가입자 — 먼저 보면 좋은 5편
 
 | # | 문서 |
 |---|------|
@@ -54,23 +51,10 @@ flowchart TB
 | 4 | [overseas-stocks-tax-part1](06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) |
 | 5 | [leveraged-etf-qqq-qld](04-portfolio/leveraged-etf-qqq-qld.md) |
 
-**청년도약 → 미래적금**: [youth-future-savings](06-korea-policy/youth-future-savings.md)
+자금 통(Bucket) 개념: [time-horizon-and-buckets](04-portfolio/time-horizon-and-buckets.md)
 
-## 분량
+## 편집·기술 (일반 독자는 건너뛰어도 됨)
 
-- **~95편** (L3 입문 + **L4 전공자** 50편+)  
-- L4 편당 **2.5~4h** · 전체 **18~24개월** ([CURRICULUM-MAP](00-roadmap/CURRICULUM-MAP.md))
-
-## 웹으로 읽기 (GitHub Pages)
-
-- **배포**: `main` 브랜치 push 시 [GitHub Actions](.github/workflows/pages.yml)가 린트 후 MkDocs Material 사이트를 빌드합니다.
-- **URL**: [https://goldanghenry.github.io/Finances/](https://goldanghenry.github.io/Finances/) — 수식·Phase 메뉴·`!!! info` 박스는 **사이트**에서 확인 ([READER-GUIDE](docs/READER-GUIDE.md) §GitHub vs Pages).
-- **로컬 미리보기**:
-  ```bash
-  python3 -m venv .venv && source .venv/bin/activate
-  pip install -r requirements-docs.txt
-  python scripts/materialize_webdocs.py && python scripts/generate_phase_nav.py
-  SITE_URL=https://goldanghenry.github.io/Finances/ mkdocs serve
-  ```
-- **비공개 노트**: `private/` 폴더는 [`.gitignore`](.gitignore) 대상 — [설명](docs/private-notes.md)
-- **최초 배포 절차**: [github-pages-deploy.md](docs/github-pages-deploy.md)
+- [전체 과목 현황표](00-roadmap/CURRICULUM-MAP.md) — 작성·추적용  
+- [GitHub `docs/`](https://github.com/goldanghenry/Finances/tree/main/docs) — DEPTH-STANDARD, TEMPLATE, 코퍼스 현황 등 **저자용** (사이트 메뉴·검색에는 없음)  
+- [GitHub 저장소](https://github.com/goldanghenry/Finances) · [사이트](https://goldanghenry.github.io/Finances/)

@@ -1,5 +1,7 @@
 # L3 코퍼스 현황
 
+> **저자·편집용** — 일반 독자는 [공부 시작](../00-roadmap/STUDY-START.md) · [학습 로드맵](../00-roadmap/master-roadmap.md). 사이트 메뉴·검색에는 없습니다.
+
 > **기준**: [DEPTH-STANDARD.md](DEPTH-STANDARD.md) · **골드**: [GOLD-CHAPTER-STANDARD.md](GOLD-CHAPTER-STANDARD.md)
 
 | Phase | 폴더 | L3+ 본문 | L4 본문 | 골드 G1–G6 | L4 G7–G9 |

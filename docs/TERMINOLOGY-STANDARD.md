@@ -1,5 +1,7 @@
 # 용어 블록 표준 (TERMINOLOGY-STANDARD)
 
+> **저자·편집용** — 사이트 메뉴·검색에는 없습니다.
+
 L2 이상 학습 문서의 **§4 정식 개념·용어** 안에 **`§4a 핵심 용어`** 와 **`§4b 관련 이론 미니맵`** 을 넣는 규칙입니다. 본문 표(§4 본표)와 분리해 **복습·교차 링크·이론 지도**에 쓰입니다.
 
 > **연계**: [DEPTH-STANDARD](DEPTH-STANDARD.md) 12블록 · [TEMPLATE](TEMPLATE.md) §4 · [glossary.md](../00-roadmap/glossary.md) · **독자** [READER-GUIDE](READER-GUIDE.md)

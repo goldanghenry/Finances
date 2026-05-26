@@ -1,6 +1,6 @@
 # 골드 편 기준 (GOLD-CHAPTER-STANDARD)
 
-> 저자·편집용. 독자는 [READER-GUIDE](READER-GUIDE.md)만 보면 된다.  
+> **저자·편집용** — 독자는 [READER-GUIDE](READER-GUIDE.md)만 보면 된다. **사이트 메뉴·검색에는 없습니다.**  
 > **모범 편**: [compound-interest-and-time-value.md](../01-foundations/compound-interest-and-time-value.md)
 
 ---
