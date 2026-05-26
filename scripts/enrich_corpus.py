@@ -22,6 +22,7 @@ def main() -> None:
         "enrich_section0_prereq.py",
         "enrich_section6_tables.py",
         "repair_corpus_mechanical.py",
+        "repair_broken_section6_tables.py",
         "ensure_section6_variable_tables.py",
         "repair_split_tables.py",
         "add_info_boxes.py",

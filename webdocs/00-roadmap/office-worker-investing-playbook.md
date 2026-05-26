@@ -157,15 +157,13 @@ flowchart LR
 > **가상 시나리오**: 세후 월 실수령 **M**(만 원). 독자는 **본인 M**으로 치환. DB 재직(개인 ETF는 DB 밖). 기호 정의: [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md).
 
 | 기호 | 이름 | 이 식에서 의미 |
-|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             \(alpha\)             | alpha | alpha이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-| \(ISA\) | Individual Savings Account | 개인종합자산관리계좌 |
-|   \(P\)   | 포트 규모 | 가상 포트폴리오 규모(만 원) |
-|             \(G\)             | G | G이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|   \(월\)   | \(월\) | \(월\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             \(cdot\)             | cdot | cdot이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|   \(M\)   | 월 실수령 | 가계 교육용 월 세후 소득 기호 |
-|   \(연금\)   | \(연금\) | \(연금\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|------|------|----------------|
+| \(\alpha_\text{ISA}\) | ISA 적립 비율 | 세후 월 실수령 **M** 중 ISA로 보내는 비율 (0~1) |
+| \(\alpha_\text{P}\) | 연금 적립 비율 | IRP·연금저축 등 연금 슬롯 비율 |
+| \(\alpha_\text{G}\) | 일반 계좌 비율 | 한도 초과분·위성·환전 여유 비율 |
+| \(M\) | 월 실수령 | 세후 월급(만 원, 기호만) |
+| \(L_\text{ISA}\) | ISA 연 한도 | 제도상 연 납입 상한(만 원) — §7·[isa](../06-korea-policy/isa.md) |
+
 \[
 \alpha_\text{ISA}+\alpha_\text{P}+\alpha_\text{G}=1,\quad
 \text{ISA}_\text{월}=\alpha_\text{ISA}\cdot M,\quad
@@ -173,9 +171,8 @@ flowchart LR
 \text{일반}_\text{월}=\alpha_\text{G}\cdot M
 \]
 
+**읽는 법**: 세후 **M**을 \(\alpha_\text{ISA}+\alpha_\text{P}+\alpha_\text{G}=1\)로 나누고, 각 슬롯 월액은 \(\alpha\cdot M\)이다. **\(L_\text{ISA}\)**와 \(12\alpha_\text{ISA}M\)로 연 한도 초과 여부를 점검한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
 
-
-**읽는 법**: **alpha**와 **ISA**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **교육용 비율(고정 아님)**: \(\alpha_\text{ISA}=0.50,\ \alpha_\text{P}=0.30,\ \alpha_\text{G}=0.20\).
 
 | 슬롯 | 비율 | 가상 용도 | bucket |
@@ -192,6 +189,13 @@ flowchart LR
 flowchart TD
   Pay[M_세후_실수령] --> ISA[ISA_alpha_ISA_코어ETF]
   Pay --> Pen[연금_alpha_P_IRP등]
+  Pay --> Gen[일반_alpha_G_위성여유]
+  ISA --> Hold[3년_유지_손익통산]
+```
+
+---
+
+Pay --> Pen[연금_alpha_P_IRP등]
   Pay --> Gen[일반_alpha_G_위성여유]
   ISA --> Hold[3년_유지_손익통산]
 ```

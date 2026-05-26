@@ -115,7 +115,7 @@ def fix_variable_row(sym: str, name: str, mean: str, terms4: dict[str, str]) -> 
     if is_placeholder_meaning(mean) or name.strip() in ("", bs, sym.strip()):
         mean = lookup_meaning(sym, terms4)
         if is_placeholder_meaning(mean):
-            mean = f"{lookup_name(sym)}이(가) 이 식에서 맡는 역할(§4·본문 참고)"
+            mean = "본문 §4·식 맥락 참고"
         if name.strip() in ("", bs, sym.strip(), "\\"):
             name = lookup_name(sym)
     if len(mean) > 80:
@@ -339,6 +339,10 @@ def polish_section6(text: str) -> tuple[str, bool]:
         sym, name, mean = m.group(1), m.group(2), m.group(3)
         if "이 식에서 의미" in sym:
             return m.group(0)
+        if re.fullmatch(r"[\s\-]+", sym.strip()) or re.fullmatch(r"[\s\-]+", name.strip()):
+            return m.group(0)
+        if "이 식에서 맡는 역할" in mean and re.fullmatch(r"[\s\-]+", sym.strip()):
+            return "|------|------|----------------|"
         if not is_placeholder_meaning(mean) and name.strip() not in ("", bare_symbol(sym)):
             return m.group(0)
         ns, nn, nm = fix_variable_row(sym, name, mean, terms4)

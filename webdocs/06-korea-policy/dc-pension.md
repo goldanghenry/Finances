@@ -127,12 +127,11 @@ flowchart LR
 **70/30** (교육):
 
 | 기호 | 이름 | 이 식에서 의미 |
-|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|   \(w_{\text{risk}\)   |   w_{\text{risk}   | \(w \textrisk\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|   \(V_\)   | V  | V 이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|   \(stock ETF\)   |   stock ETF   | \(stock ETF\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             \(total\)             | total | total이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             \(leq\)             | leq | leq이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|------|------|----------------|
+| \(\w_\text{risk}\) | w  risk | 본문 §4·위 식 맥락 참고 |
+| \(\V_\text{stock ETF}\) | V  stockETF | 본문 §4·위 식 맥락 참고 |
+| \(\V_\text{total}\) | V  total | 본문 §4·위 식 맥락 참고 |
+
 \[
 w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 \]
@@ -143,16 +142,19 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 **추가납입 절세**(2026 보도, 가상):
 
 | 기호 | 이름 | 이 식에서 의미 |
-|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|  \(P_{\text{add}}\)  |  P \textadd  | \(P \textadd\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|  \(r_{\text{deduction}}\)  |  r \textdeduction  | \(r \textdeduction\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|------|------|----------------|
+| \(\P_\text{add}\) | P  add | 본문 §4·위 식 맥락 참고 |
+| \(\r_\text{deduction}\) | r  deduction | 본문 §4·위 식 맥락 참고 |
+
 \[
 \text{절세} \approx \min(P_{\text{add}}, 3{,}000{,}000) \times r_{\text{deduction}}
 \]
 
 
 
-**읽는 법**: **P_**와 **r_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
+**읽는 법**: **P_**와 **r_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+---
 
 ## 7. 한국 적용
 

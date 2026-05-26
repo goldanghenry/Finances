@@ -110,15 +110,14 @@ flowchart LR
 **Fama-French 3요인**(교육):
 
 | 기호 | 이름 | 이 식에서 의미 |
-|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             Fama             | Fama | Fama이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             French             | French | French이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             R             | R | 기간당 이자·요구수익률 |
-|             i             | i | i이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             f             | f | f이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             alpha             | alpha | alpha이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|             mkt             | mkt | mkt이(가) 이 식에서 맡는 역할(§4·본문 참고) |
-|  m  | 월 실수령 | 가계 교육용 월 세후 소득 기호 |
+|------|------|----------------|
+| \(\a_\text{mkt}\) | a  mkt | 본문 §4·위 식 맥락 참고 |
+| \(\a_\text{SMB}\) | a  SMB | 본문 §4·위 식 맥락 참고 |
+| \(\a_\text{HML}\) | a  HML | 본문 §4·위 식 맥락 참고 |
+| \(\R_i\) | R i | 본문 §4·위 식 맥락 참고 |
+| \(\R_f\) | 무위험금리 | 국채·예금 등 기준 금리 |
+| \(\R_m\) | R m | 본문 §4·위 식 맥락 참고 |
+
 \[
 R_i - R_f = \alpha + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}}\text{SMB} + \beta_{\text{HML}}\text{HML} + \epsilon
 \]
@@ -126,6 +125,16 @@ R_i - R_f = \alpha + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}}\text{SMB
 
 
 **읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
+**해당 없음** 심화: 5요인·Carhart 모멘텀.
+
+---
+
+ 대한 민감도가 **β**다. **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
+**해당 없음** 심화: 5요인·Carhart 모멘텀.
+
+---
+
+RP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 **해당 없음** 심화: 5요인·Carhart 모멘텀.
 
 ---
