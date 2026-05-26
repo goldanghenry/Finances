@@ -160,8 +160,16 @@ def insert_boxes(text: str, path: Path) -> tuple[str, bool]:
             continue
         pos = m.start()
         line_start = new_body.rfind("\n", 0, pos) + 1
+        line_end = new_body.find("\n", pos)
+        if line_end == -1:
+            line_end = len(new_body)
+        current_line = new_body[line_start:line_end]
         prefix = new_body[line_start:pos]
         if prefix.strip().startswith("!") or prefix.strip().startswith("|"):
+            continue
+        if current_line.strip().startswith("|"):
+            continue
+        if re.match(r"^\s*[-*0-9]+\.", current_line):
             continue
         box = make_box(term)
         new_body = new_body[:line_start] + box + new_body[line_start:]

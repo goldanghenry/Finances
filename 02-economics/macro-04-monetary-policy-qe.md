@@ -75,6 +75,9 @@
 
 ---
 
+
+
+**이 모형이 말하는 것**: 수식은 계산 절차이고, 경제 직관은 「누가 이득·손해를 보는가」「어떤 가정이 깨지면 결론이 뒤집히는가」다. 유도 각 단계마다 **가정**을 한 줄로 적어 본다.
 ## 4. 정식 개념·용어
 
 | 용어 | 한글 | English | 정의 |
@@ -198,19 +201,20 @@ John Taylor (1993) **원형**:
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(i\) | i | §4·본문 정의 참고 |
-| \(t\) | t | §4·본문 정의 참고 |
-| \(rho\) | rho | §4·본문 정의 참고 |
-| \(i_{t-1}\) | i_{t-1} | §4·본문 정의 참고 |
-| \(r\) | r | §4·본문 정의 참고 |
-| \(pi\) | pi | §4·본문 정의 참고 |
-| \(alpha\) | alpha | §4·본문 정의 참고 |
-| \(y\) | y | §4·본문 정의 참고 |
-
+|  \(i\)  |  i  | 본문 §4·위 식 맥락 참고 |
+|  \(t\)  |  t  | 마지막 CF 시점 |
+|  \(rho\)  |  rho  | 본문 §4·위 식 맥락 참고 |
+|  \(i_{t-1}\)  |  i_{t-1}  | 본문 §4·위 식 맥락 참고 |
+|  \(r\)  |  r  | 기간당 이자·요구수익률 |
+|  \(pi\)  |  pi  | 물가 상승률 |
+|  \(alpha\)  |  alpha  | 본문 §4·위 식 맥락 참고 |
+|  \(y\)  |  y  | 기간 총 실수령·매출 등 |
 \[
 i_t = \rho i_{t-1} + (1-\rho)\left[ r^* + \pi_t + \alpha_\pi (\pi_t - \pi^*) + \alpha_y (y_t - \bar{y}_t) \right]
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 - \(i_t\): **명목 정책금리**
 - \(r^*\): **중립 실질금리**
 - \(\pi_t, \pi^*\): 인플레·목표(2%)
@@ -220,10 +224,18 @@ i_t = \rho i_{t-1} + (1-\rho)\left[ r^* + \pi_t + \alpha_\pi (\pi_t - \pi^*) + \
 
 **단순화(손 계산용)**:
 
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
+| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
+
 \[
 i = r^* + \pi + 0.5(\pi - \pi^*) + 0.5 \cdot \text{gap}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 gap을 **% of potential GDP**로 두면, \(\pi=3\%, \pi^*=2\%, gap=+1\%, r^*=0.5\%\) → \(i = 0.5 + 3 + 0.5 + 0.5 = 4.5\%\).
 
 ### 6.2 Taylor rule 유도 직관 (비교정태)
@@ -234,14 +246,28 @@ gap을 **% of potential GDP**로 두면, \(\pi=3\%, \pi^*=2\%, gap=+1\%, r^*=0.5
 2. **Phillips 곡선**(기대 강화): \(\pi = \pi^e + \kappa (y - \bar{y}) + \cdots\)
 3. **정책 규칙** \(i = f(\pi, y)\) 대입 → **고정점**에서 \(\pi=\pi^*, y=\bar{y}\)가 **국소적으로 안정**하려면 \(\partial i / \partial \pi > 1\) (Taylor principle).
 
-**투자 해석**: \(\pi\) surprise ↑ → **시장이** Taylor \(\Rightarrow i\uparrow\) 를 **가격** → [채권](../03-markets/bonds-fixed-income.md) **듀레이션 손실**, **성장주** 할인율↑.
+**투자 해석| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r_t\) | r t | 본문 §4·위 식 맥락 참고 |
+| \(i_t\) | i t | 본문 §4·위 식 맥락 참고 |
+| \(\pi_{t\) | \pi t | 본문 §4·위 식 맥락 참고 |
+
+**: \(\pi\) surprise ↑ → **시장이** Taylor \(\Rightarrow i\uparrow\) 를 **가격** → [채권](../03-markets/bonds-fixed-income.md) **듀레이션 손실**, **성장주** 할인율↑.
 
 ### 6.3 실질정책금리
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r_t\) | r t | 본문 §4·위 식 맥락 참고 |
+| \(i_t\) | i t | 본문 §4·위 식 맥락 참고 |
+| \(\pi_{t\) | \pi t | 본문 §4·위 식 맥락 참고 |
 
 \[
 r_t^{real} = i_t - \pi_{t+1}^e
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 - **Ex ante** 실질금리: **기대 인플레** \(\pi^e\) 사용(전망·breakeven)
 - **Ex post**: 실현 \(\pi_{t+1}\) — 사후 검증용
 
@@ -251,11 +277,24 @@ r_t^{real} = i_t - \pi_{t+1}^e
 | **≈ 0** | 중립 근처 | [asset-allocation](../04-portfolio/asset-allocation.md) **기본** |
 | **< 0** | 완화적 | **QQQ** tailwind **가능**, 단 **인플레** 리스크 |
 
-**Fisher equation** (장기 균형): \(i \approx r + \pi^e\). **중립금리** \(r^*\) 추정 오류 → “금리를 충분히 올렸는가?” 논쟁(Fed 2024~ **higher for longer**).
+**Fisher equation** (장기 균형): \(i \approx r + \pi^e\). **중립금리** \(r^| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(y_{10}\) | y 10 | 본문 §4·위 식 맥락 참고 |
+| \(P\) | 포트 규모 | 가상 포트폴리오 규모(만 원) |
+| \(D\) | D | 본문 §4·위 식 맥락 참고 |
+| \(E\) | E | 본문 §4·위 식 맥락 참고 |
+
+*\) 추정 오류 → “금리를 충분히 올렸는가?” 논쟁(Fed 2024~ **higher for longer**).
 
 ### 6.4 채권 가격·듀레이션과 정책금리
 
-**1년 zero** 근사: \(\Delta P/P \approx -D \cdot \Delta y\). **Macaulay / Modified duration** \(D\).
+**1년 zero** 근사: \(\Delta P/P \approx -D \cdot \Delta y\). **Macaulay / | 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(y_{10}\) | y 10 | 본문 §4·위 식 맥락 참고 |
+| \(D\) | D | 본문 §4·위 식 맥락 참고 |
+| \(E\) | E | 본문 §4·위 식 맥락 참고 |
+
+Modified duration** \(D\).
 
 10년 국채 \(D \approx 7\)~9, \(\Delta y = +1\%p\) → **가격 ~−7~9%** ([bonds-fixed-income](../03-markets/bonds-fixed-income.md)).
 
@@ -265,12 +304,16 @@ r_t^{real} = i_t - \pi_{t+1}^e
 y_{10} = \underbrace{\mathbb{E}\sum \text{short rates}}_{\text{기대 단기금리 경로}} + \underbrace{\text{term premium}}_{\text{기간 프리미엄}}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **QE**는 주로 **term premium↓** (장기채 **희소성 프리미엄** 축소) + **기대 경로** 신호. **QT**는 역방향 **공급**.
 
 ### 6.5 QQQ·성장주와 할인율 (DCF 직관)
 
 \[ \text{주가} \approx \sum_{t=1}^{T} \frac{CF_t}{(1+r)^{t}} + \frac{TV}{(1+r)^{T}} \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 - **무위험률·실질금리↑** → \(r\uparrow\) → **PV↓** (특히 **먼 미래 CF** 비중 큰 **성장주**)
 - **QQQ**(나스닥100)는 **장기 성장·기술** 비중 → **듀레이션 equity**에 가깝게 **금리 민감** ([macro-06](macro-06-asset-prices-macro.md))
 - **QLD/TQQQ**는 **일일 2×·3×** — 금리 shock 시 **변동성·경로**가 [leveraged-etf](../04-portfolio/leveraged-etf-qqq-qld.md) **붕괴**와 중첩

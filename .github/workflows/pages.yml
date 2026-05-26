@@ -33,6 +33,11 @@ jobs:
       - name: Enrich reader-friendly corpus
         run: python scripts/enrich_corpus.py
 
+      - name: Lint corpus quality
+        run: |
+          python scripts/lint_reader_friendly.py
+          python scripts/lint_corpus_quality.py
+
       - name: Materialize webdocs (dereference symlinks)
         run: python scripts/materialize_webdocs.py
 

@@ -99,14 +99,14 @@
 | 용어 | 한 줄 | 관련 이론 | glossary |
 |------|-------|-----------|----------|
 | 총수익 | 배당·평가 포함 | §4 | [glossary](../00-roadmap/glossary.md#총수익) |
-| 초과수익 | \ | §4 | [glossary](../00-roadmap/glossary.md#초과수익) |
+| 초과수익 | 벤치마크 대비 초과 | §4 | [glossary](../00-roadmap/glossary.md#초과수익) |
 | α | 모델·회귀 초과 | §4 | [glossary](../00-roadmap/glossary.md#α) |
 | β | 시장 민감도 | §4 | [glossary](../00-roadmap/glossary.md#β) |
-| Sharpe | \ | §4 | [glossary](../00-roadmap/glossary.md#sharpe) |
-| Sortino | \ | §4 | [glossary](../00-roadmap/glossary.md#sortino) |
-| Treynor | \ | §4 | [glossary](../00-roadmap/glossary.md#treynor) |
-| TE | \ | §4 | [glossary](../00-roadmap/glossary.md#te) |
-| IR | \ | §4 | [glossary](../00-roadmap/glossary.md#ir) |
+| Sharpe | (Rp−Rf)/σp | §4 | [glossary](../00-roadmap/glossary.md#sharpe) |
+| Sortino | (Rp−Rf)/하방σ | §4 | [glossary](../00-roadmap/glossary.md#sortino) |
+| Treynor | (Rp−Rf)/β | §4 | [glossary](../00-roadmap/glossary.md#treynor) |
+| TE | 추적오차(표준편차) | §4 | [glossary](../00-roadmap/glossary.md#te) |
+| IR | 초과수익/TE | §4 | [glossary](../00-roadmap/glossary.md#ir) |
 | Jensen α | CAPM 회귀 절편 | §4 | [glossary](../00-roadmap/glossary.md#jensen-α) |
 | 벤치마크 | 비교 기준 지수·혼합 | §4 | [glossary](../00-roadmap/glossary.md#벤치마크) |
 | 공액수익 | 기하 누적 | §4 | [glossary](../00-roadmap/glossary.md#공액수익) |
@@ -149,73 +149,156 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(R_\) | R_ | §4·본문 정의 참고 |
-| \(p\) | p | §4·본문 정의 참고 |
-| \(t\) | t | §4·본문 정의 참고 |
-| \(f\) | f | §4·본문 정의 참고 |
-| \(alpha\) | alpha | §4·본문 정의 참고 |
-| \(beta\) | beta | §4·본문 정의 참고 |
-| \(m\) | m | §4·본문 정의 참고 |
-| \(varepsilon\) | varepsilon | §4·본문 정의 참고 |
-
+|  \(R_\)  |  R_  | 본문 §4·위 식 맥락 참고 |
+|  \(p\)  |  p  | 가상 포트폴리오 규모(만 원) |
+|  \(t\)  |  t  | 마지막 CF 시점 |
+|  \(f\)  |  f  | 본문 §4·위 식 맥락 참고 |
+|  \(alpha\)  |  alpha  | 본문 §4·위 식 맥락 참고 |
+|  \(beta\)  |  beta  | 시장 대비 민감도 |
+|  \(m\)  |  m  | 가계 교육용 월 세후 소득 기호 |
+|  \(varepsilon\)  |  varepsilon  | 본문 §4·위 식 맥락 참고 |
 \[
 R_{p,t} - R_{f,t} = \alpha + \beta (R_{m,t} - R_{f,t}) + \varepsilon_t
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **Jensen α** (기간 평균 해석, 교육):
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(R_f\) | 무위험금리 | 국채·예금 등 기준 금리 |
+| \(R\) | R | 기간당 이자·요구수익률 |
 
 \[
 \alpha \approx \bar{R}_p - R_f - \beta (\bar{R}_m - R_f)
 \]
 
-**α>0**: 모델 대비 **초과** — **표본·선택편향** 주의.
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
+**α>0**: 모델 대비| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(S_p\) | S p | 본문 §4·위 식 맥락 참고 |
+| \(R_f}\) | 무위험금리 | 국채·예금 등 기준 금리 |
+| \(gma_p}\) | gma p | 본문 §4·위 식 맥락 참고 |
+| \(R\) | R | 기간당 이자·요구수익률 |
+
+ **초과** — **표본·선택편향** 주의.
 
 ### 6.2 Sharpe (복습·성과 맥락)
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(S_p\) | S p | 본문 §4·위 식 맥락 참고 |
+| \(R_f}\) | 무위험금리 | 국채·예금 등 기준 금리 |
+| \(gma_p}\) | gma p | 본문 §4·위 식 맥락 참고 |
+| \(R\) | R | 기간당 이자·요구수익률 |
 
 \[
 S_p = \frac{\bar{R}_p - R_f}{\sigma_p}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **연환산** (교육, 월 데이터):
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(S_{annual}\) | S annual | 본문 §4·위 식 맥락 참고 |
+| \(r_{f\) | r f | 국채·예금 등 기준 금리 |
+| \(gma_m}\) | gma m | 본문 §4·위 식 맥락 참고 |
 
 \[
 S_{annual} \approx \frac{\bar{r}_m - r_{f,m}}{\sigma_m} \times \sqrt{12}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 (독립·동분포 가정 — 실무는 **기간 일치** 검증.)
 
-**직관**: [portfolio-theory-mpt.md](portfolio-theory-mpt.md) — **총 σ** 페널티.
+**직관**: [por| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(R_f\) | 무위험금리 | 국채·예금 등 기준 금리 |
+| \(gma_d\) | gma d | 본문 §4·위 식 맥락 참고 |
+| \(\sum_{t}\) | \sum t | 본문 §4·위 식 맥락 참고 |
+| \(R_{p\) | R p | 본문 §4·위 식 맥락 참고 |
+| \(R\) | R | 기간당 이자·요구수익률 |
+| \(T\) | 기간 | 마지막 CF 시점 |
+
+tfolio-theory-mpt.md](portfolio-theory-mpt.md) — **총 σ** 페널티.
 
 ### 6.3 Sortino
 
 **하방 편차** (목표 \(MAR\), 보통 \(R_f\)):
 
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(\sigma_d\) | 하방 편차 | 목표 미달 수익만 모은 표준편차 |
+| \(MAR\) | 최소수용수익 | 보통 \(R_f\) |
+| \(R_{p,t}\) | t기 포트 수익 | 기간별 수익률 |
+
 \[
 \sigma_d = \sqrt{\frac{1}{T}\sum_{t} \min(R_{p,t}-MAR, 0)^2}
 \]
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(\bar{R}_p\) | 평균 수익 | 표본 평균 |
+| \(Sortino\) | 소르티노 | (\(\bar{R}_p - MAR\))/\(\sigma_d\) |
 
 \[
 Sortino = \frac{\bar{R}_p - MAR}{\sigma_d}
 \]
 
-**Sharpe vs Sortino**: 상승 **변동**은 Sortino에서 **덜 벌점** — **비대칭** 수익에 유리한 **해석** (과최적화 위험은 동일).
+**읽는 법**: 상승 변동은 Sortino에서 덜 벌점 — 비대칭 수익 해석에 유리(과최적화 위험은 동일).
 
 ### 6.4 Treynor
 
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(R_f}\) | 무위험금리 | 국채·예금 등 기준 금리 |
+| \(eta_p}\) | eta p | 본문 §4·위 식 맥락 참고 |
+| \(R\) | R | 기간당 이자·요구수익률 |
+
 \[
-T_p = \frac{\bar{R}_p - R_f}{\beta_p}
+T_| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(R_f}\) | 무위험금리 | 국채·예금 등 기준 금리 |
+| \(eta_p}\) | eta p | 본문 §4·위 식 맥락 참고 |
+| \(R\) | R | 기간당 이자·요구수익률 |
+
+p = \frac{\bar{R}_p - R_f}{\beta_p}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
+| \(CAPM\) | CAPM | 본문 §4·위 식 맥락 참고 |
+| \(r_{a\) | r a | 본문 §4·위 식 맥락 참고 |
+| \(r_{p\) | r p | 본문 §4·위 식 맥락 참고 |
+| \(r_{b\) | r b | 본문 §4·위 식 맥락 참고 |
+| \(r_a\) | r a | 본문 §4·위 식 맥락 참고 |
+
+육용 기호(M·P·PV 등)로 대입한다.
 **해석**: **체계적 위험 1단위**당 초과. **완전 분산**·**CAPM** 가정 하 **비교** — β≈0 자산 **부적합**.
 
 ### 6.5 추적오차·정보비율
 
 **활성 수익**: \(r_{a,t} = r_{p,t} - r_{b,t}\)
 
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
+| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
+
 \[
 TE = \sigma(r_a), \quad IR = \frac{\bar{r}_a}{TE}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **IR ≈ 0.5** 장기·**지속**은 어렵다는 **경험칙**(교육) — 비용·세금 전 **총액**.
 
 **패시브 코어**: \(\bar{r}_a \approx 0\), **TE 낮음** — [passive-vs-active.md](passive-vs-active.md).
@@ -410,7 +493,7 @@ QQQ 포트를 **KOSPI** 벤치 → α **과대**·**TE 과대** — **잘못된 
 | Sortino | σ 하방 | 비대칭·헤지 | MAR 선택 |
 | Treynor | β | 분산·β 비교 | β≈0 부적 |
 | IR | TE | 액티브·위성 | 벤치 의존 |
-| Calmar | \|MDD\| | 드로다운 민감 | 단기 MDD |
+| Calmar | MDD 절댓값 | 드로다운 민감 | 단기 MDD |
 
 **코어 QQQ+채권**: **Sharpe·MDD** 병행. **위성 섹터**: **IR·TE** + **절대 MDD**.
 

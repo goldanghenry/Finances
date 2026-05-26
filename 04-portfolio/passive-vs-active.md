@@ -181,25 +181,34 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| TER | TER | §4·본문 정의 참고 |
-| ETF | ETF | §4·본문 정의 참고 |
-| approx | approx | §4·본문 정의 참고 |
-| E | E | §4·본문 정의 참고 |
-| alpha | alpha | §4·본문 정의 참고 |
-| quad | quad | §4·본문 정의 참고 |
-| leveraged | leveraged | §4·본문 정의 참고 |
-| etf | etf | §4·본문 정의 참고 |
-
+|  TER  | TER | 본문 §4·위 식 맥락 참고 |
+|  ETF  | ETF | 본문 §4·위 식 맥락 참고 |
+|  approx  | approx | 본문 §4·위 식 맥락 참고 |
+|  E  | E | 본문 §4·위 식 맥락 참고 |
+|  alpha  | alpha | 본문 §4·위 식 맥락 참고 |
+|  quad  | quad | 본문 §4·위 식 맥락 참고 |
+|  leveraged  | leveraged | 본문 §4·위 식 맥락 참고 |
+|  etf  | etf | 본문 §4·위 식 맥락 참고 |
 \[
 \text{순수익} \approx \text{시장수익} - \text{비용(TER+세금+수수료)} - \text{행동 오류}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **액티브 기대값** (교육적):
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
+| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
 
 \[
 E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 → 코어는 **α 추구 포기**, **비용·오류 최소화**.
 
 **해당 없음**: 일일 리셋 레버리지 — [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md).
@@ -354,8 +363,5 @@ E[\alpha] \approx 0 - \text{비용} \quad \text{(대다수 참가자)}
 ??? note "정답 힌트"
 
     1. 시장−비용 · 2. 아니오 · 3. 금지 · 4. ISA·IRP · 5. 집중·행동 오류
-
-
-
 
 

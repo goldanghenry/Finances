@@ -218,19 +218,20 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| S | S | §4·본문 정의 참고 |
-| t | t | §4·본문 정의 참고 |
-| ISA | ISA | §4·본문 정의 참고 |
-| T | T | §4·본문 정의 참고 |
-| free | free | §4·본문 정의 참고 |
-| left | left | §4·본문 정의 참고 |
-| right | right | §4·본문 정의 참고 |
-| isa | isa | §4·본문 정의 참고 |
-
+|  S  | S | 소득 대비 남는 비율 |
+|  t  | 기간 | 마지막 CF 시점 |
+|  ISA  | ISA | 본문 §4·위 식 맥락 참고 |
+|  T  | 기간 | 마지막 CF 시점 |
+|  free  | free | 본문 §4·위 식 맥락 참고 |
+|  left  | left | 본문 §4·위 식 맥락 참고 |
+|  right  | right | 본문 §4·위 식 맥락 참고 |
+|  isa  | isa | 본문 §4·위 식 맥락 참고 |
 \[
 T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 \(S_t\): 해당 연도 **금융투자소득**(통산 후). 초과분 **9.9%** 분리과세(일반형). 서민형·2026 안은 [isa.md](isa.md) 표 참조.
 
 **해당 없음**: 복리·DCM 등은 [time-value-npv-irr.md](../01-foundations/time-value-npv-irr.md).

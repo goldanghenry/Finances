@@ -202,24 +202,33 @@ flowchart TB
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(pi\) | pi | §4·본문 정의 참고 |
-| \(bit growth\) | bit growth | §4·본문 정의 참고 |
+|  \(pi\)  |  pi  | 물가 상승률 |
+|  \(bit growth\)  |  bit growth  | 본문 §4·위 식 맥락 참고 |
 | \(ASP\) | 평균판매단가 | 메모리 **수익성** |
-| \(fixed cost\) | fixed cost | §4·본문 정의 참고 |
-| \(variable cost\) | variable cost | §4·본문 정의 참고 |
-
+|  \(fixed cost\)  |  fixed cost  | 본문 §4·위 식 맥락 참고 |
+|  \(variable cost\)  |  variable cost  | 본문 §4·위 식 맥락 참고 |
 \[
 \pi \approx (\text{bit growth}) \times (\text{ASP}) - (\text{fixed cost}) - (\text{variable cost})
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 - **bit growth** ↑ + **ASP** ↓ = **허위 성장** — [financial-statements-intro.md](../../01-foundations/financial-statements-intro.md)
 
 **HBM attach rate (교육)**:
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
+| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
 
 \[
 \text{HBM 수요} \propto (\text{GPU 출하}) \times (\text{HBM capacity per GPU}) \times (\text{attach rate})
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 - GPU 1장당 HBM **용량·층수** ↑ = **구조적 tailwind**
 
 **장비 주문 vs CAPEX lag**:
@@ -413,4 +422,3 @@ flowchart TB
     6. **아니오**  
     7. **출하는 늘지만 가격·마진 악화**  
     8. **500만 원**
-

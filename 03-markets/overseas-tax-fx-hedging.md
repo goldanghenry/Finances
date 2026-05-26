@@ -241,45 +241,92 @@ flowchart TD
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(R_\) | R_ | §4·본문 정의 참고 |
-| \(KRW, unhedged\) | KRW, unhedged | §4·본문 정의 참고 |
-| \(USD asset\) | USD asset | §4·본문 정의 참고 |
-| \(FX\) | FX | §4·본문 정의 참고 |
-
+|  \(R_\)  |  R_  | 본문 §4·위 식 맥락 참고 |
+|  \(KRW, unhedged\)  |  KRW, unhedged  | 본문 §4·위 식 맥락 참고 |
+|  \(USD asset\)  |  USD asset  | 본문 §4·위 식 맥락 참고 |
+|  \(FX\)  |  FX  | 본문 §4·위 식 맥락 참고 |
 \[
 R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) - 1
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 - \(R_{\text{USD asset}}\): 달러 표시 **주가·배당 포함** 수익(단순화)
 - \(R_{\text{FX}}\): 원/달러 **상승 = 원화 약세**일 때 양(+) — 달러 자산의 **원화 가치** 상승 요인
 
 **분해**(1차 근사):
 
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(R_{\text{KRW}}\) | R \textKRW | 본문 §4·위 식 맥락 참고 |
+| \(R_{\text{USDasset}}\) | R \textUSDasset | 본문 §4·위 식 맥락 참고 |
+| \(R_{\text{FX}}\) | R \textFX | 본문 §4·위 식 맥락 참고 |
+
 \[
 R_{\text{KRW}} \approx R_{\text{USD asset}} + R_{\text{FX}} + R_{\text{USD asset}} \cdot R_{\text{FX}}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 교차항 \(R_{\text{USD asset}} \cdot R_{\text{FX}}\)는 **동시 변동**이 클 때 무시하기 어렵다 — 2022~2023 교육 사례에서 **주가↓·달러↑**가 **상쇄**된 패턴 학습.
 
 ### 6.2 헷지 ETF — 교육용 분해
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(R_{\text{USDasset}}\) | R \textUSDasset | 본문 §4·위 식 맥락 참고 |
+| \(c_{\text{hedge}}\) | c \texthedge | 본문 §4·위 식 맥락 참고 |
+| \(f_{\text{TER}}\) | f \textTER | 본문 §4·위 식 맥락 참고 |
+| \(\delta_{\text{repl}}\) | \delta \textrepl | 본문 §4·위 식 맥락 참고 |
+| \(TER\) | TER | 본문 §4·위 식 맥락 참고 |
 
 \[
 R_{\text{KRW, hedged}} \approx R_{\text{USD asset}} - c_{\text{hedge}} - f_{\text{TER}} - \delta_{\text{repl}}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 - \(c_{\text{hedge}}\): **금리차·basis·롤** — 원화 금리 > 달러 금리면 **양(+) 비용** 경향(교육, 시점 의존)
-- \(f_{\text{TER}}\): 총보수 — 헷지 ETF가 **비헷지보다 TER 높은** 경우 多
+- \(f_{\text{TER}}\): 총보수 — 헷지 | 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(\delta_{\text{repl}}\) | \delta \textrepl | 본문 §4·위 식 맥락 참고 |
+| \(D_{\text{gross}}\) | D \textgross | 본문 §4·위 식 맥락 참고 |
+| \(\tau_{\text{WHT}}\) | \tau \textWHT | 본문 §4·위 식 맥락 참고 |
+| \(TER\) | TER | 본문 §4·위 식 맥락 참고 |
+| \(W\) | W | 본문 §4·위 식 맥락 참고 |
+| \(D\) | D | 본문 §4·위 식 맥락 참고 |
+
+ETF가 **비헷지보다 TER 높은** 경우 多
 - \(\delta_{\text{repl}}\): 복제·샘플링·원천 — [etf-index-funds-deep](etf-index-funds-deep.md)
 
 **헷지 ≠ 0% 환 노출**: **잔여 노출**(헷지 ratio <100%, 재balancing lag, dividend FX) 존재.
 
 ### 6.3 W-8BEN — 배당 세후 (교육, 단순)
 
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(D_{\text{gross}}\) | D \textgross | 본문 §4·위 식 맥락 참고 |
+| \(\tau_{\text{WHT}}\) | \tau \textWHT | 본문 §4·위 식 맥락 참고 |
+| \(D\) | D | 본문 §4·위 식 맥락 참고 |
+
 \[
-D_{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
+D_| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(D_{\text{gross}}\) | D \textgross | 본문 §4·위 식 맥락 참고 |
+| \(\tau_{\text{WHT}}\) | \tau \textWHT | 본문 §4·위 식 맥락 참고 |
+
+{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 \]
 
-- \(\tau_{\text{WHT}} = 15\%\) (W-8BEN·조약 자격, 교육) vs \(30\%\) (미적용)
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
+- \(\tau_{\text{WHT}} = 15\%\) (W-8BEN·조약 자격, 교육) vs \(30| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
+| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
+
+\%\) (미적용)
 
 **한국 레이어**(별도):
 
@@ -287,18 +334,36 @@ D_{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 \text{추가 국내 부담} = f(\text{금융소득 합계}, \text{ISA 여부}, \text{§57 FTC})
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 — [Part2](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md).
 
 ### 6.4 양도차익 — 환율 (Part1 연결)
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(P_{\text{sell,KRW}}\) | P \textsell,KRW | 본문 §4·위 식 맥락 참고 |
+| \(P_{\text{buy,KRW}}\) | P \textbuy,KRW | 본문 §4·위 식 맥락 참고 |
 
 \[
 \text{차익}_{\text{원화}} = P_{\text{sell,KRW}} - P_{\text{buy,KRW}} - \text{비용}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(P_{\text{buy,KRW}}\) | P \textbuy,KRW | 본문 §4·위 식 맥락 참고 |
+| \(e_{\text{buy}}\) | e \textbuy | 본문 §4·위 식 맥락 참고 |
+| \(P_{\text{sell,KRW}}\) | P \textsell,KRW | 본문 §4·위 식 맥락 참고 |
+| \(e_{\text{sell}}\) | e \textsell | 본문 §4·위 식 맥락 참고 |
+
 \[
 P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sell,KRW}} = \text{USD amount} \times e_{\text{sell}}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **교육**: \(e_{\text{sell}} > e_{\text{buy}}\) (원화 약세)이면 **주가 변동 0**이어도 **원화 차익** 가능 — [Part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md).
 
 ---

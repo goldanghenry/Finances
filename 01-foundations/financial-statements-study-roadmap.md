@@ -22,6 +22,8 @@
 | **복습 한 줄** | — |
 
 
+
+> **가상 사례 회사**: 본 Phase 재무제표 심화 편은 **「가상 주식회사 한빛전자」** (가상의 코스피 제조·전자 부품) 숫자로 3표·DART·FCF를 **같은 스레드**로 읽는다. 실제 종목·실적이 아니다.
 ## TL;DR
 
 1. **12주**로 [financial-statements-intro](financial-statements-intro.md) → [financial-statements-analysis](financial-statements-analysis.md) → [cash-flow-statement-fcf](cash-flow-statement-fcf.md) → [reading-annual-reports-dart](reading-annual-reports-dart.md) → [equity-valuation-fundamentals](../03-markets/equity-valuation-fundamentals.md) 연결.
@@ -156,28 +158,45 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(ROE\) | ROE | §4·본문 정의 참고 |
-| \(Net Income\) | Net Income | §4·본문 정의 참고 |
-| \(Sales\) | Sales | §4·본문 정의 참고 |
-| \(Assets\) | Assets | §4·본문 정의 참고 |
-| \(Equity\) | Equity | §4·본문 정의 참고 |
-
+|  \(ROE\)  |  ROE  | 본문 §4·위 식 맥락 참고 |
+|  \(Net Income\)  |  Net Income  | 본문 §4·위 식 맥락 참고 |
+|  \(Sales\)  |  Sales  | 본문 §4·위 식 맥락 참고 |
+|  \(Assets\)  |  Assets  | 본문 §4·위 식 맥락 참고 |
+|  \(Equity\)  |  Equity  | 본문 §4·위 식 맥락 참고 |
 \[
 ROE = \frac{\text{Net Income}}{\text{Sales}} \times \frac{\text{Sales}}{\text{Assets}} \times \frac{\text{Assets}}{\text{Equity}}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **FCF (Week 7)**:
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(FCF\) | 잉여현금흐름 | 투자자에게 가용한 현금 |
+| \(OCF\) | 영업현금흐름 | 영업활동에서 발생한 현금 |
 
 \[
 FCF = OCF - CapEx
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **상대밸류 (Week 12, 교육용)**:
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(EPS\) | 주당순이익 | 순이익 ÷ 발행주식수 |
+| \(P\) | 포트 규모 | 가상 포트폴리오 규모(만 원) |
+| \(E\) | E | 본문 §4·위 식 맥락 참고 |
+| \(B\) | B | 본문 §4·위 식 맥락 참고 |
 
 \[
 P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 해당 없음: 복잡 DCF는 [time-value-npv-irr](time-value-npv-irr.md) 이후.
 
 ---

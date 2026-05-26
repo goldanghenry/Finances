@@ -128,22 +128,30 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(w_{\text{risk}\) | w_{\text{risk} | §4·본문 정의 참고 |
-| \(V_\) | V_ | §4·본문 정의 참고 |
-| \(stock ETF\) | stock ETF | §4·본문 정의 참고 |
-| \(total\) | total | §4·본문 정의 참고 |
-| \(leq\) | leq | §4·본문 정의 참고 |
-
+|  \(w_{\text{risk}\)  |  w_{\text{risk}  | 본문 §4·위 식 맥락 참고 |
+|  \(V_\)  |  V_  | 본문 §4·위 식 맥락 참고 |
+|  \(stock ETF\)  |  stock ETF  | 본문 §4·위 식 맥락 참고 |
+|  \(total\)  |  total  | 본문 §4·위 식 맥락 참고 |
+|  \(leq\)  |  leq  | 본문 §4·위 식 맥락 참고 |
 \[
 w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **추가납입 절세**(2026 보도, 가상):
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(P_{\text{add}}\) | P \textadd | 본문 §4·위 식 맥락 참고 |
+| \(r_{\text{deduction}}\) | r \textdeduction | 본문 §4·위 식 맥락 참고 |
 
 \[
 \text{절세} \approx \min(P_{\text{add}}, 3{,}000{,}000) \times r_{\text{deduction}}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 ---
 
 ## 7. 한국 적용
@@ -355,4 +363,3 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 ??? note "정답 힌트"
 
     1. 가입자 · 2. 70% · 3. 아니오 · 4. 비권장 · 5. 제도 전환·이중 가능(회사별) — 회사 확인
-

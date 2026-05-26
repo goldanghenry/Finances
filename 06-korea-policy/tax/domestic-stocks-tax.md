@@ -116,20 +116,29 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(T_\) | T_ | §4·본문 정의 참고 |
-| \(domestic CGT\) | domestic CGT | §4·본문 정의 참고 |
-| \(비과세\) | 비과세 | §4·본문 정의 참고 |
-
+|  \(T_\)  |  T_  | 본문 §4·위 식 맥락 참고 |
+|  \(domestic CGT\)  |  domestic CGT  | 본문 §4·위 식 맥락 참고 |
+|  \(비과세\)  |  비과세  | 본문 §4·위 식 맥락 참고 |
 \[
 T_{\text{domestic CGT}} = 0 \quad (\text{비과세})
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 배당 (금융소득 합산):
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(D_{\text{domestic}}\) | D \textdomestic | 본문 §4·위 식 맥락 참고 |
+| \(D_{\text{foreign}}\) | D \textforeign | 본문 §4·위 식 맥락 참고 |
+| \(I\) | I | 본문 §4·위 식 맥락 참고 |
 
 \[
 Fin = D_{\text{domestic}} + D_{\text{foreign}} + I + \cdots
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 ---
 
 ## 7. 한국 적용
@@ -175,8 +184,7 @@ NXT로 체결해도 **상장주식·계좌 규칙**은 위와 같습니다. “N
 |------|---------------------------|-------------|
 | 국내 매매차익 | **비과세** 원칙 | **별도** — 전문가 확인 |
 | 금융투자소득세 | **유예** 보도(2026) | 시행 시 **별도** 추적 |
-| 본 저장소 기본 독자 | **후자** 문서 + [investment-tax-overview](investment-tax-overview.md) | |
-
+|  본 저장소 기본 독자  |  **후자** 문서 + [investment-tax-overview](investment-tax-overview.md)  | 본문 §4·위 식 맥락 참고 |
 **법·정책 근거**: 소득세법, 국세청 안내, [korea-ats-nextrade](../../03-markets/korea-ats-nextrade.md).
 
 ---
@@ -336,4 +344,3 @@ NXT로 체결해도 **상장주식·계좌 규칙**은 위와 같습니다. “N
 ??? note "정답 힌트"
 
     1. 비과세 원칙 · 2. 금융소득 · 3. part1-cgt · 4. ISA 세제 · 5. 해외는 양도세
-

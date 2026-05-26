@@ -42,10 +42,6 @@
 
 | 함정 | 플레이북 대응 |
 |------|----------------|
-
-!!! info "ETF"
-    지수·자산 **바구니**를 한 종목처럼 거래
-
 | “GPU 밸류체인을 안다” → **개별주 올인** | 코어 **지수 ETF** + 위성 **≤20%** — [core-satellite-framework](../04-portfolio/core-satellite-framework.md) |
 | 뉴스·논문만 보고 **매매** | **주간 거시 체크** + **분기 리밸런싱**만 — 감정 배제 |
 | DB 가입자인데 **ETF를 DB에서** 찾음 | DB는 **회사 운용** — [db-pension](../06-korea-policy/db-pension.md) · ISA/IRP 분리 |
@@ -126,9 +122,9 @@ flowchart LR
 
 | 기간 | 학습 초점 | 실행(가상) | 산출물 |
 |------|-----------|------------|--------|
-| **1~2월** | [macroeconomics-basics](../02-economics/macroeconomics-basics.md), [macro-01](../02-economics/macro-01-gdp-accounts-growth.md), [macro-04](../02-economics/macro-04-monetary-policy-qe.md), [etf-index-funds](../03-markets/etf-index-funds.md), [isa](../06-korea-policy/isa.md), [db-pension](../06-korea-policy/db-pension.md) | 계좌 **지도** 작성(가상) | **주간 거시 체크리스트** v1 |
-| **3~4월** | [rebalancing-and-dca](../04-portfolio/rebalancing-and-dca.md), [asset-allocation](../04-portfolio/asset-allocation.md), [passive-vs-active](../04-portfolio/passive-vs-active.md) | **M·α_ISA·α_P·α_G** 배분 시뮬 | DCA·밴드 규칙 1페이지 |
-| **5~6월** | [financial-statements-study-roadmap](../01-foundations/financial-statements-study-roadmap.md) 전편 | DART **1개 기업** 연습(가상 티커) | 3표+주석 **1페이지 노트** |
+| **1~2월** | [macroeconomics-basics](../02-economics/macroeconomics-basics.md) §0~§7, [macro-01](../02-economics/macro-01-gdp-accounts-growth.md) §6, [macro-04](../02-economics/macro-04-monetary-policy-qe.md) §8, [etf-index-funds](../03-markets/etf-index-funds.md) §5~§8, [isa](../06-korea-policy/isa.md) §7, [db-pension](../06-korea-policy/db-pension.md) §6 | 계좌 **지도** 작성(가상) | **주간 거시 체크리스트** v1 |
+| **3~4월** | [rebalancing-and-dca](../04-portfolio/rebalancing-and-dca.md) §6~§8, [asset-allocation](../04-portfolio/asset-allocation.md) §8, [passive-vs-active](../04-portfolio/passive-vs-active.md) §10 | **M·α_ISA·α_P·α_G** 배분 시뮬 — 본 편 §6 | DCA·밴드 규칙 1페이지 |
+| **5~6월** | [financial-statements-study-roadmap](../01-foundations/financial-statements-study-roadmap.md) + [intro](../01-foundations/financial-statements-intro.md) §6~§8 (한빛전자) | DART **1개 기업** 연습(가상) | 3표+주석 **1페이지 노트** |
 | **7~8월** | [semiconductor](../03-markets/sectors/semiconductor.md), [ai-infrastructure](../03-markets/sectors/ai-infrastructure.md) | 위성 **테마 맵** | GPU·HBM **밸류체인** 다이어그램 |
 | **9~10월** | [power-grid-electrification](../03-markets/sectors/power-grid-electrification.md), 클라우드·DC 전력 | 코어 vs 위성 **비중표** | 전력·DC **리스크 체크** |
 | **11~12월** | [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md), [portfolio-theory-mpt](../04-portfolio/portfolio-theory-mpt.md) 입문 | **연간 리밸런싱** 시뮬 | IPS 초안(가상) |
@@ -162,15 +158,14 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(alpha\) | alpha | §4·본문 정의 참고 |
+|  \(alpha\)  |  alpha  | 본문 §4·위 식 맥락 참고 |
 | \(ISA\) | Individual Savings Account | 개인종합자산관리계좌 |
-| \(P\) | P | §4·본문 정의 참고 |
-| \(G\) | G | §4·본문 정의 참고 |
-| \(월\) | 월 | §4·본문 정의 참고 |
-| \(cdot\) | cdot | §4·본문 정의 참고 |
-| \(M\) | M | §4·본문 정의 참고 |
-| \(연금\) | 연금 | §4·본문 정의 참고 |
-
+|  \(P\)  |  P  | 가상 포트폴리오 규모(만 원) |
+|  \(G\)  |  G  | 본문 §4·위 식 맥락 참고 |
+|  \(월\)  |  월  | 본문 §4·위 식 맥락 참고 |
+|  \(cdot\)  |  cdot  | 본문 §4·위 식 맥락 참고 |
+|  \(M\)  |  M  | 가계 교육용 월 세후 소득 기호 |
+|  \(연금\)  |  연금  | 본문 §4·위 식 맥락 참고 |
 \[
 \alpha_\text{ISA}+\alpha_\text{P}+\alpha_\text{G}=1,\quad
 \text{ISA}_\text{월}=\alpha_\text{ISA}\cdot M,\quad
@@ -178,6 +173,8 @@ flowchart LR
 \text{일반}_\text{월}=\alpha_\text{G}\cdot M
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **교육용 비율(고정 아님)**: \(\alpha_\text{ISA}=0.50,\ \alpha_\text{P}=0.30,\ \alpha_\text{G}=0.20\).
 
 | 슬롯 | 비율 | 가상 용도 | bucket |

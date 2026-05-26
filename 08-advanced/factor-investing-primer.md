@@ -111,19 +111,20 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| Fama | Fama | §4·본문 정의 참고 |
-| French | French | §4·본문 정의 참고 |
-| R | R | §4·본문 정의 참고 |
-| i | i | §4·본문 정의 참고 |
-| f | f | §4·본문 정의 참고 |
-| alpha | alpha | §4·본문 정의 참고 |
-| mkt | mkt | §4·본문 정의 참고 |
-| m | m | §4·본문 정의 참고 |
-
+|  Fama  | Fama | 본문 §4·위 식 맥락 참고 |
+|  French  | French | 본문 §4·위 식 맥락 참고 |
+|  R  | R | 기간당 이자·요구수익률 |
+|  i  | i | 본문 §4·위 식 맥락 참고 |
+|  f  | f | 본문 §4·위 식 맥락 참고 |
+|  alpha  | alpha | 본문 §4·위 식 맥락 참고 |
+|  mkt  | mkt | 본문 §4·위 식 맥락 참고 |
+|  m  | 월 실수령 | 가계 교육용 월 세후 소득 기호 |
 \[
 R_i - R_f = \alpha + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}}\text{SMB} + \beta_{\text{HML}}\text{HML} + \epsilon
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **해당 없음** 심화: 5요인·Carhart 모멘텀.
 
 ---

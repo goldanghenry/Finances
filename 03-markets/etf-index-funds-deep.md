@@ -178,15 +178,14 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(r_{\mathrm{ETF}\) | r_{\mathrm{ETF} | §4·본문 정의 참고 |
-| \(r_{\mathrm{index}\) | r_{\mathrm{index} | §4·본문 정의 참고 |
-| \((TR 또는 PR 규격)\) | (TR 또는 PR 규격) | §4·본문 정의 참고 |
-| \(f_{\mathrm{TER}\) | f_{\mathrm{TER} | §4·본문 정의 참고 |
-| \((연율 근사)\) | (연율 근사) | §4·본문 정의 참고 |
-| \(c_{\mathrm{tx}\) | c_{\mathrm{tx} | §4·본문 정의 참고 |
-| \((거래·스프레드·FX)\) | (거래·스프레드·FX) | §4·본문 정의 참고 |
-| \(delta\) | delta | §4·본문 정의 참고 |
-
+|  \(r_{\mathrm{ETF}\)  |  r_{\mathrm{ETF}  | 본문 §4·위 식 맥락 참고 |
+|  \(r_{\mathrm{index}\)  |  r_{\mathrm{index}  | 본문 §4·위 식 맥락 참고 |
+|  \((TR 또는 PR 규격)\)  |  (TR 또는 PR 규격)  | 본문 §4·위 식 맥락 참고 |
+|  \(f_{\mathrm{TER}\)  |  f_{\mathrm{TER}  | 본문 §4·위 식 맥락 참고 |
+|  \((연율 근사)\)  |  (연율 근사)  | 본문 §4·위 식 맥락 참고 |
+|  \(c_{\mathrm{tx}\)  |  c_{\mathrm{tx}  | 본문 §4·위 식 맥락 참고 |
+|  \((거래·스프레드·FX)\)  |  (거래·스프레드·FX)  | 본문 §4·위 식 맥락 참고 |
+|  \(delta\)  |  delta  | 본문 §4·위 식 맥락 참고 |
 \[
 r_{\mathrm{ETF}} \approx r_{\mathrm{index}}^{\mathrm{(TR 또는 PR 규격)}} 
 - f_{\mathrm{TER}}^{\mathrm{(연율 근사)}}
@@ -196,14 +195,24 @@ r_{\mathrm{ETF}} \approx r_{\mathrm{index}}^{\mathrm{(TR 또는 PR 규격)}}
 - \delta_{\mathrm{tax/WHT}}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 여기 \(\delta_{\mathrm{cash}}\)는 **현금 버퍼**·예탁금 수익·기준금리 스프레드, \(\delta_{\mathrm{tax/WHT}}\)는 **현지 원천**·외환 헷지 이자 비용, \(\delta_{\mathrm{sample}}\)은 **종목 교체 레그** 차이다.
 
 **괴리율 교육 정의**(정의 따라 상이하지만 패턴 학습 목적):
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
+| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
 
 \[
 \mathrm{premium}=\frac{P_{\mathrm{mkt}}- \widehat{NAV}}{ \widehat{NAV}}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 \(\widehat{NAV}\)는 공시 IOPV 또는 운용사 추정 장중 순자추정치 — **종목 정지**(해외)·**통화 헷지** 구간에서는 추정 불확실도가 증폭된다.
 
 ---

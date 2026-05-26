@@ -187,25 +187,39 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(T_\) | T_ | §4·본문 정의 참고 |
-| \(week\) | week | §4·본문 정의 참고 |
-| \(read\) | read | §4·본문 정의 참고 |
-| \(note\) | note | §4·본문 정의 참고 |
-| \(quiz\) | quiz | §4·본문 정의 참고 |
-| \(~\) | ~ | §4·본문 정의 참고 |
-| \(시간\) | 시간 | §4·본문 정의 참고 |
-
+|  \(T_\)  |  T_  | 본문 §4·위 식 맥락 참고 |
+|  \(week\)  |  week  | 본문 §4·위 식 맥락 참고 |
+|  \(read\)  |  read  | 본문 §4·위 식 맥락 참고 |
+|  \(note\)  |  note  | 본문 §4·위 식 맥락 참고 |
+|  \(quiz\)  |  quiz  | 본문 §4·위 식 맥락 참고 |
+|  \(~\)  |  ~  | 본문 §4·위 식 맥락 참고 |
+|  \(시간\)  |  시간  | 본문 §4·위 식 맥락 참고 |
 \[
 T_{\text{week}} = T_{\text{read}} + T_{\text{note}} + T_{\text{quiz}} \approx 5\text{~}8\ \text{시간}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 **9주 총**:
+
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
+| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
 
 \[
 T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1학기}
 \]
 
-**포트 배분 (교육, Week 9 산출)**:
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
+*| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+| \(B\) | B | 본문 §4·위 식 맥락 참고 |
+| \(C\) | 지출 | 기간 총 현금 유출 |
+
+*포트 배분 (교육, Week 9 산출)**:
 
 | | 최소 | 최대 |
 |--|------|------|
@@ -218,6 +232,8 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 \text{학습 ROI} \approx \frac{\text{리스크 인지·의사결정 품질}}{\text{45~72h}} + \text{인적자본 시너지}
 \]
 
+
+**읽는 법**: 위 식의 기호는 바로 위 변수표와 같다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호(M·P·PV 등)로 대입한다.
 — **알파 보장 아님**.
 
 ---
@@ -392,8 +408,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 | 2 | [time-horizon-and-buckets.md](../../04-portfolio/time-horizon-and-buckets.md) | Bucket |
 | 3 | DB/ISA — [db-pension.md](../../06-korea-policy/db-pension.md), [isa.md](../../06-korea-policy/isa.md) | 2a/2b |
 | 4 | [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md) | 3/4 |
-| 5 | **산출**: 본인 bucket 표 1장 | |
-
+|  5  |  **산출**: 본인 bucket 표 1장  | 본문 §4·위 식 맥락 참고 |
 ### Week 2 — 반도체
 
 | 체크 | 내용 |
