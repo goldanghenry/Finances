@@ -118,6 +118,17 @@ def already_has_box(text: str, term: str) -> bool:
     return bool(pat.search(text))
 
 
+def inside_admonition(text: str, pos: int) -> bool:
+    """True if pos falls inside an existing !!! info block body."""
+    before = text[:pos]
+    headers = list(re.finditer(r"^!!! .+$", before, re.M))
+    if not headers:
+        return False
+    last = headers[-1]
+    after_header = text[last.end() : pos]
+    return "\n" in after_header and not re.search(r"^##+ ", after_header, re.M)
+
+
 def section1_body(text: str) -> tuple[int, int, str]:
     m = re.search(r"^## 1\.[^\n]*\n", text, re.M)
     if not m:
@@ -165,7 +176,12 @@ def insert_boxes(text: str, path: Path) -> tuple[str, bool]:
             line_end = len(new_body)
         current_line = new_body[line_start:line_end]
         prefix = new_body[line_start:pos]
+        abs_pos = start + pos
+        if inside_admonition(text, abs_pos):
+            continue
         if prefix.strip().startswith("!") or prefix.strip().startswith("|"):
+            continue
+        if current_line.startswith("    ") or current_line.startswith("\t"):
             continue
         if current_line.strip().startswith("|"):
             continue
