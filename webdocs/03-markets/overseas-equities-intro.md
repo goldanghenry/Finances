@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **미국 직접**(QQQ·VOO 등): **달러·미국 장시간·양도세·배당** 규칙이 국내와 다르다.
@@ -30,7 +29,6 @@
 4. 해외주식 세금은 **[part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md)~[part3](../06-korea-policy/tax/overseas-stocks-tax-part3-scenarios.md)** 필수.
 5. [지역 분산](../04-portfolio/geographic-diversification.md)과 함께 **한국·미국·환율**을 동시에 본다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -42,7 +40,6 @@
 
 **왜 중요한가**: 코어로 **미국 성장·글로벌 분산**을 둘 때 가장 흔한 경로다. “QQQ 샀다” 한 줄 뒤에 **환율·5월 신고·ISA 3년·장 시간**이 붙는다. 이를 모르면 **세금·행동(FOMO)** 에서 손실이 난다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -59,7 +56,6 @@
 - [지역 분산](../04-portfolio/geographic-diversification.md)
 - [FOMO·거래시간](../05-behavioral/fomo-and-trading-hours.md)
 
----
 
 ## 3. 직관·비유
 
@@ -77,7 +73,6 @@
 
 **DB·DC와 혼동 금지**: 회사 퇴직연금으로 QQQ를 살 수 없는 경우가 많다. 해외 코어는 **개인 ISA·IRP·일반**에서 설계 — [db-pension](../06-korea-policy/db-pension.md), [dc-pension](../06-korea-policy/dc-pension.md).
 
----
 
 ## 4. 정식 개념·용어
 
@@ -116,7 +111,6 @@
 - **[지역 분산](../04-portfolio/geographic-diversification.md)** — 미국 코어만으로는 지역 분산 부족
 - **[FOMO·거래시간](../05-behavioral/fomo-and-trading-hours.md)** — 환전·장시간 타이밍 함정
 
----
 
 ## 5. 메커니즘
 
@@ -159,14 +153,13 @@ flowchart LR
 | 국내 래핑 | KRW | 국내 ETF 규칙 + 분배 | **한국 장** |
 | ISA | KRW/USD | 비과세 한도·기간 | 계좌 규칙 |
 
----
-
 ## 6. 수식·모델
 
 **원화 총수익** (1종목, 근사):
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 R_{\text{원화}} \approx (1 + R_{\text{주가}})(1 + R_{\text{FX}}) - 1
 \]
@@ -188,7 +181,9 @@ R_{\text{원화}} \approx (1 + R_{\text{주가}})(1 + R_{\text{FX}}) - 1
 \]
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.세율·공제·신고는 **[part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md)** — 본 문서는 **개념만**.
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+세율·공제·신고는 **[part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md)** — 본 문서는 **개념만**.
 
 **ISA 비과세**: 한도·기간 내 **분리과세·비과세** — [isa](../06-korea-policy/isa.md)
 
@@ -199,6 +194,7 @@ R_{\text{원화}} \approx (1 + R_{\text{주가}})(1 + R_{\text{FX}}) - 1
 ### 6.2 브로커·경로 비교 (교육용)
 
 | 경로 | 장점 | 단점 |
+|------|------|----------------|
 | 국내 증권 해외주문 | 원화 입출금·한국어 | 환전 스프레드·수수료 |
 | 미국 브로커 | 현지 상품·시간 | 계좌·세무·송금 복잡 |
 | 국내 래핑 ETF | 원화·한국 장 | 환헷지·보수 |
@@ -207,7 +203,7 @@ R_{\text{원화}} \approx (1 + R_{\text{주가}})(1 + R_{\text{FX}}) - 1
 
 출금·한국어 | 환전 스프레드·수수료 |---
 
----## 7. 한국 적용
+## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정·일반적 맥락)
 
@@ -247,8 +243,6 @@ R_{\text{원화}} \approx (1 + R_{\text{주가}})(1 + R_{\text{FX}}) - 1
 | 1~4월 | 전년 **양도·배당** 정리 |
 | **5월** | 종합소득세 **신고** (해외주 양도 등) — [part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) |
 | 수시 | W-8BEN·환율·ISA 만기 |
-
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -300,7 +294,6 @@ R_{\text{원화}} \approx (1 + R_{\text{주가}})(1 + R_{\text{FX}}) - 1
 | 연말 매도 차익 | **M** |
 | 신고 | [part2](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md) + [part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) |
 
----
 ## 9. FAQ
 
 **Q1. KODEX 미국 S&P vs VOO?**  
@@ -327,7 +320,6 @@ R_{\text{원화}} \approx (1 + R_{\text{주가}})(1 + R_{\text{FX}}) - 1
 **Q8. 환헷지 ETF는 언제?**  
 **A.** 원화 **강세**가 예상될 때 직접 달러 노출을 줄이고 싶을 **수** 있음 — 항상 유리하지 않음.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -373,8 +365,6 @@ R_{\text{원화}} \approx (1 + R_{\text{주가}})(1 + R_{\text{FX}}) - 1
 | [part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) | 양도세 | 매도 전 |
 | [part2](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md) | 배당 | 분배금 받을 때 |
 | [part3](../06-korea-policy/tax/overseas-stocks-tax-part3-scenarios.md) | 통합 시나리오 | 연초 계획 |
-
----
 
 ## 12. 스스로 점검 퀴즈
 

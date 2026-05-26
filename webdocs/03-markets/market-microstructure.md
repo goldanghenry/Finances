@@ -21,8 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
-
 ## TL;DR
 
 1. **시장 미시구조**는 **가격이 어떻게 형성·체결**되는지(호가·스프레드·유동성)를 다룬다 — **펀더멘털**과 **별도** 축.
@@ -32,7 +30,6 @@
 5. **HFT**는 **초단기**·**고빈도** — **개인**과 **비대칭** **속도·정보**; **교육**은 **비용·리스크** 인식.
 6. **한국 KRX vs NXT(ATS)** — [korea-ats-nextrade](korea-ats-nextrade.md); **개인**은 **체결·수수료·행동**에 **영향**.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -40,7 +37,6 @@
 
 **왜 중요한가**: **IV**가 10만 원이어도 **스프레드 2%**·**충격 3%**면 **실현** 가격은 **다르다**. **NXT 야간**·**시장가**·**소형주**는 **미시 비용**이 **수익**을 **삼킨다**. [밸류에이션](equity-valuation-fundamentals.md) **다음** **필수**.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -48,7 +44,6 @@
 
 **이후**: [fomo-and-trading-hours](../05-behavioral/fomo-and-trading-hours.md), [equity-valuation](equity-valuation-fundamentals.md), [bonds-deep](bonds-fixed-income-deep.md) 부록 BD
 
----
 
 ## 3. 직관·비유
 
@@ -60,7 +55,6 @@
 
 **HFT = 배달 오토바이**: **신호** **먼저** — **개인** **도보**와 **같은** **출발선** **아님**.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -75,7 +69,7 @@
 | HFT | High-frequency trading | **ms** **단위** **전략** |
 | ATS | 대체거래소 | **KRX** **외** **장소** |
 | 슬리피지 | Slippage | **기대** **vs** **체결** |
-|       VWAP       | VWAP | **거래량** **가중** **평균** |
+|              VWAP              | VWAP | **거래량** **가중** **평균** |
 ### 4a. 핵심 용어 (본문 등장 순)
 
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
@@ -94,7 +88,6 @@
 | VWAP | **거래량** **가중** **평균** | §4 | [glossary](../00-roadmap/glossary.md#vwap) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -129,7 +122,6 @@ flowchart TD
   Ill --> Impact2[충격_큼]
 ```
 
----
 
 ## 6. 수식·모델 (교육)
 
@@ -172,7 +164,7 @@ flowchart TD
 
 **체결** **가격**과 **중간가** **차** — **정보** **거래** **비중** **추정**.
 
----
+
 ## 7. 한국 적용
 
 ### 7.1 KRX
@@ -194,7 +186,6 @@ flowchart TD
 
 **DB** **연금** **본인** **주문** **불가** — **NXT** **직접** **해당** **없음**.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -214,7 +205,7 @@ flowchart TD
 
 **IV** **할인** **20%** **MoS** **확보**했으나 **충격** **3%** → **순** **MoS** **17%**.
 
----
+
 ## 9. FAQ
 
 **Q1. 스프레드만 보면 되나?**  
@@ -241,7 +232,6 @@ flowchart TD
 **Q8. 채권 OTC?**  
 **A8.** **두꺼운** **스프레드** — [bonds-deep](bonds-fixed-income-deep.md).
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -264,8 +254,6 @@ flowchart TD
 - Harris — *Trading and Exchanges*  
 - O'Hara — *Market Microstructure Theory*  
 - [korea-ats-nextrade](korea-ats-nextrade.md)
-
----
 
 
 ## 연습문제 (L4, 기호)
@@ -301,8 +289,6 @@ flowchart TD
     7. 속도·비용  
     8. 순 MoS 감소
 
-
----
 
 
 ## 부록 A — 주문 유형
@@ -600,7 +586,6 @@ Spread, Book, MM, HFT, ATS, Impact, Slippage, VWAP, IOC, FOK, VI, AP, OTC, SOR, 
 ## 부록 BU — Logging template
 
 | 날짜 | 종목 | Mid | Spread | 체결가 | 슬리피지 |
-|------|------|------|------|------|----------------|
 ## 부록 BV — Myth busting
 
 **"NXT=싸다"** **X** — **스프레드** **확인**. **"시장가=빠르다=좋다"** **X**.
@@ -640,7 +625,6 @@ Spread, Book, MM, HFT, ATS, Impact, Slippage, VWAP, IOC, FOK, VI, AP, OTC, SOR, 
 | 열1 | 열2 | 열3 |
 |------|------|----------------|
 | 정규 | 09:00~15:30 | 병행 |
-|------|------|----------------|
 ## 부록 CE — Circuit breaker levels
 
 **코스피** **VI** **단계** — **미시** **거래** **완화** **메커니즘**.

@@ -127,14 +127,14 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|            R            | R | 기간당 이자·요구수익률 |
-|            Delta            | Delta | 위 식의 Delta |
-|            tau            | tau | 위 식의 tau |
-|            after            | after | 위 식의 after |
-|            u            | u | 위 식의 u |
-|            eff            | eff | 위 식의 eff |
-|            approx            | approx | 위 식의 approx |
-|            times            | times | 위 식의 times |
+|              R              | R | 기간당 이자·요구수익률 |
+|              Delta              | Delta | 위 식의 Delta |
+|              tau              | tau | 위 식의 tau |
+|              after              | after | 위 식의 after |
+|              u              | u | 위 식의 u |
+|              eff              | eff | 위 식의 eff |
+|              approx              | approx | 위 식의 approx |
+|              times              | times | 위 식의 times |
 
 \[
 R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})

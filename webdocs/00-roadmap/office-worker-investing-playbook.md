@@ -22,7 +22,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **1년 로드맵**: 1~2월 거시·ETF·계좌 → 3~4월 DCA·리밸런싱 → 5~6월 재무제표 → 7~12월 섹터·포트폴리오 통합.
@@ -32,7 +31,6 @@
 5. **주간 거시 체크리스트** + 필독서(돈의 심리학, 부의 인문학, Little Book 시리즈) — 행동·역사 맥락.
 6. 시작점: [STUDY-START.md](STUDY-START.md) · [master-roadmap.md](master-roadmap.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -50,8 +48,6 @@
 | DB 가입자인데 **ETF를 DB에서** 찾음 | DB는 **회사 운용** — [db-pension](../06-korea-policy/db-pension.md) · ISA/IRP 분리 |
 | 해외 ETF **일반계좌**만 사용 | **ISA 3년·손익통산** — [isa](../06-korea-policy/isa.md) |
 
----
-
 ## 2. 선수 지식 / 이후 읽을 것
 
 **선수**:
@@ -66,7 +62,6 @@
 - [sectors/README.md](../03-markets/sectors/README.md)
 - [quant-investing-intro](../08-advanced/quant-investing-intro.md) (선택·2년차)
 
----
 
 ## 3. 직관·비유
 
@@ -78,7 +73,6 @@
 
 **데이트레이딩** = 프로덕션 DB에 **무제한 쓰기 부하** — 이론상 이익보다 **다운타임(손실·세금·스트레스)** 비용이 크다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -105,9 +99,6 @@
 | IRP | 개인형퇴직연금 | §4 | [glossary](../00-roadmap/glossary.md#irp) |
 | HBM | AI 가속기 **고대역폭 메모리** | §4 | [glossary](../00-roadmap/glossary.md#hbm) |
 | DC (섹터) | **데이터센터** 인프라·전력·냉각 체인 | §4 | [glossary](../00-roadmap/glossary.md#dc) |
-
-
----
 
 ## 5. 메커니즘 — 12개월 로드맵
 
@@ -150,8 +141,6 @@ flowchart LR
 | 위성 **≤20%** (가상 IPS) | QLD 등 **레버 ETF**를 코어 대체 — [leveraged-etf-qqq-qld](../04-portfolio/leveraged-etf-qqq-qld.md) |
 | ISA·IRP **정책 한도** 내 적립 | 한도 초과 **무리한 일시 납입** |
 
----
-
 ## 6. 수식·모델 — 월 실수령 M 배분
 
 > **가상 시나리오**: 세후 월 실수령 **M**(만 원). 독자는 **본인 M**으로 치환. DB 재직(개인 ETF는 DB 밖). 기호 정의: [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md).
@@ -171,7 +160,12 @@ flowchart LR
 \text{일반}_\text{월}=\alpha_\text{G}\cdot M
 \]
 
-**읽는 법**: 세후 **M**을 \(\alpha_\text{ISA}+\alpha_\text{P}+\alpha_\text{G}=1\)로 나누고, 각 슬롯 월액은 \(\alpha\cdot M\)이다. **\(L_\text{ISA}\)**와 \(12\alpha_\text{ISA}M\)로 연 한도 초과 여부를 점검한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
+**읽는 법**: 세후 **M**을 \(\alpha_\text{ISA}+\alpha_\text{P}+\alpha_\text{G}=1\)로 나누고, 각 슬롯 월액은 \(\alpha\cdot M\)이다. 
+
+
+
+
+**\(L_\text{ISA}\)**와 \(12\alpha_\text{ISA}M\)로 연 한도 초과 여부를 점검한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
 
 **교육용 비율(고정 아님)**: \(\alpha_\text{ISA}=0.50,\ \alpha_\text{P}=0.30,\ \alpha_\text{G}=0.20\).
 
@@ -193,14 +187,7 @@ flowchart TD
   ISA --> Hold[3년_유지_손익통산]
 ```
 
----
-
-Pay --> Pen[연금_alpha_P_IRP등]
-  Pay --> Gen[일반_alpha_G_위성여유]
-  ISA --> Hold[3년_유지_손익통산]
-```
-
----## 7. 한국 적용
+## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정·교육용 요약)
 
@@ -219,7 +206,6 @@ Pay --> Pen[연금_alpha_P_IRP등]
 
 **법·정책 근거**: 소득세법·금융위 ISA 안내 — 실행 전 [국세청](https://www.nts.go.kr)·취급 증권사.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -241,7 +227,6 @@ Pay --> Pen[연금_alpha_P_IRP등]
 - B가 ‘우리 업종 대박’ 뉴스 후 **일반계좌** 개별주 **40%** 매수 → [fomo-and-trading-hours](../05-behavioral/fomo-and-trading-hours.md) 패턴
 - **교정**: 코어 유지, 위성 **20% 캡** 복귀, 공시 [reading-annual-reports-dart](../01-foundations/reading-annual-reports-dart.md)로 **FCF** 확인
 
----
 
 ## 9. 주간 거시 체크리스트 (30~45분)
 
@@ -262,7 +247,6 @@ Pay --> Pen[연금_alpha_P_IRP등]
 
 **월 1회 추가**: ISA 납입 누적·3년 만기일·[account-product-tax-map](../06-korea-policy/tax/account-product-tax-map.md).
 
----
 
 ## 10. 필독서·심화 (행동·역사)
 
@@ -310,7 +294,6 @@ Pay --> Pen[연금_alpha_P_IRP등]
 **Q8. 1년 끝나면?**  
 **A8.** [quant-investing-intro](../08-advanced/quant-investing-intro.md)·[factor-investing-fama-french](../08-advanced/factor-investing-fama-french.md) 선택.
 
----
 
 ## 12. 함정·리스크·한계
 
@@ -320,7 +303,6 @@ Pay --> Pen[연금_alpha_P_IRP등]
 - **개인정보**: 플레이북·노트에 **실제 잔고·회사명** 기입 금지 — [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md).
 - **교육 한계**: M·α 비율은 **독자 치환용**이며 세무 확정 아님. 문서에 **구체 M 금액** 기입 금지.
 
----
 
 ## 13. 심화 읽기
 
@@ -329,7 +311,6 @@ Pay --> Pen[연금_alpha_P_IRP등]
 - [recommended-deep-study-roadmap](../03-markets/sectors/recommended-deep-study-roadmap.md)
 - [references/sources.md](../references/sources.md)
 
----
 
 ## 14. 스스로 점검 퀴즈
 

@@ -159,13 +159,19 @@ sequenceDiagram
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 | \(\mathrm{NOI}\) | 순영업소득 | 임대·운영에서 발생한 순현금 흐름(교육용) |
-| \(V\) | 자산·증권 가치 | Cap rate 분모(거래가·평가가) |
+| **V** | 자산·증권 가치 | Cap rate 분모(거래가·평가가) |
 
 \[
 \mathrm{Cap}=\frac{\mathrm{NOI}}{V}
 \]
 
 **읽는 법**: **NOI**를 **V**로 나눈 비율이 Cap rate이다. 
+
+
+
+
+
+
 
 
 
@@ -195,7 +201,7 @@ sequenceDiagram
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 | \(\mathrm{NOI}_1\) | 1기 NOI | 다음 기간 순영업소득 |
-| \(g\) | 성장률 | NOI 영구성장 근사(교육용) |
+| **g** | 성장률 | NOI 영구성장 근사(교육용) |
 | \(\mathrm{required\_yield}\) | 요구수익률 | Cap rate·할인율 근사 |
 
 \[
@@ -203,6 +209,12 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 \]
 
 **읽는 법**: 분모 \(\mathrm{required\_yield}-g\)가 커질수록 **V**는 작아진다. 
+
+
+
+
+
+
 
 
 
@@ -248,6 +260,12 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 
 
 
+
+
+
+
+
+
 주가는 NAV 대비 **프리미엄·디스카운트**로 거래될 수 있다.
 
 **유도 (L4)**:
@@ -261,15 +279,21 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(P\) | 리츠 가격 | 시장 증권 가격 |
+| **P** | 리츠 가격 | 시장 증권 가격 |
 | \(D_{\mathrm{eff}}\) | 유효 듀레이션 | 금리 변화에 대한 가격 민감도 근사 |
-| \(r\) | 금리·할인율 | 무위험+스프레드 등 |
+| **r** | 금리·할인율 | 무위험+스프레드 등 |
 
 \[
 \frac{\partial P}{P}\approx-D_{\mathrm{eff}}\,\partial r+(\text{NOI 성장항})+(\text{스프레드 항})
 \]
 
 **읽는 법**: **금리↑**이면 보통 \(D_{\mathrm{eff}}>0\) 가정 하 **P↓** 방향이지만, NOI·스프레드 항이 상쇄할 수 있다. 
+
+
+
+
+
+
 
 
 

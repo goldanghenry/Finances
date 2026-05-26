@@ -150,7 +150,7 @@ flowchart LR
 | \(\alpha_\text{ISA}\) | ISA 적립 비율 | 세후 월 실수령 **M** 중 ISA로 보내는 비율 (0~1) |
 | \(\alpha_\text{P}\) | 연금 적립 비율 | IRP·연금저축 등 연금 슬롯 비율 |
 | \(\alpha_\text{G}\) | 일반 계좌 비율 | 한도 초과분·위성·환전 여유 비율 |
-| \(M\) | 월 실수령 | 세후 월급(만 원, 기호만) |
+| **M** | 월 실수령 | 세후 월급(만 원, 기호만) |
 | \(L_\text{ISA}\) | ISA 연 한도 | 제도상 연 납입 상한(만 원) — §7·[isa](../06-korea-policy/isa.md) |
 
 \[
@@ -161,6 +161,8 @@ flowchart LR
 \]
 
 **읽는 법**: 세후 **M**을 \(\alpha_\text{ISA}+\alpha_\text{P}+\alpha_\text{G}=1\)로 나누고, 각 슬롯 월액은 \(\alpha\cdot M\)이다. 
+
+
 
 
 

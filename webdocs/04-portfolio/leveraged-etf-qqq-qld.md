@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **QQQ** = 나스닥100 **1배** → 장기 **코어 후보**(채권·글로벌 분산 필수).  
@@ -30,7 +29,6 @@
 4. **DB** 재직 중 본인 매매 없음 → **ISA·IRP·일반**.  
 5. 일반 계좌 QLD 장기 = 붕괴 + **해외 양도세** — [part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -48,7 +46,6 @@
 
 **왜 중요한가**: “나스닥이 오르면 2배 ETF가 10년에 2배”는 **성립하지 않을 수** 있습니다. [core-satellite](core-satellite-framework.md)에서 **코어를 QLD로 대체**하면 10년 목표의 **경로 리스크**가 커집니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -62,13 +59,11 @@
 - [account-product-tax-map.md](../06-korea-policy/tax/account-product-tax-map.md)
 - [irp.md](../06-korea-policy/irp.md) — DB 가입자 QQQ 슬롯
 
----
 
 ## 3. 직관·비유
 
 **일일 리셋**은 “매일 아침 레버리지를 **0으로 리셋**하고 그날만 2배 맞춘다”에 가깝습니다. **연속 복리**가 아니라 **날마다 새 출발**이라, 지그재그 장에서 **지수보다 더 깎일** 수 있습니다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -104,7 +99,6 @@
 - **[행동금융](../05-behavioral/behavioral-finance-complete.md)** — 레버리지·FOMO·과신
 - **[해외 주식·ETF](../03-markets/overseas-equities-intro.md)** — 직접 보유·환율·세금
 
----
 
 ## 5. 메커니즘
 
@@ -140,7 +134,6 @@ flowchart TD
   QLDd --> Path[경로_누적_≠_2×지수누적]
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -150,7 +143,6 @@ flowchart TD
 
 **해당**: ProShares 등 공시 — **1일 초과 보유** 시 목표 배수와 **괴리**.
 
----
 
 ## 7. 한국 적용
 
@@ -169,7 +161,6 @@ flowchart TD
 
 **DC만** 해당: 회사 DC에서 QQQ·QLD — [dc-pension](../06-korea-policy/dc-pension.md), 위험자산 70%.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -221,7 +212,7 @@ flowchart TD
 
 **교훈**: “좋은 장”만 가정한 백테스트로 QLD **코어**를 정당화하기 어렵습니다.
 
----
+
 ## 9. FAQ
 
 **Q1. QLD가 10년 2배?**  
@@ -248,7 +239,6 @@ flowchart TD
 **Q8. DC에서 QLD vs QQQ?**  
 **A8.** DC **상품목록**·**위험자산 70%**·운용규정 확인 — [dc-pension](../06-korea-policy/dc-pension.md). DB 재직자는 **DC 아님**.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -296,7 +286,6 @@ ProShares **투자설명서(Prospectus)**·**Fact Sheet**에서 다음을 반드
 - [fomo-and-trading-hours.md](../05-behavioral/fomo-and-trading-hours.md) — 장후 매매 유혹  
 - [sources.md](../references/sources.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 

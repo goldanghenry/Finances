@@ -124,14 +124,14 @@ flowchart LR
 | \(\ISA\) | ISA | 개인종합자산관리계좌 슬롯 |
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|        ISA        | ISA | 개인종합자산관리계좌 슬롯 |
-|        eff        | eff | 위 식의 eff |
+|          ISA          | ISA | 개인종합자산관리계좌 슬롯 |
+|          eff          | eff | 위 식의 eff |
 |  T  | 기간 | 마지막 CF 시점 |
-|        IRP        | IRP | 위 식의 IRP |
-|        gen        | gen | 위 식의 gen |
-|        G        | G | 위 식의 G |
-|        total        | total | 위 식의 total |
-|        tau        | tau | 위 식의 tau |
+|          IRP          | IRP | 위 식의 IRP |
+|          gen          | gen | 위 식의 gen |
+|          G          | G | 위 식의 G |
+|          total          | total | 위 식의 total |
+|          tau          | tau | 위 식의 tau |
 
 \[
 \tau_{\text{eff}} = \frac{T_{\text{ISA}} + T_{\text{IRP}} + T_{\text{gen}}}{G_{\text{total}}}

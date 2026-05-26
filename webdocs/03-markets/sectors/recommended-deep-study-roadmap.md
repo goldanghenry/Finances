@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. 본 로드맵은 **9주(주 5~8시간)** 로 섹터 L3를 **A(필수) → B(권장) → C(선택)** 순으로 밟는 **학습·포트 설계** 가이드입니다 — **매매 신호가 아닙니다**.
@@ -30,7 +29,6 @@
 4. **Week 6~8 (B티어)**: [power-grid-electrification.md](power-grid-electrification.md) → [physical-ai.md](physical-ai.md) — **전력 병목·로봇 실험**.
 5. **C티어(선택)**: 사이버·바이오·원자력 등 — **위성 4 한도** 내; 매주 **5단계 체크리스트** + **퀴즈**로 [DEPTH-STANDARD.md](../../docs/DEPTH-STANDARD.md) 게이트 통과.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "GPU (Graphics Processing Unit)"
@@ -50,7 +48,6 @@
 
 섹터 문서가 6개+로 늘면 **“다 읽어야 하나?”** · **“어디서부터?”** · **“다 사야 하나?”** 혼란이 생깁니다. 로드맵은 **읽기 순서 = 의존성 순서**(반도체 → AI 인프라 → 전력)이며, **읽기 ≠ 매수**를 반복 강조합니다. **10억+ 장기** 경로에서는 **A티어만 ETF 코어(Bucket 3)** 로도 충분하고, **B·C는 위성·커리어 시너지**용입니다. **DB 가입자**는 Week 0에서 **ISA·IRP 슬롯**을 확정하지 않으면 **Week 5 “반도체 ETF 매수”** 가 **실행 불가**입니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -65,7 +62,6 @@
 - [factor-investing-primer.md](../../08-advanced/factor-investing-primer.md)
 - [master-roadmap.md](../../00-roadmap/master-roadmap.md)
 
----
 
 ## 3. 직관·비유
 
@@ -75,7 +71,6 @@
 
 **Bucket**: **필수 과목(A)** 은 **교재(ETF)** 로 **Pass/Fail**; **선택 과목(C)** 은 **레포트(개별주)** — **실패(손실)** 해도 **학점(포트)** **20%** 넘기면 **재수강 제한**.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -108,7 +103,6 @@
 | CAPEX cycle | AI·배터리·전력 | §4 | [glossary](../../00-roadmap/glossary.md#capex-cycle) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -179,7 +173,6 @@ flowchart LR
 
 **산출물**: 매주 **1장 밸류체인 mermaid** + **가상 예제 1개** + **bucket 기록**.
 
----
 
 ## 6. 수식·모델
 
@@ -187,6 +180,7 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 T_{\text{week}} = T_{\text{read}} + T_{\text{note}} + T_{\text{quiz}} \approx 5\text{~}8\ \text{시간}
 \]
@@ -206,7 +200,9 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 \]
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**포트 배분 (교육, Week 9 산출)**:
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+**포트 배분 (교육, Week 9 산출)**:
 | Bucket 4 (B·C 위성) | **0%** | **20%** |
 
 **학습 ROI (개념)**:
@@ -237,7 +233,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 **.
 
----
+
 ## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
@@ -262,7 +258,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 **법·정책 근거**: [references/sources.md](../../references/sources.md), [account-product-tax-map.md](../../06-korea-policy/tax/account-product-tax-map.md)
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -304,7 +299,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 → **위성 10%** — A티어 **학습 반영**, **올인 아님**.
 
----
+
 ## 9. FAQ
 
 **Q1. 9주 꼭 지켜야 하나요?**  
@@ -343,7 +338,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 **Q12. L1 primer **있나**?**  
 **A.** [kosdaq-tier-system-primer.md](../kosdaq-tier-system-primer.md) 등 — **L3 전** **L2** [etf-index-funds.md](../etf-index-funds.md).
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -371,7 +365,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 - [sectors/README.md](README.md)
 - [glossary.md](../../00-roadmap/glossary.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 
@@ -400,8 +393,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
     10. **아니오** — **리스크 인지·의사결정**
 
 
----
-
 
 ## 부록: 주차별 상세 체크리스트
 
@@ -413,7 +404,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 | 2 | [time-horizon-and-buckets.md](../../04-portfolio/time-horizon-and-buckets.md) | Bucket |
 | 3 | DB/ISA — [db-pension.md](../../06-korea-policy/db-pension.md), [isa.md](../../06-korea-policy/isa.md) | 2a/2b |
 | 4 | [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md) | 3/4 |
-|------|------|----------------|
+
 ### Week 2 — 반도체
 
 | 체크 | 내용 |
@@ -477,7 +468,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 | □ | C티어 **GO/NO-GO** |
 | □ | [master-roadmap.md](../../00-roadmap/master-roadmap.md) **다음** **Phase** |
 
----
 
 ## 부록: A/B/C 티어 전체 표
 
@@ -493,7 +483,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 **총 A+B 필수**: 약 **48~52시간** (Week 5·8 복습 포함).
 
----
 
 ## 부록: bucket·계좌 Quick Reference
 

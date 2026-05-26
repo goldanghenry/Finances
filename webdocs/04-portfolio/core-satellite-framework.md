@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **코어-위성**은 장기 자산의 **80~100%** 를 저비용·분산 **패시브 ETF(코어)** 에 두고, **0~20%** 만 테마·실험·레버리지(**위성**)에 쓰는 구조입니다.
@@ -30,7 +29,6 @@
 4. **DB 재직** 가입자는 코어를 **ISA·IRP(Bucket 2b~3)** 에 두고, DB(2a)는 **모니터링 슬롯**으로 분리합니다.
 5. 위성은 **별도 mental account·매매 규칙·손실 한도**를 문서화하지 않으면 코어를 잠식합니다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -42,7 +40,6 @@
 
 **왜 중요한가**: “QQQ만 산다”와 “섹터 올인한다” 사이의 **실행 가능한 중간 지점**입니다. [sector-investing-framework.md](../03-markets/sectors/sector-investing-framework.md)로 반도체·배터리·AI를 **공부**하되 **매매는 위성으로 제한**하면, [passive-vs-active.md](passive-vs-active.md) 원칙과 [behavioral](../05-behavioral/README.md) 리스크를 동시에 줄입니다. **QLD를 코어에 넣는 순간** “장기 복리”와 “레버리지 일일 리셋”이 충돌합니다. [time-horizon-and-buckets.md](time-horizon-and-buckets.md)에서 Bucket 3·4를 나눈 **후**, 그 내부 비율을 정하는 문서입니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -57,7 +54,6 @@
 - [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md) — QLD 위성 규칙
 - [sectors/README.md](../03-markets/sectors/README.md) — 위성 테마 공부
 
----
 
 ## 3. 직관·비유
 
@@ -72,7 +68,6 @@
 
 
 한국 **DB·ISA·2026 개편** 환경에서 포트폴리오 문서는 **실행 순서**가 핵심입니다. 비중 % 논쟁 이전에 **운용 가능 계좌**와 **bucket 채우기**를 확정하고, QQQ·글로벌·채권 **코어**를 [etf-index-funds.md](../03-markets/etf-index-funds.md) 기준 **저비용**으로 유지하세요. 위성·레버리지·단타는 **0~20%**와 **손실 한도**로 격리하고, [references/sources.md](../references/sources.md)로 제도 변경을 **분기 1회** 확인합니다.
----
 
 ## 4. 정식 개념·용어
 
@@ -103,7 +98,6 @@
 | Mental account | 코어·위성 **분리 인식** | §4 | [glossary](../00-roadmap/glossary.md#mental-account) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -170,7 +164,6 @@ flowchart LR
 
 [passive-vs-active.md](passive-vs-active.md) 원칙: **공부는 섹터**, **매매는 위성**. [semiconductor.md](../03-markets/sectors/semiconductor.md), [battery-lfp-ncm-ess.md](../03-markets/sectors/battery-lfp-ncm-ess.md), [ai-infrastructure.md](../03-markets/sectors/ai-infrastructure.md)를 읽어도 **코어 QQQ·글로벌은 유지**합니다. 이유: 섹터 사이클 정점에서 **코어 전량 교체**가 가장 흔한 실수이기 때문입니다.
 
----
 
 ## 6. 수식·모델
 
@@ -188,7 +181,6 @@ w_{core} + w_{sat} = 1, \quad 0 \leq w_{sat} \leq 0.20
 \]
 
 
-
 **읽는 법**: **w_**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **위성 초과 시 매도량** (교육용):
 
@@ -204,8 +196,9 @@ w_{core} + w_{sat} = 1, \quad 0 \leq w_{sat} \leq 0.20
 \]
 
 
+**읽는 법**: **lta_**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 
-**읽는 법**: **lta_**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**QLD 일일 리셋** (개념): 목표 일일 수익 ≈ \(2 \times r_{QQQ,day}\) — **장기 보유 ≠ 2× QQQ**. 코어 FV 모델에 QLD를 넣지 않습니다.
+**QLD 일일 리셋** (개념): 목표 일일 수익 ≈ \(2 \times r_{QQQ,day}\) — **장기 보유 ≠ 2× QQQ**. 코어 FV 모델에 QLD를 넣지 않습니다.
 
 **코어 FV** (가상):
 
@@ -221,8 +214,23 @@ FV_{core} = PMT \times \frac{(1+r)^n - 1}{r}
 \]
 
 
+**읽는 법**: 매 기간 **PMT**가 **r**로 **n**번 복리·누적되면 **FV**가 된다. 
 
-**읽는 법**: 매 기간 **PMT**가 **r**로 **n**번 복리·누적되면 **FV**가 된다. 월·연 단위는 **r**·**n** 정의와 맞춘다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+월·연 단위는 **r**·**n** 정의와 맞춘다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 위성 손실은 **별도 한도** \(L_{sat}\) (예: 연간 위성 원금의 30%)로 관리.
 
 ---
@@ -230,7 +238,6 @@ FV_{core} = PMT \times \frac{(1+r)^n - 1}{r}
 춘다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 위성 손실은 **별도 한도** \(L_{sat}\) (예: 연간 위성 원금의 30%)로 관리.
 
----
 
 ## 7. 한국 적용
 
@@ -255,7 +262,6 @@ FV_{core} = PMT \times \frac{(1+r)^n - 1}{r}
 
 **법·정책 근거**: ISA 시행령, 소득세법 — [account-product-tax-map.md](../06-korea-policy/tax/account-product-tax-map.md)
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -288,7 +294,7 @@ FV_{core} = PMT \times \frac{(1+r)^n - 1}{r}
 
 → DB는 **모니터링만**, 코어 성장은 ISA.
 
----
+
 ## 9. FAQ
 
 **Q1. 코어에 QLD 넣으면 수익 2배 아닌가요?**  
@@ -333,7 +339,6 @@ FV_{core} = PMT \times \frac{(1+r)^n - 1}{r}
 - [ ] DB → ISA [db-pension.md](../06-korea-policy/db-pension.md)
 
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -359,7 +364,6 @@ FV_{core} = PMT \times \frac{(1+r)^n - 1}{r}
 - [semiconductor.md](../03-markets/sectors/semiconductor.md)
 - [factor-investing-primer.md](../08-advanced/factor-investing-primer.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 

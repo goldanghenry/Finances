@@ -20,7 +20,6 @@
 | **이번 편에서 쓰는 기호** | L_ISA, ISA, IRP, DB, DC (해당 시) |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **국내주식** 매매차익: 개인 **비과세** (KRX·NXT 동일, 예외 별도).
@@ -29,7 +28,6 @@
 4. **IRP/DC**: **과세이연** → 수령 시.
 5. **DB 재직**: 개인 **매매 없음** — QQQ는 **ISA·IRP·일반**.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "CGT (Capital Gains Tax)"
@@ -42,20 +40,17 @@
 
 **왜 중요한가**: “QQQ 샀다” 한 줄로는 **DB/ISA/IRP/일반** 중 **어느 통로**인지 알 수 없습니다. 이 문서는 **한 장 지도**입니다.
 
----
 
 ## 2. 선수 / 이후
 
 **선수**: [investment-tax-overview.md](investment-tax-overview.md)  
 **이후**: [overseas-stocks-tax-part3-scenarios.md](overseas-stocks-tax-part3-scenarios.md), [../irp.md](../irp.md)
 
----
 
 ## 3. 직관·비유
 
 **계좌 = 용기**, **상품 = 내용물**, **기간 = 뚜껑 잠금 시간**. 같은 물(QQQ)도 **유리병(ISA 3년)** · **냉동고(IRP)** · **종이컵(일반)** 에 따라 **냄새(세금)** 가 다릅니다.
 
----
 
 ## 4. 정식 용어
 
@@ -79,7 +74,6 @@
 | bucket | 0~4 | §4 | [glossary](../../00-roadmap/glossary.md#bucket) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -124,7 +118,6 @@ flowchart TD
 | QQQ | ISA/IRP | — | **불가** |
 | QLD | 비권장 | 소액·단기 | **불가** |
 
----
 
 ## 6. 수식·모델
 
@@ -134,14 +127,15 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|      R      | R | 기간당 이자·요구수익률 |
-|      Delta      | Delta | 위 식의 Delta |
-|      tau      | tau | 위 식의 tau |
-|      after      | after | 위 식의 after |
-|      u      | u | 위 식의 u |
-|      eff      | eff | 위 식의 eff |
-|      approx      | approx | 위 식의 approx |
-|      times      | times | 위 식의 times |
+|             R             | R | 기간당 이자·요구수익률 |
+|             Delta             | Delta | 위 식의 Delta |
+|             tau             | tau | 위 식의 tau |
+|             after             | after | 위 식의 after |
+|             u             | u | 위 식의 u |
+|             eff             | eff | 위 식의 eff |
+|             approx             | approx | 위 식의 approx |
+|             times             | times | 위 식의 times |
+
 \[
 R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 \]
@@ -159,7 +153,7 @@ R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 
  일반 **22%** vs ISA **9.9%** 초과분 vs IRP **이연**.
 
----
+
 ## 7. 한국 적용
 
 ### 7.1 2025
@@ -205,9 +199,6 @@ R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 
 **법·정책 근거**: tax 시리즈·조세특례·소득세법 교차.
 
----
-
-
 
 ### 7.7 QLD·레버리지 — 계좌 배치 (교육)
 
@@ -220,7 +211,6 @@ R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 ◎=코어 후보, △=위성·소액·비권장, ✕=재직 중 불가 — [leveraged-etf-qqq-qld.md](../../04-portfolio/leveraged-etf-qqq-qld.md).
 
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -247,7 +237,7 @@ R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 | 일반 | 금융소득 |
 | IRP | 이연(2025 선환급 폐지) |
 
----
+
 ## 9. FAQ
 
 **Q1.** 가장 세금 효율 해외 코어? — **ISA·IRP**(조건).  
@@ -258,9 +248,6 @@ R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 **Q6.** 퇴직금 ISA? — **불가**.  
 **Q7.** 3년 미만 ISA? — **추징**.  
 **Q8.** Part3? — [overseas-part3](overseas-stocks-tax-part3-scenarios.md).
-
----
-
 
 
 ### 실행 워크숍 체크리스트 (교육)
@@ -342,7 +329,6 @@ R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 
 - [db-pension.md](../db-pension.md), [isa.md](../isa.md), [leveraged-etf-qqq-qld](../../04-portfolio/leveraged-etf-qqq-qld.md)
 
----
 
 ## 12. 퀴즈
 

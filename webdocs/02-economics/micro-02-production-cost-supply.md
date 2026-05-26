@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
 ## TL;DR
 
 1. **생산함수** \(q = F(K,L)\)는 투입(자본·노동)을 산출(물량)로 바꾸는 기술적 관계이며, **등생산량곡선(isoquant)** 과 **MRTS**로 대체 가능성을 기하학적으로 표현한다.
@@ -31,7 +30,6 @@
 5. **반도체 fab**·**배터리 셀**은 **고정비·최소효율규모(MES)** 가 커서 신규 진입이 어렵고, [과점·IO](micro-03-market-structures-io.md)와 직결된다.
 6. 투자: **가동률·ASP·\(MC\)** 를 [재무제표](../01-foundations/financial-statements-intro.md) 마진과 대조 — “매출↑인데 마진↓”는 **\(MC\) 곡선 위쪽** 또는 **가격↓** 신호.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -39,7 +37,6 @@
 
 **왜 중요한가**: [소비자 이론](micro-01-consumer-theory.md)이 **수요**를 만든다면, 본 장은 **공급**을 만든다. [반도체 fab](../03-markets/sectors/semiconductor.md)의 **100억 달러 CAPEX**, [배터리 gigafactory](../03-markets/sectors/battery-lfp-ncm-ess.md)의 **단위 kWh 비용**은 모두 **생산함수·비용곡선**의 실물 사례다. “공급 과잉” 내러티브는 **\(LAC\) 하강 종료 + \(MC\) vs \(P\)** 질문으로 검증해야 한다. [포트폴리오](../04-portfolio/time-horizon-and-buckets.md)에서 **CAPEX 사이클** 종목은 **장기 비용곡선**과 **가동률**을 함께 본다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -54,7 +51,6 @@
 - [섹터 투자 프레임워크](../03-markets/sectors/sector-investing-framework.md)
 - [패시브 vs 액티브](../04-portfolio/passive-vs-active.md)
 
----
 
 ## 3. 직관·비유
 
@@ -104,9 +100,6 @@
 | Shutdown | 휴업 | §4 | [glossary](../00-roadmap/glossary.md#shutdown) |
 | MES | 최소효율규모 | §4 | [glossary](../00-roadmap/glossary.md#mes) |
 | CRS / IRS / DRS | 규모수익 | §4 | [glossary](../00-roadmap/glossary.md#crs-/-irs-/-drs) |
-
-
----
 
 ## 5. 메커니즘
 
@@ -163,7 +156,6 @@ flowchart TB
   UTIL --> MARGIN
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -233,7 +225,12 @@ MRTS_{KL} = \frac{MP_K}{MP_L} = \frac{\alpha}{1-\alpha} \cdot \frac{L}{K}
 \]
 
 
-**읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 정밀식은 본문 또는 §4 표를 따른다.
+**읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 
+
+
+
+
+정밀식은 본문 또는 §4 표를 따른다.
 **유도 (L4)**:
 1. **정의**: **max_q**, **Pq**, **C**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
@@ -254,7 +251,6 @@ MRTS_{KL} = \frac{MP_K}{MP_L} = \frac{\alpha}{1-\alpha} \cdot \frac{L}{K}
 
 **\(P = \min LAC = MC\)** , **\(\pi = 0\)** — [micro-03](micro-03-market-structures-io.md)에서 확장.
 
----
 
 ### 6.7 학습곡선과 동적 MC (스케치)
 
@@ -268,7 +264,6 @@ MRTS_{KL} = \frac{MP_K}{MP_L} = \frac{\alpha}{1-\alpha} \cdot \frac{L}{K}
 
 **웨이퍼**에서 **DRAM+HBM** — **공동비용**. 한 제품 **\(P < MC_i\)** 여도 **joint MC** 커버하면 **생산** — **shutdown** **제품별** 아님 **fab** **단위**.
 
----
 
 ### 5.4 fab 가동률·마진 메커니즘
 
@@ -281,11 +276,11 @@ flowchart TD
   MARG --> IR[IR_마진_해석]
 ```
 
----
 
 ### 7.4 반도체·배터리 CAPEX 사이클 (투자)
 
 | 단계 | 비용·공급 | 주가 민감도 |
+|------|------|----------------|
 | **발표** | **\(FC\uparrow\)** , 미래 **\(S\uparrow\)** | **CapEx** **부담** — 단기 **하락** 가능 |
 | **건설** | **\(q=0\)** , **현금 소진** | **FCF** **악화** |
 | **Ramp** | **\(MC\downarrow\)** , **yield** | **마진** **확대** |
@@ -293,7 +288,6 @@ flowchart TD
 
 [semiconductor](../03-markets/sectors/semiconductor.md), [battery](../03-markets/sectors/battery-lfp-ncm-ess.md), [rebalancing](../04-portfolio/rebalancing-and-dca.md).
 
----
 
 ### 예제 6 — Cobb-Douglas 비용 (가상)
 
@@ -302,6 +296,7 @@ flowchart TD
 ### 예제 7 — 학습곡선 (가상 fab)
 
 | 열1 | 열2 | 열3 |
+|------|------|----------------|
 | 1 | 40% | 100 |
 | 6 | 70% | 55 |
 | 12 | 90% | 42 |
@@ -312,11 +307,11 @@ flowchart TD
 
 100GWh **\(AC=72\)** vs 20GWh **\(AC=92\)** — **가격 80** 시 대형 **마진 8**, 소형 **−12** → **shutdown** **소형** — **산업** **집중**.
 
----
 
 ### 11.2 Varian·Tirole 매핑
 
 | 교재 | 본문 |
+|------|------|
 | Varian Ch. 18 Technology | §6.1–6.2 |
 | Varian Ch. 20 Cost Min | §6.2 |
 | Varian Ch. 21 Cost Curves | §6.3–6.5 |
@@ -337,11 +332,11 @@ flowchart TD
 **Q16. 배터리 \(P<MC\) 지속?**  
 **A16.** **\(P>AVC\)** **loss-minimizing** **\(q\)** — **시장점유** **목적** — **경쟁** **모델** **혼합**.
 
----
 
 ### 3.1 fab·셀 — 생산함수 실무 매핑
 
 | 실무 지표 | 이론 객체 | IR 질문 |
+|------|------|----------------|
 | **수율(yield)** | \(A\) 또는 \(\theta\) in \(q=\theta F(K,L)\) | ramp **\(MC\)** **언제** **\(P\)** **아래**? |
 | **가동률(utilization)** | \(q\) / installed **\(K\)** | **\(FC/q\)** **분摊** |
 | **ASP** | 시장 **\(P\)** | **\(P-MC\)** **=** **economic** **margin** |
@@ -349,7 +344,6 @@ flowchart TD
 
 **반도체 fab** ([semiconductor](../03-markets/sectors/semiconductor.md)): **先端** node **\(MES\)** **극대** — **2nm** **only** **few** **players**. **배터리 셀** ([battery](../03-markets/sectors/battery-lfp-ncm-ess.md)): **LFP** **\(MES\)** **중간** — **중국** **다수** **→** **\(P\to MC\)**.
 
----
 
 ### 10.1 L4 함정 추가
 
@@ -366,7 +360,6 @@ tensive** fab **\(LAC\)** ↑ — **\(q\)** ↓ or **\(P\)** ↑ 압력.
 
 **웨이퍼**에서 **DRAM+HBM** — **공동비용**. 한 제품 **\(P < MC_i\)** 여도 **joint MC** 커버하면 **생산** — **shutdown** **제품별** 아님 **fab** **단위**.
 
----
 
 ### 5.4 fab 가동률·마진 메커니즘
 
@@ -379,11 +372,11 @@ flowchart TD
   MARG --> IR[IR_마진_해석]
 ```
 
----
 
 ### 7.4 반도체·배터리 CAPEX 사이클 (투자)
 
 | 단계 | 비용·공급 | 주가 민감도 |
+|------|------|----------------|
 | **발표** | **\(FC\uparrow\)** , 미래 **\(S\uparrow\)** | **CapEx** **부담** — 단기 **하락** 가능 |
 | **건설** | **\(q=0\)** , **현금 소진** | **FCF** **악화** |
 | **Ramp** | **\(MC\downarrow\)** , **yield** | **마진** **확대** |
@@ -391,7 +384,6 @@ flowchart TD
 
 [semiconductor](../03-markets/sectors/semiconductor.md), [battery](../03-markets/sectors/battery-lfp-ncm-ess.md), [rebalancing](../04-portfolio/rebalancing-and-dca.md).
 
----
 
 ### 예제 6 — Cobb-Douglas 비용 (가상)
 
@@ -400,6 +392,7 @@ flowchart TD
 ### 예제 7 — 학습곡선 (가상 fab)
 
 | 열1 | 열2 | 열3 |
+|------|------|----------------|
 | 1 | 40% | 100 |
 | 6 | 70% | 55 |
 | 12 | 90% | 42 |
@@ -410,11 +403,11 @@ flowchart TD
 
 100GWh **\(AC=72\)** vs 20GWh **\(AC=92\)** — **가격 80** 시 대형 **마진 8**, 소형 **−12** → **shutdown** **소형** — **산업** **집중**.
 
----
 
 ### 11.2 Varian·Tirole 매핑
 
 | 교재 | 본문 |
+|------|------|
 | Varian Ch. 18 Technology | §6.1–6.2 |
 | Varian Ch. 20 Cost Min | §6.2 |
 | Varian Ch. 21 Cost Curves | §6.3–6.5 |
@@ -435,11 +428,11 @@ flowchart TD
 **Q16. 배터리 \(P<MC\) 지속?**  
 **A16.** **\(P>AVC\)** **loss-minimizing** **\(q\)** — **시장점유** **목적** — **경쟁** **모델** **혼합**.
 
----
 
 ### 3.1 fab·셀 — 생산함수 실무 매핑
 
 | 실무 지표 | 이론 객체 | IR 질문 |
+|------|------|----------------|
 | **수율(yield)** | \(A\) 또는 \(\theta\) in \(q=\theta F(K,L)\) | ramp **\(MC\)** **언제** **\(P\)** **아래**? |
 | **가동률(utilization)** | \(q\) / installed **\(K\)** | **\(FC/q\)** **분摊** |
 | **ASP** | 시장 **\(P\)** | **\(P-MC\)** **=** **economic** **margin** |
@@ -447,7 +440,6 @@ flowchart TD
 
 **반도체 fab** ([semiconductor](../03-markets/sectors/semiconductor.md)): **先端** node **\(MES\)** **극대** — **2nm** **only** **few** **players**. **배터리 셀** ([battery](../03-markets/sectors/battery-lfp-ncm-ess.md)): **LFP** **\(MES\)** **중간** — **중국** **다수** **→** **\(P\to MC\)**.
 
----
 
 ### 10.1 L4 함정 추가
 
@@ -456,13 +448,13 @@ flowchart TD
 - **shutdown** **뉴스** **없어도** **\(P<ATC\)** **적자** **가능**  
 - **단기** **\(MC\)** **=** **장기** **공급** **곡선**
 
----
 
 # 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
 
 | 산업 | 생산·비용 특징 | 투자 지표 |
+|------|------|----------------|
 | 메모리·파운드리 | **초대형 FC**, CRS+학습 | fab CAPEX, **가동률**, ASP |
 | HBM·先端 | **수율** = 생산함수 | yield, **\(MC\)** vs ASP |
 | 2차전지 셀 | **GWh 규모** = LAC | kWh **\(AC\)**, LFP vs NCM |
@@ -471,6 +463,7 @@ flowchart TD
 ### 7.2 2026년 개편·시행 예정 (해당 시)
 
 | 항목 | 2025 | 2026 |
+|------|------|----------------|
 | 반도체 설비 세액 | 국가별 R&D·CAPEX 인centive | **미국 CHIPS·EU**와 **중복·경쟁** — 유효 \(r\) ↓ |
 | EV·배터리 IRA 연계 | 현지화 조건 | **공급곡선 이동** — 지역별 **\(AC\)** 분화 |
 | 전력·요금 | 산업용 전력 | fab·셀 **\(VC\)** — [전력망](../03-markets/sectors/power-grid-electrification.md) |
@@ -483,9 +476,7 @@ flowchart TD
 
 **가상 LFP 셀**: 100GWh 공장 **\(AC\)** = 80 USD/kWh, 30GWh **\(AC\)** = 95 — **MES** ≈ 80GWh+.
 
----
-
----## 8. 숫자 예제 (가상)
+## 8. 숫자 예제 (가상)
 
 > 모든 수치·회사는 가상입니다.
 
@@ -530,7 +521,6 @@ flowchart TD
 
 **LAC** 하강 **완만** → 100GWh 이후 **경쟁=가격** — [battery](../03-markets/sectors/battery-lfp-ncm-ess.md).
 
----
 
 ## 9. FAQ
 
@@ -570,7 +560,6 @@ flowchart TD
 **Q12. MES가 크면?**  
 **A12.** **진입장벽** ↑, **과점** ↑ — micro-03 Cournot·HBM.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -602,8 +591,6 @@ flowchart TD
   - [microeconomics-basics](microeconomics-basics.md)
   - [semiconductor](../03-markets/sectors/semiconductor.md), [battery](../03-markets/sectors/battery-lfp-ncm-ess.md)
   - [passive-vs-active](../04-portfolio/passive-vs-active.md)
-
----
 
 
 ## 연습문제 (L4, 기호)

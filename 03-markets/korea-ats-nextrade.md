@@ -153,13 +153,13 @@ flowchart LR
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 |  P  | 포트 규모 | 가상 포트폴리오 규모(만 원) |
-|        fill        | fill | 위 식의 fill |
-|        approx        | approx | 위 식의 approx |
-|        NXT        | NXT | 위 식의 NXT |
-|        KRX        | KRX | 위 식의 KRX |
-|        quad        | quad | 위 식의 quad |
-|        DEPTH        | DEPTH | 위 식의 DEPTH |
-|        STANDARD        | STANDARD | 위 식의 STANDARD |
+|          fill          | fill | 위 식의 fill |
+|          approx          | approx | 위 식의 approx |
+|          NXT          | NXT | 위 식의 NXT |
+|          KRX          | KRX | 위 식의 KRX |
+|          quad          | quad | 위 식의 quad |
+|          DEPTH          | DEPTH | 위 식의 DEPTH |
+|          STANDARD          | STANDARD | 위 식의 STANDARD |
 
 \[
 P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수 시, 호가에 따라)}

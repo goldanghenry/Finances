@@ -57,7 +57,7 @@
 | WACC | Weighted avg cost of capital | 가중 자본비용 |
 | \(R_e\) | Cost of equity | 주주 요구수익 |
 | \(R_d\) | Cost of debt | 부채 비용 |
-| \(T\) | Tax rate | 법인세율 |
+| **T** | Tax rate | 법인세율 |
 | D/V, E/V | Capital weights | 부채·자본 비중 |
 | β_L, β_U | Levered/unlevered beta | 부채 반영 여부 |
 | D/E | Debt-to-equity | 레버리지 |
@@ -75,7 +75,7 @@
 | WACC | 가중 자본비용 | §4 | [glossary](../00-roadmap/glossary.md#wacc) |
 | \(R_e\) | 주주 요구수익 | §4 | [glossary](../00-roadmap/glossary.md#\) |
 | \(R_d\) | 부채 비용 | §4 | [glossary](../00-roadmap/glossary.md#\) |
-| \(T\) | 법인세율 | §4 | [glossary](../00-roadmap/glossary.md#\) |
+| **T** | 법인세율 | §4 | [glossary](../00-roadmap/glossary.md#\) |
 | D/V, E/V | 부채·자본 비중 | §4 | [glossary](../00-roadmap/glossary.md#d/v,-e/v) |
 | β_L, β_U | 부채 반영 여부 | §4 | [glossary](../00-roadmap/glossary.md#β_l,-β_u) |
 | D/E | 레버리지 | §4 | [glossary](../00-roadmap/glossary.md#d/e) |
@@ -151,10 +151,10 @@ R_d \approx YTM_{\text{채권}} \quad \text{또는} \quad R_f + \text{Credit Spr
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
-| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
-| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
-| \(FV\) | 미래가치 | 미래 시점의 목표·결과 금액 |
+| **r** | 할인율·수익률 | 기간당 이자·요구수익률 |
+| **n** | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| **PV** | 현재가치 | 오늘 시점으로 환산한 금액 |
+| **FV** | 미래가치 | 미래 시점의 목표·결과 금액 |
 
 \[
 R_e = R_0 + (R_0 - R_d)\frac{D}{E}

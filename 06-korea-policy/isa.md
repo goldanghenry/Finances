@@ -142,12 +142,12 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|            ISA            | ISA | 개인종합자산관리계좌 슬롯 |
+|              ISA              | ISA | 개인종합자산관리계좌 슬롯 |
 |  M  | 월 실수령 | 가계 교육용 월 세후 소득 기호 |
-|            approx            | approx | 위 식의 approx |
-|            H            | H | 위 식의 H |
-|            times            | times | 위 식의 times |
-|            DEPTH            | DEPTH | 위 식의 DEPTH |
+|              approx              | approx | 위 식의 approx |
+|              H              | H | 위 식의 H |
+|              times              | times | 위 식의 times |
+|              DEPTH              | DEPTH | 위 식의 DEPTH |
 
 \[
 \text{절세액} \approx \min(\text{누적순이익}, H) \times \tau_{\text{일반}} + \max(0, \text{누적순이익} - H) \times (\tau_{\text{일반}} - 0.099)

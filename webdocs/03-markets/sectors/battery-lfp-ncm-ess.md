@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **LFP(리튬인산철)** 는 저가·안전·수명 — **저가 EV·ESS·에너지 저장**에 강하고, **NCM(삼원계)** 은 에너지 밀도·고성능 EV에 강합니다 — **대체 관계**이지 “둘 다 무조건 수혜”가 아닙니다.
@@ -30,7 +29,6 @@
 4. **한국**은 양극재·전해액·장비·일부 셀에 강점; **중국 LFP·저가 셀** 공급 확대로 **마진·점유율 압박** 구간이 반복됩니다.
 5. 투자: **코어 = 2차전지·클린 ETF**(Bucket 3), **위성 = 소재·장비 개별**(Bucket 4, 상한) — [sector-investing-framework.md](sector-investing-framework.md) 5단계 필수.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "GPU (Graphics Processing Unit)"
@@ -53,7 +51,6 @@
 
 전기차·재생에너지·AI 데이터센터 **백업 전력**까지 2차전지 TAM은 10년 스케일에서 **구조적 성장** 후보입니다. 그러나 **CAPEX 폭증·중국 공급·원자재(리튬·니켈·코발트) 가격**으로 **2018~2023급 사이클**이 반복될 수 있습니다. 한국 투자자는 **코스피·코스닥 2차전지·소재 비중**이 커서 지수·ETF·개별 선택이 [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md)와 직결됩니다. “유망 = 매수”가 아니라 **화학계 대체·ESS 분리·재무 사이클**을 이해해야 Bucket 3(분산) vs 4(집중)를 나눌 수 있습니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -68,7 +65,6 @@
 - [kosdaq-tier-system.md](../kosdaq-tier-system.md) — 소재 코스닥
 - [recommended-deep-study-roadmap.md](recommended-deep-study-roadmap.md)
 
----
 
 ## 3. 직관·비유
 
@@ -78,7 +74,6 @@
 
 **사이클**은 **반도체 메모리**와 닮았습니다. 공장을 **과잉 증설**하면 2년 뒤 **셀 가격 폭락·재고** — “성장 산업”이어도 **주가 -50%** 구간이 옵니다. [semiconductor.md](semiconductor.md)의 DRAM 사이클 직관을 **2차전지 CAPEX**에 적용하세요.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -113,9 +108,6 @@
 | 분리막 | 안전·성능 | §4 | [glossary](../../00-roadmap/glossary.md#분리막) |
 | C-rate | ESS vs EV 요구 차이 | §4 | [glossary](../../00-roadmap/glossary.md#c-rate) |
 | SOH | ESS 2차 이용·재활용 | §4 | [glossary](../../00-roadmap/glossary.md#soh) |
-
-
----
 
 ## 5. 메커니즘
 
@@ -204,7 +196,6 @@ flowchart LR
 
 ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-electrification.md))과 연결; EV는 **소비자·OEM** 사이클. **2022~2023 EV 둔화 + ESS 급성장**처럼 **디커플링**될 수 있습니다.
 
----
 
 ## 6. 수식·모델
 
@@ -243,6 +234,7 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 **재고·사이클 신호 (체크리스트)**:
 
 | 지표 | 호황 | 침체 신호 |
+|------|------|----------------|
 | 셀 ASP | ↑ | **↓ 2분기 연속** |
 | 재고일수 | 낮음 | **↑** |
 | CAPEX 가이던스 | ↑↑ | **cut** |
@@ -253,7 +245,8 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 ---
 
 ↑ | **cut** |**ROIC**: 증설 후 **ROIC < WACC** 구간이 2~3년 지속되면 “성장”이 아닌 **과잉** 가능성 — [sector-investing-framework.md](sector-investing-framework.md) 4단계.
----## 7. 한국 적용
+
+## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
 
@@ -280,7 +273,6 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 
 **법·정책 근거**: 전기사업법·신에너지·재생에너지, 미 IRA §45X, EU Battery Regulation, [references/sources.md](../../references/sources.md)
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -320,7 +312,6 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 
 → **위성 20%** = 학습·변동; 코어 ETF가 **포트 안정**.
 
----
 
 ## 9. FAQ
 
@@ -354,7 +345,6 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 **Q10. 사이클 바닥 신호 3가지는?**  
 **A.** (교육) **CAPEX cut**, **재고 정상화**, **ASP 2분기 stabilizing** — 단독 지표 금지.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -385,7 +375,6 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 - IEA Global EV Outlook, BloombergNEF (교차 검증)
 - SNE Research — 셀·ESS 출하 (2차)
 
----
 
 ## 12. 스스로 점검 퀴즈
 

@@ -32,7 +32,6 @@
 4. **국내** 개인 매매차익은 원칙 **비과세**, **해외**는 별도 — 세금 시리즈 필수.
 5. 장기 **코어**는 [ETF](../03-markets/etf-index-funds.md) 분산, **위성**만 개별·섹터 — [코어-위성](../04-portfolio/core-satellite-framework.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -40,7 +39,6 @@
 
 **왜 중요한가**: “주식 = 도박”과 “주식 = 예금 대체”는 둘 다 **왜곡**이다. 소유권·변동성·세금·유동성을 이해하면 [ISA](../06-korea-policy/isa.md)·[IRP](../06-korea-policy/tax/isa-irp-pension-tax.md)에서 **무엇을 코어로 둘지** 결정할 수 있다. 개별 코스닥 테마주만으로 은퇴 자금을 채우는 구조의 **리스크**도 여기서 걸러진다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -56,7 +54,6 @@
 - [국내 주식 세금](../06-korea-policy/tax/domestic-stocks-tax.md)
 - [계좌·상품 세금 맵](../06-korea-policy/tax/account-product-tax-map.md)
 
----
 
 ## 3. 직관·비유
 
@@ -72,7 +69,6 @@
 
 **승강제·유동성**: 코스닥은 투자주의·관리종목·상장폐지 등 **규칙 리스크**가 코스피보다 크다. 테마로 몰린 소형주는 호가가 얇아 **시장가 매도** 시 체결가가 기대보다 낮을 수 있다 — [kosdaq-tier-system](kosdaq-tier-system.md), [korea-ats-nextrade](korea-ats-nextrade.md).
 
----
 
 ## 4. 정식 개념·용어
 
@@ -101,9 +97,6 @@
 | EPS | 순이익 ÷ 주식수 | §4 | [glossary](../00-roadmap/glossary.md#eps) |
 | 배당수익률 | 연 배당 ÷ 주가 | §4 | [glossary](../00-roadmap/glossary.md#배당수익률) |
 | 유동성 | 매매·호가 **깊이** | §4 | [glossary](../00-roadmap/glossary.md#유동성) |
-
-
----
 
 ## 5. 메커니즘
 
@@ -145,8 +138,6 @@ flowchart LR
 | 미국 QQQ 등 | 달러 | 양도·배당 | [part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) |
 | ISA | 원화/해외 | 비과세 한도·기간 | [isa](../06-korea-policy/isa.md) |
 
----
-
 ## 6. 수식·모델
 
 **PER**:
@@ -177,7 +168,9 @@ PBR = \frac{\text{주가}}{BPS}
 \]
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**PEG** (성장 조정, 참고):
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+**PEG** (성장 조정, 참고):
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
@@ -204,13 +197,16 @@ PEG = \frac{PER}{\text{이익 성장률(\%)}}
 \]
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**총주주수익** (1년, 근사): \(\text{주가 변동률} + \text{배당수익률}\) (재투자·세금 제외)
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+**총주주수익** (1년, 근사): \(\text{주가 변동률} + \text{배당수익률}\) (재투자·세금 제외)
 
 입문 이후: [CAPM](../08-advanced/capm-and-risk-return.md), [팩터](../08-advanced/factor-investing-primer.md)
 
 ### 6.1 주문·유동성 (입문)
 
 | 주문 | 설명 | 함정 |
+|------|------|----------------|
 | **지정가** | 원하는 가격에만 체결 | 미체결 |
 | **시장가** | 즉시 체결 | 호가 스프레드·급락 시 **불리** |
 | **종가** | 종가 근처 체결 | 변동성 큰 날 주의 |
@@ -220,6 +216,7 @@ PEG = \frac{PER}{\text{이익 성장률(\%)}}
 ### 6.2 배당 정책
 
 | 유형 | 특징 |
+|------|------|
 | 성장주 | **재투자** → 배당 낮음 |
 | 가치·성숙 | **배당** 비중 |
 | 특별배당 | **일회성** — 수익률 착시 |
@@ -231,6 +228,7 @@ PEG = \frac{PER}{\text{이익 성장률(\%)}}
 7.1 2025년 기준 (확정·일반적 맥락)
 
 | 시장 | 특징 | 투자 교육 포인트 |
+|------|------|----------------|
 | **코스피** | 대형·금융·수출 多 | 외국인·기관 수급 |
 | **코스닥** | 성장·바이오·테마 | [승강제](kosdaq-tier-system.md), 퇴출 리스크 |
 | **대체거래소 ATS** | NXT 등 | [korea-ats-nextrade](korea-ats-nextrade.md) |
@@ -240,6 +238,7 @@ PEG = \frac{PER}{\text{이익 성장률(\%)}}
 ### 7.2 2026년 개편·시행 (해당 시)
 
 | 항목 | 2025 | 2026 (확인 필요) |
+|------|------|----------------|
 | ISA 한도·비과세 | [isa](../06-korea-policy/isa.md) | 개정 시 **코어 설계** 재검토 |
 | 코스닥 규제 | 승강제·공시 | [tier-system](kosdaq-tier-system.md) 개정 여부 |
 | 해외주식 세무 | 국세청 안내 | [investment-tax-overview](../06-korea-policy/tax/investment-tax-overview.md) |
@@ -249,12 +248,13 @@ PEG = \frac{PER}{\text{이익 성장률(\%)}}
 ### 7.3 계좌별 주식 보유 (교육용)
 
 | 계좌 | 국내주 | 해외주·QQQ | 비고 |
+|------|------|------|----------------|
 | ISA | ○ | ○(상품별) | 3년·한도 |
 | IRP/연금 | ○ | ○(상품별) | [IRP 세금](../06-korea-policy/tax/isa-irp-pension-tax.md) |
 | DB | **본인 매매×** | × | [db-pension](../06-korea-policy/db-pension.md) |
 | DC | ○(가입자 선택) | ○(제한) | [dc-pension](../06-korea-policy/dc-pension.md) |
 
----## 8. 숫자 예제 (가상)
+## 8. 숫자 예제 (가상)
 
 > 모든 인물·금액·종목명은 가상입니다.
 
@@ -296,7 +296,7 @@ PEG = \frac{PER}{\text{이익 성장률(\%)}}
 |------|------|----------------|
 → [kosdaq-tier-system](kosdaq-tier-system.md) 선행 학습.
 
----
+
 ## 9. FAQ
 
 **Q1. 주식은 도박과 같은가?**  
@@ -323,7 +323,6 @@ PEG = \frac{PER}{\text{이익 성장률(\%)}}
 **Q8. 주식 vs [레버리지 ETF](../04-portfolio/leveraged-etf-qqq-qld.md)?**  
 **A.** QLD 등은 **일일 리셋**·변동성 붕괴 — 코어 비권장, 위성·단기만 교육.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -366,8 +365,6 @@ PEG = \frac{PER}{\text{이익 성장률(\%)}}
 | PER 볼 때 EPS 품질 확인했는가 | |
 | 해외 보유 시 5월 신고 인지했는가 | |
 | DB에 개별주 기대하지 않는가 | |
-
----
 
 ## 12. 스스로 점검 퀴즈
 

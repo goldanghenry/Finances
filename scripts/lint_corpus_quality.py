@@ -172,6 +172,8 @@ def check_section6(text: str) -> list[str]:
         issues.append(
             f"§6 has {n_math} display equation(s) but {n_tables} variable table(s)"
         )
+    if re.search(r"\|[^\n]+\|\n\\\[", s6_no_code):
+        issues.append("§6 display math glued to table row (need blank line before \\[)")
     return issues
 
 

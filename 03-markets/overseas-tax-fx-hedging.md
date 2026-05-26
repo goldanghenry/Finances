@@ -236,14 +236,14 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|        R        | R | 기간당 이자·요구수익률 |
-|        KRW        | KRW | 위 식의 KRW |
-|        unhedged        | unhedged | 위 식의 unhedged |
-|        approx        | approx | 위 식의 approx |
-|        USD        | USD | 위 식의 USD |
-|        asset        | asset | 위 식의 asset |
-|        FX        | FX | 위 식의 FX |
-|        DEPTH        | DEPTH | 위 식의 DEPTH |
+|          R          | R | 기간당 이자·요구수익률 |
+|          KRW          | KRW | 위 식의 KRW |
+|          unhedged          | unhedged | 위 식의 unhedged |
+|          approx          | approx | 위 식의 approx |
+|          USD          | USD | 위 식의 USD |
+|          asset          | asset | 위 식의 asset |
+|          FX          | FX | 위 식의 FX |
+|          DEPTH          | DEPTH | 위 식의 DEPTH |
 
 \[
 R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) - 1
@@ -278,7 +278,7 @@ R_{\text{KRW}} \approx R_{\text{USD asset}} + R_{\text{FX}} + R_{\text{USD asset
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(TER\) | 총보수율 | 헷지·운용 비용(연) |
+| **TER** | 총보수율 | 헷지·운용 비용(연) |
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|

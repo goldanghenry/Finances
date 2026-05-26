@@ -123,14 +123,14 @@ flowchart LR
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|        w        | w | 위 식의 w |
-|        risk        | risk | 위 식의 risk |
-|        V        | V | 위 식의 V |
-|        stock        | stock | 위 식의 stock |
-|        ETF        | ETF | 위 식의 ETF |
-|        total        | total | 위 식의 total |
-|        DEPTH        | DEPTH | 위 식의 DEPTH |
-|        STANDARD        | STANDARD | 위 식의 STANDARD |
+|          w          | w | 위 식의 w |
+|          risk          | risk | 위 식의 risk |
+|          V          | V | 위 식의 V |
+|          stock          | stock | 위 식의 stock |
+|          ETF          | ETF | 위 식의 ETF |
+|          total          | total | 위 식의 total |
+|          DEPTH          | DEPTH | 위 식의 DEPTH |
+|          STANDARD          | STANDARD | 위 식의 STANDARD |
 
 \[
 w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70

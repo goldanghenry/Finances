@@ -32,7 +32,6 @@
 4. **ISA·IRP**에서 코어 운용 시 [계좌 맵](../06-korea-policy/tax/account-product-tax-map.md)과 [ISA](../06-korea-policy/isa.md) 규칙을 함께 본다.
 5. **레버리지·인버스**는 코어가 아니라 **위성·단기** 교육 프레임.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -40,7 +39,6 @@
 
 **왜 중요한가**: 개별 종목 20개를 고르는 것보다 **한 바스켓**으로 분산·비용·세금 계좌를 설계하기 쉽다. 본 저장소의 장기 코어(QQQ 등)는 ETF 중심이며, [패시브 vs 액티브](../04-portfolio/passive-vs-active.md)와 [코어-위성](../04-portfolio/core-satellite-framework.md)의 **실행 도구**다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -56,7 +54,6 @@
 - [섹터](sectors/README.md)
 - [ATS](korea-ats-nextrade.md)
 
----
 
 ## 3. 직관·비유
 
@@ -72,7 +69,6 @@
 
 **계좌 우선순위**: 동일 QQQ라도 **ISA 3년** vs **일반** vs **IRP**에 따라 **after-tax 수익**이 달라진다. TER 0.1%p 차이보다 **세금·기간**이 클 수 있다 — [account-product-tax-map](../06-korea-policy/tax/account-product-tax-map.md).
 
----
 
 ## 4. 정식 개념·용어
 
@@ -113,7 +109,6 @@
 - **[자산배분](../04-portfolio/asset-allocation.md)** — 지수 집중·2차 분산
 - **[시장 효율성](../08-advanced/market-efficiency-emh.md)** — 인덱싱이 전제하는 EMH
 
----
 
 ## 5. 메커니즘
 
@@ -147,14 +142,13 @@ flowchart TD
 | 섹터 ETF | 테마 노출 | **상관·집중** — [섹터](sectors/README.md) |
 | QLD 등 2x | 단기 레버리지 | **코어 비권장** — [QLD 문서](../04-portfolio/leveraged-etf-qqq-qld.md) |
 
----
-
 ## 6. 수식·모델
 
 **장기 수익 분해** (교육용):
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 R_{\text{투자자}} \approx R_{\text{지수}} - TER - \text{추적오차} - \text{세금} - \text{괴리 비용}
 \]
@@ -164,6 +158,7 @@ R_{\text{투자자}} \approx R_{\text{지수}} - TER - \text{추적오차} - \te
 **10년 복리 영향** (가상, TER 0.20% vs 0.80%):
 
 | TER | 10년 누적 비용 영향(근사, 가상) |
+|------|------|
 | 0.20% | −2.0%p 수준 |
 | 0.80% | −7.7%p 수준 |
 
@@ -182,9 +177,12 @@ R_{\text{투자자}} \approx R_{\text{지수}} - TER - \text{추적오차} - \te
 \]
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.### 6.1 복제 방식 (교육)
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+### 6.1 복제 방식 (교육)
 
 | 방식 | 설명 | 추적오차 |
+|------|------|----------------|
 | **실물(Physical)** | 지수 구성종목 **매수** | 낮은 편 |
 | **합성(Synthetic)** | 스왑·파생 | 구조·상대방 리스크 |
 | **샘플링** | 대표 종목만 | 지수와 **괴리** 가능 |
@@ -221,6 +219,7 @@ KODEX·TIGER 등 **간이투자설명서**에서 복제 방식 확인.
 ### 7.1 2025년 기준 (확정·일반적 맥락)
 
 | 유형 | 예시 (교육, 특정 종목 추천 아님) | 확인 |
+|------|------|----------------|
 | **미국 직접** | 나스닥100·S&P500 ETF | 달러·양도세 |
 | **국내 상장** | KOSPI200·미국 지수 래핑 | 환헷지 여부 |
 | **섹터** | 반도체·2차전지 | [semiconductor](sectors/semiconductor.md) |
@@ -230,16 +229,14 @@ KODEX·TIGER 등 **간이투자설명서**에서 복제 방식 확인.
 ### 7.2 2026년 (확인 필요)
 
 | 항목 | 2025 | 2026 |
+|------|------|----------------|
 | ISA 비과세·한도 | 현행 | 개정 시 **after-tax** 재계산 |
 | ATS·거래 시간 | [NXT](korea-ats-nextrade.md) | 유동성·스프레드 변화 가능 |
 | 해외 ETF 세무 | [part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) | 국세청 안내 |
 
 **법·정책 근거**: 금융투자협회 ETF 공시, 거래소 상장요건 — [sources.md](../references/sources.md)
 
----
-
-
----## 8. 숫자 예제 (가상)
+## 8. 숫자 예제 (가상)
 
 > 모든 금액·수익률은 가상입니다.
 
@@ -293,7 +290,6 @@ KODEX·TIGER 등 **간이투자설명서**에서 복제 방식 확인.
 | QQQ 70% + 반도체 ETF 20% | 테크·반도체 **이중** | 상승·하락 **증폭** |
 | MSCI World 80% + 미국 S&P 20% | 미국 비중 **과다** 가능 | [geographic](../04-portfolio/geographic-diversification.md) |
 
----
 ## 9. FAQ
 
 **Q1. ETF vs 일반 펀드?**  
@@ -332,7 +328,6 @@ KODEX·TIGER 등 **간이투자설명서**에서 복제 방식 확인.
 **Q12. DC에서 ETF?**  
 **A.** 가입자 선택 가능 — [dc-pension](../06-korea-policy/dc-pension.md), [db-vs-dc](../06-korea-policy/db-vs-dc-pension.md). DB는 [db-pension](../06-korea-policy/db-pension.md) 참고.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -371,7 +366,6 @@ KODEX·TIGER 등 **간이투자설명서**에서 복제 방식 확인.
 
 [leveraged-etf-qqq-qld](../04-portfolio/leveraged-etf-qqq-qld.md)에 정리된 대로 **QLD·TQQQ·인버스**는 (1) 코어 금지 (2) 보유 기간 **단기** 가정 (3) 변동성 붕괴 이해 — 세 가지를 만족할 때만 위성으로 검토.
 
----
 
 ## 12. 스스로 점검 퀴즈
 

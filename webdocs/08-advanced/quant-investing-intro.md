@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
 ## TL;DR
 
 1. **퀀트 투자** = 규칙·데이터·통계로 포트 구성·성과 평가 — “감”을 **프로세스**로 대체하려는 시도이지 **수익 보장**이 아니다.
@@ -32,7 +31,6 @@
 6. **DART Open API** = 한국 공시 **구조화 데이터** — ML 파이프라인과 **유사**하나 **투자 신호 ≠ API 호출**.
 7. **AI 엔지니어**에게 익숙한 ETL·피처·검증 분할을 **금융 도메인 제약**(저표본·레짐 변화)과 함께 이해한다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -49,7 +47,6 @@
 
 본 문서는 **헤지펀드 운용 매뉴얼**이 아니라, 개인 장기 투자자가 **퀀트 마케팅·학술 요약·공시 API**를 **비판적으로** 읽기 위한 **L4 입문**이다. 실행은 [passive-vs-active](../04-portfolio/passive-vs-active.md)·[core-satellite-framework](../04-portfolio/core-satellite-framework.md)와 정렬한다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -67,7 +64,6 @@
 - [reading-annual-reports-dart](../01-foundations/reading-annual-reports-dart.md)
 - [quant-investing-intro](quant-investing-intro.md) ← 본 문서
 
----
 
 ## 3. 직관·비유 — AI 엔지니어 데이터 파이프라인
 
@@ -99,7 +95,6 @@ flowchart LR
 
 **핵심**: 엔지니어에게 익숙한 “**파이프라인이 돌아간다**” ≠ “**알파가 있다**”. **검증 설계**가 제품 품질의 80%다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -141,9 +136,6 @@ flowchart LR
 | IR | 초과/TE | §4 | [glossary](../00-roadmap/glossary.md#ir) |
 | 스마트 베타 | 규칙형 팩터 ETF | §4 | [glossary](../00-roadmap/glossary.md#스마트-베타) |
 
-
----
-
 ## 5. 메커니즘 — 팩터 투자 개요
 
 ### 5.1 CAPM에서 팩터로
@@ -181,7 +173,6 @@ flowchart TD
 - **구조 변화**: 회계·공시·지수 편입 규칙 변경  
 - **데이터 마이닝**: 학술·브로커가 **수백 팩터** 시도 → **유의한 것만** 보고 ([p-hacking](https://en.wikipedia.org/wiki/Data_dredging) 유사)
 
----
 
 ## 6. 백테스트 — 설계·함정·체크리스트
 
@@ -203,6 +194,7 @@ flowchart TD
 ### 6.2 편향 카탈로그
 
 | 편향 | 설명 | 엔지니어 비유 |
+|------|------|----------------|
 | **생존편향** | 상장 폐지 종목 제외 | 삭제된 로그만으로 SLA 계산 |
 | **전망편향** | 수정 재무·당일 종가로 t일 신호 | 미래 타임스탬프 로그 혼입 |
 | **데이터 스누핑** | 100 규칙 중 1개만 보고 | 100 실험 중 p<0.05 하나 |
@@ -215,6 +207,7 @@ flowchart TD
 > **가상**: 2015~2024, KOSPI 유니버스, **분기** 리밸, **P/B 하위 30%** 20종목 동일가중, 비용 0.3%/회.
 
 | 구간 | 연환산 | MDD | 비고 |
+|------|------|------|----------------|
 | IS 2015~2020 | +12% | −25% | 튜닝 **금지** 구간 아님 |
 | OOS 2021~2024 | +3% | −18% | **성과 급감** — 과최적화 의심 |
 
@@ -232,7 +225,7 @@ flowchart LR
 
 **롤링**: 3년 학습 → 1년 검증 → 창 이동. **파라미터 고정** 규칙이 이상적; 매 창마다 재튜닝하면 **누수**.
 
----## 7. 과최적화(Overfitting) — 진단·방어
+## 7. 과최적화(Overfitting) — 진단·방어
 
 ### 7.1 정의·신호
 
@@ -258,7 +251,6 @@ flowchart LR
 
 \(N\)개 전략을 시도하면 우연히 유의한 전략 수 ≈ \(N \times \alpha\). **100번** 시도·α=0.05 → **5개**는 우연. → **사전 등록**(pre-registration)처럼 **규칙을 먼저** 적고 테스트.
 
----
 
 ## 8. 성과 측정 — 퀀트와 연결
 
@@ -282,7 +274,6 @@ flowchart TD
   Bench --> IR[IR_TE]
 ```
 
----
 
 ## 9. DART Open API 개요 — 공시 데이터 파이프라인
 
@@ -351,7 +342,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 
 [financial-statements-study-roadmap](../01-foundations/financial-statements-study-roadmap.md) Week 9~11과 **동일 윤리**.
 
----
 
 ## 10. 한국 적용 — 개인 투자자 현실
 
@@ -395,8 +385,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 
 - 유니버스 200종 → 영업이익 YoY 상위 30 → **다음 분기** 매수  
 - **비용 0.4%** 반영 후 연 4% → 코어 ETF 6% **미달** → **코어 유지**, 스크리닝 **취미**로 격하
-
----
 
 
 ## 연습문제 (L4, 기호)
@@ -442,7 +430,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 **Q10. 다음 학습?**  
 **A10.** [apt-multi-factor-models](apt-multi-factor-models.md), [technical-analysis-critical](technical-analysis-critical.md) (비판적 읽기).
 
----
 
 ## 13. 함정·리스크·한계
 
@@ -453,7 +440,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 - **윤리**: 내부정보·공시 전 **누수** 거래 **불법** — API도 **공개 후**만.  
 - **교육 한계**: API 스펙·세법 **시점별 변경**.
 
----
 
 ## 14. 심화 읽기
 
@@ -464,7 +450,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 - [references/sources.md](../references/sources.md)
 - 교재: **Active Portfolio Management** (Grinold & Kahn) — 고급
 
----
 
 ## 15. 스스로 점검 퀴즈
 
@@ -482,8 +467,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
     1. 산업 vs 공통 특성 · 2. 미래 정보 사용 · 3. 과최적화 검출 · 4. 접수일 후 매수 등 · 5. 초과/TE · 6. 과최적화 의심 · 7. MKT SMB HML · 8. 클린징·조정
 
 
----
-
 
 ## 부록 A. 백테스트 체크리스트 (인쇄용)
 
@@ -498,7 +481,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 - [ ] 코어 대비 **위성 상한**  
 - [ ] 결과 **노트** (가상 금액만)
 
----
 
 ## 부록 B. 용어 ↔ ML 대응표 (확장)
 
@@ -510,8 +492,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 | Rebalance | Batch redeploy |
 | Drawdown | SLO breach duration |
 | Factor exposure | Embedding direction (느슨한 비유) |
-
----
 
 ## 부록 C. 가상 시나리오 — 엔지니어 C의 6개월
 
@@ -526,7 +506,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 
 **교훈**: **엔지니어링 성공 ≠ 투자 α**. 프로세스는 **코어·ISA·행동**에 투입.
 
----
 
 ## 부록 D. 모멘텀·퀄리티·저변동 (FF5 확장)
 
@@ -545,7 +524,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 
 가상 2020~21: 모멘텀 상위 20% **+40%** → 2022: **−30%** (레짐 전환). 백테스트에 **2022 포함** 여부가 **전략 생존**을 가른다.
 
----
 
 ## 부록 E. 한국 팩터·스마트베타 실무 (교육용)
 
@@ -558,7 +536,6 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 
 **코어 vs 팩터**: 시장가중 **70~90%** + 팩터 **0~20%** — [asset-allocation](../04-portfolio/asset-allocation.md). **팩터만** 5개 = **중복 베팅**.
 
----
 
 ## 부록 F. 백테스트 의사코드 (가상·전체)
 
@@ -590,7 +567,6 @@ oos_start = "2021-01-01"
 # is_end 이전 데이터로 규칙 고정 후 oos만 evaluate
 ```
 
----
 
 ## 부록 G. DART API 엔드포인트 맵 (교육·명칭 변동 주의)
 
@@ -606,7 +582,6 @@ oos_start = "2021-01-01"
 
 **개인 투자**: API로 **스크리닝 리스트**만 만들고, **매매는 분기 규칙** + [rebalancing-and-dca](../04-portfolio/rebalancing-and-dca.md).
 
----
 
 ## 부록 H. 통계 검정 직관 (L4)
 
@@ -619,7 +594,6 @@ oos_start = "2021-01-01"
 
 개인은 **검정 계산**보다 **OOS·비용·경제 논리** 3축이 실용적.
 
----
 
 ## 부록 I. 퀀트 vs [technical-analysis-critical](technical-analysis-critical.md)
 
@@ -631,7 +605,6 @@ oos_start = "2021-01-01"
 
 **RSI+월요일** 규칙은 **둘 다** 데이터 스누핑 위험.
 
----
 
 ## 부록 J. 성과 측정 워크시트 (가상)
 
@@ -642,7 +615,6 @@ oos_start = "2021-01-01"
 
 [performance-measurement](../04-portfolio/performance-measurement.md) §예제와 **동일 정의** 사용 — 월간 vs 연환산 **혼동 금지**.
 
----
 
 ## 부록 K. FAQ 추가
 

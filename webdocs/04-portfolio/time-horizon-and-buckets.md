@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | Bucket, 코어, 위성, DCA |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **투자 기간(언제 쓸 돈인가)** 과 **매매 스타일(얼마나 자주 거래하는가)** 은 다른 축이며, 혼동하면 코어 ETF를 단기 자금처럼 쓰거나 단타를 장기 슬롯에 넣는 실수가 납니다.
@@ -30,7 +29,6 @@
 4. **단기 자금**(1~3년 확정 지출)은 주식 코어와 분리하고, **단타·스윙**(일~월)은 **Bucket 4** 에 **0~20% 상한**으로 격리합니다.
 5. 비중 %는 목표·기간·세금 구조가 정해진 **후**에 확정하고, 그 전에는 **bucket 채우기 순서**와 **계좌 역할**을 우선합니다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -48,7 +46,6 @@
 
 장기 자산 형성 관점에서 Bucket은 **“어디에 복리를 걸 것인가”** 와 **“어디는 원금을 지킬 것인가”** 를 분리합니다. 10년·20년 뒤 목표 금액을 [compound-interest-and-time-value.md](../01-foundations/compound-interest-and-time-value.md)로 계산하기 전에, **그 돈이 들어갈 슬롯이 운용 가능한지**부터 확인해야 합니다. DB 가입자에게 이 질문은 특히 중요합니다. 회사 퇴직연금 적립은 **미래 현금흐름(퇴직금)** 이지만, 재직 중에는 **증권 앱에서 QQQ를 고르는 슬롯이 아닙니다**.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -66,7 +63,6 @@
 - [account-product-tax-map.md](../06-korea-policy/tax/account-product-tax-map.md) — 계좌×상품×세금
 - [rebalancing-and-dca.md](rebalancing-and-dca.md) — Bucket 3 유지 규칙
 
----
 
 ## 3. 직관·비유
 
@@ -78,7 +74,6 @@
 
 **단기 자금 vs 단타**도 구분해야 합니다. 2년 뒤 전세 보증금 3,000만 원은 **단기 자금**(목적이 확정, 원금 보존)이지, **단타**(매매 빈도)가 아닙니다. 반대로 10년 뒤 은퇴 자금을 **일간 매매**로 굴리는 것은 **기간은 장기인데 행동은 단타**인 모순입니다. Bucket 모델은 이 두 축을 표로 분리합니다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -117,7 +112,6 @@
 | 단타·스윙 | 일~월 매매, 학습·소액 | §4 | [glossary](../00-roadmap/glossary.md#단타·스윙) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -192,7 +186,6 @@ flowchart LR
 | 계좌 | ISA·IRP | CMA·예금 | ISA·일반(분리) |
 | Bucket | 3 | 0~1 | 4 |
 
----
 
 ## 6. 수식·모델
 
@@ -210,7 +203,6 @@ flowchart LR
 \]
 
 
-
 **읽는 법**: **Bucket**와 **월 필수지출**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **장기 코어 적립의 미래가치** (세전, 교육용):
 
@@ -224,8 +216,23 @@ FV = PMT \times \frac{(1+r)^n - 1}{r}
 \]
 
 
+**읽는 법**: 매 기간 **PMT**가 **r**로 **n**번 복리·누적되면 **FV**가 된다. 
 
-**읽는 법**: 매 기간 **PMT**가 **r**로 **n**번 복리·누적되면 **FV**가 된다. 월·연 단위는 **r**·**n** 정의와 맞춘다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.- **PMT**: Bucket 2b·3 월 적립 (ISA 자동이체 등)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+월·연 단위는 **r**·**n** 정의와 맞춘다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.- **PMT**: Bucket 2b·3 월 적립 (ISA 자동이체 등)
 - **r**: 연간 수익률 가정 (실질·세후로 통일 권장)
 - **n**: 투자 가능 연수 — DB 가입자도 **2b·3** 에서 n 확보
 
@@ -239,7 +246,6 @@ FV = PMT \times \frac{(1+r)^n - 1}{r}
 
 **Drift 방지**: Bucket 4 비중 \(w_4 \leq 0.20\) — [rebalancing-and-dca.md](rebalancing-and-dca.md).
 
----
 
 ## 7. 한국 적용
 
@@ -277,7 +283,6 @@ FV = PMT \times \frac{(1+r)^n - 1}{r}
 - [ ] QQQ·글로벌 **코어**는 2b~3에만
 - [ ] NXT·코스닥 단타는 Bucket 4 **상한** 문서화
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -314,7 +319,7 @@ FV = PMT \times \frac{(1+r)^n - 1}{r}
 
 → 동일 “퇴직연금”이라도 **Bucket 배치가 완전히 다릅니다**.
 
----
+
 ## 9. FAQ
 
 **Q1. Bucket 0을 채우기 전에 ISA에 QQQ부터 사도 되나요?**  
@@ -341,7 +346,6 @@ FV = PMT \times \frac{(1+r)^n - 1}{r}
 **Q8. 퇴사 후 DB는 어느 bucket으로 가나요?**  
 **A8.** IRP 이전 시 **Bucket 2b** 편입 → 본인 ETF 운용. 일시금은 **단기 자금 오용** 위험 — [db-pension.md](../06-korea-policy/db-pension.md) 예제 3.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -370,7 +374,6 @@ FV = PMT \times \frac{(1+r)^n - 1}{r}
 - [db-pension.md](../06-korea-policy/db-pension.md) — DB 운용·퇴사 선택
 - [passive-vs-active.md](passive-vs-active.md) — Bucket 3 철학
 
----
 
 ## 12. 스스로 점검 퀴즈
 

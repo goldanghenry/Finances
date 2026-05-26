@@ -99,14 +99,14 @@ flowchart LR
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|        R        | R | 기간당 이자·요구수익률 |
-|        net        | net | 위 식의 net |
-|        approx        | approx | 위 식의 approx |
-|        gross        | gross | 위 식의 gross |
-|        f        | f | 위 식의 f |
-|        tau        | tau | 위 식의 tau |
-|        times        | times | 위 식의 times |
-|        N        | N | 연·월 등 복리·할인에 쓰는 횟수 |
+|          R          | R | 기간당 이자·요구수익률 |
+|          net          | net | 위 식의 net |
+|          approx          | approx | 위 식의 approx |
+|          gross          | gross | 위 식의 gross |
+|          f          | f | 위 식의 f |
+|          tau          | tau | 위 식의 tau |
+|          times          | times | 위 식의 times |
+|          N          | N | 연·월 등 복리·할인에 쓰는 횟수 |
 
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N

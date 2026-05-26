@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **전기화(Electrification)** 는 EV·히트펌프·산업 전기화와 **AI 데이터센터(MW~GW)** 가 **동시에** 전력 수요·송전·변압기·ESS를 당깁니다 — **2025~ 병목**이 **연산(HBM) → 전력(그리드)** 으로 이동 중입니다.
@@ -30,7 +29,6 @@
 4. **AI DC**는 **24/7 고부하** — [ai-infrastructure.md](ai-infrastructure.md) **전력 레이어**; **변압기·케이블·UPS·ESS** tight.
 5. **한국**: 송전·변압기·ESS·전력 IT — **코어 = 인프라·클린 ETF**, **위성 = 전력설비·ESS 개별**; **유틸**은 **규제·요금** 민감.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -50,7 +48,6 @@
 
 AI·EV·재생에너지가 **같은 그리드**를 씁니다. **변압器 lead time 2~3년**, **송전 허가 지연**은 **AI DC 증설**을 **물리적으로** 막습니다 — “GPU만 사면 된다”는 [ai-infrastructure.md](ai-infrastructure.md) 내러티브의 **반대편**입니다. 한국은 **수출(변압기·ESS)** · **국내 RE100·RPS** · **AI DC 전력** **삼중** 노출. [sector-investing-framework.md](sector-investing-framework.md) 5단계로 **유틸(규제)** vs **설비(CAPEX)** vs **ESS(배터리 사이클)** 를 **분리**하지 않으면 **“전기화 ETF”** 하나로 **올인**하는 함정에 빠집니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -64,7 +61,6 @@ AI·EV·재생에너지가 **같은 그리드**를 씁니다. **변압器 lead t
 - [semiconductor.md](semiconductor.md) — 전력반도体
 - [recommended-deep-study-roadmap.md](recommended-deep-study-roadmap.md)
 
----
 
 ## 3. 직관·비유
 
@@ -74,7 +70,6 @@ AI·EV·재생에너지가 **같은 그리드**를 씁니다. **변압器 lead t
 
 **규제**: **고속도로 건설**은 **정부 허가** — **설비주**는 **수주** 좋아도 **마진·대금** **지연**; **유틸**은 **요금** **상한**.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -109,9 +104,6 @@ AI·EV·재생에너지가 **같은 그리드**를 씁니다. **변압器 lead t
 | MW/GW | **전력** 단위 | §4 | [glossary](../../00-roadmap/glossary.md#mw/gw) |
 | Demand response | **부하** 조절 | §4 | [glossary](../../00-roadmap/glossary.md#demand-response) |
 | HVDC | **장거리** 송전 | §4 | [glossary](../../00-roadmap/glossary.md#hvdc) |
-
-
----
 
 ## 5. 메커니즘
 
@@ -172,7 +164,6 @@ flowchart TB
 
 **LFP ESS**: [battery-lfp-ncm-ess.md](battery-lfp-ncm-ess.md) — **$/kWh** 하락 → **경제성**.
 
----
 
 ## 6. 수식·모델
 
@@ -180,6 +171,7 @@ flowchart TB
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 \]
@@ -199,7 +191,9 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 \]
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**ESS 경제성 (단순)**:
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
+
+**ESS 경제성 (단순)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
@@ -231,6 +225,7 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 ### 7.1 2025년 기준 (확정)
 
 | 영역 | 내용 | bucket |
+|------|------|----------------|
 | **변압器·송전설비** | 수출·국내 | **3~4** |
 | **ESS** | LFP·프로젝트 | **3~4** |
 | **유틸·발전** | **규제** | ETF **3** |
@@ -241,6 +236,7 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 ### 7.2 2026년 개편·시행 예정 (해당 시)
 
 | 항목 | 2025 | 2026 |
+|------|------|----------------|
 | ISA 비과세 | 200만 | **500만** |
 | RE100·RPS | 현행 | **기업 DC** **PPA** ↑ |
 | 송전·변압器 | tight | **수주** **백로그** 보도 |
@@ -251,6 +247,7 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 ### 7.3 전기화 4대 메가트렌드 통합표 (교육)
 
 | 트렌드 | 전력 영향 | 연결 섹터 | bucket |
+|------|------|------|----------------|
 | **EV** | 배전·충전 피크 | battery | 3~4 |
 | **AI DC** | 24/7 MW | ai-infrastructure | 3~4 |
 | **재생** | 간헐·ESS | battery ESS | 3 |
@@ -261,6 +258,7 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 ### 7.4 유틸·설비·ESS — 투자 성격 비교 (교육)
 
 | 유형 | 수익 드라이ver | 변동성 | bucket | 대표 리스크 |
+|------|------|------|------|----------------|
 | **유틸·발전** | **요금·ROE** | **낮~중** | **3** ETF | **규제·정치** |
 | **송전·변압 설비** | **수주·백로그** | **중** | **3~4** | **리드·대금** |
 | **ESS integrator** | **입찰·LFP 가격** | **중~高** | **4** | **배터리 사이클** |
@@ -272,7 +270,7 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 
 .
 
----## 8. 숫자 예제 (가상)
+## 8. 숫자 예제 (가상)
 
 > 모든 인물·금액·회사명은 가상입니다.
 
@@ -328,7 +326,7 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 
 → [battery-lfp-ncm-ess.md](battery-lfp-ncm-ess.md) **ESS** **+** 본 문서 **배전**.
 
----
+
 ## 9. FAQ
 
 **Q1. AI DC와 전력망 관계?**  
@@ -367,7 +365,6 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 **Q12. [ai-infrastructure.md](ai-infrastructure.md) **먼저** **vs** **본 문서**?**  
 **A.** **로드맵**: **AI 인프ra Week 4** → **전력 Week 6** — **GPU** **→** **MW** **순**.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -416,7 +413,6 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 
 **DC·EV·재생 동시 확대** 시나리오에서는 **같은 ESS 풀**을 **세 수요**가 **공유**합니다. LFP **$/kWh** 하락은 ESS **경제성**을 **높이지만**, **셀** **공급** **과잉**이면 **ESS integrator** **마진**도 **압박** — [battery-lfp-ncm-ess.md](battery-lfp-ncm-ess.md) **4. 재무**와 **교차** **확인**.
 
----
 
 ## 12. 스스로 점검 퀴즈
 

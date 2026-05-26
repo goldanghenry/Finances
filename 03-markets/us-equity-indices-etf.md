@@ -210,14 +210,14 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|        R        | R | 기간당 이자·요구수익률 |
-|        approx        | approx | 위 식의 approx |
-|        FX        | FX | 위 식의 FX |
-|        DEPTH        | DEPTH | 위 식의 DEPTH |
-|        STANDARD        | STANDARD | 위 식의 STANDARD |
-|        docs        | docs | 위 식의 docs |
-|        md        | md | 위 식의 md |
-|        Mag        | Mag | 위 식의 Mag |
+|          R          | R | 기간당 이자·요구수익률 |
+|          approx          | approx | 위 식의 approx |
+|          FX          | FX | 위 식의 FX |
+|          DEPTH          | DEPTH | 위 식의 DEPTH |
+|          STANDARD          | STANDARD | 위 식의 STANDARD |
+|          docs          | docs | 위 식의 docs |
+|          md          | md | 위 식의 md |
+|          Mag          | Mag | 위 식의 Mag |
 
 \[
 R_{\text{원화}} \approx (1 + R_{\text{달러}})(1 + R_{\text{FX}}) - 1

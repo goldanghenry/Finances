@@ -22,7 +22,6 @@
 | **이번 편에서 쓰는 기호** | L_ISA, ISA, IRP, DB, DC (해당 시) |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
 ## TL;DR
 
 1. **W-8BEN**은 미국 원천징수 **조약세율(자격 시 15%)** 적용을 위한 **거주자 증명** 서식이다 — 미제출·만료 시 **30%** 등 더 높은 원천이 붙을 수 있어 **배당 실효수익**이 달라진다. 한국 **5월 신고·외국납부세액공제**와는 **별 레이어**다 — [Part2](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md).
@@ -32,7 +31,6 @@
 5. **ISA**는 3년·한도 조건 하 **비과세·9.9% 분리** 등으로 **세금 레이어를 재배치**한다 — W-8BEN·환헷지 선택과 **독립적으로** 설계해야 한다 — [isa](../06-korea-policy/isa.md).
 6. 코어 설계 순서 권장: **① 계좌(ISA→IRP→일반)** → **② 환 노출(헷지 O/X·직접 vs 래핑)** → **③ 상품(TER·복제·추적)** → **④ W-8BEN·배당·5월 캘린더**.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "CGT (Capital Gains Tax)"
@@ -48,7 +46,6 @@
 
 **왜 중요한가**: “QQQ 샀다” 한 줄 뒤에 **W-8BEN 미제출 30% 원천**, **원화 강세로 달러 수익 상쇄**, **환헷지 ETF의 금리차 비용**, **ISA 3년 vs 일반 22% 양도세**가 동시에 작동한다. 이를 분리하지 않으면 **헷지 ETF가 ‘손해’**, **배당 ETF가 ‘이득’**처럼 **잘못된 역사 해석**을 하게 되고, 10~20년 **복리 설계**에서 **실행 레이어**가 자산 선택만큼 커진다. 특히 DB 가입자처럼 **회사 연금 밖**에서 코어를 짜는 경우, [overseas-equities-intro](overseas-equities-intro.md) 입문만으로는 **Part1~3 세금 시리즈**와 **환 노출**을 동시에 다루기 부족하다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -66,7 +63,6 @@
 - [계좌·상품 과세 지도](../06-korea-policy/tax/account-product-tax-map.md)
 - [지역 분산](../04-portfolio/geographic-diversification.md), [코어-위성](../04-portfolio/core-satellite-framework.md)
 
----
 
 ## 3. 직관·비유
 
@@ -80,7 +76,6 @@
 
 **표면 수익 vs 체감 수익**: 브로커 앱의 **달러 수익률**과 **원화 수익률**은 다를 수 있다. 헷지 ETF는 **둘 다 원화에 가깝게** 보이지만 **헷지 비용** 때문에 지수 TR과 **괴리**가 남는다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -132,7 +127,6 @@
 | Withholding overlay | 원천 레이어 | §4 | [glossary](../00-roadmap/glossary.md#withholding-overlay) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -233,7 +227,6 @@ flowchart TD
 
 [W-8BEN]은 **계좌와 무관**하게 미국 **배당 원천**에 걸린다(교육). ISA는 **한국 측** 양도·배당 **우대** — [isa](../06-korea-policy/isa.md), [Part3](../06-korea-policy/tax/overseas-stocks-tax-part3-scenarios.md).
 
----
 
 ## 6. 수식·모델
 
@@ -241,6 +234,17 @@ flowchart TD
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+|         R         | R | 기간당 이자·요구수익률 |
+|         KRW         | KRW | 위 식의 KRW |
+|         unhedged         | unhedged | 위 식의 unhedged |
+|         approx         | approx | 위 식의 approx |
+|         USD         | USD | 위 식의 USD |
+|         asset         | asset | 위 식의 asset |
+|         FX         | FX | 위 식의 FX |
+|         DEPTH         | DEPTH | 위 식의 DEPTH |
+
 \[
 R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) - 1
 \]
@@ -258,6 +262,7 @@ R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) -
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 R_{\text{KRW}} \approx R_{\text{USD asset}} + R_{\text{FX}} + R_{\text{USD asset}} \cdot R_{\text{FX}}
 \]
@@ -277,6 +282,7 @@ R_{\text{KRW}} \approx R_{\text{USD asset}} + R_{\text{FX}} + R_{\text{USD asset
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sell,KRW}} = \text{USD amount} \times e_{\text{sell}}
 \]
@@ -292,7 +298,6 @@ P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sel
 | 열1 | 열2 | 열3 |
 
 | 열1 | 열2 | 열3 |
-|------|------|----------------|
 |------|------|----------------|
 ETF가 **비헷지보다 TER 높은** 경우 多
 - \(\delta_{\text{repl}}\): 복제·샘플링·원천 — [etf-index-funds-deep](etf-index-funds-deep.md)
@@ -319,6 +324,7 @@ D_{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 \text{차익}_{\text{원화}} = P_{\text{sell,KRW}} - P_{\text{buy,KRW}} - \text{비용}
 \]
@@ -330,6 +336,7 @@ D_{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sell,KRW}} = \text{USD amount} \times e_{\text{sell}}
 \]
@@ -350,7 +357,8 @@ verseas-stocks-tax-part1-cgt.md).
 
 -tax-part1-cgt.md).
 
----## 7. 한국 적용
+
+## 7. 한국 적용
 
 ### 7.1 2025년 기준 — 확정·교육 맥락
 
@@ -393,7 +401,6 @@ verseas-stocks-tax-part1-cgt.md).
 | **5월** | 종합소득세 — Part1·2·3 |
 | **ISA 만기** | 3년+ — [isa](../06-korea-policy/isa.md) |
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -472,7 +479,8 @@ verseas-stocks-tax-part1-cgt.md).
 
 **해석**: [core-satellite](../04-portfolio/core-satellite-framework.md) — **broad 코어 하나** + 계좌·환 정책 명시.
 
----## 9. FAQ
+
+## 9. FAQ
 
 **Q1. W-8BEN을 안 내면 양도세도 30%인가요?**  
 **A1.** 아니다. **배당 원천**이 주로 영향 — 양도는 [Part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) **한국 22%** 레이어. 다만 고배당·금융소득 합산 시 **체감 세부담**이 커진다.
@@ -504,7 +512,6 @@ verseas-stocks-tax-part1-cgt.md).
 **Q10. 5월에 환차익만 신고하면 되나요?**  
 **A10.** **양도차익 전체**(주가+환) — 환만 분리 과세 **아님** — [Part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) **실지거래가액**.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -534,8 +541,6 @@ verseas-stocks-tax-part1-cgt.md).
 - [macro-05-open-economy-fx](../02-economics/macro-05-open-economy-fx.md) — 환헷지 거시 질문  
 - [investment-tax-overview](../06-korea-policy/tax/investment-tax-overview.md) — 전체 세금 지도  
 - [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) — L4 품질 게이트
-
----
 
 
 ## 연습문제 (L4, 기호)
@@ -572,8 +577,6 @@ verseas-stocks-tax-part1-cgt.md).
     8. 동일 팩터·세금·환 **중복**
 
 
----
-
 
 ## 부록 A — W-8BEN 제출 체크리스트 (교육)
 
@@ -585,7 +588,6 @@ verseas-stocks-tax-part1-cgt.md).
 | 4 | **1042-S**·원천징수 영수증 **연말** 보관 — 5월·§57 |
 | 5 | **법인·신탁**은 W-8BEN-E 등 **별도** 양식 |
 
----
 
 ## 부록 B — 환헷지 운용 상세 (교육)
 
@@ -595,7 +597,6 @@ verseas-stocks-tax-part1-cgt.md).
 
 **배당 FX**: 배당이 **달러 현금**으로 들어온 뒤 **헷지 재조정** 전까지 **단기 FX 노출** — [etf-index-funds-deep](etf-index-funds-deep.md) 부록 F.
 
----
 
 ## 부록 C — 헷지 vs 비헷지 장기 비교 프레임 (교육)
 
@@ -609,7 +610,6 @@ verseas-stocks-tax-part1-cgt.md).
 
 10년 차트 **한 장**만으로 선택하지 말고 **정책 문장**을 먼저 쓴다: “나의 코어는 **환 노출 ○%**까지 허용한다.”
 
----
 
 ## 부록 D — Part1~3·ISA·본 문서 매핑
 
@@ -622,7 +622,6 @@ verseas-stocks-tax-part1-cgt.md).
 | [etf-index-funds-deep](etf-index-funds-deep.md) | AP·합성·FX 추적 | §5.3, 부록 B |
 | [overseas-equities-intro](overseas-equities-intro.md) | 입문 경로 | 선수 |
 
----
 
 ## 부록 E — 가상 시나리오: 2022형 (교육)
 
@@ -631,7 +630,6 @@ verseas-stocks-tax-part1-cgt.md).
 - **환헷지 래핑**: **≈ −25% − 헷지비** → **약 −27%** 근사(가상).  
 **교훈**: **주가 하락 국면**에서 헷지는 **환 완충 없음** — “헷지=방어” **아님**.
 
----
 
 ## 부록 F — 가상 시나리오: 달러 자산↑·원화 강세 (교육)
 
@@ -640,7 +638,6 @@ verseas-stocks-tax-part1-cgt.md).
 - **환헷지**: **≈ +15% − 2%** → **+13%**대(가상).  
 **교훈**: **해외 주식 강세 + 원화 강세**에서 헷지 **상대 우위** 가능 — **역사 한 조각**일 뿐.
 
----
 
 ## 부록 G — 코어 설계 워크시트 (교육, 가상)
 
@@ -653,37 +650,31 @@ verseas-stocks-tax-part1-cgt.md).
 | 5 | **5월** 담당자? | 본인·증권사 PDF |
 | 6 | **중복 broad**? | QQQ+비헷지 S&P **통합** |
 
----
 
 ## 부록 H — 1042-S·금융소득 연결 (교육)
 
 미국 **1042-S**는 **비거주자 원천** 보고서다. 한국 **5월**에서 **해외 배당**·**원천세액**을 **금융소득 합계**·**외국납부세액공제**와 맞출 때 **증권사 통합 PDF**와 **교차 검증**한다 — [Part2](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md). **2,000만 원** 경계는 **국내 이자·배당 포함** 합산 — QQQ만으로는 **낮아도** SCHD·예금 이자와 **합쳐지면** 초과.
 
----
 
 ## 부록 I — 환헷지와 금리·QE 맥락 (교육)
 
 [BOK 인하·Fed 정책](../02-economics/macro-04-monetary-policy-qe.md)이 **한·미 금리차**를 바꾸면 **헷지 carry**도 바뀐다. **QE 종료·긴축** 구간에서는 basis **급변** → 헷지 ETF **추적차이 확대** 사례가 **교육**에서 자주 인용된다 — **거시 문서와 분기 갱신**.
 
----
 
 ## 부록 J — 실행·미시구조 (교육)
 
 환헷지·비헷지 **쌍**을 같은 날 **시장가**로 사면 **스프레드·프리미엄**이 **실행 패널티** — [market-microstructure](market-microstructure.md). **장 시작 직후** 해외 IOPV 미반영 구간 **괴리** — [etf-index-funds-deep](etf-index-funds-deep.md) 부록 M.
 
----
 
 ## 부록 K — 용어 색인
 
 W-8BEN, W-8BEN-E, 1042-S, FATCA, treaty rate, statutory withholding, foreign tax credit, FX hedge, forward roll, basis, CIP, hedged TR, wrapper ETF, direct offshore, tracking difference, ISA netting, Part1 CGT, Part2 dividend, Part3 scenarios.
 
----
 
 ## 부록 L — 교육용 한 줄 복문
 
 해외 코어는 **세 레이어**(미국 원천·한국 과세·환 노출)와 **두 경로**(직접·래핑)가 **곱**으로 맞물린다. W-8BEN·ISA·헷지 O/X를 **한 번에** 정하지 않으면 **표면 수익률**과 **원화 세후** 사이에서 10년 **복리**가 갈라진다.
 
----
 
 ## 부록 M — 문서 종료·검증
 

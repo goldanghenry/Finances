@@ -174,13 +174,13 @@ flowchart TB
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 |  EPS  | 주당순이익 | 순이익 ÷ 발행주식수 |
-|        pro        | pro | 위 식의 pro |
-|        forma        | forma | 위 식의 forma |
-|        NI        | NI | 위 식의 NI |
-|        A        | A | 위 식의 A |
+|          pro          | pro | 위 식의 pro |
+|          forma          | forma | 위 식의 forma |
+|          NI          | NI | 위 식의 NI |
+|          A          | A | 위 식의 A |
 |  T  | 기간 | 마지막 CF 시점 |
-|        Delta        | Delta | 위 식의 Delta |
-|        I        | I | 위 식의 I |
+|          Delta          | Delta | 위 식의 Delta |
+|          I          | I | 위 식의 I |
 
 \[
 EPS_{\text{pro forma}} = \frac{NI_A + NI_T - \Delta I (1-T) + \Delta Synergy (1-T)}{Sh_A + Sh_{\text{new}}}
@@ -222,6 +222,12 @@ V_{\text{synergy}} = \sum_{t=1}^{T} \frac{\Delta CF_t}{(1+WACC)^t}
 
 
 
+
+
+
+
+
+
 프로젝트·기업가치 할인율 근사로 쓴다.
 **유도 (L4)**:
 1. **정의**: **V_**, **WACC**, **sum_**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
@@ -232,9 +238,9 @@ V_{\text{synergy}} = \sum_{t=1}^{T} \frac{\Delta CF_t}{(1+WACC)^t}
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
-| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
-| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
+| **r** | 할인율·수익률 | 기간당 이자·요구수익률 |
+| **n** | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| **PV** | 현재가치 | 오늘 시점으로 환산한 금액 |
 
 \[
 EV = \text{EBITDA} \times \text{Multiple}
@@ -252,9 +258,9 @@ EV = \text{EBITDA} \times \text{Multiple}
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
-| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
-| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
+| **r** | 할인율·수익률 | 기간당 이자·요구수익률 |
+| **n** | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| **PV** | 현재가치 | 오늘 시점으로 환산한 금액 |
 
 \[
 \text{Exchange ratio} = \frac{\text{Offer price per target share}}{\text{Acquirer share price}}

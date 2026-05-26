@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | M, FV, PMT, 저축률, Bucket |
 | **복습 한 줄** | 저축률이 높을수록 복리 공식의 **PMT**(정기 납입)가 커져 **FV**가 커진다 |
 
-
 ## TL;DR
 
 1. **현금흐름**은 일정 기간 **들어온 현금 − 나간 현금**이며, 장기 자산의 1순위 레버는 **저축률(소득 대비 남는 비율)** 이다.
@@ -30,7 +29,6 @@
 4. **라이프스타일 크립**(소득↑ 지출도↑)은 저축률을 고정시키고 FV를 막는다 — [compound-interest-and-time-value](compound-interest-and-time-value.md).
 5. 고금리 **부채 이자**는 현금흐름의 구멍 — [debt-and-interest](debt-and-interest.md)에서 먼저 막는다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -58,7 +56,6 @@
 
 투자 앱의 수익률보다 **통장·카드 흐름**을 먼저 보면 장기 목표에 도달할 확률이 올라간다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -72,7 +69,6 @@
 - [asset-allocation.md](../04-portfolio/asset-allocation.md)
 - [account-product-tax-map.md](../06-korea-policy/tax/account-product-tax-map.md)
 
----
 
 ## 3. 직관·비유
 
@@ -88,7 +84,6 @@
 
 **15시간/주 학습**: 주 15시간을 시급 2만 원(가상)으로 환산하면 월 약 120만 원의 **기회비용**이다. 이 시간을 단타·NXT 장후 매매([korea-ats-nextrade](../03-markets/korea-ats-nextrade.md))에 쓰면 **코어 패시브**([passive-vs-active](../04-portfolio/passive-vs-active.md))와 궁합이 나쁠 수 있다. 현금흐름 관점에서 “시간 예산”도 배분 대상이다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -127,7 +122,6 @@
 - **[자산배분](../04-portfolio/asset-allocation.md)** — 남는 돈이 있어야 비중 설계
 - **[행동금융](../05-behavioral/behavioral-finance-complete.md)** — FOMO·구독이 저축률 잠식
 
----
 
 ## 5. 메커니즘
 
@@ -169,7 +163,6 @@ flowchart TD
   Less --> Delay[Bucket_지연]
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -177,9 +170,10 @@ flowchart TD
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|   \(s\)   | 저축률 | 소득 대비 남는 비율 |
-|   \(Y\)   | 소득 | 기간 총 실수령·매출 등 |
-|   \(C\)   | 지출 | 기간 총 현금 유출 |
+| \(s\) | 저축률 | 소득 대비 남는 비율 |
+| \(Y\) | 소득 | 기간 총 실수령·매출 등 |
+| \(C\) | 지출 | 기간 총 현금 유출 |
+
 \[
 s = \frac{Y - C}{Y} = 1 - \frac{C}{Y}
 \]
@@ -196,24 +190,26 @@ s = \frac{Y - C}{Y} = 1 - \frac{C}{Y}
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 | \(FV\) | 미래가치 | 미래 시점의 목표·결과 금액 |
-|           \(S\)           | S | 소득 대비 남는 비율 |
+| \(S\) | 연간 저축액 | \(s \times Y\) |
+
 \[
 FV \approx S \times \frac{(1+r)^n - 1}{r}
 \]
 
 
-**읽는 법**: **FV**와 **S**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.상세는 [compound-interest-and-time-value](compound-interest-and-time-value.md).
+**읽는 법**: **FV**와 **S**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다. 상세는 [compound-interest-and-time-value](compound-interest-and-time-value.md).
 
 **50/30/20 규칙 (교육용, 미국 유래)**:
 
 | 비율 | 용도 |
+|------|------|
 | 50% | 필요 |
 | 30% | 원함 |
 | 20% | 저축·투자 |
 
 한국 가계·전세·학자금 환경에 맞게 **조정**한다.
 
----## 7. 한국 적용
+## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
 
@@ -253,7 +249,6 @@ FV \approx S \times \frac{(1+r)^n - 1}{r}
 
 식대·복지포인트·경조사 지원은 **유출 감소**이지 유입이 아니다. DC **기여금**은 회사 비용이지만 가입자에게는 **장기 FV** 슬롯 — [dc-pension](../06-korea-policy/dc-pension.md). 개인 현금흐름 표에 “회사 적립” 행을 넣으면 **이중 계상**되므로 **주석**으로만 기록한다.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -338,7 +333,7 @@ flowchart LR
 
 **현금흐름 vs P&L (가계)**: “이번 달 장보기 **M**”은 **현금 유출**이고, “투자 평가손익 +**M**”은 **미실현**이다. 가계 현금흐름표에는 **실제 이체된 금액**만 넣어 저축률을 과대 추정하지 않는다.
 
----
+
 ## 9. FAQ
 
 **Q1. 가계부 앱을 꼭 써야 하나요?**  
@@ -371,7 +366,6 @@ flowchart LR
 **Q10. 투자 손실이 나면 저축률을 올려야 하나요?**  
 **A10.** **PMT 유지**가 복리에 유리한 경우가 많다. 다만 **고금리 부채**·비상금 미달이면 우선순위를 [debt-and-interest](debt-and-interest.md)·[emergency-fund](emergency-fund.md)로 돌린다.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -411,7 +405,6 @@ flowchart LR
 
 연간 리뷰 때 **명목 연봉·실수령·순저축** 세 줄만 비교해도 lifestyle creep를 조기에 잡을 수 있다.
 
----
 
 ## 12. 스스로 점검 퀴즈
 

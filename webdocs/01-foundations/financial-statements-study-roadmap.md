@@ -32,7 +32,6 @@
 4. 산출물: 주차별 **1페이지 노트** + Week 12 **가상 밸류에이션 메모**.
 5. 코어 IPS와 분리: 재무제표 = **위성·섹터 검증** 도구.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -44,7 +43,6 @@
 
 **왜 중요한가**: [semiconductor](../03-markets/sectors/semiconductor.md) 등 **AI 엔지니어 친숙 섹터**도 결국 **영업이익·OCF·순부채**로 귀결된다. 뉴스 “매출 대박”과 **현금흐름·일회성**을 구분하지 못하면 Bucket 4 **리스크 예산**을 초과한다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -58,7 +56,6 @@
 - [wacc-capital-structure](../09-corporate-finance/wacc-capital-structure.md)
 - [sectors/README.md](../03-markets/sectors/README.md)
 
----
 
 ## 3. 직관·비유
 
@@ -68,7 +65,6 @@
 
 **주석** = 영수증 각주(“이번만 특별할인”) — **없이 보면 착각**.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -99,7 +95,6 @@
 | P/E, P/B | 11~12 | §4 | [glossary](../00-roadmap/glossary.md#p/e,-p/b) |
 
 
----
 
 ## 5. 메커니즘 — 12주 전체 맵
 
@@ -150,7 +145,6 @@ flowchart LR
   Dart --> Val
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -168,7 +162,6 @@ ROE = \frac{\text{Net Income}}{\text{Sales}} \times \frac{\text{Sales}}{\text{As
 \]
 
 
-
 **읽는 법**: **ROE**와 **Net**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **FCF (Week 7)**:
 
@@ -180,7 +173,6 @@ ROE = \frac{\text{Net Income}}{\text{Sales}} \times \frac{\text{Sales}}{\text{As
 \[
 FCF = OCF - CapEx
 \]
-
 
 
 **읽는 법**: **FCF**와 **OCF**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -199,11 +191,9 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 \]
 
 
-
 **읽는 법**: **EPS**와 **P**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 해당 없음: 복잡 DCF는 [time-value-npv-irr](time-value-npv-irr.md) 이후.
 
----
 
 ## 7. 한국 적용
 
@@ -217,7 +207,6 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 
 - 회계기준·공시 규정 **개정** 시 Week 9~11 **체크리스트** 갱신
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -241,7 +230,6 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 - 주가 가상 50,000원, EPS 2,500 → P/E **20**  
 - 섹터 평균 P/E 가상 15 → **프리미엄** — [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md) 사이클 맥락
 
----
 
 ## 9. FAQ
 
@@ -269,7 +257,6 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 **Q8. 실제 종목 티커?**  
 **A8.** 학습 노트에 **실제 매수 기록** 금지 — [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md).
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -291,7 +278,6 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 - [stocks-equities-intro](../03-markets/stocks-equities-intro.md)  
 - [CURRICULUM-MAP.md](../00-roadmap/CURRICULUM-MAP.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 
@@ -305,8 +291,6 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 
     1. FCF=OCF−CapEx · 2. 9~11 · 3. cash-flow-statement-fcf.md · 4. 이익률·회전율·레버리지 · 5. 약 36~48h
 
-
----
 
 
 ## 부록 A. 주차별 체크박스
@@ -324,7 +308,6 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 - [ ] Week 11 — 분기·IR  
 - [ ] Week 12 — valuation  
 
----
 
 ## 부록 B. 8주 압축 트랙 (코어 ETF 전용)
 
@@ -337,7 +320,6 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 
 **산출물 축소**: 주차별 노트 → **최종 2페이지** “공시 읽기 치트시트”.
 
----
 
 ## 부록 C. 섹터·AI 엔지니어 연계 (Week 7~12 병행)
 
@@ -357,7 +339,6 @@ flowchart LR
   IPS --> Play[ai_engineer_playbook_M7-12]
 ```
 
----
 
 ## 부록 D. 주차별 DART 검색 키워드 (가상)
 
@@ -370,7 +351,6 @@ flowchart LR
 
 [reading-annual-reports-dart](reading-annual-reports-dart.md) 부록 표와 **교차**.
 
----
 
 ## 부록 E. 스프레드시트 템플릿 (가상 열)
 
@@ -390,7 +370,6 @@ flowchart LR
 
 **검증**: Y2 FCF < Y1 FCF인데 주가 ↑ → **스토리 vs 현금** 불일치 메모.
 
----
 
 ## 부록 F. 문서별 예상 읽기 시간
 
@@ -404,7 +383,6 @@ flowchart LR
 
 **12주 합계**: 약 **40~55h** (압축 8주 **25~35h**).
 
----
 
 ## 부록 G. FAQ 추가
 
@@ -420,7 +398,6 @@ flowchart LR
 **Q12. 퀴즈는 어디?**  
 **A12.** 각 본문 §12 — 로드맵 주말에 **닫고** 풀기 [STUDY-START.md](../00-roadmap/STUDY-START.md).
 
----
 
 ## 부록 H. 12주 완료 후 인증 체크 (자가)
 

@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **자산배분**은 주식·채권·현금 등 **자산군 간 목표 비중**을 정하는 것으로, 장기 포트폴리오 **변동성·수익 경로**에 가장 큰 영향을 줍니다(교육 요지).
@@ -30,7 +29,6 @@
 4. **DB 재직** 가입자는 회사 DB에 배분을 넣을 수 **없으므로**, **ISA·IRP(Bucket 2b~3)** 에서 60/40 등을 실행합니다.
 5. Bucket **0~2** 를 채운 **후** Bucket 3 배분을 확정하고, [rebalancing-and-dca.md](rebalancing-and-dca.md)로 유지합니다.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -42,7 +40,6 @@
 
 **왜 중요한가**: 개별 종목을 고르는 것보다 **“얼마나 주식을 들고 있을 것인가”** 가 수면의 질·강제 매도 확률·10년 후 자산 규모에 더 큰 영향을 줍니다. [time-horizon-and-buckets.md](time-horizon-and-buckets.md)로 **어느 통에** 넣을지 정한 뒤, Bucket 3 **안에서** 주식 70% vs 40%를 정하는 단계입니다. **DB 가입자**는 “회사 퇴직연금 = 내 60/40”이 **아님** — [db-pension.md](../06-korea-policy/db-pension.md).
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -57,7 +54,6 @@
 - [geographic-diversification.md](geographic-diversification.md) — 주식 **내부** 지역
 - [capm-and-risk-return.md](../08-advanced/capm-and-risk-return.md)
 
----
 
 ## 3. 직관·비유
 
@@ -69,7 +65,6 @@
 
 **DB vs ISA**: 회사 구내식당(DB) 메뉴는 내가 정하지 못합니다. **집 식단(ISA 60/40)** 을 내가 짭니다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -98,7 +93,6 @@
 | 드리프트 | 목표 대비 실제 비중 이탈 | §4 | [glossary](../00-roadmap/glossary.md#드리프트) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -156,7 +150,6 @@ Bucket 3 **주식군**만 다시 쪼개면 **지역·스타일·섹터** 3층입
 
 DB 추계 퇴직금을 **정성적**으로 “채권에 가깝다(확정에 가까움)” vs “주식에 가깝다(운용 불투명)”로 나누는 논의가 있습니다. 교육 프레임에서는 **단순화**: DB는 **별도 슬롯(2a)** 으로 두고, **본인이 조정 가능한 ISA·IRP**에서만 60/40을 **실행**합니다. DB+ISA **합산** 배분을 스프레드시트에 넣을 때는 **DB를 ‘주식 0% 직접통제’** 로 표기해 **과잉 주식** 착각을 막습니다.
 
----
 
 ## 6. 수식·모델
 
@@ -191,9 +184,10 @@ r_p \approx 0.6 \times 7\% + 0.4 \times 3\% = 5.4\%
 \]
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**100−나이** 공식: 참고만 — [capm-and-risk-return.md](../08-advanced/capm-and-risk-return.md).
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 
----
+**100−나이** 공식: 참고만 — [capm-and-risk-return.md](../08-advanced/capm-and-risk-return.md).
+
 
 ## 7. 한국 적용
 
@@ -235,7 +229,6 @@ r_p \approx 0.6 \times 7\% + 0.4 \times 3\% = 5.4\%
 
 금리 **상승기**: 채권 가격 **하락** — 60/40도 **손실** 가능. **역할**은 **주식 급락 완충**(완벽 아님). **현금 5%**는 Bucket 0과 **별도** — 코어 현금은 **리밸런싱 탄력**용.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -273,7 +266,7 @@ r_p \approx 0.6 \times 7\% + 0.4 \times 3\% = 5.4\%
 
 → [passive-vs-active.md](passive-vs-active.md): **패시브 코어** 유지, 섹터 **위성 10%**. **인적자본(연봉)** 이 tech 업종이면 포트 **QQQ·반도체** **이중 노출** — 글로벌·채권 **비중**으로 **완충**합니다.
 
----
+
 ## 9. FAQ
 
 **Q1. 최적 60/40인가요?**  
@@ -319,7 +312,6 @@ r_p \approx 0.6 \times 7\% + 0.4 \times 3\% = 5.4\%
 
 은퇴 **10년 전**부터 주식 비중을 **매년 1~2%p** 낮추는 **glide path** 는 60/40 **정적** 배분의 변형입니다. 가상: 50세·목표 은퇴 60세 → 현재 65/35, 55세 **63/37**, 60세 **50/50**. **DB 퇴직금 IRP 이전** 시 **일시 100% 주식** 편입 **비권장** — [db-pension.md](../06-korea-policy/db-pension.md) 예제 3. **전세·결혼** 등 **3년 내 지출**은 60/40 **분모에서 제외** — [cash-flow-basics.md](../01-foundations/cash-flow-basics.md).
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -344,7 +336,6 @@ r_p \approx 0.6 \times 7\% + 0.4 \times 3\% = 5.4\%
 - [capm-and-risk-return.md](../08-advanced/capm-and-risk-return.md)
 - [real-estate-basics.md](../07-real-estate/real-estate-basics.md) — 부동산 별도 bucket
 
----
 
 ## 12. 스스로 점검 퀴즈
 

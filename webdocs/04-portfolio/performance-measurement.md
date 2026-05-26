@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | L3 선수 편을 먼저 읽으면 수식이 수월함 |
 
-
 ## TL;DR
 
 1. **α** 는 벤치·모델 대비 **초과 수익**(회귀 잔차·Jensen α) — “실력 vs 운” 구분이 어렵다.
@@ -31,7 +30,6 @@
 5. **추적오차(TE)** = 포트−벤치 수익 차이의 **σ**; **정보비율 IR** = 초과수익/TE — **액티브** 품질.
 6. **벤치마크 선택**이 모든 지표의 **전제** — 잘못 고르면 α·IR **왜곡**.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -43,7 +41,6 @@
 
 **왜 중요한가**: [passive-vs-active.md](passive-vs-active.md) 논쟁은 “**벤치 이길 수 있는가**”로 귀결된다. QQQ 코어를 **S&P500·NASDAQ100** 중 무엇과 비교하느냐에 **α·TE** 가 달라진다. [portfolio-theory-mpt.md](portfolio-theory-mpt.md)의 샤프를 **실제 계좌**에 적용할 때 **R_f(국채·MMDA)·기간(월 vs 연)** 을 맞춰야 한다. Bucket 4 위성은 **IR·TE** 로 “베팅이 값었는지”를 **사후** 점검 — [behavioral-finance-complete.md](../05-behavioral/behavioral-finance-complete.md)와 연결.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -57,7 +54,6 @@
 - [factor-investing-primer.md](../08-advanced/factor-investing-primer.md)
 - [rebalancing-and-dca.md](rebalancing-and-dca.md)
 
----
 
 ## 3. 직관·비유
 
@@ -73,7 +69,6 @@
 
 **정보비율 = 다르게 산 것이 **돈이 됐는가** (초과/TE)**.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -111,9 +106,6 @@
 | 벤치마크 | 비교 기준 지수·혼합 | §4 | [glossary](../00-roadmap/glossary.md#벤치마크) |
 | 공액수익 | 기하 누적 | §4 | [glossary](../00-roadmap/glossary.md#공액수익) |
 
-
----
-
 ## 5. 메커니즘
 
 ### 5.1 성과 분해 파이프라인
@@ -141,7 +133,6 @@ flowchart LR
   Q2 --> Beta2[β_단독]
 ```
 
----
 
 ## 6. 수식·모델
 
@@ -159,7 +150,12 @@ R_{p,t} - R_{f,t} = \alpha + \beta (R_{m,t} - R_{f,t}) + \varepsilon_t
 \]
 
 
-**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
+**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
+
+
+
+
+**R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 **유도 (L4)**:
 1. **정의**: **R_**, **p**, **t**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
@@ -170,12 +166,18 @@ R_{p,t} - R_{f,t} = \alpha + \beta (R_{m,t} - R_{f,t}) + \varepsilon_t
 |------|------|----------------|
 | \(R_f\) | 무위험금리 | 국채·예금 등 기준 금리 |
 |           \(R\)           | R | 기간당 이자·요구수익률 |
+
 \[
 \alpha \approx \bar{R}_p - R_f - \beta (\bar{R}_m - R_f)
 \]
 
 
-**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
+**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
+
+
+
+
+**R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 **유도 (L4)**:
 1. **정의**: **R_f**, **R**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
@@ -214,7 +216,12 @@ p = \frac{\bar{R}_p - R_f}{\beta_p}
 \]
 
 
-**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
+**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
+
+
+
+
+**R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 **유도 (L4)**:
 1. **정의**: **R_f**, **eta_p**, **R**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
@@ -252,6 +259,7 @@ TE = \sigma(r_a), \quad IR = \frac{\bar{r}_a}{TE}
 ### 6.6 벤치마크 선택 (핵심)
 
 | 포트 성격 | 벤치 후보(예) | 오선택 함정 |
+|------|------|----------------|
 | 글로벌 60/40 | 혼합 지수·MSCI ACWI+채권 | KOSPI만 |
 | QQQ 코어 | NASDAQ-100 | KOSPI200 |
 | 국내 주식+채권 | KOSPI+국채 혼합 | S&P500 |
@@ -272,7 +280,12 @@ TE = \sigma(r_a), \quad IR = \frac{\bar{r}_a}{TE}
 p = \frac{\bar{R}_p - R_f}{\beta_p}
 
 
-**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. **R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
+**읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 
+
+
+
+
+**R_f**·**ERP**와 함께 요구수익 **r**을 구성한다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
 **유도 (L4)**:
 1. **정의**: **R_f**, **eta_p**, **R**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
 2. **식 변형**: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 **시점 이동**이 핵심이다.
@@ -310,6 +323,7 @@ TE = \sigma(r_a), \quad IR = \frac{\bar{r}_a}{TE}
 ### 6.6 벤치마크 선택 (핵심)
 
 | 포트 성격 | 벤치 후보(예) | 오선택 함정 |
+|------|------|----------------|
 | 글로벌 60/40 | 혼합 지수·MSCI ACWI+채권 | KOSPI만 |
 | QQQ 코어 | NASDAQ-100 | KOSPI200 |
 | 국내 주식+채권 | KOSPI+국채 혼합 | S&P500 |
@@ -324,7 +338,7 @@ TE = \sigma(r_a), \quad IR = \frac{\bar{r}_a}{TE}
 - **M²** = 레버리지·디레버리지로 **벤치 σ** 맞춘 수익 — 고급.  
 - **팩터 α**: FF3+α — [factor-investing-primer.md](../08-advanced/factor-investing-primer.md).
 
----## 7. 한국 적용
+## 7. 한국 적용
 
 ### 7.1 R_f 근사 (교육)
 
@@ -354,7 +368,6 @@ ISA 한도·세제 — **세후 α** 는 [isa.md](../06-korea-policy/isa.md) 별
 4. Bucket 4 **별도 IR**  
 5. **QLD** 는 broad **벤치 부적** — 전용 규칙
 
----
 
 ## 8. 가상 숫자 예제
 
@@ -380,7 +393,6 @@ ISA 한도·세제 — **세후 α** 는 [isa.md](../06-korea-policy/isa.md) 별
 
 QQQ 포트를 **KOSPI** 벤치 → α **과대**·**TE 과대** — **잘못된 결론**.
 
----
 
 ## 9. FAQ (8+)
 
@@ -414,7 +426,6 @@ QQQ 포트를 **KOSPI** 벤치 → α **과대**·**TE 과대** — **잘못된 
 **Q10. 월 vs 일 데이터?**  
 **노이즈·미세구조** — 개인은 **월** 권장.
 
----
 
 ## 10. 함정·리스크
 
@@ -441,8 +452,6 @@ QQQ 포트를 **KOSPI** 벤치 → α **과대**·**TE 과대** — **잘못된 
 - CFA Performance Attribution  
 - 본 저장소: [portfolio-theory-mpt.md](portfolio-theory-mpt.md)
 
----
-
 
 ## 연습문제 (L4, 기호)
 
@@ -462,8 +471,6 @@ QQQ 포트를 **KOSPI** 벤치 → α **과대**·**TE 과대** — **잘못된 
 3. Sharpe vs Sortino 언제 Sortino가 더 높은가?  
 4. QQQ에 맞는 벤치 2개 제시.  
 5. Treynor가 정의되지 않는 경우?
-
----
 
 
 ## 부록 A — Brinson 성과 Attribution (개념)

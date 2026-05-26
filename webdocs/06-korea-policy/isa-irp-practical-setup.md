@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | L_ISA, ISA, IRP, DB, DC (해당 시) |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **DB 가입자**는 재직 중 **ETF 직접 매매 불가** — 코어·위성 설계는 **ISA·IRP·일반**에서.
@@ -31,7 +30,6 @@
 5. **TOP10 실수**로 중도해지·한도 초과·일반계좌 해외양도세 혼동 방지.
 6. 이론: [irp.md](irp.md) · [pension-savings-account.md](pension-savings-account.md) · [isa.md](isa.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -49,7 +47,6 @@
 
 **왜 중요한가**: DB만 이해하고 ISA를 **미개설**하면 해외 ETF **양도소득세·5월 신고** 부담이 커진다. “ISA 들었다”와 “**3년·손익통산·한도**를 지킨다”는 다르다. [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md)의 가상 50% ISA 슬롯은 **이 문서의 실행부**에 해당한다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -66,7 +63,6 @@
 - [tax/account-product-tax-map.md](tax/account-product-tax-map.md)
 - [rebalancing-and-dca.md](../04-portfolio/rebalancing-and-dca.md)
 
----
 
 ## 3. 직관·비유
 
@@ -75,7 +71,6 @@
 **IRP** = **냉동고**(지금 세금 안 내고 나중에) — 퇴직금·추가 납입.  
 **일반계좌** = **포장 도시락** — 먹을 때마다(매도) 계산대(양도세).
 
----
 
 ## 4. 정식 개념·용어
 
@@ -102,7 +97,6 @@
 | 자동이체 | ISA **정기 납입** | §4 | [glossary](../00-roadmap/glossary.md#자동이체) |
 
 
----
 
 ## 5. 메커니즘 — DB 가입자 전체 플로우
 
@@ -205,7 +199,6 @@ flowchart LR
 | 3 | 분기 **밴드 리밸런싱** — 매도 시 통산 인지 |
 | 4 | 위성·개별주는 **일반 또는 ISA 내 상한** — [core-satellite-framework.md](../04-portfolio/core-satellite-framework.md) |
 
----
 
 ## 6. 수식·모델
 
@@ -228,7 +221,6 @@ T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 \]
 
 
-
 **읽는 법**: **S**와 **t**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 \(S_t\): 해당 연도 **금융투자소득**(통산 후). 초과분 **9.9%** 분리과세(일반형). 서민형·2026 안은 [isa.md](isa.md) 표 참조.
 
@@ -239,13 +231,11 @@ T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 ght)
 
 
-
 **읽는 법**: **S**와 **t**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 \(S_t\): 해당 연도 **금융투자소득**(통산 후). 초과분 **9.9%** 분리과세(일반형). 서민형·2026 안은 [isa.md](isa.md) 표 참조.
 
 **해당 없음**: 복리·DCM 등은 [time-value-npv-irr.md](../01-foundations/time-value-npv-irr.md).
 
----
 
 ## 7. 한국 적용
 
@@ -266,7 +256,6 @@ ght)
 
 **법·정책 근거**: 소득세법·금융위 ISA 제도 안내.
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -286,7 +275,7 @@ ght)
 - 월 **M** × 12 = **M** 납입 시도 → **M** 거절/이월 불가**  
 - **수정**: 월 166만 ISA + 잔여 **연금저축** — [pension-savings-account.md](pension-savings-account.md)
 
----
+
 ## 9. TOP10 실수
 
 | # | 실수 | 결과 | 예방 |
@@ -302,7 +291,6 @@ ght)
 | 9 | 리밸런싱 **과다** | 수수료·통산 노이즈 | 분기 밴드 |
 | 10 | 2026 한도 **미반영** | 계획 오류 | 분기 공지 확인 |
 
----
 
 ## 10. FAQ
 
@@ -344,7 +332,6 @@ ght)
 - **환율**: 해외 ETF — [overseas-tax-fx-hedging.md](../03-markets/overseas-tax-fx-hedging.md).  
 - **교육 한계**: 증권사 UI·약관은 **시점별 상이**.
 
----
 
 ## 12. 심화 읽기
 
@@ -352,7 +339,6 @@ ght)
 - [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md)
 - [references/sources.md](../references/sources.md)
 
----
 
 ## 13. 스스로 점검 퀴즈
 
@@ -366,8 +352,6 @@ ght)
 
     1. ISA·IRP·일반( DC 제외 ) · 2. 동일 ISA · 3. 2,000만 · 4. 3·6 등 · 5. ISA(중개형)
 
-
----
 
 
 ## 부록 A. IRP·연금저축 병행 매트릭스 (DB 가입자)
@@ -404,7 +388,6 @@ flowchart TD
 | 4 | ISA와 **별도** | 퇴직금 IRP ≠ ISA 납입 혼동 |
 | 5 | 55세·연금 수령 | 장기 **잠금** 인지 |
 
----
 
 ## 부록 B. 증권사 비교 프레임 (가상 점수표)
 
@@ -421,7 +404,6 @@ flowchart TD
 
 **TOP10 실수 #11(보너스)**: “친구 추천 **한 곳만**” — 본인 **상품 목록** 미확인.
 
----
 
 ## 부록 C. 분기 운영 캘린더 (가상 2026)
 
@@ -432,7 +414,6 @@ flowchart TD
 | Q3 | 3년 만기 **90일 전** 알림 | | |
 | Q4 | 연간 한도 **마감** | 연말정산 연계 | 연간 성과 [performance-measurement](../04-portfolio/performance-measurement.md) |
 
----
 
 ## 부록 D. ETF 경로 상세 — 환헤지·추적오차
 
@@ -444,7 +425,6 @@ flowchart TD
 
 **실무**: 첫 코어는 **1~2개 ETF**로 단순화 — [etf-index-funds-deep.md](../03-markets/etf-index-funds-deep.md).
 
----
 
 ## 부록 E. FAQ 추가 (실무)
 

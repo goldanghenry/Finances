@@ -40,6 +40,40 @@ STRAY_FENCE_AFTER_HR = re.compile(
     re.M,
 )
 
+# §6 variable table: | \(PV\) | → | **PV** | (MkDocs tables often hide inline math)
+VAR_TABLE_INLINE_SYM = re.compile(
+    r"^\| \\\(([^\\)\n]{1,24})\\\) \|",
+    re.M,
+)
+
+# Footnote clash when display math is misparsed as a table row: (1+r)^n
+DISPLAY_EXPONENT = re.compile(
+    r"(\(1\s*\+\s*r\))\^n\b",
+)
+
+
+def normalize_var_table_symbols(text: str) -> tuple[str, int]:
+    changes = 0
+
+    def repl(m: re.Match[str]) -> str:
+        sym = m.group(1).strip()
+        if "_" in sym or "{" in sym or "\\" in sym:
+            return m.group(0)
+        return f"| **{sym}** |"
+
+    new = VAR_TABLE_INLINE_SYM.sub(repl, text)
+    if new != text:
+        changes += len(VAR_TABLE_INLINE_SYM.findall(text))
+        text = new
+    return text, changes
+
+
+def brace_display_exponents(text: str) -> tuple[str, int]:
+    n = len(DISPLAY_EXPONENT.findall(text))
+    if not n:
+        return text, 0
+    return DISPLAY_EXPONENT.sub(r"\1^{n}", text), n
+
 
 def fix_text(text: str) -> tuple[str, int]:
     changes = 0
@@ -72,6 +106,12 @@ def fix_text(text: str) -> tuple[str, int]:
     if new != text:
         changes += len(SPLIT_READING_TAIL.findall(text))
         text = new
+
+    text, n_sym = normalize_var_table_symbols(text)
+    changes += n_sym
+
+    text, n_exp = brace_display_exponents(text)
+    changes += n_exp
 
     return text, changes
 

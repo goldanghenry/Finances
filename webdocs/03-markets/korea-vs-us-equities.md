@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **한국**은 코스피·코스닥 **이중 시장**, KRX·NXT **이중 거래 시간**, **국내주 비과세(원칙)**·ISA·DB/DC **계좌 레이어**가 특징이다 — [korea-equity-market-structure.md](korea-equity-market-structure.md).
@@ -30,7 +29,6 @@
 4. **코어 설계**: “한국+미국 **둘 다**”도 가능하나, **KOSPI200 + S&P + QQQ** 동시는 **대형주·테크 중복** — [core-satellite-framework.md](../04-portfolio/core-satellite-framework.md).
 5. **DB 재직자**는 퇴직연금에서 ETF 직접 선택이 **불가**한 경우가 많아, **ISA**에 국내·미국 코어를 두는 **가상 경로**가 교육 프레임의 핵심 — [isa.md](../06-korea-policy/isa.md).
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 
@@ -42,7 +40,6 @@
 
 **왜 중요한가**: “국내주는 안전, 미국은 수익” 같은 **이분법**은 둘 다 틀릴 수 있다. 코스닥 **관리군·퇴출**과 미국 **Mag7 집중**은 **서로 다른 리스크**다. 한국 DB 가입자는 **회사 연금만**으로는 QQQ·KOSPI ETF 코어를 **못 만드는** 경우가 많아, **ISA 슬롯** 설계가 실무의 시작점이다. 두 시장을 **표로 비교**하지 않으면 [korea-equity-market-structure.md](korea-equity-market-structure.md)와 [us-equity-indices-etf.md](us-equity-indices-etf.md)를 **한 포트폴리오**에 연결하기 어렵다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -59,7 +56,6 @@
 - [geographic-diversification.md](../04-portfolio/geographic-diversification.md) — 한·미 비중
 - [domestic-stocks-tax.md](../06-korea-policy/tax/domestic-stocks-tax.md) — 국내주 세금
 
----
 
 ## 3. 직관·비유
 
@@ -71,7 +67,6 @@
 
 **DB→ISA 경로**: 회사 **구내식당(DB)** 은 메뉴를 **정해 주고**, **집 냉장고(ISA)** 에 **본인이 고른 코어 ETF**를 넣는 그림 — [db-vs-dc-pension.md](../06-korea-policy/db-vs-dc-pension.md).
 
----
 
 ## 4. 정식 개념·용어
 
@@ -106,9 +101,6 @@
 | DB | — | §4 | [glossary](../00-roadmap/glossary.md#db) |
 | 환율 | **달러** 노출 | §4 | [glossary](../00-roadmap/glossary.md#환율) |
 | 지배구조 이슈 | **ESG·buyback·dual class** | §4 | [glossary](../00-roadmap/glossary.md#지배구조-이슈) |
-
-
----
 
 ## 5. 메커니즘
 
@@ -201,8 +193,6 @@ flowchart TB
 | 바이오 | **코스닥** 집중 | **Nasdaq** 일부 | 코스닥 개별 = **퇴출 리스크** — 코어 아님 |
 | AI·클라우드 | **국내 IT·반도체** | **Mag7** | **가장 흔한 중복** 구간 |
 
----
-
 ## 6. 수식·모델
 
 **지역 분산 기대수익(교육, 2자산)**:
@@ -225,6 +215,7 @@ R_p \approx w_K R_K + w_U R_U + w_B R_B
 **상관계수(직관)**:
 
 | 조합 (교육) | 상관(개념) | 분산 효과 |
+|------|------|----------------|
 | KOSPI200 + S&P500 | **중~높음** (글로벌 리스크 공유) | **제한적** |
 | KOSPI200 + QQQ | **높음** (테크·수출 연동) | **더 제한적** |
 | KOSPI200 + **국내 채권** | **낮~중** | **보완** |
@@ -232,6 +223,7 @@ R_p \approx w_K R_K + w_U R_U + w_B R_B
 **after-tax 비교(가상)** — 동일 500만 원 차익:
 
 | 경로 | 세금(가상) | 순수익(가상) |
+|------|------|----------------|
 | 국내 ETF 일반 | 0 (원칙) | 500만 |
 | 국내 ETF ISA | 0 (한도·3년) | 500만 |
 | 미국 QQQ 일반 | 100만 (가상 20%) | 400만 |
@@ -243,6 +235,7 @@ R_p \approx w_K R_K + w_U R_U + w_B R_B
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 w_{\text{주식 코어}} = w_{\text{KOSPI ETF}} + w_{\text{S&P}} + w_{\text{QQQ}} \leq 100\%
 \]
@@ -260,7 +253,7 @@ w_{\text{주식 코어}} = w_{\text{KOSPI ETF}} + w_{\text{S&P}} + w_{\text{QQQ}
 
 검토.
 
----## 7. 한국 적용
+## 7. 한국 적용
 
 ### 7.1 DB 재직자 — ISA 코어 설계 (교육 프레임)
 
@@ -287,8 +280,6 @@ w_{\text{주식 코어}} = w_{\text{KOSPI ETF}} + w_{\text{S&P}} + w_{\text{QQQ}
 | 코스닥 세그먼트 | KRX·금융위 공지 | — |
 | ISA 한도 | [isa.md](../06-korea-policy/isa.md) | — |
 | 해외주 세무 | 국세청 | 5월 신고 |
-
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -353,7 +344,7 @@ w_{\text{주식 코어}} = w_{\text{KOSPI ETF}} + w_{\text{S&P}} + w_{\text{QQQ}
 
 **해석**: 한국 **코스닥 위성** 리스크는 미국 코어와 **다른 축** — [kosdaq-tier-system.md](kosdaq-tier-system.md).
 
----
+
 ## 9. FAQ
 
 **Q1. 한국 주식만 사면 분산 끝?**  
@@ -386,7 +377,6 @@ w_{\text{주식 코어}} = w_{\text{KOSPI ETF}} + w_{\text{S&P}} + w_{\text{QQQ}
 **Q10. DC 가입자도 ISA 필요?**  
 **A.** **필수는 아님**. DC **미국 비중** 높으면 ISA는 **한국·세제** 보완.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -415,7 +405,6 @@ w_{\text{주식 코어}} = w_{\text{KOSPI ETF}} + w_{\text{S&P}} + w_{\text{QQQ}
 - [core-satellite-framework.md](../04-portfolio/core-satellite-framework.md)
 - [references/sources.md](../references/sources.md)
 
----
 
 ## 12. 스스로 점검 퀴즈
 

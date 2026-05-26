@@ -21,7 +21,6 @@
 | **이번 편에서 쓰는 기호** | L_ISA, ISA, IRP, DB, DC (해당 시) |
 | **복습 한 줄** | — |
 
-
 ## TL;DR
 
 1. **DC**는 회사 **기여금** + 가입자가 **ETF·펀드 직접 선택**.
@@ -30,7 +29,6 @@
 4. **QQQ** — 상품목록·70% 내; **QLD**는 레버리지·편입 **제한** 확인.
 5. **2026** DC 추가납입 **+300만 원** 세액공제 보도 — **DB 해당 없음**.
 
----
 
 ## 1. 한 줄 정의 + 왜 중요한가
 !!! info "DB (Defined Benefit)"
@@ -47,7 +45,6 @@
 
 **왜 중요한가**: DC 가입자는 증권 앱에서 **퇴직연금 ETF**를 직접 고릅니다. **70/30**, 해외 ETF 배당, **2026 추가납입** 공제를 모르면 세금·리스크 모두 손해입니다.
 
----
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -59,13 +56,11 @@
 - [tax/account-product-tax-map.md](tax/account-product-tax-map.md)
 - [leveraged-etf-qqq-qld.md](../04-portfolio/leveraged-etf-qqq-qld.md)
 
----
 
 ## 3. 직관·비유
 
 DC는 “**회사가 매달 정해진 돈을 넣어 주고, 본인이 그 통장에서 ETF를 고르는**” 구조입니다. DB는 “**회사가 통을 굴리고, 나는 보고만 한다**”입니다.
 
----
 
 ## 4. 정식 개념·용어
 
@@ -92,7 +87,6 @@ DC는 “**회사가 매달 정해진 돈을 넣어 주고, 본인이 그 통장
 | 과세이연 | 운용 중 과세 유예 | §4 | [glossary](../00-roadmap/glossary.md#과세이연) |
 
 
----
 
 ## 5. 메커니즘
 
@@ -120,7 +114,6 @@ flowchart LR
 | QQQ | IRP·ISA | DC **목록 내** |
 | 추가납입 공제 300만(2026) | **없음** | **있음**(보도) |
 
----
 
 ## 6. 수식·모델
 
@@ -128,6 +121,17 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+| 기호 | 이름 | 이 식에서 의미 |
+|------|------|----------------|
+|         w         | w | 위 식의 w |
+|         risk         | risk | 위 식의 risk |
+|         V         | V | 위 식의 V |
+|         stock         | stock | 위 식의 stock |
+|         ETF         | ETF | 위 식의 ETF |
+|         total         | total | 위 식의 total |
+|         DEPTH         | DEPTH | 위 식의 DEPTH |
+|         STANDARD         | STANDARD | 위 식의 STANDARD |
+
 \[
 w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 \]
@@ -138,6 +142,7 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
+
 \[
 \text{절세} \approx \min(P_{\text{add}}, 3{,}000{,}000) \times r_{\text{deduction}}
 \]
@@ -149,7 +154,7 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 
 제를 맞춘다.
 
----
+
 ## 7. 한국 적용
 
 ### 7.1 2025년
@@ -208,9 +213,6 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 
 **법·정책 근거**: 근로자퇴직급여보장법, 퇴직연금감독규정(위험자산 70%), 소득세법 §20·연금계좌, 2026 DC 추가납입 보도(시행 확인).
 
----
-
-
 
 ### 7.7 DC·IRP·ISA 역할 분담 (가상)
 
@@ -223,7 +225,6 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 해외 ETF **배당**은 DC에서 **이연**되나 2025~ **선환급 폐지**로 현금흐름이 달라질 수 있습니다. 배당 중심 ETF는 DC 비중을 낮추고 ISA·IRP와 **역할 분담**을 검토하세요.
 
 
----
 
 ## 8. 숫자 예제 (가상)
 
@@ -254,7 +255,7 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 | 공제율(가상) | 13.2% |
 | 절세(가상) | 약 **M** |
 
----
+
 ## 9. FAQ
 
 **Q1. DB인데 이 문서를 읽나요?**  
@@ -287,7 +288,6 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 **Q10. DB인데 DC 추가납입 300만?**  
 **A10.** **해당 없음** — [db-pension.md](db-pension.md)·개인 **IRP** 검토.
 
----
 
 ## 10. 함정·리스크·한계
 
@@ -351,7 +351,6 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 - [db-vs-dc-pension.md](db-vs-dc-pension.md)  
 - 금감원 퇴직연금 백서
 
----
 
 ## 12. 스스로 점검 퀴즈
 
