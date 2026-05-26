@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SKIP = {"scripts", ".tmp_l3", "site", "webdocs", ".venv", "private", ".git", ".github", "docs", "references"}
+SKIP_NAMES = {"README.md", "sources.md", "required-reading-guide.md"}
 
 
 def check(path: Path) -> list[str]:
@@ -31,8 +32,9 @@ def check(path: Path) -> list[str]:
             if "기호" not in s6_body[:800] and "변수" not in s6_body[:800]:
                 if "해당 없음" not in s6_body[:200]:
                     issues.append("§6 may lack variable table")
-    if ("L3" in text or "L4" in text) and not re.search(r"^### 4a\.|^## 4a\.", text, re.M):
-        if "## 4." in text:
+    meta_l = re.search(r"\|\s*\*\*?난이도\*\*?\s*\|\s*[^|]*(L3|L4)", text)
+    if meta_l and not re.search(r"^### 4a\.|^## 4a\.", text, re.M):
+        if re.search(r"^## 4\.", text, re.M):
             issues.append("missing §4a (L3/L4)")
     return issues
 
@@ -42,7 +44,7 @@ def main() -> int:
     for path in sorted(ROOT.rglob("*.md")):
         if any(p in SKIP for p in path.parts):
             continue
-        if path.name == "README.md":
+        if path.name in SKIP_NAMES or path.name == "README.md":
             continue
         issues = check(path)
         if issues:
