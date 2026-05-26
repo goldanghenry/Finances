@@ -69,7 +69,7 @@
 | HFT | High-frequency trading | **ms** **단위** **전략** |
 | ATS | 대체거래소 | **KRX** **외** **장소** |
 | 슬리피지 | Slippage | **기대** **vs** **체결** |
-|                VWAP                | VWAP | **거래량** **가중** **평균** |
+|                 VWAP                 | VWAP | **거래량** **가중** **평균** |
 ### 4a. 핵심 용어 (본문 등장 순)
 
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
@@ -140,6 +140,12 @@ flowchart TD
 \[
 \Delta P \approx \lambda \cdot Q
 \]
+
+**식 (기호)**: **Δ**_ **P** ≈ ·**Q**
+
+
+**식 (기호)**: **Δ**_ **P** ≈ ·**Q**
+
 
 
 **읽는 법**: **Delta**와 **P**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

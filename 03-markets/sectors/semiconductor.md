@@ -206,6 +206,12 @@ flowchart TB
 \pi \approx (\text{bit growth}) \times (\text{ASP}) - (\text{fixed cost}) - (\text{variable cost})
 \]
 
+**식 (기호)**: **π**_ ≈ (**bit** **growth**) ×(**ASP**) - (**fixed** **cost**) - (**variable** **cost**)
+
+
+**식 (기호)**: **π**_ ≈ (**bit** **growth**) ×(**ASP**) - (**fixed** **cost**) - (**variable** **cost**)
+
+
 
 **읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 
 
@@ -224,6 +230,12 @@ flowchart TB
 \[
 \text{HBM 수요} \propto (\text{GPU 출하}) \times (\text{HBM capacity per GPU}) \times (\text{attach rate})
 \]
+
+**식 (기호)**: **HBM** 수요 (**GPU** 출하) ×(**HBM** **capacity** **per** **GPU**) ×(**attach** **rate**)
+
+
+**식 (기호)**: **HBM** 수요 (**GPU** 출하) ×(**HBM** **capacity** **per** **GPU**) ×(**attach** **rate**)
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- GPU 1장당 HBM **용량·층수** ↑ = **구조적 tailwind**

@@ -171,6 +171,12 @@ flowchart LR
 \text{VWAP}=\frac{\sum_{i=1}^{N} p_i \cdot v_i}{\sum_{i=1}^{N} v_i}
 \]
 
+**식 (기호)**: **VWAP**=(Σ_i=1^N **p_i** ·**v_i**) / (Σ_i=1^N **v_i**)
+
+
+**식 (기호)**: **VWAP**=(Σ_i=1^N **p_i** ·**v_i**) / (Σ_i=1^N **v_i**)
+
+
 
 **읽는 법**: **VWAP**와 **i**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -189,6 +195,12 @@ flowchart LR
 \text{Slippage}_s \approx \kappa_s \cdot (\text{fill price} - m)
 \]
 
+**식 (기호)**: **Slippage_s** ≈ _s ·(**fill** **price** - **m**)
+
+
+**식 (기호)**: **Slippage_s** ≈ _s ·(**fill** **price** - **m**)
+
+
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -206,6 +218,12 @@ flowchart LR
 \[
 \text{PR}=\frac{Q}{\sum_{t\in T} V_t}
 \]
+
+**식 (기호)**: **PR**=(**Q**) / (Σ_t **T**) V_t}
+
+
+**식 (기호)**: **PR**=(**Q**) / (Σ_t **T**) V_t}
+
 
 
 **읽는 법**: **sum_**와 **V_t**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

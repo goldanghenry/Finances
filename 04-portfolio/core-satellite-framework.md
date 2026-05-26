@@ -178,6 +178,12 @@ flowchart LR
 w_{core} + w_{sat} = 1, \quad 0 \leq w_{sat} \leq 0.20
 \]
 
+**식 (기호)**: **w_core** + **w_sat** = 1, 0 ≤ **w_sat** ≤ 0.20
+
+
+**식 (기호)**: **w_core** + **w_sat** = 1, 0 ≤ **w_sat** ≤ 0.20
+
+
 
 **읽는 법**: **w_**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **위성 초과 시 매도량** (교육용):
@@ -192,6 +198,12 @@ w_{core} + w_{sat} = 1, \quad 0 \leq w_{sat} \leq 0.20
 \[
 \Delta_{sell,sat} = V \times (w_{sat,actual} - w_{sat,target})
 \]
+
+**식 (기호)**: **Δ_sell**,**sat** = **V** ×(**w_sat**,**actual** - **w_sat**,**target**)
+
+
+**식 (기호)**: **Δ_sell**,**sat** = **V** ×(**w_sat**,**actual** - **w_sat**,**target**)
+
 
 
 **읽는 법**: **lta_**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -210,6 +222,12 @@ w_{core} + w_{sat} = 1, \quad 0 \leq w_{sat} \leq 0.20
 \[
 FV_{core} = PMT \times \frac{(1+r)^{n} - 1}{r}
 \]
+
+**식 (기호)**: **FV_core** = **PMT** ×((1+**r**)^**n** - 1) / (**r**)
+
+
+**식 (기호)**: **FV_core** = **PMT** ×((1+**r**)^**n** - 1) / (**r**)
+
 
 
 **읽는 법**: 매 기간 **PMT**가 **r**로 **n**번 복리·누적되면 **FV**가 된다. 

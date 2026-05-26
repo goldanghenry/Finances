@@ -161,6 +161,12 @@ flowchart TD
 P_{t+1} = P_t + \varepsilon_{t+1}, \quad E[\varepsilon_{t+1} \mid \mathcal{I}_t^{weak}] = 0
 \]
 
+**식 (기호)**: **P_t**+1 = **P_t** + **ε_t**+1, **E**[**ε_t**+1 {I}_t^weak] = 0
+
+
+**식 (기호)**: **P_t**+1 = **P_t** + **ε_t**+1, **E**[**ε_t**+1 {I}_t^weak] = 0
+
+
 
 **읽는 법**: **P_**와 **t**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -181,6 +187,12 @@ P_{t+1} = P_t + \varepsilon_{t+1}, \quad E[\varepsilon_{t+1} \mid \mathcal{I}_t^
 \[
 R_{i,t} = \alpha_i + \beta_i R_{m,t} + \sum_k \gamma_{i,k} D_{t,k} + u_{i,t}
 \]
+
+**식 (기호)**: **R_i**,**t** = **α_i** + **β_i** **R_m**,**t** + Σ_k **γ_i**,**k** **D_t**,**k** + **u_i**,**t**
+
+
+**식 (기호)**: **R_i**,**t** = **α_i** + **β_i** **R_m**,**t** + Σ_k **γ_i**,**k** **D_t**,**k** + **u_i**,**t**
+
 
 
 **읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 

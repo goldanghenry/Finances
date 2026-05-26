@@ -181,6 +181,12 @@ quadrantChart
 \text{ROI} \approx \frac{\text{절감 인건비} + \text{품질·가동 이득} - \text{유지·전력}}{\text{로봇·설치 CAPEX}}
 \]
 
+**식 (기호)**: **ROI** ≈ (절감 인건비 + 품질·가동 이득 - 유지·전력) / (로봇·설치 **CAPEX**)
+
+
+**식 (기호)**: **ROI** ≈ (절감 인건비 + 품질·가동 이득 - 유지·전력) / (로봇·설치 **CAPEX**)
+
+
 
 **읽는 법**: **ROI**와 **절감 인건비**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 - **회수 기간** 2~4년 = **commercial**; **10년+** = **실험**
@@ -196,6 +202,12 @@ quadrantChart
 \[
 \text{BOM} \approx N_{\text{DoF}} \times (\text{감속기} + \text{서보}) + \text{센서} + \text{컴pute}
 \]
+
+**식 (기호)**: **BOM** ≈ **N_DoF** ×(감속기 + 서보) + 센서 + 컴pute
+
+
+**식 (기호)**: **BOM** ≈ **N_DoF** ×(감속기 + 서보) + 센서 + 컴pute
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- DoF **30**, 감속기 **200만 원×30** = **6,000만 원** (가상) — **양산** 전 **단가** 불확실

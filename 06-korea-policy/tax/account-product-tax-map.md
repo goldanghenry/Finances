@@ -126,18 +126,24 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|               R               | R | 기간당 이자·요구수익률 |
-|               Delta               | Delta | 위 식의 Delta |
-|               tau               | tau | 위 식의 tau |
-|               after               | after | 위 식의 after |
-|               u               | u | 위 식의 u |
-|               eff               | eff | 위 식의 eff |
-|               approx               | approx | 위 식의 approx |
-|               times               | times | 위 식의 times |
+|                R                | R | 기간당 이자·요구수익률 |
+|                Delta                | Delta | 위 식의 Delta |
+|                tau                | tau | 위 식의 tau |
+|                after                | after | 위 식의 after |
+|                u                | u | 위 식의 u |
+|                eff                | eff | 위 식의 eff |
+|                approx                | approx | 위 식의 approx |
+|                times                | times | 위 식의 times |
 
 \[
 R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 \]
+
+**식 (기호)**: **R_after** ≈ **R** ×(1 - _eff)
+
+
+**식 (기호)**: **R_after** ≈ **R** ×(1 - _eff)
+
 
 
 **읽는 법**: **R_**와 **after**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

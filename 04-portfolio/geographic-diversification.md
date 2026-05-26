@@ -198,6 +198,12 @@ flowchart LR
 R_{KRW} \approx R_{local} + R_{FX}
 \]
 
+**식 (기호)**: **R_KRW** ≈ **R_local** + **R_FX**
+
+
+**식 (기호)**: **R_KRW** ≈ **R_local** + **R_FX**
+
+
 
 **읽는 법**: **R**와 **KRW**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **2지역 주식 (가상)**:
@@ -212,6 +218,12 @@ R_{KRW} \approx R_{local} + R_{FX}
 \[
 R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 \]
+
+**식 (기호)**: **R_p** = **w_US** **R_US** + **w_GL** **R_GL** + 상관항
+
+
+**식 (기호)**: **R_p** = **w_US** **R_US** + **w_GL** **R_GL** + 상관항
+
 
 
 **읽는 법**: **R_p**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

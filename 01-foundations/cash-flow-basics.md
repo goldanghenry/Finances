@@ -178,6 +178,12 @@ flowchart TD
 s = \frac{Y - C}{Y} = 1 - \frac{C}{Y}
 \]
 
+**식 (기호)**: **s** = (**Y** - **C**) / (**Y**) = 1 - (**C**) / (**Y**)
+
+
+**식 (기호)**: **s** = (**Y** - **C**) / (**Y**) = 1 - (**C**) / (**Y**)
+
+
 
 **읽는 법**: **s**와 **Y**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 - \(Y\) = 기간 소득(실수령 권장)
@@ -195,6 +201,12 @@ s = \frac{Y - C}{Y} = 1 - \frac{C}{Y}
 \[
 FV \approx S \times \frac{(1+r)^{n} - 1}{r}
 \]
+
+**식 (기호)**: **FV** ≈ **S** ×((1+**r**)^**n** - 1) / (**r**)
+
+
+**식 (기호)**: **FV** ≈ **S** ×((1+**r**)^**n** - 1) / (**r**)
+
 
 
 **읽는 법**: **FV**와 **S**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다. 상세는 [compound-interest-and-time-value](compound-interest-and-time-value.md).

@@ -113,6 +113,12 @@ flowchart LR
 Fin = I + D_{\text{dom}} + D_{\text{for}} + \cdots
 \]
 
+**식 (기호)**: **Fin** = **I** + **D_dom** + **D_for** + ·**s**
+
+
+**식 (기호)**: **Fin** = **I** + **D_dom** + **D_for** + ·**s**
+
+
 
 **읽는 법**: **F**와 **in**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 | 기호 | 이름 | 이 식에서 의미 |
@@ -124,6 +130,12 @@ Fin = I + D_{\text{dom}} + D_{\text{for}} + \cdots
 \[
 Fin > 20{,}000{,}000 \Rightarrow \text{종합과세 경로}
 \]
+
+**식 (기호)**: **Fin** > 20{,}000{,}000 종합과세 경로
+
+
+**식 (기호)**: **Fin** > 20{,}000{,}000 종합과세 경로
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -139,6 +151,12 @@ Fin > 20{,}000{,}000 \Rightarrow \text{종합과세 경로}
 T_{\text{KR}} - \text{FTC} \leq T_{\text{KR}}
 \]
 
+**식 (기호)**: **T_KR** - **FTC** ≤ **T_KR**
+
+
+**식 (기호)**: **T_KR** - **FTC** ≤ **T_KR**
+
+
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 
@@ -153,6 +171,12 @@ T_{\text{KR}} - \text{FTC} \leq T_{\text{KR}}
 \[
 T_{\text{KR}} - \text{FTC} \leq T_{\text{KR}}
 \]
+
+**식 (기호)**: **T_KR** - **FTC** ≤ **T_KR**
+
+
+**식 (기호)**: **T_KR** - **FTC** ≤ **T_KR**
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---

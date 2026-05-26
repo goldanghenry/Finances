@@ -164,6 +164,12 @@ sequenceDiagram
 \mathrm{Cap}=\frac{\mathrm{NOI}}{V}
 \]
 
+**식 (기호)**: **Cap**=(**NOI**) / (**V**)
+
+
+**식 (기호)**: **Cap**=(**NOI**) / (**V**)
+
+
 **읽는 법**: **NOI**를 **V**로 나눈 비율이 Cap rate이다. 
 
 
@@ -234,6 +240,12 @@ V=\frac{\mathrm{NOI}_1}{\mathrm{required\_yield}-g}\quad(\mathrm{required\_yield
 \[
 \frac{\partial P}{P}\approx-D_{\mathrm{eff}}\,\partial r+(\text{NOI 성장항})+(\text{스프레드 항})
 \]
+
+**식 (기호)**: ( **P**) / (**P**)≈-**D_eff** **r**+(**NOI** 성장항)+(스프레드 항)
+
+
+**식 (기호)**: ( **P**) / (**P**)≈-**D_eff** **r**+(**NOI** 성장항)+(스프레드 항)
+
 
 **읽는 법**: **금리↑**이면 보통 \(D_{\mathrm{eff}}>0\) 가정 하 **P↓** 방향이지만, NOI·스프레드 항이 상쇄할 수 있다. 
 

@@ -176,6 +176,12 @@ flowchart TD
 \text{Post-money} = \text{Pre-money} + \text{Investment}
 \]
 
+**식 (기호)**: **Post**-**money** = **Pre**-**money** + **Investment**
+
+
+**식 (기호)**: **Post**-**money** = **Pre**-**money** + **Investment**
+
+
 
 **읽는 법**: **Post**와 **Pre**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -190,6 +196,12 @@ flowchart TD
 \[
 \text{Investor ownership} = \frac{\text{Investment}}{\text{Post-money}}
 \]
+
+**식 (기호)**: **Investor** **ownership** = (**Investment**) / (**Post**-**money**)
+
+
+**식 (기호)**: **Investor** **ownership** = (**Investment**) / (**Post**-**money**)
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -233,6 +245,12 @@ flowchart TD
 V = \sum_{t=1}^{n} \frac{FCF_t}{(1+WACC)^t} + \frac{TV}{(1+WACC)^n}
 \]
 
+**식 (기호)**: **V** = Σ_t=1}^n (**FCF_t**) / ((1+**WACC**)^**t**) + (**TV**) / ((1+**WACC**)^**n**)
+
+
+**식 (기호)**: **V** = Σ_t=1}^n (**FCF_t**) / ((1+**WACC**)^**t**) + (**TV**) / ((1+**WACC**)^**n**)
+
+
 
 **읽는 법**: 부채·자본 비중으로 **r_d**·**r_e**를 가중 평균한 것이 **WACC**다. 
 
@@ -254,6 +272,12 @@ V = \sum_{t=1}^{n} \frac{FCF_t}{(1+WACC)^t} + \frac{TV}{(1+WACC)^n}
 \[
 \text{Runway (months)} = \frac{\text{Cash}}{\text{Monthly burn}}
 \]
+
+**식 (기호)**: **Runway** (**months**) = (**Cash**) / (**Monthly** **burn**)
+
+
+**식 (기호)**: **Runway** (**months**) = (**Cash**) / (**Monthly** **burn**)
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -270,6 +294,12 @@ V = \sum_{t=1}^{n} \frac{FCF_t}{(1+WACC)^t} + \frac{TV}{(1+WACC)^n}
 V = \sum_{t=1}^{n} \frac{FCF_t}{(1+WACC)^t} + \frac{TV}{(1+WACC)^n}
 \]
 
+**식 (기호)**: **V** = Σ_t=1}^n (**FCF_t**) / ((1+**WACC**)^**t**) + (**TV**) / ((1+**WACC**)^**n**)
+
+
+**식 (기호)**: **V** = Σ_t=1}^n (**FCF_t**) / ((1+**WACC**)^**t**) + (**TV**) / ((1+**WACC**)^**n**)
+
+
 
 **읽는 법**: 부채·자본 비중으로 **r_d**·**r_e**를 가중 평균한 것이 **WACC**다. 
 
@@ -291,6 +321,12 @@ V = \sum_{t=1}^{n} \frac{FCF_t}{(1+WACC)^t} + \frac{TV}{(1+WACC)^n}
 \[
 \text{Runway (months)} = \frac{\text{Cash}}{\text{Monthly burn}}
 \]
+
+**식 (기호)**: **Runway** (**months**) = (**Cash**) / (**Monthly** **burn**)
+
+
+**식 (기호)**: **Runway** (**months**) = (**Cash**) / (**Monthly** **burn**)
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

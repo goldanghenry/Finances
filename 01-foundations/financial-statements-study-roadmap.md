@@ -159,6 +159,12 @@ flowchart LR
 ROE = \frac{\text{Net Income}}{\text{Sales}} \times \frac{\text{Sales}}{\text{Assets}} \times \frac{\text{Assets}}{\text{Equity}}
 \]
 
+**식 (기호)**: **ROE** = (**Net** **Income**) / (**Sales**) ×(**Sales**) / (**Assets**) ×(**Assets**) / (**Equity**)
+
+
+**식 (기호)**: **ROE** = (**Net** **Income**) / (**Sales**) ×(**Sales**) / (**Assets**) ×(**Assets**) / (**Equity**)
+
+
 
 **읽는 법**: **ROE**와 **Net**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **FCF (Week 7)**:
@@ -171,6 +177,12 @@ ROE = \frac{\text{Net Income}}{\text{Sales}} \times \frac{\text{Sales}}{\text{As
 \[
 FCF = OCF - CapEx
 \]
+
+**식 (기호)**: **FCF** = **OCF** - **CapEx**
+
+
+**식 (기호)**: **FCF** = **OCF** - **CapEx**
+
 
 
 **읽는 법**: **FCF**와 **OCF**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -187,6 +199,12 @@ FCF = OCF - CapEx
 \[
 P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 \]
+
+**식 (기호)**: **P**/**E** = (**Price** **per** **share**) / (**EPS**), **P**/**B** = (**Price**) / (**BVPS**)
+
+
+**식 (기호)**: **P**/**E** = (**Price** **per** **share**) / (**EPS**), **P**/**B** = (**Price**) / (**BVPS**)
+
 
 
 **읽는 법**: **EPS**와 **P**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

@@ -210,6 +210,12 @@ flowchart TD
 OCF \approx NI + D\&A - \Delta NWC + \text{기타 비현금 조정}
 \]
 
+**식 (기호)**: **OCF** ≈ **NI** + **D&A** - **Δ**_ **NWC** + 기타 비현금 조정
+
+
+**식 (기호)**: **OCF** ≈ **NI** + **D&A** - **Δ**_ **NWC** + 기타 비현금 조정
+
+
 
 **읽는 법**: **OCF**와 **NI**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -229,6 +235,12 @@ OCF \approx NI + D\&A - \Delta NWC + \text{기타 비현금 조정}
 FCF \approx OCF - CAPEX_{\text{ gross}}
 \]
 
+**식 (기호)**: **FCF** ≈ **OCF** - **CAPEX_** **gross**
+
+
+**식 (기호)**: **FCF** ≈ **OCF** - **CAPEX_** **gross**
+
+
 
 **읽는 법**: **CAPEX_**와 **FCF**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -244,6 +256,12 @@ FCF \approx OCF - CAPEX_{\text{ gross}}
 \[
 FCF \approx OCF - CAPEX_{\text{ maintenance}} - CAPEX_{\text{ growth}}
 \]
+
+**식 (기호)**: **FCF** ≈ **OCF** - **CAPEX_** **maintenance** - **CAPEX_** **growth**
+
+
+**식 (기호)**: **FCF** ≈ **OCF** - **CAPEX_** **maintenance** - **CAPEX_** **growth**
+
 
 
 **읽는 법**: **FCF**와 **OCF**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -261,6 +279,12 @@ FCF \approx OCF - CAPEX_{\text{ maintenance}} - CAPEX_{\text{ growth}}
 \[
 \text{CAPEX intensity} = \frac{CAPEX}{Sales},\quad \text{OCF margin} = \frac{OCF}{Sales}
 \]
+
+**식 (기호)**: **CAPEX** **intensity** = (**CAPEX**) / (**Sales**), **OCF** **margin** = (**OCF**) / (**Sales**)
+
+
+**식 (기호)**: **CAPEX** **intensity** = (**CAPEX**) / (**Sales**), **OCF** **margin** = (**OCF**) / (**Sales**)
+
 
 
 **읽는 법**: **D**와 **A**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -281,6 +305,12 @@ FCF \approx OCF - CAPEX_{\text{ maintenance}} - CAPEX_{\text{ growth}}
 \[
 FCFF = EBIT(1-T) + D\&A - CAPEX - \Delta NWC
 \]
+
+**식 (기호)**: **FCFF** = **EBIT**(1-**T**) + **D&A** - **CAPEX** - **Δ**_ **NWC**
+
+
+**식 (기호)**: **FCFF** = **EBIT**(1-**T**) + **D&A** - **CAPEX** - **Δ**_ **NWC**
+
 
 **읽는 법**: **EBIT(1−T)**로 **NOPAT**를 잡고, **D&A**를 더하고 **CAPEX**·**ΔNWC**를 빼 **기업 전체** 현금창출(**FCFF**)을 본다. 
 
@@ -305,6 +335,12 @@ FCFF = EBIT(1-T) + D\&A - CAPEX - \Delta NWC
 FCFE = FCFF - Interest(1-T) + Net\ Borrowing
 \]
 
+**식 (기호)**: **FCFE** = **FCFF** - **Interest**(1-**T**) + **Net** **Borrowing**
+
+
+**식 (기호)**: **FCFE** = **FCFF** - **Interest**(1-**T**) + **Net** **Borrowing**
+
+
 **읽는 법**: **FCFF**에서 **이자(1−T)**를 빼고 **순차입**을 더하면 **주주**에게 귀속 가능한 **FCFE**다.
 
 
@@ -318,6 +354,12 @@ FCFE = FCFF - Interest(1-T) + Net\ Borrowing
 \[
 FCFE \approx NI + D\&A - CAPEX - \Delta NWC + Net\ Borrowing
 \]
+
+**식 (기호)**: **FCFE** ≈ **NI** + **D&A** - **CAPEX** - **Δ**_ **NWC** + **Net** **Borrowing**
+
+
+**식 (기호)**: **FCFE** ≈ **NI** + **D&A** - **CAPEX** - **Δ**_ **NWC** + **Net** **Borrowing**
+
 
 **읽는 법**: **NI** 출발식은 **간접법 OCF**와 동일 골격 — **Net Borrowing**으로 레버리지 효과가 들어온다.
 
@@ -336,6 +378,12 @@ FCFE \approx NI + D\&A - CAPEX - \Delta NWC + Net\ Borrowing
 Enterprise\ Value \approx \sum_{t} \frac{FCFF_t}{(1+WACC)^t} + PV(Terminal)
 \]
 
+**식 (기호)**: **Enterprise** **Value** ≈ Σ_t (**FCFF_t**) / ((1+**WACC**)^**t**) + **PV**(**Terminal**)
+
+
+**식 (기호)**: **Enterprise** **Value** ≈ Σ_t (**FCFF_t**) / ((1+**WACC**)^**t**) + **PV**(**Terminal**)
+
+
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 | **r** | 할인율·수익률 | 기간당 이자·요구수익률 |
@@ -345,6 +393,12 @@ Enterprise\ Value \approx \sum_{t} \frac{FCFF_t}{(1+WACC)^t} + PV(Terminal)
 \[
 Equity\ Value \approx Enterprise\ Value - Net\ Debt
 \]
+
+**식 (기호)**: **Equity** **Value** ≈ **Enterprise** **Value** - **Net** **Debt**
+
+
+**식 (기호)**: **Equity** **Value** ≈ **Enterprise** **Value** - **Net** **Debt**
+
 
 **읽는 법**: **FCFF**를 **WACC**로 할인해 **EV**를 구하고 **순부채**를 빼 **주주가치**로 연결한다. 
 
@@ -373,6 +427,12 @@ Equity\ Value \approx Enterprise\ Value - Net\ Debt
 \[
 EBITDA = EBIT + D\&A
 \]
+
+**식 (기호)**: **EBITDA** = **EBIT** + **D&A**
+
+
+**식 (기호)**: **EBITDA** = **EBIT** + **D&A**
+
 
 **읽는 법**: **EBITDA**는 **이자·세·CAPEX·운전자본** 전 — **현금** 아님. 
 

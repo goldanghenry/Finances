@@ -34,6 +34,7 @@ def main() -> None:
         "fix_table_separator_columns.py",
         "fix_unbalanced_display_math.py",
         "fix_markdown_structure.py",
+        "add_section6_formula_fallback.py",
     ]
     for step in steps:
         run(step)

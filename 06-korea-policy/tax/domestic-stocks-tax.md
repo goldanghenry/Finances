@@ -117,6 +117,12 @@ flowchart LR
 T_{\text{domestic CGT}} = 0 \quad (\text{비과세})
 \]
 
+**식 (기호)**: **T_domestic** **CGT** = 0 (비과세)
+
+
+**식 (기호)**: **T_domestic** **CGT** = 0 (비과세)
+
+
 
 **읽는 법**: **T_**와 **domestic**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 배당 (금융소득 합산):
@@ -127,6 +133,12 @@ T_{\text{domestic CGT}} = 0 \quad (\text{비과세})
 \[
 Fin = D_{\text{domestic}} + D_{\text{foreign}} + I + \cdots
 \]
+
+**식 (기호)**: **Fin** = **D_domestic** + **D_foreign** + **I** + ·**s**
+
+
+**식 (기호)**: **Fin** = **D_domestic** + **D_foreign** + **I** + ·**s**
+
 
 
 **읽는 법**: **D_**와 **D_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---

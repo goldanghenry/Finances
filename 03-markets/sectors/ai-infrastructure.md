@@ -201,6 +201,12 @@ flowchart TB
 \text{DC 전력(MW)} \approx \frac{\text{GPU 수} \times \text{GPU TDP(W)}}{\text{PUE} \times 10^6}
 \]
 
+**식 (기호)**: **DC** 전력(**MW**) ≈ (**GPU** 수 ×**GPU** **TDP**(**W**)) / (**PUE** ×10^6)
+
+
+**식 (기호)**: **DC** 전력(**MW**) ≈ (**GPU** 수 ×**GPU** **TDP**(**W**)) / (**PUE** ×10^6)
+
+
 
 **읽는 법**: **DC**와 **GPU**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 - PUE 1.2~1.5 — **냉각**이 전력의 **상당 부분**
@@ -216,6 +222,12 @@ flowchart TB
 \[
 \text{AI ROI} \approx \frac{\text{추론·구독 매출} - \text{GPU·전력·감가}}{\text{AI CAPEX}}
 \]
+
+**식 (기호)**: **AI** **ROI** ≈ (추론·구독 매출 - **GPU**·전력·감가) / (**AI** **CAPEX**)
+
+
+**식 (기호)**: **AI** **ROI** ≈ (추론·구독 매출 - **GPU**·전력·감가) / (**AI** **CAPEX**)
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- ROI **불확실** → CAPEX **변동성**

@@ -160,6 +160,12 @@ R_d \approx YTM_{\text{채권}} \quad \text{또는} \quad R_f + \text{Credit Spr
 R_e = R_0 + (R_0 - R_d)\frac{D}{E}
 \]
 
+**식 (기호)**: **R_e** = **R_0** + (**R_0** - **R_d**)(**D**) / (**E**)
+
+
+**식 (기호)**: **R_e** = **R_0** + (**R_0** - **R_d**)(**D**) / (**E**)
+
+
 
 **읽는 법**: **R_**와 **e**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:

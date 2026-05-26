@@ -153,6 +153,12 @@ flowchart TD
 P = \sum_{t=1}^{T} \frac{C}{(1+y)^{t}} + \frac{F}{(1+y)^T}
 \]
 
+**식 (기호)**: **P** = Σ_t=1}^T (**C**) / ((1+**y**)^**t**) + (**F**) / ((1+**y**)^**T**)
+
+
+**식 (기호)**: **P** = Σ_t=1}^T (**C**) / ((1+**y**)^**t**) + (**F**) / ((1+**y**)^**T**)
+
+
 
 **읽는 법**: **P**와 **t**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -170,6 +176,12 @@ P = \sum_{t=1}^{T} \frac{C}{(1+y)^{t}} + \frac{F}{(1+y)^T}
 \[
 D_{Mac} = \frac{\sum t \cdot PV(CF_t)}{P}, \quad D_{mod} = \frac{D_{Mac}}{1+y}
 \]
+
+**식 (기호)**: **D_Mac** = (Σ **t** ·**PV**(**CF_t**)) / (**P**), **D_mod** = (**D_Mac**) / (1+**y**)
+
+
+**식 (기호)**: **D_Mac** = (Σ **t** ·**PV**(**CF_t**)) / (**P**), **D_mod** = (**D_Mac**) / (1+**y**)
+
 
 
 **읽는 법**: **PV**와 **D_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -191,6 +203,12 @@ D_{Mac} = \frac{\sum t \cdot PV(CF_t)}{P}, \quad D_{mod} = \frac{D_{Mac}}{1+y}
 \frac{\Delta P}{P} \approx -D_{mod}\Delta y + \frac{1}{2} C_x (\Delta y)^{2}
 \]
 
+**식 (기호)**: (**Δ**_ **P**) / (**P**) ≈ -D_mod**Δ**_ **y** + (1) / (2) **C_x** (**Δ**_ **y**)^**2**
+
+
+**식 (기호)**: (**Δ**_ **P**) / (**P**) ≈ -D_mod**Δ**_ **y** + (1) / (2) **C_x** (**Δ**_ **y**)^**2**
+
+
 
 **읽는 법**: **D_**와 **C_x**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -211,6 +229,12 @@ D_{Mac} = \frac{\sum t \cdot PV(CF_t)}{P}, \quad D_{mod} = \frac{D_{Mac}}{1+y}
 \[
 Spread \approx YTM_{corp} - YTM_{gov}
 \]
+
+**식 (기호)**: **Spread** ≈ **YTM_corp** - **YTM_gov**
+
+
+**식 (기호)**: **Spread** ≈ **YTM_corp** - **YTM_gov**
+
 
 
 **읽는 법**: **YTM_**와 **YTM_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

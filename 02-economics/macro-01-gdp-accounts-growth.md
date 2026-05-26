@@ -157,6 +157,12 @@ flowchart LR
 Y = C + I + G + NX,\quad NX = X - M
 \]
 
+**식 (기호)**: **Y** = **C** + **I** + **G** + **NX**, **NX** = **X** - **M**
+
+
+**식 (기호)**: **Y** = **C** + **I** + **G** + **NX**, **NX** = **X** - **M**
+
+
 
 **읽는 법**: **Y**와 **C**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -177,6 +183,12 @@ Y = C + I + G + NX,\quad NX = X - M
 Y = wL + rK + \text{이윤} + \text{간접세} - \text{보조금} + \text{감가상각 등}
 \]
 
+**식 (기호)**: **Y** = **wL** + **rK** + 이윤 + 간접세 - 보조금 + 감가상각 등
+
+
+**식 (기호)**: **Y** = **wL** + **rK** + 이윤 + 간접세 - 보조금 + 감가상각 등
+
+
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -193,6 +205,12 @@ Y = wL + rK + \text{이윤} + \text{간접세} - \text{보조금} + \text{감가
 \[
 GDP^{nom}_t = P_t \cdot GDP^{real}_t,\quad \text{Deflator}_t = 100 \cdot \frac{GDP^{nom}_t}{GDP^{real}_t}
 \]
+
+**식 (기호)**: GDP^nom_t = **P_t** ·GDP^real_t, **Deflator_t** = 100 ·(GDP^nom_t) / (GDP^real_t)
+
+
+**식 (기호)**: GDP^nom_t = **P_t** ·GDP^real_t, **Deflator_t** = 100 ·(GDP^nom_t) / (GDP^real_t)
+
 
 
 **읽는 법**: **GDP**와 **P_t**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -214,6 +232,12 @@ GDP^{nom}_t = P_t \cdot GDP^{real}_t,\quad \text{Deflator}_t = 100 \cdot \frac{G
 \[
 Y = A F(K,L),\quad y = Y/L,\quad k = K/L
 \]
+
+**식 (기호)**: **Y** = **A** **F**(**K**,**L**), **y** = **Y**/**L**, **k** = **K**/**L**
+
+
+**식 (기호)**: **Y** = **A** **F**(**K**,**L**), **y** = **Y**/**L**, **k** = **K**/**L**
+
 
 
 **읽는 법**: **Y**와 **A**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

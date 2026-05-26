@@ -148,6 +148,12 @@ flowchart TD
 \frac{\Delta P}{P} \approx -D_{\text{mod}} \times \Delta y
 \]
 
+**식 (기호)**: (**Δ**_ **P**) / (**P**) ≈ -**D_mod** ×**Δ**_ **y**
+
+
+**식 (기호)**: (**Δ**_ **P**) / (**P**) ≈ -**D_mod** ×**Δ**_ **y**
+
+
 
 **읽는 법**: **Delta**와 **P**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 - \(D_{\text{mod}}\): 수정 듀레이션(년), \(\Delta y\): 수익률 변화(%)  
@@ -164,6 +170,12 @@ flowchart TD
 \[
 \text{연 이자} = \text{액면} \times \text{쿠폰율}
 \]
+
+**식 (기호)**: 연 이자 = 액면 ×쿠폰율
+
+
+**식 (기호)**: 연 이자 = 액면 ×쿠폰율
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

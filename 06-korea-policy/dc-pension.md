@@ -122,18 +122,24 @@ flowchart LR
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|           w           | w | 위 식의 w |
-|           risk           | risk | 위 식의 risk |
-|           V           | V | 위 식의 V |
-|           stock           | stock | 위 식의 stock |
-|           ETF           | ETF | 위 식의 ETF |
-|           total           | total | 위 식의 total |
-|           DEPTH           | DEPTH | 위 식의 DEPTH |
-|           STANDARD           | STANDARD | 위 식의 STANDARD |
+|            w            | w | 위 식의 w |
+|            risk            | risk | 위 식의 risk |
+|            V            | V | 위 식의 V |
+|            stock            | stock | 위 식의 stock |
+|            ETF            | ETF | 위 식의 ETF |
+|            total            | total | 위 식의 total |
+|            DEPTH            | DEPTH | 위 식의 DEPTH |
+|            STANDARD            | STANDARD | 위 식의 STANDARD |
 
 \[
 w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 \]
+
+**식 (기호)**: **w_risk** = (**V_stock** **ETF**) / (**V_total**) ≤ 0.70
+
+
+**식 (기호)**: **w_risk** = (**V_stock** **ETF**) / (**V_total**) ≤ 0.70
+
 
 
 **읽는 법**: **w_**와 **V_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -145,6 +151,12 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 \[
 \text{절세} \approx \min(P_{\text{add}}, 3{,}000{,}000) \times r_{\text{deduction}}
 \]
+
+**식 (기호)**: 절세 ≈ (**P_add**, 3{,}000{,}000) ×**r_deduction**
+
+
+**식 (기호)**: 절세 ≈ (**P_add**, 3{,}000{,}000) ×**r_deduction**
+
 
 
 **읽는 법**: **P_**와 **r_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

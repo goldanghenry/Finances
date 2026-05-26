@@ -212,6 +212,12 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 \text{Pack cost} \approx \text{Cell cost} + \text{BMS} + \text{구조·열관리} + \text{마진}
 \]
 
+**식 (기호)**: **Pack** **cost** ≈ **Cell** **cost** + **BMS** + 구조·열관리 + 마진
+
+
+**식 (기호)**: **Pack** **cost** ≈ **Cell** **cost** + **BMS** + 구조·열관리 + 마진
+
+
 
 **읽는 법**: **Pack**와 **Cell**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 - LFP 셀 **$/kWh** 하락 → ESS **경제성** ↑ → LFP 수요 ↑ → **NCM 점유율** 압박
@@ -227,6 +233,12 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 \[
 \text{영업이익} \propto (\text{출하 GWh}) \times (\text{ASP} - \text{단위원가}) - \text{고정비}
 \]
+
+**식 (기호)**: 영업이익 (출하 **GWh**) ×(**ASP** - 단위원가) - 고정비
+
+
+**식 (기호)**: 영업이익 (출하 **GWh**) ×(**ASP** - 단위원가) - 고정비
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- 가동률 **<70%** 구간에서 **영업적자** 전환 빈번 (가상 CAPEX 과잉 시)

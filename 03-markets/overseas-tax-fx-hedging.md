@@ -235,18 +235,24 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|           R           | R | 기간당 이자·요구수익률 |
-|           KRW           | KRW | 위 식의 KRW |
-|           unhedged           | unhedged | 위 식의 unhedged |
-|           approx           | approx | 위 식의 approx |
-|           USD           | USD | 위 식의 USD |
-|           asset           | asset | 위 식의 asset |
-|           FX           | FX | 위 식의 FX |
-|           DEPTH           | DEPTH | 위 식의 DEPTH |
+|            R            | R | 기간당 이자·요구수익률 |
+|            KRW            | KRW | 위 식의 KRW |
+|            unhedged            | unhedged | 위 식의 unhedged |
+|            approx            | approx | 위 식의 approx |
+|            USD            | USD | 위 식의 USD |
+|            asset            | asset | 위 식의 asset |
+|            FX            | FX | 위 식의 FX |
+|            DEPTH            | DEPTH | 위 식의 DEPTH |
 
 \[
 R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) - 1
 \]
+
+**식 (기호)**: **R_KRW**, **unhedged** ≈ (1 + **R_USD** **asset**)(1 + **R_FX**) - 1
+
+
+**식 (기호)**: **R_KRW**, **unhedged** ≈ (1 + **R_USD** **asset**)(1 + **R_FX**) - 1
+
 
 
 **읽는 법**: **R_**와 **KRW**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -265,6 +271,12 @@ R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) -
 \[
 R_{\text{KRW}} \approx R_{\text{USD asset}} + R_{\text{FX}} + R_{\text{USD asset}} \cdot R_{\text{FX}}
 \]
+
+**식 (기호)**: **R_KRW** ≈ **R_USD** **asset** + **R_FX** + **R_USD** **asset** ·**R_FX**
+
+
+**식 (기호)**: **R_KRW** ≈ **R_USD** **asset** + **R_FX** + **R_USD** **asset** ·**R_FX**
+
 
 
 **읽는 법**: **R_**와 **R_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -285,6 +297,12 @@ R_{\text{KRW}} \approx R_{\text{USD asset}} + R_{\text{FX}} + R_{\text{USD asset
 \[
 P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sell,KRW}} = \text{USD amount} \times e_{\text{sell}}
 \]
+
+**식 (기호)**: **P_buy**,**KRW** = **USD** **amount** ×**e_buy**, **P_sell**,**KRW** = **USD** **amount** ×**e_sell**
+
+
+**식 (기호)**: **P_buy**,**KRW** = **USD** **amount** ×**e_buy**, **P_sell**,**KRW** = **USD** **amount** ×**e_sell**
+
 
 
 **읽는 법**: **P_**와 **e_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -315,6 +333,12 @@ ETF가 **비헷지보다 TER 높은** 경우 多
 D_{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 \]
 
+**식 (기호)**: **D_net**, **US** = **D_gross** ×(1 - _WHT)
+
+
+**식 (기호)**: **D_net**, **US** = **D_gross** ×(1 - _WHT)
+
+
 **읽는 법**: **D_gross**에 **(1−τ)**를 곱하면 **세후 배당**이다. \(\tau_{\text{WHT}} = 15\%\) (W-8BEN·조약 자격, 교육) vs \(30\%\) (미적용).
 
 — [Part2](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md).
@@ -328,6 +352,12 @@ D_{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 \text{차익}_{\text{원화}} = P_{\text{sell,KRW}} - P_{\text{buy,KRW}} - \text{비용}
 \]
 
+**식 (기호)**: 차익_원화 = **P_sell**,**KRW** - **P_buy**,**KRW** - 비용
+
+
+**식 (기호)**: 차익_원화 = **P_sell**,**KRW** - **P_buy**,**KRW** - 비용
+
+
 
 **읽는 법**: **P_**와 **P_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -339,6 +369,12 @@ D_{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 \[
 P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sell,KRW}} = \text{USD amount} \times e_{\text{sell}}
 \]
+
+**식 (기호)**: **P_buy**,**KRW** = **USD** **amount** ×**e_buy**, **P_sell**,**KRW** = **USD** **amount** ×**e_sell**
+
+
+**식 (기호)**: **P_buy**,**KRW** = **USD** **amount** ×**e_buy**, **P_sell**,**KRW** = **USD** **amount** ×**e_sell**
+
 
 
 **읽는 법**: **P_**와 **e_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

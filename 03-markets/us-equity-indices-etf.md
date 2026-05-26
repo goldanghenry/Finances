@@ -210,18 +210,24 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|           R           | R | 기간당 이자·요구수익률 |
-|           approx           | approx | 위 식의 approx |
-|           FX           | FX | 위 식의 FX |
-|           DEPTH           | DEPTH | 위 식의 DEPTH |
-|           STANDARD           | STANDARD | 위 식의 STANDARD |
-|           docs           | docs | 위 식의 docs |
-|           md           | md | 위 식의 md |
-|           Mag           | Mag | 위 식의 Mag |
+|            R            | R | 기간당 이자·요구수익률 |
+|            approx            | approx | 위 식의 approx |
+|            FX            | FX | 위 식의 FX |
+|            DEPTH            | DEPTH | 위 식의 DEPTH |
+|            STANDARD            | STANDARD | 위 식의 STANDARD |
+|            docs            | docs | 위 식의 docs |
+|            md            | md | 위 식의 md |
+|            Mag            | Mag | 위 식의 Mag |
 
 \[
 R_{\text{원화}} \approx (1 + R_{\text{달러}})(1 + R_{\text{FX}}) - 1
 \]
+
+**식 (기호)**: R_원화 ≈ (1 + R_달러)(1 + **R_FX**) - 1
+
+
+**식 (기호)**: R_원화 ≈ (1 + R_달러)(1 + **R_FX**) - 1
+
 
 
 **읽는 법**: **R_**와 **원화**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -236,6 +242,12 @@ R_{\text{원화}} \approx (1 + R_{\text{달러}})(1 + R_{\text{FX}}) - 1
 E_{\text{Mag7}} \approx w_{\text{S&P}} \cdot s_{\text{S&P}} + w_{\text{QQQ}} \cdot s_{\text{NDX}} + w_{\text{개별}}
 \]
 
+**식 (기호)**: **E_Mag7** ≈ **w_S&P** ·**s_S&P** + **w_QQQ** ·**s_NDX** + w_개별
+
+
+**식 (기호)**: **E_Mag7** ≈ **w_S&P** ·**s_S&P** + **w_QQQ** ·**s_NDX** + w_개별
+
+
 
 **읽는 법**: **E_**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.\(s\): 각 바스켓의 Mag7 비중(시점별 변동), \(w\): 포트 비중. \(w_{\text{S&P}}=50\%, w_{\text{QQQ}}=50\%\)이면 **broad 2개**만으로도 Mag7 **이중**.
 
@@ -247,6 +259,12 @@ E_{\text{Mag7}} \approx w_{\text{S&P}} \cdot s_{\text{S&P}} + w_{\text{QQQ}} \cd
 \[
 R_{\text{투자자}} \approx R_{\text{지수}} - TER - \text{추적오차} - \text{헷지비용} - \text{세금}
 \]
+
+**식 (기호)**: R_투자자 ≈ R_지수 - **TER** - 추적오차 - 헷지비용 - 세금
+
+
+**식 (기호)**: R_투자자 ≈ R_지수 - **TER** - 추적오차 - 헷지비용 - 세금
+
 
 
 **읽는 법**: **R_**와 **R_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

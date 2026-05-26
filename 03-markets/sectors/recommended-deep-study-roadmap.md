@@ -184,6 +184,12 @@ flowchart LR
 T_{\text{week}} = T_{\text{read}} + T_{\text{note}} + T_{\text{quiz}} \approx 5\text{~}8\ \text{시간}
 \]
 
+**식 (기호)**: **T_week** = **T_read** + **T_note** + **T_quiz** ≈ 5~8 시간
+
+
+**식 (기호)**: **T_week** = **T_read** + **T_note** + **T_quiz** ≈ 5~8 시간
+
+
 
 **읽는 법**: **T_**와 **week**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **9주 총**:
@@ -198,6 +204,12 @@ T_{\text{week}} = T_{\text{read}} + T_{\text{note}} + T_{\text{quiz}} \approx 5\
 T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1학기}
 \]
 
+**식 (기호)**: **T_total** ≈ 45~72 시간 ≈ **L3** 섹터 1학기
+
+
+**식 (기호)**: **T_total** ≈ 45~72 시간 ≈ **L3** 섹터 1학기
+
+
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 
@@ -209,6 +221,12 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 \[
 \text{학습 ROI} \approx \frac{\text{리스크 인지·의사결정 품질}}{\text{45~72h}} + \text{인적자본 시너지}
 \]
+
+**식 (기호)**: 학습 **ROI** ≈ (리스크 인지·의사결정 품질) / (45~72h) + 인적자본 시너지
+
+
+**식 (기호)**: 학습 **ROI** ≈ (리스크 인지·의사결정 품질) / (45~72h) + 인적자본 시너지
+
 
 
 **읽는 법**: **Bucket**와 **Bucket**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -223,6 +241,12 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 \[
 \text{학습 ROI} \approx \frac{\text{리스크 인지·의사결정 품질}}{\text{45~72h}} + \text{인적자본 시너지}
 \]
+
+**식 (기호)**: 학습 **ROI** ≈ (리스크 인지·의사결정 품질) / (45~72h) + 인적자본 시너지
+
+
+**식 (기호)**: 학습 **ROI** ≈ (리스크 인지·의사결정 품질) / (45~72h) + 인적자본 시너지
+
 
 
 **읽는 법**: **Bucket**와 **Bucket**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

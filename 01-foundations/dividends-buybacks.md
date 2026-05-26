@@ -151,6 +151,12 @@ flowchart LR
 g \approx ROE \times (1-\mathrm{payout})
 \]
 
+**식 (기호)**: **g** ≈ **ROE** ×(1-**payout**)
+
+
+**식 (기호)**: **g** ≈ **ROE** ×(1-**payout**)
+
+
 
 **읽는 법**: **g**와 **ROE**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -173,6 +179,12 @@ g \approx ROE \times (1-\mathrm{payout})
 r_{\text{after}} \approx y(1-\tau)
 \]
 
+**식 (기호)**: **r_after** ≈ **y**(1-)
+
+
+**식 (기호)**: **r_after** ≈ **y**(1-)
+
+
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -193,6 +205,12 @@ r_{\text{after}} \approx y(1-\tau)
 \[
 EPS \approx \frac{\Pi}{S-\Delta}
 \]
+
+**식 (기호)**: **EPS** ≈ (**Π**_) / (**S**-**Δ**_)
+
+
+**식 (기호)**: **EPS** ≈ (**Π**_) / (**S**-**Δ**_)
+
 
 **읽는 법**: 분모 **S−Δ**가 줄면 같은 **Π**에서 **EPS**는 올라간다 — **기계적** 효과이며, **현금**·**성장**과 분리해 본다.
 

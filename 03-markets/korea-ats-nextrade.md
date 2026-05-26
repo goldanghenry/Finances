@@ -152,17 +152,23 @@ flowchart LR
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 |  P  | 포트 규모 | 가상 포트폴리오 규모(만 원) |
-|           fill           | fill | 위 식의 fill |
-|           approx           | approx | 위 식의 approx |
-|           NXT           | NXT | 위 식의 NXT |
-|           KRX           | KRX | 위 식의 KRX |
-|           quad           | quad | 위 식의 quad |
-|           DEPTH           | DEPTH | 위 식의 DEPTH |
-|           STANDARD           | STANDARD | 위 식의 STANDARD |
+|            fill            | fill | 위 식의 fill |
+|            approx            | approx | 위 식의 approx |
+|            NXT            | NXT | 위 식의 NXT |
+|            KRX            | KRX | 위 식의 KRX |
+|            quad            | quad | 위 식의 quad |
+|            DEPTH            | DEPTH | 위 식의 DEPTH |
+|            STANDARD            | STANDARD | 위 식의 STANDARD |
 
 \[
 P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수 시, 호가에 따라)}
 \]
+
+**식 (기호)**: **P_fill** ≈ (**P_NXT**, **P_KRX**) (매수 시, 호가에 따라)
+
+
+**식 (기호)**: **P_fill** ≈ (**P_NXT**, **P_KRX**) (매수 시, 호가에 따라)
+
 
 
 **읽는 법**: **P_**와 **fill**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -174,6 +180,12 @@ P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 \]
+
+**식 (기호)**: **R_net** ≈ **R_gross** - (**f** + **s**) ×**N**
+
+
+**식 (기호)**: **R_net** ≈ **R_gross** - (**f** + **s**) ×**N**
+
 
 
 **읽는 법**: **R_**와 **R_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- \(f\): 수수료, \(s\): 스프레드·슬리피지, \(N\): **초과** 거래 횟수  

@@ -62,11 +62,11 @@ def check_section6_gold(text: str) -> list[str]:
     if TEMPLATE_READING in s6:
         issues.append("§6 template reading note (G2)")
 
-    # Each display math should have 읽는 법 within 250 chars
+    # Each display math should have 읽는 법 within 500 chars (식 (기호) fallback may sit in between)
     for m in re.finditer(r"\\\]\s*\n", s6_nc):
-        after = s6_nc[m.end() : m.end() + 250]
+        after = s6_nc[m.end() : m.end() + 500]
         if "읽는 법" not in after:
-            issues.append("§6 equation missing **읽는 법** within 250 chars (G2)")
+            issues.append("§6 equation missing **읽는 법** within 500 chars (G2)")
             break
     return issues
 

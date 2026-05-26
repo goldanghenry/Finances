@@ -106,17 +106,23 @@ flowchart LR
 | \(\R_f\) | 무위험금리 | 국채·예금 등 기준 금리 |
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|           Fama           | Fama | 위 식의 Fama |
-|           French           | French | 위 식의 French |
-|           R           | R | 기간당 이자·요구수익률 |
-|           f           | f | 위 식의 f |
-|           i           | i | 위 식의 i |
-|           mkt           | mkt | 위 식의 mkt |
+|            Fama            | Fama | 위 식의 Fama |
+|            French            | French | 위 식의 French |
+|            R            | R | 기간당 이자·요구수익률 |
+|            f            | f | 위 식의 f |
+|            i            | i | 위 식의 i |
+|            mkt            | mkt | 위 식의 mkt |
 |  m  | 월 실수령 | 가계 교육용 월 세후 소득 기호 |
 
 \[
 R_i - R_f = \alpha + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}}\text{SMB} + \beta_{\text{HML}}\text{HML} + \epsilon
 \]
+
+**식 (기호)**: **R_i** - **R_f** = **α**_ + **β_mkt**(**R_m** - **R_f**) + **β_SMBSMB** + **β_HMLHML** +
+
+
+**식 (기호)**: **R_i** - **R_f** = **α**_ + **β_mkt**(**R_m** - **R_f**) + **β_SMBSMB** + **β_HMLHML** +
+
 
 
 **읽는 법**: 시장 초과수익에 대한 민감도가 **β**다. 

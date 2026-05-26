@@ -181,6 +181,12 @@ sequenceDiagram
 
 \[ r_{\text{after-tax,approx}} \approx i \cdot (1-\tau_{\text{i}})\quad (\text{이자 과세 레짐 간략 근사}) \]
 
+**식 (기호)**: **r_after**-**tax**,approx ≈ **i** ·(1-_i) (이자 과세 레짐 간략 근사)
+
+
+**식 (기호)**: **r_after**-**tax**,approx ≈ **i** ·(1-_i) (이자 과세 레짐 간략 근사)
+
+
 **읽는 법**: **APR**와 **τ**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
 1. **정의**: **APR**, **τ**, **NMB**를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
@@ -190,6 +196,12 @@ sequenceDiagram
 **(3) 현금 활주 runway**(비상 레이어만):
 
 \[ \textbf{months}_{\textbf{liquidity}} = \frac{C_{\textbf{bucket0}}}{\text{NMB}} \quad,\quad \textbf{NMB}=\text{필수 월 순소비(Net monthly burn)}\]
+
+**식 (기호)**: **months_liquidity** = (**C_bucket0**) / (**NMB**) , **NMB**=필수 월 순소비(**Net** **monthly** **burn**)
+
+
+**식 (기호)**: **months_liquidity** = (**C_bucket0**) / (**NMB**) , **NMB**=필수 월 순소비(**Net** **monthly** **burn**)
+
 
 **읽는 법**: **APR**와 **τ**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:

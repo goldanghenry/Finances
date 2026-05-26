@@ -99,18 +99,24 @@ flowchart LR
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|           R           | R | 기간당 이자·요구수익률 |
-|           net           | net | 위 식의 net |
-|           approx           | approx | 위 식의 approx |
-|           gross           | gross | 위 식의 gross |
-|           f           | f | 위 식의 f |
-|           tau           | tau | 위 식의 tau |
-|           times           | times | 위 식의 times |
-|           N           | N | 연·월 등 복리·할인에 쓰는 횟수 |
+|            R            | R | 기간당 이자·요구수익률 |
+|            net            | net | 위 식의 net |
+|            approx            | approx | 위 식의 approx |
+|            gross            | gross | 위 식의 gross |
+|            f            | f | 위 식의 f |
+|            tau            | tau | 위 식의 tau |
+|            times            | times | 위 식의 times |
+|            N            | N | 연·월 등 복리·할인에 쓰는 횟수 |
 
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 \]
+
+**식 (기호)**: **R_net** ≈ **R_gross** - (**f** + ) ×**N**
+
+
+**식 (기호)**: **R_net** ≈ **R_gross** - (**f** + ) ×**N**
+
 
 
 **읽는 법**: **R_**와 **net**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -125,6 +131,12 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 \]
+
+**식 (기호)**: **R_net** ≈ **R_gross** - (**f** + ) ×**N**
+
+
+**식 (기호)**: **R_net** ≈ **R_gross** - (**f** + ) ×**N**
+
 
 
 **읽는 법**: **R_**와 **net**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

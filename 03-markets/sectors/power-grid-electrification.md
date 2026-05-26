@@ -176,6 +176,12 @@ flowchart TB
 P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 \]
 
+**식 (기호)**: **P_DC** ≈ (**N_GPU** ×**P_GPU**) / (**PUE**)
+
+
+**식 (기호)**: **P_DC** ≈ (**N_GPU** ×**P_GPU**) / (**PUE**)
+
+
 
 **읽는 법**: **P_**와 **DC**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **변압器 수요 (교육)**:
@@ -189,6 +195,12 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 \[
 \text{변압기 수요} \propto (\text{DC MW}) + (\text{EV 충전 MW}) + (\text{재생 접속 MW})
 \]
+
+**식 (기호)**: 변압기 수요 (**DC** **MW**) + (**EV** 충전 **MW**) + (재생 접속 **MW**)
+
+
+**식 (기호)**: 변압기 수요 (**DC** **MW**) + (**EV** 충전 **MW**) + (재생 접속 **MW**)
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -204,6 +216,12 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 \[
 \text{ESS profit} \approx (\text{peak price} - \text{off-peak price}) \times \text{efficiency} \times \text{cycles} - \text{capex}
 \]
+
+**식 (기호)**: **ESS** **profit** ≈ (**peak** **price** - **off**-**peak** **price**) ×**efficiency** ×**cycles** - **capex**
+
+
+**식 (기호)**: **ESS** **profit** ≈ (**peak** **price** - **off**-**peak** **price**) ×**efficiency** ×**cycles** - **capex**
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

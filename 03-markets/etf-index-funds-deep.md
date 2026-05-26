@@ -184,6 +184,12 @@ r_{\mathrm{ETF}} \approx r_{\mathrm{index}}^{\mathrm{(TR 또는 PR 규격)}}
 - \delta_{\mathrm{tax/WHT}}
 \]
 
+**식 (기호)**: **r_ETF** ≈ r_index^(**TR** 또는 **PR** 규격) - f_TER^(연율 근사) - c_tx^(거래·스프레드·**FX**) - **δ_cash** - **δ_sample** - **δ_tax**/**WHT**
+
+
+**식 (기호)**: **r_ETF** ≈ r_index^(**TR** 또는 **PR** 규격) - f_TER^(연율 근사) - c_tx^(거래·스프레드·**FX**) - **δ_cash** - **δ_sample** - **δ_tax**/**WHT**
+
+
 
 **읽는 법**: **r_**와 **r_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -203,6 +209,12 @@ r_{\mathrm{ETF}} \approx r_{\mathrm{index}}^{\mathrm{(TR 또는 PR 규격)}}
 \[
 \mathrm{premium}=\frac{P_{\mathrm{mkt}}- \widehat{NAV}}{ \widehat{NAV}}
 \]
+
+**식 (기호)**: **premium**=(**P_mkt**- {NAV}) / ({NAV})
+
+
+**식 (기호)**: **premium**=(**P_mkt**- {NAV}) / ({NAV})
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

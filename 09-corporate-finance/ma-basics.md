@@ -173,17 +173,23 @@ flowchart TB
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 |  EPS  | 주당순이익 | 순이익 ÷ 발행주식수 |
-|           pro           | pro | 위 식의 pro |
-|           forma           | forma | 위 식의 forma |
-|           NI           | NI | 위 식의 NI |
-|           A           | A | 위 식의 A |
+|            pro            | pro | 위 식의 pro |
+|            forma            | forma | 위 식의 forma |
+|            NI            | NI | 위 식의 NI |
+|            A            | A | 위 식의 A |
 |  T  | 기간 | 마지막 CF 시점 |
-|           Delta           | Delta | 위 식의 Delta |
-|           I           | I | 위 식의 I |
+|            Delta            | Delta | 위 식의 Delta |
+|            I            | I | 위 식의 I |
 
 \[
 EPS_{\text{pro forma}} = \frac{NI_A + NI_T - \Delta I (1-T) + \Delta Synergy (1-T)}{Sh_A + Sh_{\text{new}}}
 \]
+
+**식 (기호)**: **EPS_pro** **forma** = (**NI_A** + **NI_T** - **Δ**_ **I** (1-**T**) + **Δ**_ **Synergy** (1-**T**)) / (**Sh_A** + **Sh_new**)
+
+
+**식 (기호)**: **EPS_pro** **forma** = (**NI_A** + **NI_T** - **Δ**_ **I** (1-**T**) + **Δ**_ **Synergy** (1-**T**)) / (**Sh_A** + **Sh_new**)
+
 
 
 **읽는 법**: **EPS_**와 **pro**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -205,6 +211,12 @@ EPS_{\text{pro forma}} = \frac{NI_A + NI_T - \Delta I (1-T) + \Delta Synergy (1-
 \[
 V_{\text{synergy}} = \sum_{t=1}^{T} \frac{\Delta CF_t}{(1+WACC)^t}
 \]
+
+**식 (기호)**: **V_synergy** = Σ_t=1}^T (**Δ**_ **CF_t**) / ((1+**WACC**)^**t**)
+
+
+**식 (기호)**: **V_synergy** = Σ_t=1}^T (**Δ**_ **CF_t**) / ((1+**WACC**)^**t**)
+
 
 
 **읽는 법**: 부채·자본 비중으로 **r_d**·**r_e**를 가중 평균한 것이 **WACC**다. 
@@ -228,6 +240,12 @@ V_{\text{synergy}} = \sum_{t=1}^{T} \frac{\Delta CF_t}{(1+WACC)^t}
 EV = \text{EBITDA} \times \text{Multiple}
 \]
 
+**식 (기호)**: **EV** = **EBITDA** ×**Multiple**
+
+
+**식 (기호)**: **EV** = **EBITDA** ×**Multiple**
+
+
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -247,6 +265,12 @@ EV = \text{EBITDA} \times \text{Multiple}
 \[
 \text{Exchange ratio} = \frac{\text{Offer price per target share}}{\text{Acquirer share price}}
 \]
+
+**식 (기호)**: **Exchange** **ratio** = (**Offer** **price** **per** **target** **share**) / (**Acquirer** **share** **price**)
+
+
+**식 (기호)**: **Exchange** **ratio** = (**Offer** **price** **per** **target** **share**) / (**Acquirer** **share** **price**)
+
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
