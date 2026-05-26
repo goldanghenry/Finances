@@ -1,0 +1,9 @@
+title: 문서 표준
+nav:
+  - DEPTH-STANDARD.md
+  - TEMPLATE.md
+  - TERMINOLOGY-STANDARD.md
+  - L3-CORPUS-STATUS.md
+  - L4-ECONOMICS-STATUS.md
+  - private-notes.md
+  - github-pages-deploy.md

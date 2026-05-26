@@ -1,0 +1,24 @@
+# --- 비공개·로컬 (GitHub Pages에 올리지 않음) ---
+private/
+notes-personal/
+*.local.md
+.env
+.env.*
+
+# --- MkDocs / Python ---
+site/
+.venv/
+# webdocs/ 는 심볼릭 링크만 포함 — 커밋 대상
+venv/
+__pycache__/
+*.pyc
+
+# --- 빌드·작업용 ---
+.tmp_l3/
+scripts/
+
+# --- OS / IDE ---
+.DS_Store
+.idea/
+.vscode/
+.cursor/
