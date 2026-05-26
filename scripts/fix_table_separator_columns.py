@@ -218,9 +218,16 @@ def fix_separator_widths(lines: list[str]) -> int:
     return changed
 
 
+def split_hr_glued_to_headings(text: str) -> str:
+    return re.sub(r"^(---+)\s*(#{1,6}\s)", r"\1\n\n\2", text, flags=re.M)
+
+
 def fix_file(text: str) -> tuple[str, int]:
+    text2 = split_hr_glued_to_headings(text)
+    hr = int(text2 != text)
+    text = text2
     lines = text.splitlines()
-    changed = split_separator_glued_to_heading(lines)
+    changed = hr + split_separator_glued_to_heading(lines)
     changed += remove_orphan_trailing_table_separators(lines)
     changed += fix_merged_table_after_prose(lines)
     changed += remove_orphan_headers(lines)

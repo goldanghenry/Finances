@@ -87,9 +87,26 @@ def is_table_data_row(line: str) -> bool:
     if line.strip() == VAR_HDR:
         return False
     first = split_table_row(line)[0].strip() if split_table_row(line) else ""
-    if first in ("기호", "Bucket", "항목", "용어", "열1", "이름"):
+    if first in (
+        "기호",
+        "Bucket",
+        "항목",
+        "용어",
+        "열1",
+        "이름",
+        "단계",
+        "분기",
+        "충격",
+        "헤드라인",
+        "헤드라인 (예)",
+    ):
         return False
     return True
+
+
+def split_hr_glued_to_headings(text: str) -> str:
+    """Restore '---\\n\\n## N' when a horizontal rule was merged into a heading."""
+    return re.sub(r"^(---+)\s*(#{1,6}\s)", r"\1\n\n\2", text, flags=re.M)
 
 
 def split_separator_glued_to_heading(lines: list[str]) -> int:
@@ -205,6 +222,7 @@ def fix_split_prose(lines: list[str]) -> int:
             intruded: list[int] = []
             while j < len(lines) and (
                 not lines[j].strip()
+                or lines[j].strip().startswith("---")
                 or is_table_line(lines[j])
                 or is_sep_line(lines[j])
                 or ORPHAN_NAME_HDR.match(lines[j].strip())
@@ -217,7 +235,12 @@ def fix_split_prose(lines: list[str]) -> int:
                 if b in ("\\[", "\\]") or b.startswith("\\["):
                     i += 1
                     continue
-                if b and not b.startswith("|") and not b.startswith("#"):
+                if (
+                    b
+                    and not b.startswith("|")
+                    and not b.startswith("#")
+                    and not b.startswith("---")
+                ):
                     merged = a + b
                     lines[i] = merged
                     for k in reversed(intruded + list(range(i + 1, j + 1))):
@@ -336,7 +359,11 @@ def repair_section6(text: str) -> tuple[str, int]:
     s6 = fix_glued_display_math_openers(s6)
     s6 = close_unterminated_display_blocks(s6)
     s6 = re.sub(r"\n{4,}", "\n\n\n", s6)
-    result = head + s6 + tail
+    if tail:
+        result = head + s6.rstrip() + "\n\n" + tail.lstrip("\n")
+    else:
+        result = head + s6
+    result = split_hr_glued_to_headings(result)
     result = re.sub(
         r"(\|(?:[^|\n]*\|)+)\s*(#{1,6}\s)",
         r"\1\n\n\2",
@@ -350,7 +377,10 @@ def main() -> int:
     files = 0
     for path in iter_corpus_md():
         text = path.read_text(encoding="utf-8")
-        new_text, n = repair_section6(text)
+        text2 = split_hr_glued_to_headings(text)
+        hr_fix = int(text2 != text)
+        new_text, n = repair_section6(text2)
+        n += hr_fix
         if n:
             path.write_text(new_text, encoding="utf-8")
             print(f"{path.name}: {n} fix(es)")
