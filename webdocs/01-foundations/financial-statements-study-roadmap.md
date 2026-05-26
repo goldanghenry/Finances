@@ -22,10 +22,12 @@
 | **복습 한 줄** | — |
 
 
+
+> **가상 사례 회사**: 본 Phase 재무제표 심화 편은 **「가상 주식회사 한빛전자」** (가상의 코스피 제조·전자 부품) 숫자로 3표·DART·FCF를 **같은 스레드**로 읽는다. 실제 종목·실적이 아니다.
 ## TL;DR
 
 1. **12주**로 [financial-statements-intro](financial-statements-intro.md) → [financial-statements-analysis](financial-statements-analysis.md) → [cash-flow-statement-fcf](cash-flow-statement-fcf.md) → [reading-annual-reports-dart](reading-annual-reports-dart.md) → [equity-valuation-fundamentals](../03-markets/equity-valuation-fundamentals.md) 연결.
-2. 주당 **읽기 2~2.5h + 손계산·DART 1~1.5h** — [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md) 5~6월 블록과 정렬.
+2. 주당 **읽기 2~2.5h + 손계산·DART 1~1.5h** — [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md) 5~6월 블록과 정렬.
 3. **코어 ETF만** 투자해도 Week 9~12는 **간접** 유용(ETF 구성 종목·섹터).
 4. 산출물: 주차별 **1페이지 노트** + Week 12 **가상 밸류에이션 메모**.
 5. 코어 IPS와 분리: 재무제표 = **위성·섹터 검증** 도구.
@@ -155,29 +157,47 @@ flowchart LR
 **DuPont (Week 4)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(ROE\) | ROE | §4·본문 정의 참고 |
-| \(Net Income\) | Net Income | §4·본문 정의 참고 |
-| \(Sales\) | Sales | §4·본문 정의 참고 |
-| \(Assets\) | Assets | §4·본문 정의 참고 |
-| \(Equity\) | Equity | §4·본문 정의 참고 |
-
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             \(ROE\)             | ROE | ROE이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|   \(Net Income\)   |   Net Income   | \(Net Income\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             \(Sales\)             | Sales | Sales이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             \(Assets\)             | Assets | Assets이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             \(Equity\)             | Equity | Equity이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 \[
 ROE = \frac{\text{Net Income}}{\text{Sales}} \times \frac{\text{Sales}}{\text{Assets}} \times \frac{\text{Assets}}{\text{Equity}}
 \]
 
+
+
+**읽는 법**: **ROE**와 **Net**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **FCF (Week 7)**:
+
+| 기호 | 이름 | 이 식에서 의미 |
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+| \(FCF\) | 잉여현금흐름 | 투자자에게 가용한 현금 |
+| \(OCF\) | 영업현금흐름 | 영업활동에서 발생한 현금 |
 
 \[
 FCF = OCF - CapEx
 \]
 
-**상대밸류 (Week 12, 교육용)**:
 
+
+**읽는 법**: **FCF**와 **OCF**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**상대밸류 (Week 12, 교육용)**:
+
+| 기호 | 이름 | 이 식에서 의미 |
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+| \(EPS\) | 주당순이익 | 순이익 ÷ 발행주식수 |
+| \(P\) | 포트 규모 | 가상 포트폴리오 규모(만 원) |
+|            \(E\)            | E | E이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|            \(B\)            | B | B이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 \[
 P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 \]
 
+
+
+**읽는 법**: **EPS**와 **P**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 해당 없음: 복잡 DCF는 [time-value-npv-irr](time-value-npv-irr.md) 이후.
 
 ---
@@ -235,7 +255,7 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 **A4.** Week 11에 **비교사 1개**(다른 섹터) 추가 — 편향 방지.
 
 **Q5. 플레이북 5~6월과 병행?**  
-**A5.** [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md) **5~6월 = 본 로드맵**.
+**A5.** [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md) **5~6월 = 본 로드맵**.
 
 **Q6. 스프레드시트 필수?**  
 **A6.** 권장. 없으면 **손계산 노트**로 대체.
@@ -256,6 +276,11 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 - **시간 부족** — 12주 → **16주** 연장 허용, 순서 유지.
 
 ---
+
+
+
+**Q. 실무에서는?**  
+교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
 ## 11. 심화 읽기
 
@@ -279,6 +304,7 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 
 
 ---
+
 
 ## 부록 A. 주차별 체크박스
 

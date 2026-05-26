@@ -9,7 +9,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SKIP_DIRS = {"scripts", ".tmp_l3", "site", "webdocs", ".venv", "private", ".git", ".github", "docs", "references"}
-SKIP_NAMES = {"README.md", "sources.md", "TEMPLATE.md", "required-reading-guide.md"}
+SKIP_NAMES = {
+    "README.md",
+    "sources.md",
+    "TEMPLATE.md",
+    "required-reading-guide.md",
+    "ai-engineer-investing-playbook.md",
+    "office-worker-investing-playbook.md",
+}
 
 # term -> (English, one-line Korean)
 TERM_DEFS: dict[str, tuple[str, str]] = {
@@ -129,6 +136,27 @@ def inside_admonition(text: str, pos: int) -> bool:
     return "\n" in after_header and not re.search(r"^##+ ", after_header, re.M)
 
 
+_TABLE_BLOCK = re.compile(
+    r"(?:^|\n)(\|[^\n]+\n\|[-: |]+\|\n(?:\|[^\n]+\n)+)",
+    re.M,
+)
+
+
+def table_row_spans(body: str) -> list[tuple[int, int]]:
+    """Character spans of markdown table blocks in body."""
+    spans: list[tuple[int, int]] = []
+    for m in _TABLE_BLOCK.finditer(body):
+        start = m.start(1)
+        spans.append((start, m.end(1)))
+    return spans
+
+
+def inside_table_block(body: str, pos: int, spans: list[tuple[int, int]] | None = None) -> bool:
+    if spans is None:
+        spans = table_row_spans(body)
+    return any(start <= pos < end for start, end in spans)
+
+
 def section1_body(text: str) -> tuple[int, int, str]:
     m = re.search(r"^## 1\.[^\n]*\n", text, re.M)
     if not m:
@@ -154,6 +182,7 @@ def insert_boxes(text: str, path: Path) -> tuple[str, bool]:
         return text, False
     terms = terms_for_path(path)
     new_body = body
+    table_spans = table_row_spans(new_body)
     inserted = 0
     for term in terms:
         if inserted >= 5:
@@ -185,16 +214,29 @@ def insert_boxes(text: str, path: Path) -> tuple[str, bool]:
             continue
         if current_line.strip().startswith("|"):
             continue
+        if inside_table_block(new_body, pos, table_spans):
+            continue
         if re.match(r"^\s*[-*0-9]+\.", current_line):
             continue
         box = make_box(term)
         new_body = new_body[:line_start] + box + new_body[line_start:]
+        table_spans = table_row_spans(new_body)
         inserted += 1
     if inserted == 0 and terms:
         first = terms[0]
         if not already_has_box(text, first):
-            new_body = make_box(first) + new_body.lstrip("\n")
-            inserted = 1
+            anchor = re.search(
+                r"(\*\*왜 중요한가[^*]*\*\*:\s*\n)(\s*\|)",
+                new_body,
+            )
+            if anchor and not inside_table_block(new_body, anchor.start(2), table_spans):
+                pos = anchor.start(2)
+            else:
+                m_def = re.search(r"(\*\*정의\*\*:[^\n]+\n\n)", new_body)
+                pos = m_def.end() if m_def else 0
+            if pos > 0 and not inside_table_block(new_body, pos, table_spans):
+                new_body = new_body[:pos] + make_box(first) + new_body[pos:]
+                inserted = 1
     if inserted == 0:
         return text, False
     return text[:start] + new_body + text[end:], True

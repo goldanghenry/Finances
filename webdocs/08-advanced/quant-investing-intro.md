@@ -42,10 +42,6 @@
 
 | 독자 상황 | 본 문서 역할 |
 |-----------|--------------|
-
-!!! info "ETF"
-    지수·자산 **바구니**를 한 종목처럼 거래
-
 | **코어 ETF** 투자자 | “팩터 ETF·백테스트 광고”를 **검증 가능한 언어**로 해독 |
 | **AI/ML 엔지니어** | 자신의 **MLOps·데이터 파이프라인** 비유를 **금융 함정**(과최적화·레짐)에 대입 |
 | **위성·섹터** | 스크리닝 규칙이 **우연히 좋았던** 것인지 **구분** |
@@ -159,7 +155,7 @@ R_{i,t} - R_{f,t} = \alpha_i + \beta_{i,M}(R_{M,t}-R_{f,t}) + \beta_{i,SMB} SMB_
 \]
 
 | 팩터 | 직관 | 개인 투자자 접점 |
-|------|------|------------------|
+|------|------|----------------|
 | **MKT** | 시장 | 코어 지수 ETF |
 | **SMB** | 소형 | 코스닥·소형 ETF |
 | **HML** | 가치(저P/B) | 가치·배당 스마트베타 |
@@ -190,7 +186,7 @@ flowchart TD
 ## 6. 백테스트 — 설계·함정·체크리스트
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 | OOS | 표본 외 검증 | 튜닝에 쓰지 않은 구간 성과 |
 | IC | 정보계수 | 시그널·수익 상관(개념) |
 
@@ -207,7 +203,7 @@ flowchart TD
 ### 6.2 편향 카탈로그
 
 | 편향 | 설명 | 엔지니어 비유 |
-|------|------|----------------|
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 | **생존편향** | 상장 폐지 종목 제외 | 삭제된 로그만으로 SLA 계산 |
 | **전망편향** | 수정 재무·당일 종가로 t일 신호 | 미래 타임스탬프 로그 혼입 |
 | **데이터 스누핑** | 100 규칙 중 1개만 보고 | 100 실험 중 p<0.05 하나 |
@@ -379,6 +375,11 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 
 ---
 
+
+
+**Q. 실무에서는?**  
+교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
+
 ## 11. 숫자 예제 (가상)
 
 ### 예제 1 — 팩터 회귀 (가상 ETF P)
@@ -401,6 +402,18 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 
 ---
 
+
+## 연습문제 (L4, 기호)
+
+1. 위 §6 주요 식에서 변수 하나를 미지로 두고, 나머지를 기호로 둔 **관계식**을 쓰시오.
+2. 가정이 깨질 때(유동성·세금·다중 IRR 등) 위 식의 **한계**를 기호·부등식으로 서술하시오.
+3. §8 예제와 동일 기호(M·P·PV 등)로 **부호·단조성**만 검증하는 짧은 논증을 하시오.
+
+### 해설 키
+
+1. 직전 변수표의 「이 식에서 의미」를 이용해 동일 차원으로 정리한다.
+2. 「가정이 깨지면」 절의 한계 사례와 연결한다.
+3. 숫자 대입 없이 **부호**·**단위** 일치만 확인한다.
 ## 12. FAQ
 
 **Q1. AI 엔지니어면 퀀트가 쉬운가?**  
@@ -451,7 +464,7 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 - [factor-investing-fama-french](factor-investing-fama-french.md)
 - [performance-measurement](../04-portfolio/performance-measurement.md)
 - [factor-investing-primer](factor-investing-primer.md)
-- [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md)
+- [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md)
 - [references/sources.md](../references/sources.md)
 - 교재: **Active Portfolio Management** (Grinold & Kahn) — 고급
 
@@ -474,6 +487,7 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 
 
 ---
+
 
 ## 부록 A. 백테스트 체크리스트 (인쇄용)
 
@@ -540,7 +554,7 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 ## 부록 E. 한국 팩터·스마트베타 실무 (교육용)
 
 | 유형 | 구현 | 개인 주의 |
-|------|------|-----------|
+|------|------|----------------|
 | **가치** | 저PBR·저PER ETF | 금융·사이클 **섞임** |
 | **배당** | 고배당 지수 | **배당락**·세금 |
 | **모멘텀** | 규칙형 순환 | **회전율·비용** |

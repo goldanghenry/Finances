@@ -33,6 +33,8 @@
 ---
 
 ## 1. 한 줄 정의 + 왜 중요한가
+!!! info "GPU (Graphics Processing Unit)"
+    AI 학습·추론 가속 칩.
 
 **정의**: **반도체 섹터**는 집적회로(IC) 설계·제조·패키징·장비·소재로 구성되며, **메모리·로직·파운드리·장비** 등 **서브세그먼트**마다 **경쟁구조·마진·사이클**이 다릅니다.
 
@@ -45,6 +47,12 @@
 
 !!! info "ETF"
     지수·자산 **바구니**를 한 종목처럼 거래
+
+!!! info "HBM (High Bandwidth Memory)"
+    GPU 옆 고대역폭 메모리.
+
+!!! info "CAPEX (Capital Expenditure)"
+    설비·데이터센터 등 자본 지출.
 
 반도체 없는 산업이 거의 없고, **2023~ AI 데이터센터 CAPEX**가 **HBM·先進 공정** 수요를 재구성했습니다. 한국은 **메모리·파운드리** 글로벌 top tier — KOSPI·수출·고용과 연결. **반도체 ETF**는 [etf-index-funds.md](../etf-index-funds.md) · [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md)에서 **Bucket 3 코어**로 넣기 **쉬운** 섹터입니다. 반면 **HBM 1종·코스닥 장비**는 **위성** — 메모리 **재고 폭탄**·**미·중 수출통제**·**CAPEX cut** 리스크를 [sector-investing-framework.md](sector-investing-framework.md) 5단계로 읽어야 합니다.
 
@@ -195,26 +203,36 @@ flowchart TB
 **메모리 영업이익 (단순)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(pi\) | pi | §4·본문 정의 참고 |
-| \(bit growth\) | bit growth | §4·본문 정의 참고 |
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|   \(pi\)   | 인플레이션율 | 물가 상승률 |
+|   \(bit growth\)   |   bit growth   | \(bit growth\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 | \(ASP\) | 평균판매단가 | 메모리 **수익성** |
-| \(fixed cost\) | fixed cost | §4·본문 정의 참고 |
-| \(variable cost\) | variable cost | §4·본문 정의 참고 |
-
+|   \(fixed cost\)   |   fixed cost   | \(fixed cost\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|   \(variable cost\)   |   variable cost   | \(variable cost\)이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 \[
 \pi \approx (\text{bit growth}) \times (\text{ASP}) - (\text{fixed cost}) - (\text{variable cost})
 \]
 
+
+
+**읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 정밀식은 본문 또는 §4 표를 따른다.
 - **bit growth** ↑ + **ASP** ↓ = **허위 성장** — [financial-statements-intro.md](../../01-foundations/financial-statements-intro.md)
 
 **HBM attach rate (교육)**:
+
+| 기호 | 이름 | 이 식에서 의미 |
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+| \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
+| \(n\) | 기간 | 연·월 등 복리·할인에 쓰는 횟수 |
+| \(PV\) | 현재가치 | 오늘 시점으로 환산한 금액 |
 
 \[
 \text{HBM 수요} \propto (\text{GPU 출하}) \times (\text{HBM capacity per GPU}) \times (\text{attach rate})
 \]
 
-- GPU 1장당 HBM **용량·층수** ↑ = **구조적 tailwind**
+
+
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- GPU 1장당 HBM **용량·층수** ↑ = **구조적 tailwind**
 
 **장비 주문 vs CAPEX lag**:
 
@@ -234,7 +252,7 @@ flowchart TB
 ### 7.1 2025년 기준 (확정)
 
 | 영역 | 내용 | bucket |
-|------|------|--------|
+|------|------|----------------|
 | **KOSPI 메모리·파운드리** | 시총·수출 핵심 | ETF 코어 **3** |
 | **반도체 ETF** | KRX, 해외 SMH/SOXX | **3** (ISA 우선) |
 | **장비·소재** | CAPEX 민감 | **4** |
@@ -247,7 +265,7 @@ flowchart TB
 ### 7.2 2026년 개편·시행 예정 (해당 시)
 
 | 항목 | 2025 | 2026 |
-|------|------|------|
+|------|------|----------------|
 | ISA 비과세 | 200만 | **500만** (확인) |
 | CHIPS·K-Chips 보조금 | 진행 | **선단 증설** 지속 |
 | HBM 경쟁 | SK·Samsung·Micron | **HBM4·용량** 경쟁 |
@@ -300,15 +318,14 @@ flowchart TB
 ### 예제 3: ISA 코어·위성 (가상 E)
 
 | 자산 | 금액 | bucket |
-|------|------|--------|
-| KRX 반도체 ETF | 3,000만 | 3 |
-| QQQ | 2,000만 | 3 |
-| 가상 장비주 | 500만 | 4 |
+|------|------|----------------|
+| KRX 반도체 ETF | **M** | 3 |
+| QQQ | **M** | 3 |
+| 가상 장비주 | **M** | 4 |
 
 **GPU CAPEX cut** (가상): ETF -12%, 장비 -35% → **위성 상한** 의미.
 
 ---
-
 ## 9. FAQ
 
 **Q1. 반도체는 성숙 산업인데 왜 변동성이 큰가요?**  
@@ -377,6 +394,12 @@ flowchart TB
 
 ---
 
+
+
+
+**Q. 실무에서는?**  
+교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
+
 ## 11. 심화 읽기
 
 - [references/sources.md](../../references/sources.md)
@@ -407,4 +430,3 @@ flowchart TB
     6. **아니오**  
     7. **출하는 늘지만 가격·마진 악화**  
     8. **500만 원**
-

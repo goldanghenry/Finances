@@ -1,8 +1,11 @@
 # 전체 커리큘럼 맵 — 필수 과목·누락·우선순위
 
+> **일반 독자**: [공부 시작](STUDY-START.md) · [학습 로드맵](master-roadmap.md)만 보셔도 됩니다.  
+> **이 페이지**는 전체 과목을 한눈에 추적하는 **편집·현황용**입니다.
+
 > **목표**: 금융·주식·투자 **필수** 과목을 **과목 단위**로 쪼개고, 편마다 L3/L4로 채운다.  
 > **범례**: ✅ 있음 · 🟡 개요만(L3) · ❌ 없음 · 🔨 작성 중  
-> **난이도**: [READER-GUIDE §L1~L4](../docs/READER-GUIDE.md) — **L3**=교재 본문, **L4**=전공 심화
+> **난이도**: [읽는 법 §L1~L4](../docs/READER-GUIDE.md)
 
 **최종 갱신**: 2026-05-25
 
@@ -185,7 +188,7 @@
 
 | ID | 과목 | 파일 | 상태 |
 |----|------|------|------|
-| R0-1 | **AI 엔지니어 1년 투자 플레이북** | ai-engineer-investing-playbook.md | ✅ L3 |
+| R0-1 | **직장인 1년 투자 플레이북** | office-worker-investing-playbook.md | ✅ L3 |
 
 ---
 
@@ -234,7 +237,7 @@ flowchart TD
   K5 --> R0[R0_플레이북_실행]
 ```
 
-**병행**: Phase 5(세금)는 Phase 3~4와 **병행**. [ai-engineer-investing-playbook.md](ai-engineer-investing-playbook.md)로 1년 실행.
+**병행**: Phase 5(세금)는 Phase 3~4와 **병행**. [office-worker-investing-playbook.md](office-worker-investing-playbook.md)로 1년 실행.
 
 ---
 
@@ -255,5 +258,5 @@ flowchart TD
 
 - [master-roadmap.md](master-roadmap.md)  
 - [STUDY-START.md](STUDY-START.md)  
-- [ai-engineer-investing-playbook.md](ai-engineer-investing-playbook.md)  
+- [office-worker-investing-playbook.md](office-worker-investing-playbook.md)  
 - [DEPTH-STANDARD.md](../docs/DEPTH-STANDARD.md)

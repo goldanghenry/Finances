@@ -9,6 +9,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WEBDOCS = ROOT / "webdocs"
+SYNC_DIRS = (
+    "00-roadmap",
+    "01-foundations",
+    "02-economics",
+    "03-markets",
+    "04-portfolio",
+    "05-behavioral",
+    "06-korea-policy",
+    "07-real-estate",
+    "08-advanced",
+    "09-corporate-finance",
+    "references",
+)
 
 
 def materialize_entry(entry: Path) -> None:
@@ -43,7 +56,22 @@ def main() -> None:
                 shutil.rmtree(js_dst)
         shutil.copytree(js_src, js_dst)
 
-    print(f"Materialized webdocs under {WEBDOCS}")
+    synced = 0
+    for dirname in SYNC_DIRS:
+        src_dir = ROOT / dirname
+        dst_dir = WEBDOCS / dirname
+        if not src_dir.is_dir() or not dst_dir.is_dir():
+            continue
+        for src in src_dir.rglob("*.md"):
+            rel = src.relative_to(src_dir)
+            dst = dst_dir / rel
+            if dst.is_symlink():
+                dst.unlink()
+            if not dst.exists() or dst.is_file():
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(src, dst)
+                synced += 1
+    print(f"Materialized webdocs under {WEBDOCS}; synced {synced} markdown files")
 
 
 if __name__ == "__main__":

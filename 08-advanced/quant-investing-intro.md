@@ -464,7 +464,7 @@ def fetch_operating_income(corp_code: str, year: int) -> float:
 - [factor-investing-fama-french](factor-investing-fama-french.md)
 - [performance-measurement](../04-portfolio/performance-measurement.md)
 - [factor-investing-primer](factor-investing-primer.md)
-- [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md)
+- [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md)
 - [references/sources.md](../references/sources.md)
 - 교재: **Active Portfolio Management** (Grinold & Kahn) — 고급
 

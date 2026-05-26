@@ -188,7 +188,7 @@
 
 | ID | 과목 | 파일 | 상태 |
 |----|------|------|------|
-| R0-1 | **AI 엔지니어 1년 투자 플레이북** | ai-engineer-investing-playbook.md | ✅ L3 |
+| R0-1 | **직장인 1년 투자 플레이북** | office-worker-investing-playbook.md | ✅ L3 |
 
 ---
 
@@ -237,7 +237,7 @@ flowchart TD
   K5 --> R0[R0_플레이북_실행]
 ```
 
-**병행**: Phase 5(세금)는 Phase 3~4와 **병행**. [ai-engineer-investing-playbook.md](ai-engineer-investing-playbook.md)로 1년 실행.
+**병행**: Phase 5(세금)는 Phase 3~4와 **병행**. [office-worker-investing-playbook.md](office-worker-investing-playbook.md)로 1년 실행.
 
 ---
 
@@ -258,5 +258,5 @@ flowchart TD
 
 - [master-roadmap.md](master-roadmap.md)  
 - [STUDY-START.md](STUDY-START.md)  
-- [ai-engineer-investing-playbook.md](ai-engineer-investing-playbook.md)  
+- [office-worker-investing-playbook.md](office-worker-investing-playbook.md)  
 - [DEPTH-STANDARD.md](../docs/DEPTH-STANDARD.md)

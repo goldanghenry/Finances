@@ -22,7 +22,7 @@
 
 **선택**
 
-- [1년 실행 플레이북](00-roadmap/ai-engineer-investing-playbook.md) — 월별 체크리스트  
+- [1년 실행 플레이북](00-roadmap/office-worker-investing-playbook.md) — 월별 체크리스트 (직장인)  
 - [필독서 요약](00-roadmap/required-reading-guide.md) — 책 없이 핵심만  
 - [출처·공식 링크](references/sources.md) — 법령·기관 URL  
 

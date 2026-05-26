@@ -1,7 +1,7 @@
 # 마스터 학습 로드맵
 
 > **가정**: 주당 15시간+, 약 12~18개월.  
-> **시작**: [공부 시작](STUDY-START.md) · **1년 실행(선택)**: [ai-engineer-investing-playbook.md](ai-engineer-investing-playbook.md)
+> **시작**: [공부 시작](STUDY-START.md) · **1년 실행(선택)**: [office-worker-investing-playbook.md](office-worker-investing-playbook.md)
 
 ## Phase 개요
 
@@ -19,7 +19,7 @@
 | **8** | 선택 | 4h | CAPM·팩터·APT·**퀀트** | [08-advanced/](../08-advanced/) |
 | **9** | 선택 | 2h | M&A·VC | [09-corporate-finance/](../09-corporate-finance/) |
 
-**실행**: Phase 0 → Bucket 0~1 → **1주차** → Phase 2~4 병행 + Phase 5 세금 + [플레이북](ai-engineer-investing-playbook.md).
+**실행**: Phase 0 → Bucket 0~1 → **1주차** → Phase 2~4 병행 + Phase 5 세금 + [플레이북](office-worker-investing-playbook.md).
 
 ---
 
@@ -91,7 +91,7 @@
 | 6 | [ai-infrastructure](../03-markets/sectors/ai-infrastructure.md) |
 | 7 | [physical-ai](../03-markets/sectors/physical-ai.md) |
 | 8 | [power-grid-electrification](../03-markets/sectors/power-grid-electrification.md) |
-| 9 | 복습·ETF·bucket — [ai-engineer-investing-playbook](ai-engineer-investing-playbook.md) Month 7~12 |
+| 9 | 복습·ETF·bucket — [office-worker-investing-playbook](office-worker-investing-playbook.md) Month 7~12 |
 
 ---
 
@@ -138,4 +138,4 @@
 - [ ] Phase 3b 섹터
 - [ ] Phase 4 + 투자 철학
 - [ ] Phase 5 세금·ISA 실전
-- [ ] [ai-engineer-investing-playbook](ai-engineer-investing-playbook.md) 12개월
+- [ ] [office-worker-investing-playbook](office-worker-investing-playbook.md) 12개월

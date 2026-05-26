@@ -25,6 +25,7 @@ def main() -> None:
         "ensure_section6_variable_tables.py",
         "repair_split_tables.py",
         "add_info_boxes.py",
+        "repair_tables_split_by_info.py",
         "repair_section4a.py",
     ]
     for step in steps:

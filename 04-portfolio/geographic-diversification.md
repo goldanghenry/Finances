@@ -375,5 +375,3 @@ R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 
 
 
-
-

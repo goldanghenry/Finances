@@ -62,4 +62,4 @@
 - [ ] Phase 0
 - [ ] Phase 2~3
 - [ ] Phase 5 세금·계좌
-- [ ] [1년 플레이북](ai-engineer-investing-playbook.md) (선택)
+- [ ] [1년 플레이북](office-worker-investing-playbook.md) (선택)

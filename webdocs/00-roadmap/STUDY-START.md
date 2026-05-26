@@ -1,20 +1,20 @@
-# 공부 시작 가이드 (L3+ 코퍼스)
+# 공부 시작 가이드
 
-> **먼저 읽기**: [READER-GUIDE](../docs/READER-GUIDE.md) — **L1~L4**가 무엇인지, Phase 순서, **FV·PMT** 등 약어.  
-> 본문 1편 ≈ **45~65분** 읽기 + 퀴즈·노트 **30~60분** = **1.5~2h/편**(L3) 권장. L4는 **2.5~4h**.  
-> **1년 실행**: [ai-engineer-investing-playbook.md](ai-engineer-investing-playbook.md) · **용어**: [glossary.md](glossary.md)
+> **먼저**: [읽는 법](../docs/READER-GUIDE.md) (5~10분)  
+> 본문 1편 ≈ **1.5~2시간**(L3) · 심화(L4)는 **2.5~4시간**  
+> **용어**: [glossary.md](glossary.md)
 
 ## Day 1 (오늘, 약 6~8h)
 
 | 블록 | 문서 | 시간 |
 |------|------|------|
-| 1 | [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md), [L3-CORPUS-STATUS](../docs/L3-CORPUS-STATUS.md) | 30m |
-| 2 | [time-horizon-and-buckets](../04-portfolio/time-horizon-and-buckets.md) | 2h |
+| 1 | [읽는 법](../docs/READER-GUIDE.md) | 30m |
+| 2 | [자금 통·Bucket](../04-portfolio/time-horizon-and-buckets.md) | 2h |
 | 3 | [db-pension](../06-korea-policy/db-pension.md) | 2h |
 | 4 | [irp](../06-korea-policy/irp.md) | 1.5h |
-| 5 | [emergency-fund](../01-foundations/emergency-fund.md) | 1.5h |
+| 5 | [비상금](../01-foundations/emergency-fund.md) | 1.5h |
 
-**산출물**: bucket 0~2b 체크리스트 (본인만).
+**산출물**: Bucket 0~2b 체크리스트 (본인만, 종이·메모 앱).
 
 ---
 
@@ -30,42 +30,36 @@
 | 6 | [isa](../06-korea-policy/isa.md) + [isa-irp-practical-setup](../06-korea-policy/isa-irp-practical-setup.md) |
 | 7 | [passive-vs-active](../04-portfolio/passive-vs-active.md) + 퀴즈 |
 
-**청년 계좌**: [youth-leap](../06-korea-policy/youth-leap-account.md) → [youth-future-savings](../06-korea-policy/youth-future-savings.md) (6월 갈아타기 해당 시)
+**청년 계좌**: [youth-leap](../06-korea-policy/youth-leap-account.md) → [youth-future-savings](../06-korea-policy/youth-future-savings.md) (해당 시)
 
 ---
 
-## Phase 일정 (L3 기준)
+## Phase 일정 (가이드)
 
-| Phase | 주차(가이드) | 폴더 |
-|-------|-------------|------|
-| 0 | 2주 | [01-foundations](../01-foundations/) — **가계부** 포함 |
-| 1 | 2~12주 | [financial-statements-study-roadmap](../01-foundations/financial-statements-study-roadmap.md) |
-| 2 | **10~12주** | [02-economics L4](../02-economics/README.md) (편당 2.5~4h) |
-| 3 | 6~7주 | [03-markets](../03-markets/) — **미국 지수·한미 비교** 포함 |
-| 3b | 9주 병행 | [sectors](../03-markets/sectors/) |
+| Phase | 주차 | 내용 |
+|-------|------|------|
+| 0 | 2주 | [01-foundations](../01-foundations/) |
+| 1 | 2~12주 | [재무제표 로드맵](../01-foundations/financial-statements-study-roadmap.md) |
+| 2 | 10~12주 | [02-economics](../02-economics/) L4 |
+| 3 | 6~7주 | [03-markets](../03-markets/) |
 | 4 | 4주 | [04-portfolio](../04-portfolio/) |
 | 5 | 병행 | [06-korea-policy](../06-korea-policy/) |
-| 6~8 | 선택 | 05 · 07 · 08 — **퀀트 입문** 포함 |
 
-**총 본문 ~55편+ × 1.5h ≈ 80h+** (복습·공시 읽기 별도)
+전체: [master-roadmap.md](master-roadmap.md)
 
 ---
 
 ## 학습 루틴 (편당)
 
-1. **§0 선행 5분** → 2. TL;DR → 3. **§4a 용어** → 4. 본문(첫 등장 `!!! info` 박스) → 5. **§6 변수표·수식** → 6. FAQ → 7. 퀴즈 **닫고** 풀기 → 8. 1페이지 노트 (`private/` 권장)
+1. §0 → 2. TL;DR → 3. §4a → 4. 본문(info 박스) → 5. §6 → 6. FAQ → 7. 퀴즈 **닫고** → 8. 한 페이지 노트
 
 ---
 
-## 진도
+## 진도 체크
 
 - [ ] Day 1
 - [ ] 1주차
-- [ ] Phase 0 (+ 가계부)
-- [ ] Phase 2~3 (+ 미국 ETF)
-- [ ] Phase 3b
-- [ ] Phase 4 + 철학 결정
-- [ ] Phase 5 세금·계좌 실전
-- [ ] [ai-engineer-investing-playbook](ai-engineer-investing-playbook.md) 1년
-
-→ [master-roadmap.md](master-roadmap.md) · [CURRICULUM-MAP.md](CURRICULUM-MAP.md)
+- [ ] Phase 0
+- [ ] Phase 2~3
+- [ ] Phase 5 세금·계좌
+- [ ] [1년 플레이북](office-worker-investing-playbook.md) (선택)

@@ -27,7 +27,7 @@
 ## TL;DR
 
 1. **12주**로 [financial-statements-intro](financial-statements-intro.md) → [financial-statements-analysis](financial-statements-analysis.md) → [cash-flow-statement-fcf](cash-flow-statement-fcf.md) → [reading-annual-reports-dart](reading-annual-reports-dart.md) → [equity-valuation-fundamentals](../03-markets/equity-valuation-fundamentals.md) 연결.
-2. 주당 **읽기 2~2.5h + 손계산·DART 1~1.5h** — [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md) 5~6월 블록과 정렬.
+2. 주당 **읽기 2~2.5h + 손계산·DART 1~1.5h** — [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md) 5~6월 블록과 정렬.
 3. **코어 ETF만** 투자해도 Week 9~12는 **간접** 유용(ETF 구성 종목·섹터).
 4. 산출물: 주차별 **1페이지 노트** + Week 12 **가상 밸류에이션 메모**.
 5. 코어 IPS와 분리: 재무제표 = **위성·섹터 검증** 도구.
@@ -255,7 +255,7 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 **A4.** Week 11에 **비교사 1개**(다른 섹터) 추가 — 편향 방지.
 
 **Q5. 플레이북 5~6월과 병행?**  
-**A5.** [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md) **5~6월 = 본 로드맵**.
+**A5.** [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md) **5~6월 = 본 로드맵**.
 
 **Q6. 스프레드시트 필수?**  
 **A6.** 권장. 없으면 **손계산 노트**로 대체.

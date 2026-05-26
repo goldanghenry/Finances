@@ -47,7 +47,7 @@
 
 **정의**: **ISA·IRP 실무 셋업**은 확정급여형(DB) 퇴직연금 가입자가 **직접 운용 가능한 계좌**를 개설·자동적립·상품(ETF) 경로까지 **실행 순서**로 정리한 운영 가이드다.
 
-**왜 중요한가**: DB만 이해하고 ISA를 **미개설**하면 해외 ETF **양도소득세·5월 신고** 부담이 커진다. “ISA 들었다”와 “**3년·손익통산·한도**를 지킨다”는 다르다. [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md)의 가상 50% ISA 슬롯은 **이 문서의 실행부**에 해당한다.
+**왜 중요한가**: DB만 이해하고 ISA를 **미개설**하면 해외 ETF **양도소득세·5월 신고** 부담이 커진다. “ISA 들었다”와 “**3년·손익통산·한도**를 지킨다”는 다르다. [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md)의 가상 50% ISA 슬롯은 **이 문서의 실행부**에 해당한다.
 
 ---
 
@@ -341,7 +341,7 @@ T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 ## 12. 심화 읽기
 
 - [isa.md](isa.md) · [irp.md](irp.md) · [pension-savings-account.md](pension-savings-account.md)
-- [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md)
+- [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md)
 - [references/sources.md](../references/sources.md)
 
 ---

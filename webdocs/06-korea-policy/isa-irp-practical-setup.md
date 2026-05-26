@@ -39,9 +39,15 @@
 !!! info "ETF"
     지수·자산 **바구니**를 한 종목처럼 거래
 
+!!! info "DB (Defined Benefit)"
+    확정급여형 퇴직연금.
+
+!!! info "IRP (Individual Retirement Pension)"
+    개인형 퇴직연금.
+
 **정의**: **ISA·IRP 실무 셋업**은 확정급여형(DB) 퇴직연금 가입자가 **직접 운용 가능한 계좌**를 개설·자동적립·상품(ETF) 경로까지 **실행 순서**로 정리한 운영 가이드다.
 
-**왜 중요한가**: DB만 이해하고 ISA를 **미개설**하면 해외 ETF **양도소득세·5월 신고** 부담이 커진다. “ISA 들었다”와 “**3년·손익통산·한도**를 지킨다”는 다르다. [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md)의 가상 50% ISA 슬롯은 **이 문서의 실행부**에 해당한다.
+**왜 중요한가**: DB만 이해하고 ISA를 **미개설**하면 해외 ETF **양도소득세·5월 신고** 부담이 커진다. “ISA 들었다”와 “**3년·손익통산·한도**를 지킨다”는 다르다. [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md)의 가상 50% ISA 슬롯은 **이 문서의 실행부**에 해당한다.
 
 ---
 
@@ -204,16 +210,29 @@ flowchart LR
 ## 6. 수식·모델
 
 | 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 | \(S_t\) | t연도 금융투자소득 | ISA 통산 소득 |
 | \(T_{\text{free}}\) | 비과세 누적액 | 3년 한도 200만 원 이내 |
 
 **3년 누적 비과세(일반형, 2025 교육용)**:
 
+| 기호 | 이름 | 이 식에서 의미 |
+|       ------       | ------ | ------이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             S             | S | 소득 대비 남는 비율 |
+|  t  | 기간 | 마지막 CF 시점 |
+|             ISA             | ISA | ISA이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|  T  | 기간 | 마지막 CF 시점 |
+|             free             | free | free이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             left             | left | left이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             right             | right | right이(가) 이 식에서 맡는 역할(§4·본문 참고) |
+|             isa             | isa | isa이(가) 이 식에서 맡는 역할(§4·본문 참고) |
 \[
 T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 \]
 
+
+
+**읽는 법**: **S**와 **t**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 \(S_t\): 해당 연도 **금융투자소득**(통산 후). 초과분 **9.9%** 분리과세(일반형). 서민형·2026 안은 [isa.md](isa.md) 표 참조.
 
 **해당 없음**: 복리·DCM 등은 [time-value-npv-irr.md](../01-foundations/time-value-npv-irr.md).
@@ -233,7 +252,7 @@ T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 ### 7.2 2026년 개편·시행 예정
 
 | 항목 | 2025 | 2026 (안·시행 확인) |
-|------|------|---------------------|
+|------|------|----------------|
 | 연 납입 | 2,000만 | 4,000만 |
 | 비과세 | 200만/400만 | 500만/1,000만 |
 
@@ -256,11 +275,10 @@ T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 
 ### 예제 3 — 한도 초과
 
-- 월 200만 × 12 = 2,400만 납입 시도 → **400만 거절/이월 불가**  
+- 월 **M** × 12 = **M** 납입 시도 → **M** 거절/이월 불가**  
 - **수정**: 월 166만 ISA + 잔여 **연금저축** — [pension-savings-account.md](pension-savings-account.md)
 
 ---
-
 ## 9. TOP10 실수
 
 | # | 실수 | 결과 | 예방 |
@@ -306,6 +324,11 @@ T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 
 ---
 
+
+
+**Q. 실무에서는?**  
+교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
+
 ## 11. 함정·리스크·한계
 
 - **개편 리스크**: 2026 한도·비과세 **안**과 시행일.  
@@ -318,7 +341,7 @@ T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 ## 12. 심화 읽기
 
 - [isa.md](isa.md) · [irp.md](irp.md) · [pension-savings-account.md](pension-savings-account.md)
-- [ai-engineer-investing-playbook](../00-roadmap/ai-engineer-investing-playbook.md)
+- [office-worker-investing-playbook](../00-roadmap/office-worker-investing-playbook.md)
 - [references/sources.md](../references/sources.md)
 
 ---
@@ -337,6 +360,7 @@ T_{\text{free}} = \min\left(\sum_{t=1}^{3} \max(S_t, 0),\; 2{,}000{,}000 \right)
 
 
 ---
+
 
 ## 부록 A. IRP·연금저축 병행 매트릭스 (DB 가입자)
 
