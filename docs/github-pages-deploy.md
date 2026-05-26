@@ -2,27 +2,23 @@
 
 ## 1. GitHub 저장소
 
-1. GitHub에서 **public** 저장소 `Finances` 생성 (이름은 자유, URL에 반영됨).
-2. 로컬에서:
+[goldanghenry/Finances](https://github.com/goldanghenry/Finances)
 
-```bash
-cd /Users/henry/Finances
-git add .
-git commit -m "Add MkDocs site and GitHub Pages workflow"
-git branch -M main
-git remote add origin https://github.com/goldanghenry/Finances.git
-git push -u origin main
-```
+`main`에 push되면 [pages.yml](../.github/workflows/pages.yml)이 MkDocs를 빌드해 **`gh-pages` 브랜치**에 올립니다.
 
-## 2. Pages 설정
+## 2. Pages 설정 (필수, 1회)
 
-1. 저장소 **Settings → Pages**
-2. **Build and deployment** → Source: **GitHub Actions**
-3. `main`에 push되면 [pages.yml](../.github/workflows/pages.yml)이 자동 실행됩니다.
+1. [Settings → Pages](https://github.com/goldanghenry/Finances/settings/pages)
+2. **Build and deployment**
+   - Source: **Deploy from a branch**
+   - Branch: **`gh-pages`** · 폴더: **`/ (root)`**
+3. 저장 후 1~2분 뒤 접속
+
+> **참고:** Source를 **GitHub Actions**만 켜 두면 `deploy-pages`가 **404**로 실패할 수 있습니다. 이 저장소는 **`gh-pages` 브랜치** 방식을 씁니다.
 
 ## 3. URL
 
-`https://goldanghenry.github.io/Finances/`
+[https://goldanghenry.github.io/Finances/](https://goldanghenry.github.io/Finances/)
 
 ## 4. 로컬 미리보기
 
