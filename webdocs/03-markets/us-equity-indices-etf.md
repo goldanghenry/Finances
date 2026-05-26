@@ -269,7 +269,6 @@ R_{\text{투자자}} \approx R_{\text{지수}} - TER - \text{추적오차} - \te
 ---
 
 ox R_{\text{지수}} - TER - \text{추적오차} - \text{헷지비용} - \text{세금}
-\]
 
 
 **읽는 법**: **R_**와 **R_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.| TER (가상) | 10년 누적 비용 영향(근사) |

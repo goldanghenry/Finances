@@ -146,7 +146,6 @@ flowchart LR
 ---
 
 ext{IRP}} + T_{\text{gen}}}{G_{\text{total}}}
-\]
 
 
 

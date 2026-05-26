@@ -136,7 +136,6 @@ E(R_i) = R_f + \beta_i (E(R_m) - R_f)
 ---
 
 \beta_i
-\]
 
 
 

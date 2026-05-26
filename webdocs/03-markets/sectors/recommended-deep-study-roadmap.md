@@ -133,7 +133,6 @@ flowchart TB
 ```
 
 | 티어 | 문서 | 이유 | bucket |
-|------|------|------|--------|
 | **A** | framework, semi, battery, ai-infra | **한국 수출·AI·EV** | **3** |
 | **B** | power-grid, physical-ai | **병목·실험** | **3~4** |
 | **C** | 사이버·바이오·원전 | **관심·커리어** | **4** |
@@ -213,8 +212,9 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 
 
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.*| 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.*
+| 이름 | 이 식에서 의미 | |
+| 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 | \(C\) | 지출 | 기간 총 현금 유출 |
 
@@ -286,7 +286,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 ### 예제 1: 9주 일정 — 가상 학습자 L (AI 엔지니어)
 
 | Week | 시간 | 산출 | bucket 결정 |
-|------|------|------|-------------|
 | 1 | 6h | Bucket·ISA 확정 | 2b ISA 개설 |
 | 2 | 7h | 반도체 5단계 노트 | KRX 반도체 ETF → **3** |
 | 4 | 8h | AI CAPEX 다이어그램 | QQQ **3** 유지 |
@@ -497,7 +496,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 ## 부록: A/B/C 티어 전체 표
 
 | 티어 | 문서 | 주차 | 시간 | bucket | 필수 퀴즈 |
-|------|------|------|------|--------|-----------|
 | **Prep** | sector-investing-framework | W0~1 | 6h | 3/4 | §12 |
 | **A** | semiconductor | W2 | 7h | 3 | §12 |
 | **A** | battery-lfp-ncm-ess | W3 | 7h | 3/4 | §12 |

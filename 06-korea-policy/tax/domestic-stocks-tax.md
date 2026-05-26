@@ -144,7 +144,6 @@ Fin = D_{\text{domestic}} + D_{\text{foreign}} + I + \cdots
 **읽는 법**: **D_**와 **D_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 
 D_{\text{foreign}} + I + \cdots
-\]
 
 
 
