@@ -211,6 +211,7 @@ extra:
 
 extra_css:
   - stylesheets/headings.css
+  - stylesheets/math-fallback.css
 
 extra_javascript:
   - javascripts/mathjax.js

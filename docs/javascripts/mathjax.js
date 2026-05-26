@@ -14,12 +14,20 @@ window.MathJax = {
 };
 
 function typesetMath() {
-  if (window.MathJax && MathJax.typesetPromise) {
-    MathJax.typesetPromise();
+  if (!window.MathJax?.startup?.promise) {
+    return;
   }
+  MathJax.startup.promise.then(() => {
+    if (MathJax.startup?.output?.clearCache) {
+      MathJax.startup.output.clearCache();
+    }
+    MathJax.typesetClear();
+    MathJax.texReset();
+    return MathJax.typesetPromise();
+  });
 }
 
-/* Material instant navigation */
+/* Material instant navigation — must reset cache between SPA page swaps */
 if (typeof document$ !== "undefined") {
   document$.subscribe(typesetMath);
 } else {
