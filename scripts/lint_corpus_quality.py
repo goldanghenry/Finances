@@ -82,8 +82,28 @@ def split_table_blocks(text: str) -> list[list[tuple[int, list[str]]]]:
     return blocks
 
 
+def is_separator_line(line: str) -> bool:
+    cells = split_table_row(line)
+    return bool(cells) and all(re.fullmatch(r"-+", c.replace(" ", "")) for c in cells)
+
+
 def check_tables(text: str) -> list[str]:
     issues: list[str] = []
+    lines = text.splitlines()
+    for i, line in enumerate(lines, 1):
+        if not line.strip().startswith("|") or is_separator_line(line):
+            continue
+        ncol = len(split_table_row(line))
+        if ncol < 1 or i >= len(lines):
+            continue
+        nxt = lines[i]
+        if not nxt.strip().startswith("|") or not is_separator_line(nxt):
+            continue
+        sep_ncol = len(split_table_row(nxt))
+        if sep_ncol != ncol:
+            issues.append(
+                f"line {i + 1}: separator has {sep_ncol} columns, header has {ncol}"
+            )
     for block in split_table_blocks(text):
         if len(block) < 2:
             continue

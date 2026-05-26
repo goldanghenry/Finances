@@ -96,7 +96,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | 코어 | 지수·글로벌 ETF 등 **분산·저비용** 중심 | §4 | [glossary](../00-roadmap/glossary.md#코어) |
 | 위성 | 섹터·개별주 **제한 비중** | §4 | [glossary](../00-roadmap/glossary.md#위성) |
 | DCA | **정기·정액** 적립 매수 | §4 | [glossary](../00-roadmap/glossary.md#dca) |
@@ -122,7 +122,7 @@ flowchart LR
 ### 5.1 월별 학습·실행 매트릭스
 
 | 기간 | 학습 초점 | 실행(가상) | 산출물 |
-|------|------|----------------|
+|------|------|------|----------------|
 | **1~2월** | [macroeconomics-basics](../02-economics/macroeconomics-basics.md) §0~§7, [macro-01](../02-economics/macro-01-gdp-accounts-growth.md) §6, [macro-04](../02-economics/macro-04-monetary-policy-qe.md) §8, [etf-index-funds](../03-markets/etf-index-funds.md) §5~§8, [isa](../06-korea-policy/isa.md) §7, [db-pension](../06-korea-policy/db-pension.md) §6 | 계좌 **지도** 작성(가상) | **주간 거시 체크리스트** v1 |
 | **3~4월** | [rebalancing-and-dca](../04-portfolio/rebalancing-and-dca.md) §6~§8, [asset-allocation](../04-portfolio/asset-allocation.md) §8, [passive-vs-active](../04-portfolio/passive-vs-active.md) §10 | **M·α_ISA·α_P·α_G** 배분 시뮬 — 본 편 §6 | DCA·밴드 규칙 1페이지 |
 | **5~6월** | [financial-statements-study-roadmap](../01-foundations/financial-statements-study-roadmap.md) + [intro](../01-foundations/financial-statements-intro.md) §6~§8 (한빛전자) | DART **1개 기업** 연습(가상) | 3표+주석 **1페이지 노트** |
@@ -176,7 +176,7 @@ flowchart LR
 **교육용 비율(고정 아님)**: \(\alpha_\text{ISA}=0.50,\ \alpha_\text{P}=0.30,\ \alpha_\text{G}=0.20\).
 
 | 슬롯 | 비율 | 가상 용도 | bucket |
-|------|------|----------------|
+|------|------|------|----------------|
 | ISA | \(\alpha_\text{ISA}\) | 해외·국내 **코어 ETF** DCA | 2b~3 |
 | 연금(IRP/연금저축) | \(\alpha_\text{P}\) | 세액공제·**과세이연** | 2b |
 | 일반 | \(\alpha_\text{G}\) | 한도 초과분·**위성**·환전 여유 | 3~4 |
@@ -200,9 +200,7 @@ Pay --> Pen[연금_alpha_P_IRP등]
   ISA --> Hold[3년_유지_손익통산]
 ```
 
----
-
-## 7. 한국 적용
+---## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정·교육용 요약)
 
@@ -250,7 +248,7 @@ Pay --> Pen[연금_alpha_P_IRP등]
 매주 **같은 요일·같은 템플릿** (매매 아님, **관찰**).
 
 | # | 항목 | 질문 | 문서 |
-|------|------|----------------|
+|------|------|------|----------------|
 | 1 | 금리 | Fed·한국은행 기준금리·**금리 경로** 변화? | [macro-04](../02-economics/macro-04-monetary-policy-qe.md) |
 | 2 | 인플레 | CPI·PCE **서프라이즈**? | [macro-02](../02-economics/macro-02-money-inflation.md) |
 | 3 | 성장 | GDP·PMI·실업 **방향**? | [macro-01](../02-economics/macro-01-gdp-accounts-growth.md) |

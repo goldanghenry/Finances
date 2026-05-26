@@ -79,7 +79,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | 곡선 벤치 | Par / zero / swap 선택을 먼저 고정 | §4 | [glossary](../00-roadmap/glossary.md#곡선-벤치) |
 | 정상·역전·평평 | 해석은 경제 상황과 섞어 쓰되 레그 정의를 분리 | §4 | [glossary](../00-roadmap/glossary.md#정상·역전·평평) |
 | 경사 | 두 만기 \ | §4 | [glossary](../00-roadmap/glossary.md#경사) |

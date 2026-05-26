@@ -88,7 +88,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | IS | 1~3 | §4 | [glossary](../00-roadmap/glossary.md#is) |
 | BS | 2~4 | §4 | [glossary](../00-roadmap/glossary.md#bs) |
 | CF | 5~7 | §4 | [glossary](../00-roadmap/glossary.md#cf) |
@@ -114,7 +114,7 @@ flowchart TD
 ### 5.1 주차별 상세 스케줄
 
 | 주 | 주제 | 필수 문서 | 실습(가상) | 산출물 |
-|------|------|----------------|
+|------|------|------|------|----------------|
 | **1** | 3표 역할·연결 | [financial-statements-intro](financial-statements-intro.md) §1~4 | 가상 **제조사 X** IS 한 줄 읽기 | 3표 질문 카드 |
 | **2** | IS 심화·마진 | intro §5~7 | 매출·영업이익·당기순이익 **2년 비교** | 마진 표 |
 | **3** | BS·유동성 | intro 나머지 | 유동비율·부채비율 **손계산** | BS 스냅샷 |

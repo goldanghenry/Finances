@@ -81,7 +81,7 @@
 ## 4. 정식 개념·용어
 
 | 용어 | 한글 표기 흔히 쓰이는 이름 | English | 정의 |
-|------|------|----------------|
+|------|------|------|----------------|
 | REIT | 부동산투자회사 또는 유사 명칭(관할에 따름) | Real Estate Investment Trust | 부동산·임대 또는 모기지 기반 현금흐름 패키지를 증권형태로 제공 |
 | Equity REIT | 지분형 리츠 | Equity REIT | **임대·운영**(상업·물류 등) 현금 중심, 자산 밸류·Cap rate 채널 민감 |
 | mREIT · Mortgage REIT | 모기지·대출 채널 리츠 | Mortgage REIT | **부동산 담보대출·MBS 채널**(레버 많은 유형 존재) — 금리·스프레드 **고민감** |
@@ -96,7 +96,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | REIT | 부동산투자회사 또는 유사 명칭 | §4 | [glossary](../00-roadmap/glossary.md#reit) |
 | Equity REIT | 지분형 리츠 | §4 | [glossary](../00-roadmap/glossary.md#equity-reit) |
 | mREIT · Mortgage REIT | 모기지·대출 채널 리츠 | §4 | [glossary](../00-roadmap/glossary.md#mreit-·-mortgage-reit) |

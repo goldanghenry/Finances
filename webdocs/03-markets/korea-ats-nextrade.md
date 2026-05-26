@@ -73,7 +73,7 @@ NXT는 **같은 상품(종목)을 파는 두 번째 매장**입니다. 본점(KR
 ## 4. 정식 개념·용어
 
 | 용어 | 한글 | English | 정의 |
-|------|------|----------------|
+|------|------|------|----------------|
 | ATS | 대체거래소 | Alternative Trading System | KRX 외 인가 거래 장소 |
 | NXT | 넥스트레이드 | NexTrade | 국내 대표 ATS 운영·시장 명칭 |
 | 라우팅 | 주문 경로 | Order routing | 증권사가 KRX/NXT로 주문 전송 |
@@ -88,7 +88,7 @@ NXT는 **같은 상품(종목)을 파는 두 번째 매장**입니다. 본점(KR
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | ATS | KRX 외 인가 거래 장소 | §4 | [glossary](../00-roadmap/glossary.md#ats) |
 | NXT | 국내 대표 ATS 운영·시장 명칭 | §4 | [glossary](../00-roadmap/glossary.md#nxt) |
 | 라우팅 | 증권사가 KRX/NXT로 주문 전송 | §4 | [glossary](../00-roadmap/glossary.md#라우팅) |
@@ -157,13 +157,9 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|  \(\P_\text{fill}\)  |  P  fill  | §4 용어·식 맥락에서 확인 |
-|  \(\P_\text{NXT}\)  |  P  NXT  | §4 용어·식 맥락에서 확인 |
-|  \(\P_\text{KRX}\)  |  P  KRX  | §4 용어·식 맥락에서 확인 |
 \[
 P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수 시, 호가에 따라)}
 \]
-
 
 
 **읽는 법**: **P_**와 **fill**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -171,12 +167,9 @@ P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|  \(\R_\text{net}\)  |  R  net  | §4 용어·식 맥락에서 확인 |
-|  \(\R_\text{gross}\)  |  R  gross  | §4 용어·식 맥락에서 확인 |
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 \]
-
 
 
 **읽는 법**: **R_**와 **R_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- \(f\): 수수료, \(s\): 스프레드·슬리피지, \(N\): **초과** 거래 횟수  
@@ -196,7 +189,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 서 범위 밖.
 
 ---
-
 ## 7. 한국 적용
 
 ### 7.1 2025년 (확정·운영 초기)

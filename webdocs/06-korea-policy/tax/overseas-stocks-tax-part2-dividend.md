@@ -73,7 +73,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | 금융소득 | 이자+배당+일부 기타 | §4 | [glossary](../../00-roadmap/glossary.md#금융소득) |
 | 원천징수 | 현지·국내 **징수** | §4 | [glossary](../../00-roadmap/glossary.md#원천징수) |
 | 종합과세 | 2,000만 초과 시 **합산** | §4 | [glossary](../../00-roadmap/glossary.md#종합과세) |
@@ -116,15 +116,12 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|  \(\D_\text{dom}\)  |  D  dom  | §4 용어·식 맥락에서 확인 |
-|  \(\D_\text{for}\)  |  D  for  | §4 용어·식 맥락에서 확인 |
 \[
 Fin = I + D_{\text{dom}} + D_{\text{for}} + \cdots
 \]
 
 
 **읽는 법**: **F**와 **in**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
-|   이름   |   이 식에서 의미   | §4 용어·식 맥락에서 확인 |
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 | \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |
@@ -134,7 +131,6 @@ Fin = I + D_{\text{dom}} + D_{\text{for}} + \cdots
 \[
 Fin > 20{,}000{,}000 \Rightarrow \text{종합과세 경로}
 \]
-
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -149,7 +145,6 @@ Fin > 20{,}000{,}000 \Rightarrow \text{종합과세 경로}
 \[
 T_{\text{KR}} - \text{FTC} \leq T_{\text{KR}}
 \]
-
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
@@ -167,13 +162,11 @@ T_{\text{KR}} - \text{FTC} \leq T_{\text{KR}}
 \]
 
 
-
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 
 s/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 
 .---
-
 ## 7. 한국 적용
 
 ### 7.1 2025

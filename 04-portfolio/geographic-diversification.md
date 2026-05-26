@@ -93,7 +93,7 @@
 ## 4. 정식 개념·용어
 
 | 용어 | 한글 | English | 정의 |
-|------|------|----------------|
+|------|------|------|----------------|
 | 홈 바이어스 | — | Home bias | 본국 자산 과다 |
 | QQQ | — | Invesco QQQ | 나스닥100, **미국** |
 | 글로벌 ETF | — | Global ETF | ACWI, FTSE AW 등 |
@@ -107,7 +107,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | 홈 바이어스 | 본국 자산 과다 | §4 | [glossary](../00-roadmap/glossary.md#홈-바이어스) |
 | QQQ | 나스닥100, **미국** | §4 | [glossary](../00-roadmap/glossary.md#qqq) |
 | 글로벌 ETF | ACWI, FTSE AW 등 | §4 | [glossary](../00-roadmap/glossary.md#글로벌-etf) |
@@ -208,7 +208,6 @@ R_{KRW} \approx R_{local} + R_{FX}
 \]
 
 
-
 **읽는 법**: **R**와 **KRW**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **2지역 주식 (가상)**:
 
@@ -224,23 +223,16 @@ R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
 \]
 
 
-
 **읽는 법**: **R_p**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**해당 없음**: 레버리지 환 — [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md).
 
 ---
 
 역할(§4·본문 참고) |
-|------|------|----------------|
-\[
-R_p = w_{US} R_{US} + w_{GL} R_{GL} + \text{상관항}
-\]
-
 
 
 **읽는 법**: **R_p**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**해당 없음**: 레버리지 환 — [leveraged-etf-qqq-qld.md](leveraged-etf-qqq-qld.md).
 
 ---
-
 ## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)

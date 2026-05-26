@@ -71,7 +71,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | FOMO | 놓칠까 하는 **불안** | §4 | [glossary](../00-roadmap/glossary.md#fomo) |
 | 거래시간 확대 | NXT·장후 등 **체결 가능 시간** 증가 | §4 | [glossary](../00-roadmap/glossary.md#거래시간-확대) |
 | DCA | 정기 **정액** 매수 | §4 | [glossary](../00-roadmap/glossary.md#dca) |
@@ -106,12 +106,9 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|  \(\R_\text{net}\)  |  R  net  | §4 용어·식 맥락에서 확인 |
-|  \(\R_\text{gross}\)  |  R  gross  | §4 용어·식 맥락에서 확인 |
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 \]
-
 
 
 **읽는 법**: **R_**와 **net**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -127,7 +124,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 \]
 
 
-
 **읽는 법**: **R_**와 **net**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 - \(N\): **초과** 매매 횟수, \(f\): 수수료, \(\tau\): 세금(해외·단기)
 
@@ -137,7 +133,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 
 
 ---
-
 ## 7. 한국 적용
 
 ### 7.1 NXT·장후
@@ -177,7 +172,7 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + \tau) \times N
 ### 7.5 코어·위성 규칙 카드 (교육용)
 
 | Bucket | 자산 | 거래 창 | NXT |
-|------|------|----------------|
+|------|------|------|----------------|
 | 3 코어 | QQQ·채권 ETF | **월 1회** DCA일만 | 선택 |
 | 4 위성 | 코스닥·테마 | 규칙 **상한 20%** | 장후 **자제** |
 | 0~1 | 비상금·도약 | **매매 없음** | — |

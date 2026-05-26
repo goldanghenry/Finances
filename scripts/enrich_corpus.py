@@ -24,12 +24,15 @@ def main() -> None:
         "repair_corpus_mechanical.py",
         "repair_broken_section6_tables.py",
         "repair_mangled_tables.py",
+        "repair_section6_intrusion.py",
         "ensure_section6_variable_tables.py",
         "repair_split_tables.py",
         "add_info_boxes.py",
         "repair_tables_split_by_info.py",
         "repair_section4a.py",
         "enrich_section6_from_glossary.py",
+        "fix_table_separator_columns.py",
+        "fix_unbalanced_display_math.py",
     ]
     for step in steps:
         run(step)

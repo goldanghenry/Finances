@@ -75,7 +75,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | 상장주식 | KRX·코스닥·NXT 등 **국내 상장** | §4 | [glossary](../../00-roadmap/glossary.md#상장주식) |
 | 매매차익 | 매도가 − 취득가 − 비용 | §4 | [glossary](../../00-roadmap/glossary.md#매매차익) |
 | 배당소득 | 금융소득 | §4 | [glossary](../../00-roadmap/glossary.md#배당소득) |
@@ -126,18 +126,14 @@ T_{\text{domestic CGT}} = 0 \quad (\text{비과세})
 \]
 
 
-
 **읽는 법**: **T_**와 **domestic**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 배당 (금융소득 합산):
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|  \(\D_\text{domestic}\)  |  D  domestic  | §4 용어·식 맥락에서 확인 |
-|  \(\D_\text{foreign}\)  |  D  foreign  | §4 용어·식 맥락에서 확인 |
 \[
 Fin = D_{\text{domestic}} + D_{\text{foreign}} + I + \cdots
 \]
-
 
 
 **읽는 법**: **D_**와 **D_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
@@ -145,13 +141,11 @@ Fin = D_{\text{domestic}} + D_{\text{foreign}} + I + \cdots
 D_{\text{foreign}} + I + \cdots
 
 
-
 **읽는 법**: **D_**와 **D_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 
 s/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 
 .---
-
 ## 7. 한국 적용
 
 ### 7.1 2025~2026
@@ -182,7 +176,7 @@ s/DEPTH-STANDARD.md) 기호 예제를 맞춘다.---
 ### 7.5 ISA·DC·IRP 내 국내주식 (계좌 세제 우선)
 
 | 계좌 | 매매차익(운용 중) | 배당 | 퇴사·만기 |
-|------|------|----------------|
+|------|------|------|----------------|
 | 일반 | 비과세(원칙) | 금융소득 | 즉시 과세 이벤트 |
 | ISA | **손익통산·한도** | 통산 | 3년·9.9% |
 | IRP·DC | **과세이연** | 이연(규칙) | 연금·퇴직세 |

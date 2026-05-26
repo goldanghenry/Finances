@@ -80,7 +80,7 @@
 ## 4. 정식 개념·용어
 
 | 용어 | 한글 | English | 정의 |
-|------|------|----------------|
+|------|------|------|----------------|
 | A-tier | A티어 | — | **필수** 심화 — 한국·AI·전기화 **축** |
 | B-tier | B티어 | — | **권장** — 전력·피지컬 AI |
 | C-tier | C티어 | — | **선택** — 사이버·바이오 등 |
@@ -96,7 +96,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | A-tier | **필수** 심화 | §4 | [glossary](../../00-roadmap/glossary.md#a-tier) |
 | B-tier | **권장** | §4 | [glossary](../../00-roadmap/glossary.md#b-tier) |
 | C-tier | **선택** | §4 | [glossary](../../00-roadmap/glossary.md#c-tier) |
@@ -133,6 +133,7 @@ flowchart TB
 ```
 
 | 티어 | 문서 | 이유 | bucket |
+|------|------|------|----------------|
 | **A** | framework, semi, battery, ai-infra | **한국 수출·AI·EV** | **3** |
 | **B** | power-grid, physical-ai | **병목·실험** | **3~4** |
 | **C** | 사이버·바이오·원전 | **관심·커리어** | **4** |
@@ -186,14 +187,9 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|  \(\T_\text{week}\)  |  T  week  | §4 용어·식 맥락에서 확인 |
-|  \(\T_\text{read}\)  |  T  read  | §4 용어·식 맥락에서 확인 |
-|  \(\T_\text{note}\)  |  T  note  | §4 용어·식 맥락에서 확인 |
-|  \(\T_\text{quiz}\)  |  T  quiz  | §4 용어·식 맥락에서 확인 |
 \[
 T_{\text{week}} = T_{\text{read}} + T_{\text{note}} + T_{\text{quiz}} \approx 5\text{~}8\ \text{시간}
 \]
-
 
 
 **읽는 법**: **T_**와 **week**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -210,18 +206,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 \]
 
 
-
-**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.*
-|   이름   |   이 식에서 의미   | §4 용어·식 맥락에서 확인 |
-| 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| \(C\) | 지출 | 기간 총 현금 유출 |
-
-*포트 배분 (교육, Week 9 산출)**:
-
-| | 최소 | 최대 |
-|------|------|----------------|
-| Bucket 3 (A티어 ETF) | **60%** | **95%** |
+**읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**포트 배분 (교육, Week 9 산출)**:
 | Bucket 4 (B·C 위성) | **0%** | **20%** |
 
 **학습 ROI (개념)**:
@@ -229,7 +214,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 \[
 \text{학습 ROI} \approx \frac{\text{리스크 인지·의사결정 품질}}{\text{45~72h}} + \text{인적자본 시너지}
 \]
-
 
 
 **읽는 법**: **Bucket**와 **Bucket**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -246,7 +230,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 \]
 
 
-
 **읽는 법**: **Bucket**와 **Bucket**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 — **알파 보장 아님**.
 
@@ -255,7 +238,6 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 **.
 
 ---
-
 ## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
@@ -289,6 +271,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 ### 예제 1: 9주 일정 — 가상 학습자 L (AI 엔지니어)
 
 | Week | 시간 | 산출 | bucket 결정 |
+|------|------|------|----------------|
 | 1 | 6h | Bucket·ISA 확정 | 2b ISA 개설 |
 | 2 | 7h | 반도체 5단계 노트 | KRX 반도체 ETF → **3** |
 | 4 | 8h | AI CAPEX 다이어그램 | QQQ **3** 유지 |
@@ -310,7 +293,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 ### 예제 3: A티어 후 포트 (가상, **F**)
 
 | | 금액 | % | bucket |
-|------|------|----------------|
+|------|------|------|----------------|
 | QQQ | **M** | 40% | 3 |
 | KRX 반도체 ETF | **M** | 20% | 3 |
 | 2차전지 ETF | **M** | 15% | 3 |
@@ -499,6 +482,7 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 ## 부록: A/B/C 티어 전체 표
 
 | 티어 | 문서 | 주차 | 시간 | bucket | 필수 퀴즈 |
+|------|------|------|------|------|----------------|
 | **Prep** | sector-investing-framework | W0~1 | 6h | 3/4 | §12 |
 | **A** | semiconductor | W2 | 7h | 3 | §12 |
 | **A** | battery-lfp-ncm-ess | W3 | 7h | 3/4 | §12 |

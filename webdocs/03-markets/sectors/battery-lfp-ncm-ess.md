@@ -83,7 +83,7 @@
 ## 4. 정식 개념·용어
 
 | 용어 | 한글 | English | 정의 |
-|------|------|----------------|
+|------|------|------|----------------|
 | LFP | 리튬인산철 | LiFePO₄ | 저비용·안전·장수명 양극 화학계 |
 | NCM/NCA | 삼원계·NCMA | Nickel-rich cathode | 고에너지 밀도 양극 |
 | ESS | 에너지저장장치 | Energy Storage System | 고정형 그리드·산업용 저장 |
@@ -101,7 +101,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | LFP | 저비용·안전·장수명 양극 화학계 | §4 | [glossary](../../00-roadmap/glossary.md#lfp) |
 | NCM/NCA | 고에너지 밀도 양극 | §4 | [glossary](../../00-roadmap/glossary.md#ncm/nca) |
 | ESS | 고정형 그리드·산업용 저장 | §4 | [glossary](../../00-roadmap/glossary.md#ess) |
@@ -222,7 +222,6 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 \]
 
 
-
 **읽는 법**: **Pack**와 **Cell**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 - LFP 셀 **$/kWh** 하락 → ESS **경제성** ↑ → LFP 수요 ↑ → **NCM 점유율** 압박
 
@@ -239,13 +238,11 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 \]
 
 
-
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- 가동률 **<70%** 구간에서 **영업적자** 전환 빈번 (가상 CAPEX 과잉 시)
 
 **재고·사이클 신호 (체크리스트)**:
 
 | 지표 | 호황 | 침체 신호 |
-|------|------|----------------|
 | 셀 ASP | ↑ | **↓ 2분기 연속** |
 | 재고일수 | 낮음 | **↑** |
 | CAPEX 가이던스 | ↑↑ | **cut** |
@@ -255,14 +252,8 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 
 ---
 
-↑ | **cut** |
-| 중국 LFP 가격 | 안정 | **급락** |
-
-**ROIC**: 증설 후 **ROIC < WACC** 구간이 2~3년 지속되면 “성장”이 아닌 **과잉** 가능성 — [sector-investing-framework.md](sector-investing-framework.md) 4단계.
-
----
-
-## 7. 한국 적용
+↑ | **cut** |**ROIC**: 증설 후 **ROIC < WACC** 구간이 2~3년 지속되면 “성장”이 아닌 **과잉** 가능성 — [sector-investing-framework.md](sector-investing-framework.md) 4단계.
+---## 7. 한국 적용
 
 ### 7.1 2025년 기준 (확정)
 
@@ -298,7 +289,7 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 ### 예제 1: LFP vs NCM — 가상 OEM 선택
 
 | OEM (가상) | 2024 모델 | 화학계 | 이유 |
-|------|------|----------------|
+|------|------|------|----------------|
 | **저가 EV Z** | 3,**M** (만 원 단위, 교육용)급 | **LFP** | 원가·수명 |
 | **프리미엄 P** | 6,**M** (만 원 단위, 교육용)급 | **NCM 811** | 주행거리 |
 | **ESS 유틸 U** | 100MWh | **LFP** | 안전·$/kWh |
@@ -308,7 +299,7 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 ### 예제 2: 사이클 — 가상 셀메이커 B (GWh)
 
 | 연도 | CAPEX | 가동률 | ASP | 영업이익률 |
-|------|------|----------------|
+|------|------|------|------|----------------|
 | 2021 | 2조 | 95% | 100 | 12% |
 | 2023 | 5조 | 65% | 70 | **-5%** |
 | 2025 | 3조 | 80% | 78 | 4% |
@@ -318,7 +309,7 @@ ESS는 **전력망·유틸·RE100** ([power-grid-electrification.md](power-grid-
 ### 예제 3: ISA 코어 vs 위성 (가상 직장인 D)
 
 | 포지션 | 금액 | 비중 | bucket |
-|------|------|----------------|
+|------|------|------|----------------|
 | 2차전지 ETF | 4,000만 원 | 80% | 3 (ISA) |
 | 가상 전해액 코스피 | **M** (만 원 단위, 교육용) | 10% | 4 |
 | 가상 코스닥 장비 | **M** (만 원 단위, 교육용) | 10% | 4 |

@@ -79,7 +79,7 @@ AI·EV·재생에너지가 **같은 그리드**를 씁니다. **변압器 lead t
 ## 4. 정식 개념·용어
 
 | 용어 | 한글 | English | 정의 |
-|------|------|----------------|
+|------|------|------|----------------|
 | Grid | 전력망 | — | 송·변·배 **통합** |
 | 송전 | — | Transmission | **고압** 장거리 |
 | 배전 | — | Distribution | **저압** 지역 |
@@ -97,7 +97,7 @@ AI·EV·재생에너지가 **같은 그리드**를 씁니다. **변압器 lead t
 > 복습용. 정의는 §4 본표·[glossary](../../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | Grid | 송·변·배 **통합** | §4 | [glossary](../../00-roadmap/glossary.md#grid) |
 | 송전 | **고압** 장거리 | §4 | [glossary](../../00-roadmap/glossary.md#송전) |
 | 배전 | **저압** 지역 | §4 | [glossary](../../00-roadmap/glossary.md#배전) |
@@ -180,14 +180,9 @@ flowchart TB
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|  \(\DC\)  | DC | §4 용어·식 맥락에서 확인 |
-|  \(\P_\text{DC}\)  |  P  DC  | §4 용어·식 맥락에서 확인 |
-|  \(\N_\text{GPU}\)  |  N  GPU  | §4 용어·식 맥락에서 확인 |
-|  \(\P_\text{GPU}\)  |  P  GPU  | §4 용어·식 맥락에서 확인 |
 \[
 P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 \]
-
 
 
 **읽는 법**: **P_**와 **DC**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -204,7 +199,6 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 \]
 
 
-
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.**ESS 경제성 (단순)**:
 
 | 기호 | 이름 | 이 식에서 의미 |
@@ -216,7 +210,6 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 \[
 \text{ESS profit} \approx (\text{peak price} - \text{off-peak price}) \times \text{efficiency} \times \text{cycles} - \text{capex}
 \]
-
 
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -238,7 +231,6 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 ### 7.1 2025년 기준 (확정)
 
 | 영역 | 내용 | bucket |
-|------|------|----------------|
 | **변압器·송전설비** | 수출·국내 | **3~4** |
 | **ESS** | LFP·프로젝트 | **3~4** |
 | **유틸·발전** | **규제** | ETF **3** |
@@ -249,7 +241,6 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 ### 7.2 2026년 개편·시행 예정 (해당 시)
 
 | 항목 | 2025 | 2026 |
-|------|------|----------------|
 | ISA 비과세 | 200만 | **500만** |
 | RE100·RPS | 현행 | **기업 DC** **PPA** ↑ |
 | 송전·변압器 | tight | **수주** **백로그** 보도 |
@@ -260,7 +251,6 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 ### 7.3 전기화 4대 메가트렌드 통합표 (교육)
 
 | 트렌드 | 전력 영향 | 연결 섹터 | bucket |
-|------|------|----------------|
 | **EV** | 배전·충전 피크 | battery | 3~4 |
 | **AI DC** | 24/7 MW | ai-infrastructure | 3~4 |
 | **재생** | 간헐·ESS | battery ESS | 3 |
@@ -271,7 +261,6 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 ### 7.4 유틸·설비·ESS — 투자 성격 비교 (교육)
 
 | 유형 | 수익 드라이ver | 변동성 | bucket | 대표 리스크 |
-|------|------|----------------|
 | **유틸·발전** | **요금·ROE** | **낮~중** | **3** ETF | **규제·정치** |
 | **송전·변압 설비** | **수주·백로그** | **중** | **3~4** | **리드·대금** |
 | **ESS integrator** | **입찰·LFP 가격** | **중~高** | **4** | **배터리 사이클** |
@@ -283,9 +272,7 @@ P_{\text{DC}} \approx \frac{N_{\text{GPU}} \times P_{\text{GPU}}}{\text{PUE}}
 
 .
 
----
-
-## 8. 숫자 예제 (가상)
+---## 8. 숫자 예제 (가상)
 
 > 모든 인물·금액·회사명은 가상입니다.
 

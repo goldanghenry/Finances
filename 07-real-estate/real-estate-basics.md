@@ -69,7 +69,7 @@
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | NOI | 임대수익−운영비 | §4 | [glossary](../00-roadmap/glossary.md#noi) |
 | 캡레이트 | NOI/가격 | §4 | [glossary](../00-roadmap/glossary.md#캡레이트) |
 | LTV | 대출/담보가치 | §4 | [glossary](../00-roadmap/glossary.md#ltv) |
@@ -115,7 +115,6 @@ flowchart LR
 
 
 **읽는 법**: **Cap**와 **NOI**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
-|   이름   |   이 식에서 의미   | §4 용어·식 맥락에서 확인 |
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 | \(r\) | 할인율·수익률 | 기간당 이자·요구수익률 |

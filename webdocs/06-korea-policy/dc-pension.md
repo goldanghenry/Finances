@@ -83,7 +83,7 @@ DC는 “**회사가 매달 정해진 돈을 넣어 주고, 본인이 그 통장
 > 복습용. 정의는 §4 본표·[glossary](../00-roadmap/glossary.md)·본문 `!!! info` 박스.
 
 | 용어 | 한 줄 | 관련 이론 | glossary |
-|------|------|----------------|
+|------|------|------|----------------|
 | DC | 확정기여형 | §4 | [glossary](../00-roadmap/glossary.md#dc) |
 | 기여금 | 사용자·가입자 납입 | §4 | [glossary](../00-roadmap/glossary.md#기여금) |
 | 위험자산 | 주식·주식형 ETF 등 | §4 | [glossary](../00-roadmap/glossary.md#위험자산) |
@@ -128,13 +128,9 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|  \(\w_\text{risk}\)  |  w  risk  | §4 용어·식 맥락에서 확인 |
-|  \(\V_\text{stock ETF}\)  |  V  stockETF  | §4 용어·식 맥락에서 확인 |
-|  \(\V_\text{total}\)  |  V  total  | §4 용어·식 맥락에서 확인 |
 \[
 w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 \]
-
 
 
 **읽는 법**: **w_**와 **V_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -142,12 +138,9 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|  \(\P_\text{add}\)  |  P  add  | §4 용어·식 맥락에서 확인 |
-|  \(\r_\text{deduction}\)  |  r  deduction  | §4 용어·식 맥락에서 확인 |
 \[
 \text{절세} \approx \min(P_{\text{add}}, 3{,}000{,}000) \times r_{\text{deduction}}
 \]
-
 
 
 **읽는 법**: **P_**와 **r_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -157,7 +150,6 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 제를 맞춘다.
 
 ---
-
 ## 7. 한국 적용
 
 ### 7.1 2025년
