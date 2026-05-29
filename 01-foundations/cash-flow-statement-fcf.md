@@ -380,9 +380,7 @@ Enterprise\ Value \approx \sum_{t} \frac{FCFF_t}{(1+WACC)^t} + PV(Terminal)
 
 **식 (기호)**: **Enterprise** **Value** ≈ Σ_t (**FCFF_t**) / ((1+**WACC**)^**t**) + **PV**(**Terminal**)
 
-
-**식 (기호)**: **Enterprise** **Value** ≈ Σ_t (**FCFF_t**) / ((1+**WACC**)^**t**) + **PV**(**Terminal**)
-
+**읽는 법**: **FCFF**를 **WACC**로 할인해 **기업가치(EV)**를 구한다. 터미널 가치는 **PV(Terminal)**로 합산한다.
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
@@ -396,26 +394,9 @@ Equity\ Value \approx Enterprise\ Value - Net\ Debt
 
 **식 (기호)**: **Equity** **Value** ≈ **Enterprise** **Value** - **Net** **Debt**
 
+**읽는 법**: **EV**에서 **순부채**를 빼 **주주가치(Equity Value)**로 연결한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호로 대입한다.
 
-**식 (기호)**: **Equity** **Value** ≈ **Enterprise** **Value** - **Net** **Debt**
-
-
-**읽는 법**: **FCFF**를 **WACC**로 할인해 **EV**를 구하고 **순부채**를 빼 **주주가치**로 연결한다. 
-
-
-숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 교육용 기호로 대입한다.
-
-**Terminal**: **
-| 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| 기호 | 이름 | 이 식에서 의미 |
-|------|------|----------------|
-| **WACC** | 가중평균자본비용 | 기업·프로젝트 할인율 근사 |
-| **OCF** | 영업현금흐름 | 영업활동에서 발생한 현금 |
-| **D** | D | 위 식의 D |
-| **A** | A | 위 식의 A |
-
-영구 성장률 g** 가정 시 **g < WACC** 필요 — [time-value-npv-irr](time-value-npv-irr.md).
+**Terminal**: 영구 성장률 **g** 가정 시 **g < WACC** 필요 — [time-value-npv-irr](time-value-npv-irr.md).
 
 ### 6.7 OCF vs EBITDA
 
