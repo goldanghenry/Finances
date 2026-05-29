@@ -173,14 +173,27 @@ def dedupe_fallback_lines(text: str) -> str:
     out: list[str] = []
     i = 0
     while i < len(lines):
-        out.append(lines[i])
-        if lines[i].startswith("**식 (기호)**"):
+        line = lines[i]
+        if line.startswith("**식 (기호)**"):
+            out.append(line)
             i += 1
-            while i < len(lines) and lines[i].startswith("**식 (기호)**"):
-                i += 1
+            while i < len(lines):
+                nxt = lines[i]
+                if nxt.strip() == "":
+                    i += 1
+                    continue
+                if nxt.startswith("**식 (기호)**"):
+                    i += 1
+                    continue
+                break
             continue
+        out.append(line)
         i += 1
     return "\n".join(out)
+
+
+def has_fallback_near(s6: str, pos: int, window: int = 160) -> bool:
+    return "**식 (기호)**" in s6[pos : pos + window]
 
 
 def process_section6(s6: str) -> tuple[str, int]:
@@ -191,7 +204,7 @@ def process_section6(s6: str) -> tuple[str, int]:
         out.append(s6[pos : m.end()])
         pos = skip_existing_fallback(s6, m.end())
         fallback = latex_to_fallback(m.group(1))
-        if fallback and len(fallback) >= 3:
+        if fallback and len(fallback) >= 3 and not has_fallback_near(s6, m.end()):
             out.append(f"\n\n**식 (기호)**: {fallback}\n")
             changes += 1
     out.append(s6[pos:])
