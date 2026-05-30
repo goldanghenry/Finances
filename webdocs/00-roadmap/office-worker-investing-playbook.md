@@ -1,4 +1,4 @@
-# 직장인 투자 플레이북 — 가상 1년 로드맵 — 가상 1년 로드맵
+# 직장인 투자 플레이북 — 가상 1년 로드맵
 
 > **면책**: 본 문서는 교육 목적이며, 특정 개인·법인에 대한 투자·세무·법률 자문이 아닙니다. 제도·세율·상품 조건은 변경될 수 있으므로 실행 전 금융위·국세청·취급 금융기관·공식 출처를 확인하세요. 본문의 **월별 배분·금액·인물·회사명**은 **가상의 직장인(월급·DB·퇴직연금) 학습 시나리오**이며, 실제 연봉·잔고·계좌 정보를 넣지 마세요. **데이트레이딩·단기 매매를 권장하지 않습니다.**
 
@@ -26,7 +26,7 @@
 
 1. **1년 로드맵**: 1~2월 거시·ETF·계좌 → 3~4월 DCA·리밸런싱 → 5~6월 재무제표 → 7~12월 섹터·포트폴리오 통합.
 2. **투자 철학**: **장기 지수·ETF 코어 OK**, **데이트레이딩·단타 NO** — [passive-vs-active](../04-portfolio/passive-vs-active.md) 정렬.
-3. **세후 월 실수령 M** 배분: **ISA \(\alpha_\text{ISA}=0.50\)** · **연금 \(\alpha_\text{P}=0.30\)** · **일반 \(\alpha_\text{G}=0.20\)** — 계좌 우선순위·세제 방패.
+3. **세후 월 실수령 M** 배분: **ISA α_ISA=0.50** · **연금 α_P=0.30** · **일반 α_G=0.20** — 계좌 우선순위·세제 방패.
 4. **선택 위성 테마**: 본업·뉴스에 익숙한 **업종·배당·대형주**만 — [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md), **위성 ≤20%**.
 5. **주간 거시 체크리스트** + 필독서(돈의 심리학, 부의 인문학, Little Book 시리즈) — 행동·역사 맥락.
 6. 시작점: [STUDY-START.md](STUDY-START.md) · [master-roadmap.md](master-roadmap.md).
@@ -104,10 +104,10 @@
 
 ```mermaid
 flowchart LR
-  M1[M1-2_거시_ETF_계좌] --> M2[M3-4_DCA_리밸]
-  M2 --> M3[M5-6_재무제표]
-  M3 --> M4[M7-12_섹터_포트]
-  M4 --> Rev[연간_회고]
+  M1["M1-2 거시 ETF 계좌"] --> M2["M3-4 DCA 리밸"]
+  M2 --> M3["M5-6 재무제표"]
+  M3 --> M4["M7-12 섹터 포트"]
+  M4 --> Rev["연간 회고"]
 ```
 
 ### 5.1 월별 학습·실행 매트릭스
@@ -147,44 +147,51 @@ flowchart LR
 
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-| \(\alpha_\text{ISA}\) | ISA 적립 비율 | 세후 월 실수령 **M** 중 ISA로 보내는 비율 (0~1) |
-| \(\alpha_\text{P}\) | 연금 적립 비율 | IRP·연금저축 등 연금 슬롯 비율 |
-| \(\alpha_\text{G}\) | 일반 계좌 비율 | 한도 초과분·위성·환전 여유 비율 |
-| \(M\) | 월 실수령 | 세후 월급(만 원, 기호만) |
-| \(L_\text{ISA}\) | ISA 연 한도 | 제도상 연 납입 상한(만 원) — §7·[isa](../06-korea-policy/isa.md) |
+| **α_ISA** | ISA 적립 비율 | 세후 월 실수령 **M** 중 ISA로 보내는 비율 (0~1) |
+| **α_P** | 연금 적립 비율 | IRP·연금저축 등 연금 슬롯 비율 |
+| **α_G** | 일반 계좌 비율 | 한도 초과분·위성·환전 여유 비율 |
+| **M** | 월 실수령 | 세후 월급(만 원, 기호만) |
+| **L_ISA** | ISA 연 한도 | 제도상 연 납입 상한(만 원) — §7·[isa](../06-korea-policy/isa.md) |
 
 \[
-\alpha_\text{ISA}+\alpha_\text{P}+\alpha_\text{G}=1,\quad
-\text{ISA}_\text{월}=\alpha_\text{ISA}\cdot M,\quad
-\text{연금}_\text{월}=\alpha_\text{P}\cdot M,\quad
-\text{일반}_\text{월}=\alpha_\text{G}\cdot M
+\alpha_{ISA}+\alpha_{P}+\alpha_{G}=1,\quad
+M_{ISA}=\alpha_{ISA}\cdot M,\quad
+M_{P}=\alpha_{P}\cdot M,\quad
+M_{G}=\alpha_{G}\cdot M
 \]
 
-**읽는 법**: 세후 **M**을 \(\alpha_\text{ISA}+\alpha_\text{P}+\alpha_\text{G}=1\)로 나누고, 각 슬롯 월액은 \(\alpha\cdot M\)이다. 
+**식 (기호)**: **α_ISA**+**α_P**+**α_G**=1, **M_ISA**=**α_ISA**·**M**, **M_P**=**α_P**·**M**, **M_G**=**α_G**·**M**
 
 
+**식 (기호)**: **α_ISA**+**α_P**+**α_G**=1, **M_ISA**=**α_ISA**·**M**, **M_P**=**α_P**·**M**, **M_G**=**α_G**·**M**
 
 
-**\(L_\text{ISA}\)**와 \(12\alpha_\text{ISA}M\)로 연 한도 초과 여부를 점검한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
+**식 (기호)**: **α_ISA**+**α_P**+**α_G**=1, **M_ISA**=**α_ISA**·**M**, **M_P**=**α_P**·**M**, **M_G**=**α_G**·**M**
 
-**교육용 비율(고정 아님)**: \(\alpha_\text{ISA}=0.50,\ \alpha_\text{P}=0.30,\ \alpha_\text{G}=0.20\).
+
+**읽는 법**: 세후 **M**을 **α_ISA+α_P+α_G=1**로 나눈다. 
+
+
+**ISA 월** **M_ISA** = **α_ISA·M**, **연금 월** **M_P** = **α_P·M**, **일반 월** **M_G** = **α_G·M**. **L_ISA**와 **12·α_ISA·M**으로 연 한도 초과 여부를 점검한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제로 대입한다.
+
+**교육용 비율(고정 아님)**: **α_ISA=0.50**, **α_P=0.30**, **α_G=0.20**.
 
 | 슬롯 | 비율 | 가상 용도 | bucket |
 |------|------|------|----------------|
-| ISA | \(\alpha_\text{ISA}\) | 해외·국내 **코어 ETF** DCA | 2b~3 |
-| 연금(IRP/연금저축) | \(\alpha_\text{P}\) | 세액공제·**과세이연** | 2b |
-| 일반 | \(\alpha_\text{G}\) | 한도 초과분·**위성**·환전 여유 | 3~4 |
+| ISA | **α_ISA** | 해외·국내 **코어 ETF** DCA | 2b~3 |
+| 연금(IRP/연금저축) | **α_P** | 세액공제·**과세이연** | 2b |
+| 일반 | **α_G** | 한도 초과분·**위성**·환전 여유 | 3~4 |
 
-**ISA 연 한도**: \(12\alpha_\text{ISA}M \stackrel{?}{\leq} L_\text{ISA}\) (2025 일반형 \(L_\text{ISA}=2{,}000\)만 — [isa](../06-korea-policy/isa.md)). 초과분은 **일반·연금**으로 우회 — [isa-irp-practical-setup](../06-korea-policy/isa-irp-practical-setup.md).
+**ISA 연 한도**: **12·α_ISA·M ≤ L_ISA** (2025 일반형 **L_ISA=2,000**만 — [isa](../06-korea-policy/isa.md)). 초과분은 **일반·연금**으로 우회 — [isa-irp-practical-setup](../06-korea-policy/isa-irp-practical-setup.md).
 
 **DB 적립**은 회사·제도별 **별도**(M·α 슬롯에 미포함). DB 가입자 체크: [isa-irp-practical-setup](../06-korea-policy/isa-irp-practical-setup.md).
 
 ```mermaid
 flowchart TD
-  Pay[M_세후_실수령] --> ISA[ISA_alpha_ISA_코어ETF]
-  Pay --> Pen[연금_alpha_P_IRP등]
-  Pay --> Gen[일반_alpha_G_위성여유]
-  ISA --> Hold[3년_유지_손익통산]
+  Pay["M 세후 실수령"] --> ISA["ISA alpha ISA 코어ETF"]
+  Pay --> Pen["연금 alpha P IRP등"]
+  Pay --> Gen["일반 alpha G 위성여유"]
+  ISA --> Hold["3년 유지 손익통산"]
 ```
 
 ## 7. 한국 적용
@@ -213,8 +220,8 @@ flowchart TD
 
 ### 예제 1 — 1년 ISA 적립만
 
-- 연 ISA 납입: \(12 \cdot \alpha_\text{ISA} M\). \(\alpha_\text{ISA}=0.50\)이면 \(6M\). **\(6M > L_\text{ISA}\)** 이면 초과 \(6M - L_\text{ISA}\)는 이월 불가·**일반·연금**으로 우회 설계.
-- **교훈**: α 규칙은 **\(12\alpha_\text{ISA}M \leq L_\text{ISA}\)** 와 **월 현금흐름**을 동시에 체크. [isa-irp-practical-setup](../06-korea-policy/isa-irp-practical-setup.md).
+- 연 ISA 납입: **12·α_ISA·M**. **α_ISA=0.50**이면 **6M**. **6M > L_ISA** 이면 초과 **6M − L_ISA**는 이월 불가·**일반·연금**으로 우회 설계.
+- **교훈**: α 규칙은 **12·α_ISA·M ≤ L_ISA** 와 **월 현금흐름**을 동시에 체크. [isa-irp-practical-setup](../06-korea-policy/isa-irp-practical-setup.md).
 
 ### 예제 2 — 코어 80 / 위성 20
 
@@ -263,8 +270,6 @@ flowchart TD
 ---
 
 
-
-
 **Q. 실무에서는?**  
 교과서 식·기호를 그대로 적용하기 전에 **수수료·세금·데이터 시점**을 분리한다. 숫자는 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md)처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.
 
@@ -274,7 +279,7 @@ flowchart TD
 **A1.** **내부자 정보는 불법**이고, ‘안다’는 감각은 **과신**으로 이어지기 쉽다. 코어 **지수 ETF** + 위성 **≤20%**.
 
 **Q2. α_ISA·α_P·α_G 비율을 바꿔도 되나?**  
-**A2.** 본문 \(\alpha\)는 **교육용**. 실제는 **\(12\alpha_\text{ISA}M \leq L_\text{ISA}\)** ·연금 공제·비상금([emergency-fund](../01-foundations/emergency-fund.md)) 우선.
+**A2.** 본문 α는 **교육용**. 실제는 **12·α_ISA·M ≤ L_ISA** ·연금 공제·비상금([emergency-fund](../01-foundations/emergency-fund.md)) 우선.
 
 **Q3. DB인데 왜 ISA 50%?**  
 **A3.** DB는 **운용권 없음**. 장기 코어·세제는 **ISA·IRP** — [db-pension](../06-korea-policy/db-pension.md).
@@ -315,14 +320,14 @@ flowchart TD
 ## 14. 스스로 점검 퀴즈
 
 1. DB 재직자가 **직접 ETF를 고를 수 있는** 계좌는?
-2. \(\alpha_\text{ISA}=0.50\)일 때 ISA **월액**은? (M 대입)
+2. **α_ISA=0.50**일 때 ISA **월액**은? (M 대입)
 3. 7~8월 학습 섹터 2개는?
 4. 데이트레이딩이 본 플레이북에서 **NO**인 이유 1가지?
 5. 주간 체크리스트 **10번** 항목은?
 
 ??? note "정답 힌트"
 
-    1. ISA·IRP·일반( DB 아님 ) · 2. \(\alpha_\text{ISA} \cdot M\) (그리고 \(12\alpha_\text{ISA}M \leq L_\text{ISA}\) 검증) · 3. 섹터 프레임·주식 입문 등 · 4. 세금·심리·시간비용 등 · 5. FOMO·뉴스 매매 충동
+    1. ISA·IRP·일반( DB 아님 ) · 2. **α_ISA·M** (그리고 **12·α_ISA·M ≤ L_ISA** 검증) · 3. 섹터 프레임·주식 입문 등 · 4. 세금·심리·시간비용 등 · 5. FOMO·뉴스 매매 충동
 
 ---
 

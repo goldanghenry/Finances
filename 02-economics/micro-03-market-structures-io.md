@@ -35,7 +35,16 @@
 
 **정의**: **산업조직(Industrial Organization, IO)** 은 **시장구조**(경쟁자 수·진입장벽·차별화)가 **가격·수량·마진·혁신·복지**에 미치는 영향을, **부분균형**과 **게임이론**으로 분석한다.
 
-**왜 중요한가**: 동일한 “AI 붐”도 **완전경쟁 LFP 셀**과 **HBM oligopoly**에서는 **마진·주가 민감도**가 다르다. [microeconomics-basics](microeconomics-basics.md) L3의 “과점=마진”을 **MR=MC, Cournot, Nash**로 **정량화**한다. 한국 투자자에게 **수출 재벌·반도체**는 **국가 포트폴리오** 핵심 — [코어-위성](../04-portfolio/core-satellite-framework.md) **위성**의 **집중·변동성**은 IO 리스크와 맞물린다. [반도체](../03-markets/sectors/semiconductor.md), [섹터 프레임](../03-markets/sectors/sector-investing-framework.md) 심화의 **이론 축**.
+!!! info "GDP (Gross Domestic Product)"
+    일정 기간 국내 총생산.
+
+**왜 중요한가**: 투자자에게 시장구조 이론이 필요한 이유:
+
+- **마진 지속성 판단**: 완전경쟁 시장(LFP 배터리 셀)에서는 수익성이 장기적으로 평균 수준으로 수렴합니다. 반면 과점(HBM, 파운드리 선단 공정)에서는 높은 마진이 지속될 수 있습니다.
+- **진입 장벽 분석**: 신규 경쟁자가 쉽게 들어올 수 있는가(낮은 진입 장벽)를 파악하면 기업의 장기 수익 방어력을 알 수 있습니다.
+- **가격 전쟁 위험**: 과점 기업들이 암묵적 협조를 유지할 수 있는가? 치킨게임(Bertrand 경쟁)으로 갈 수 있는가?
+
+동일한 “AI 붐”도 **완전경쟁 LFP 셀**과 **HBM oligopoly**에서는 **마진·주가 민감도**가 다릅니다. [microeconomics-basics](microeconomics-basics.md) L3의 “과점=마진”을 **MR=MC, Cournot, Nash**로 **정량화**한다. 한국 투자자에게 **수출 재벌·반도체**는 **국가 포트폴리오** 핵심 — [코어-위성](../04-portfolio/core-satellite-framework.md) **위성**의 **집중·변동성**은 IO 리스크와 맞물린다. [반도체](../03-markets/sectors/semiconductor.md), [섹터 프레임](../03-markets/sectors/sector-investing-framework.md) 심화의 **이론 축**.
 
 
 ## 2. 선수 지식 / 이후 읽을 것
@@ -52,6 +61,13 @@
 
 
 ## 3. 직관·비유
+
+> **강의 시작 전 질문** — 이 질문에 바로 답하기 어렵다면, 이 섹션이 당신을 위한 것입니다.
+> - "HBM(고대역폭메모리)이 왜 일반 D램보다 마진이 높은가?"
+> - "네이버와 카카오가 광고를 올려도 기업들이 계속 돈을 내는 이유는?"
+> - "중국 LFP 배터리 업체들이 난립하는데 한국 배터리 기업 마진은 왜 내려갔나?"
+
+**핵심은:** 같은 "AI 붐"이라도 **경쟁 구조**에 따라 기업의 수익성이 전혀 다릅니다. 독점·과점 기업은 가격 결정력(pricing power)이 있어서 마진을 지킬 수 있지만, 완전경쟁 시장에서는 초과 이익이 경쟁으로 사라집니다. 섹터 분석의 핵심은 "이 기업은 어떤 시장 구조에 있는가?"입니다.
 
 **동네 과일 시장 vs HBM**: 과일은 **진입 쉬움** → **\(P \approx MC\)**, 마진 얇음. HBM fab는 **수천억 CAPEX** → **소수 player** → **\(P \gg MC\)** 가능(수요·용량에 따라).
 
@@ -107,21 +123,21 @@
 
 ```mermaid
 flowchart LR
-  PC[완전경쟁_P_eq_MC] --> MON[독점_MR_eq_MC]
-  MON --> COUR[Cournot_과점]
-  COUR --> STACK[Stackelberg_선도]
-  COUR --> CART[카르텔_협력]
-  CART --> PD[죄수의딜레마_불안정]
+  PC["완전경쟁 P eq MC"] --> MON["독점 MR eq MC"]
+  MON --> COUR["Cournot 과점"]
+  COUR --> STACK["Stackelberg 선도"]
+  COUR --> CART["카르텔 협력"]
+  CART --> PD["죄수의딜레마 불안정"]
 ```
 
 ### 5.2 독점 → markup
 
 ```mermaid
 flowchart TD
-  D[시장수요_P_of_Q] --> MR[MR_lt_P]
-  MC[MC곡선] --> OPT[MR_eq_MC]
-  OPT --> Pstar[P_star>`MC]
-  Pstar --> LER[Lerner_1_over_eps]
+  D["시장수요 P of Q"] --> MR["MR lt P"]
+  MC[MC곡선] --> OPT["MR eq MC"]
+  OPT --> Pstar["P star>MC"]
+  Pstar --> LER["Lerner 1 over eps"]
 ```
 
 ### 5.3 Cournot · Nash · HBM
@@ -129,19 +145,19 @@ flowchart TD
 ```mermaid
 flowchart TB
   subgraph firms [N_firms]
-    F1[기업1_q1]
-    F2[기업2_q2]
+    F1["기업1 q1"]
+    F2["기업2 q2"]
   end
-  Q[시장Q_eq_sum_q]
-  P[P_of_Q_수요]
-  BR[최선응답_R_i_q_minus_i]
+  Q["시장Q eq sum q"]
+  P["P of Q 수요"]
+  BR["최선응답 R i q minus i"]
   F1 --> Q
   F2 --> Q
   Q --> P
   P --> BR
   BR --> F1
   BR --> F2
-  HBM[HBM_2to3사_용량제약] -.-> firms
+  HBM["HBM 2~3사 용량제약"] -.-> firms
 ```
 
 
@@ -174,6 +190,8 @@ MR(Q) = P(Q) + Q \cdot P'(Q) < P
 **식 (기호)**: **MR**(**Q**) = **P**(**Q**) + **Q** ·P'(**Q**) < **P**
 
 
+**식 (기호)**: **MR**(**Q**) = **P**(**Q**) + **Q** ·P'(**Q**) < **P**
+
 
 **읽는 법**: **MR**와 **Q**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -204,6 +222,8 @@ MR(Q) = P(Q) + Q \cdot P'(Q) < P
 
 **식 (기호)**: (**P** - **MC**) / (**P**) = -(1) / (**ε_D**)
 
+
+**식 (기호)**: (**P** - **MC**) / (**P**) = -(1) / (**ε_D**)
 
 
 **읽는 법**: **lon_D**와 **P**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -261,6 +281,8 @@ Follower: \(q_2 = \frac{a-c-bq_1}{2b}\). Leader anticipates → **\(q_1^{Stack} 
 
 **식 (기호)**: **π**_(협력,협력) > **π**_(이탈,협력) > **π**_(협력,이탈) > **π**_(이탈,이탈)
 
+
+**식 (기호)**: **π**_(협력,협력) > **π**_(이탈,협력) > **π**_(협력,이탈) > **π**_(이탈,이탈)
 
 
 **읽는 법**: **명목** 수익에서 **인플레**를 반영하면 **실질** 체감 수익을 본다. 
@@ -331,6 +353,18 @@ Follower: \(q_2 = \frac{a-c-bq_1}{2b}\). Leader anticipates → **\(q_1^{Stack} 
 - **포트폴리오**:  [geographic-diversification](../04-portfolio/geographic-diversification.md) — **한국 IO 집중** **위성** 리스크
 
 
+### 7.4 2025~2026 한국 시장구조 투자 체크포인트
+
+**쉽게 말하면:** 시장 구조 변화가 기업 마진·주가에 미치는 영향입니다.
+
+| 섹터 | 시장 구조 | 체크 포인트 |
+|------|------|------|
+| HBM 메모리 | 사실상 과점(삼성·SK·마이크론) | 가격 협력 지속 여부 |
+| LFP 배터리 셀 | 중국 진입으로 경쟁 심화 | 마진 바닥 확인 타이밍 |
+| 국내 플랫폼 | 네트워크 효과 독점 | 규제 리스크·글로벌 경쟁 |
+| 파운드리 선단(2nm~3nm) | 2강 체제(TSMC·삼성) | 점유율 변화·수율 경쟁 |
+| 조선 | 글로벌 과점 회귀 | 수주 단가 유지 능력 |
+
 ## 8. 숫자 예제 (가상)
 
 > 가상 수치·회사입니다.
@@ -372,6 +406,22 @@ Leader **\(q\)** > Cournot **40 vs 26.7** — **first-mover**.
 **Nash**: (증산,증산) — **DRAM** **cut** 실패 **논리**.
 
 
+### 예제 13 — 단계별: HBM 과점 시장의 쿠르노 경쟁
+
+**상황**: HBM 시장에 기업 A, B 두 곳 (수요 P = 200 − Q, 각사 MC = 40)
+
+**단계별 쿠르노 균형:**
+
+1. **기업 A 이익 극대화**: MR_A = 200 − 2q_A − q_B = 40 → q_A = 80 − q_B/2
+2. **기업 B도 동일**: q_B = 80 − q_A/2
+3. **연립방정식 풀기**: q_A = q_B = 53.3, 총 Q ≈ 106.6
+4. **시장 가격**: P = 200 − 106.6 ≈ **93.4**
+5. **단위이익**: 93.4 − 40 = **53.4** (각사)
+
+**완전경쟁 비교**: P = MC = 40, 이익 = 0. **독점 비교**: Q = 80, P = 120, 이익 = 80 × 80 = 6,400 합산.
+
+**투자 시사점**: 과점 구조에서는 경쟁보다 훨씬 높은 가격·마진이 유지됩니다. 3위권 기업이 시장에 진입하면 이 균형이 깨집니다.
+
 ## 9. FAQ
 
 **Q1. 완전경쟁 현실에 있나?**  
@@ -409,6 +459,10 @@ Leader **\(q\)** > Cournot **40 vs 26.7** — **first-mover**.
 
 **Q12. 포트폴리오 **과점** **overweight**?**  
 **A12.** **Cycle** **peak** **\(P\)** — [rebalancing](../04-portfolio/rebalancing-and-dca.md).
+**Q13. 한국 플랫폼 기업(네이버·카카오)의 시장 구조는?**  
+**A13.** 쉽게 말하면: 플랫폼은 네트워크 효과로 인해 자연독점 성향이 강합니다. 사용자가 많을수록 광고주에게 더 가치 있는 플랫폼이 되고(양면시장), 후발 진입자는 이 네트워크를 따라가기 어렵습니다. 다만 글로벌 플랫폼(구글·유튜브)이 경쟁하면 국내 독점력이 희석될 수 있습니다. 규제 리스크(독점 규제)도 고려해야 합니다.
+
+
 
 
 ## 10. 함정·리스크·한계
@@ -515,13 +569,13 @@ flowchart LR
   end
   subgraph global [글로벌]
     M[Micron]
-    CN[중국_추격]
+    CN["중국 추격"]
   end
-  AI[AI_수요_a] --> P[P_of_Q]
+  AI["AI 수요 a"] --> P["P of Q"]
   S --> Q
   SK --> Q
   M --> Q
-  CN -.->|N_up| P
+  CN -.->|"N up"| P
 ```
 
 ### A.8 가격차별·2차 버전 (예제 8)
@@ -548,11 +602,11 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  C[협력_고가_저량] --> T{이탈_유인}
-  T -->|일회게임| D[Defect_Nash]
-  T -->|반복_delta_높음| S[협력_유지]
-  D --> Pfall[P_하락_사이클]
-  S --> Pstable[P_고정_구간]
+  C["협력 고가 저량"] --> T{"이탈 유인"}
+  T -->|일회게임| D["Defect Nash"]
+  T -->|"반복 delta 높음"| S["협력 유지"]
+  D --> Pfall["P 하락 사이클"]
+  S --> Pstable["P 고정 구간"]
 ```
 
 ### A.12 Tirole·Varian 매핑

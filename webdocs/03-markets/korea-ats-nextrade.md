@@ -62,8 +62,13 @@
 
 NXT는 **같은 상품(종목)을 파는 두 번째 매장**입니다. 본점(KRX) 문을 닫아도 **지점(NXT)** 이 일찍 열리거나 늦게 닫힐 수 있습니다. 손님(투자자) 입장에서는 **어느 매장에서 샀는지**에 따라 줄 서는 시간·할인(수수료)이 다를 수 있지만, **물건 자체(상장주식)** 와 **영수증 규칙(국내주식 세법)** 은 같습니다.
 
+쉽게 말하면: 삼성전자를 오전 9시에 KRX에서 사든, 오전 8시에 NXT 프리마켓에서 사든 **동일 종목, 동일 세금 원칙**이다. 다만 아침 일찍 열리는 NXT 프리마켓은 **참가자가 적고 호가 스프레드가 넓을 수 있어**, 급히 시장가로 매수하면 **불리한 가격에 체결**될 수 있다.
+
+핵심은: NXT가 생겼다고 해서 더 많이 거래해야 하는 것이 아니다. 거래 시간이 늘었다는 것은 **FOMO(Fear Of Missing Out) 충동이 하루 중 더 많은 시간 동안 발생한다**는 의미다. [fomo-and-trading-hours](../05-behavioral/fomo-and-trading-hours.md)를 먼저 읽고 나서 NXT를 활용할지 결정하는 것이 교육적 순서다.
+
 **DB 퇴직연금**은 “회사가 맡긴 창고”라서 본인이 NXT 앱에서 주문하지 않습니다. **ISA·일반 계좌**가 “본인 지갑”입니다.
 
+주의할 점: NXT 거래량 규제가 있다. 특정 종목이 ATS 전체 거래량 한도(15%)나 종목별 한도(30%)를 초과하면 해당 종목 거래가 일시 중단된다. 인기 소형주에서 이런 상황이 자주 발생한다. 실제 투자에서는 이렇게 씁니다: 아침 일찍 NXT에서 특정 종목을 매수하려고 시장가 주문을 냈는데, 호가가 없거나 스프레드가 커서 예상보다 높은 가격에 체결되는 사례가 있다. 장기 코어 투자자라면 굳이 프리마켓을 이용할 실익이 없다.
 
 ## 4. 정식 개념·용어
 
@@ -94,21 +99,20 @@ NXT는 **같은 상품(종목)을 파는 두 번째 매장**입니다. 본점(KR
 | 스프레드 | 매수·매도 호가 차이 | §4 | [glossary](../00-roadmap/glossary.md#스프레드) |
 
 
-
 ## 5. 메커니즘
 
 ### 5.1 주문·체결 흐름
 
 ```mermaid
 flowchart TD
-  Inv[투자자] --> Br[증권사_HTSk_MTS]
-  Br --> Route{라우팅_설정}
-  Route -->|KRX| KRX[KRX_호가창]
-  Route -->|NXT| NXT[NXT_호가창]
-  Route -->|스마트| Smart[최적_시장_자동]
+  Inv[투자자] --> Br["증권사 HTSk MTS"]
+  Br --> Route{"라우팅 설정"}
+  Route -->|KRX| KRX["KRX 호가창"]
+  Route -->|NXT| NXT["NXT 호가창"]
+  Route -->|스마트| Smart["최적 시장 자동"]
   KRX --> Fill[체결]
   NXT --> Fill
-  Fill --> Stmt[잔고_체결통보]
+  Fill --> Stmt["잔고 체결통보"]
 ```
 
 ### 5.2 KRX vs NXT 비교
@@ -116,11 +120,11 @@ flowchart TD
 ```mermaid
 flowchart LR
   subgraph same [동일_상장종목]
-    Ticker[예_삼성전자]
+    Ticker["예 삼성전자"]
   end
-  Ticker --> KRX2[KRX_체결]
-  Ticker --> NXT2[NXT_체결]
-  KRX2 --> Tax[국내주식_세제_동일]
+  Ticker --> KRX2["KRX 체결"]
+  Ticker --> NXT2["NXT 체결"]
+  KRX2 --> Tax["국내주식 세제 동일"]
   NXT2 --> Tax
 ```
 
@@ -153,17 +157,25 @@ flowchart LR
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
 |  P  | 포트 규모 | 가상 포트폴리오 규모(만 원) |
-|         fill         | fill | 위 식의 fill |
-|         approx         | approx | 위 식의 approx |
-|         NXT         | NXT | 위 식의 NXT |
-|         KRX         | KRX | 위 식의 KRX |
-|         quad         | quad | 위 식의 quad |
-|         DEPTH         | DEPTH | 위 식의 DEPTH |
-|         STANDARD         | STANDARD | 위 식의 STANDARD |
+|              fill              | fill | 위 식의 fill |
+|              approx              | approx | 위 식의 approx |
+|              NXT              | NXT | 위 식의 NXT |
+|              KRX              | KRX | 위 식의 KRX |
+|              quad              | quad | 위 식의 quad |
+|              DEPTH              | DEPTH | 위 식의 DEPTH |
+|              STANDARD              | STANDARD | 위 식의 STANDARD |
 
 \[
 P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수 시, 호가에 따라)}
 \]
+
+**식 (기호)**: **P_fill** ≈ (**P_NXT**, **P_KRX**) (매수 시, 호가에 따라)
+
+
+**식 (기호)**: **P_fill** ≈ (**P_NXT**, **P_KRX**) (매수 시, 호가에 따라)
+
+
+**식 (기호)**: **P_fill** ≈ (**P_NXT**, **P_KRX**) (매수 시, 호가에 따라)
 
 
 **읽는 법**: **P_**와 **fill**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -175,6 +187,14 @@ P_{\text{fill}} \approx \min(P_{\text{NXT}}, P_{\text{KRX}}) \quad \text{(매수
 \[
 R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 \]
+
+**식 (기호)**: **R_net** ≈ **R_gross** - (**f** + **s**) ×**N**
+
+
+**식 (기호)**: **R_net** ≈ **R_gross** - (**f** + **s**) ×**N**
+
+
+**식 (기호)**: **R_net** ≈ **R_gross** - (**f** + **s**) ×**N**
 
 
 **읽는 법**: **R_**와 **R_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.- \(f\): 수수료, \(s\): 스프레드·슬리피지, \(N\): **초과** 거래 횟수  
@@ -314,8 +334,6 @@ R_{\text{net}} \approx R_{\text{gross}} - (f + s) \times N
 - 본 문서의 시간·한도·종목은 **개정·공지**에 따름
 
 ---
-
-
 
 
 **Q. 실무에서는?**  

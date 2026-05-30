@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Insert !!! info boxes at first acronym occurrence in §1."""
+"""Insert !!! info boxes at first acronym occurrence across all corpus docs."""
 
 from __future__ import annotations
 
@@ -20,60 +20,69 @@ SKIP_NAMES = {
 
 # term -> (English, one-line Korean)
 TERM_DEFS: dict[str, tuple[str, str]] = {
-    "PV": ("Present Value", "미래·과거 CF를 오늘 가치로 환산한 금액"),
+    "PV": ("Present Value", "미래·과거 현금흐름을 오늘 가치로 환산한 금액"),
     "FV": ("Future Value", "오늘 PV를 이자·수익률로 굴린 미래 금액"),
-    "PMT": ("Payment", "매 기간 같은 금액의 납입·수령"),
-    "NPV": ("Net Present Value", "할인 CF 합 − 초기 투자"),
-    "IRR": ("Internal Rate of Return", "NPV=0이 되는 할인율"),
+    "PMT": ("Payment", "매 기간 동일한 금액의 납입·수령"),
+    "NPV": ("Net Present Value", "할인된 현금흐름 합 − 초기 투자액"),
+    "IRR": ("Internal Rate of Return", "NPV=0이 되는 내부수익률"),
     "TVM": ("Time Value of Money", "시점이 다르면 돈의 가치가 다름"),
     "M": ("Monthly take-home", "월 실수령·가계 기준 금액(기호 M)"),
     "Bucket": ("Time bucket", "목적·기간별 자금 슬롯"),
     "OCF": ("Operating Cash Flow", "영업활동 현금흐름"),
-    "FCF": ("Free Cash Flow", "투자자에게 가용한 잉여현금흐름"),
-    "PER": ("Price-Earnings Ratio", "주가 ÷ 주당순이익"),
-    "ROE": ("Return on Equity", "순이익 ÷ 자기자본"),
+    "FCF": ("Free Cash Flow", "투자자에게 가용한 잉여현금흐름(영업CF − CAPEX)"),
+    "PER": ("Price-Earnings Ratio", "주가 ÷ 주당순이익. 주가 수익 배수"),
+    "PBR": ("Price-to-Book Ratio", "주가 ÷ 주당순자산. 장부가 대비 주가 배수"),
+    "EPS": ("Earnings Per Share", "주당순이익. 순이익 ÷ 발행주식수"),
+    "DPS": ("Dividend Per Share", "주당 배당금. 배당 총액 ÷ 발행주식수"),
+    "ROE": ("Return on Equity", "순이익 ÷ 자기자본. 자기자본이익률"),
+    "ROA": ("Return on Assets", "순이익 ÷ 총자산. 총자산이익률"),
     "ROIC": ("Return on Invested Capital", "세후영업이익 ÷ 투하자본"),
+    "EBITDA": ("Earnings Before Interest, Taxes, Depreciation & Amortization", "이자·세금·감가상각 차감 전 영업이익"),
     "GDP": ("Gross Domestic Product", "일정 기간 국내 총생산"),
-    "CPI": ("Consumer Price Index", "소비자물가지수·인플레 근사"),
-    "ETF": ("Exchange-Traded Fund", "거래소 상장 지수·섹터 펀드"),
-    "TER": ("Total Expense Ratio", "펀드·ETF 총보수율"),
+    "CPI": ("Consumer Price Index", "소비자물가지수·인플레 근사 지표"),
+    "ETF": ("Exchange-Traded Fund", "거래소에 상장된 인덱스·자산 묶음 펀드"),
+    "TER": ("Total Expense Ratio", "펀드·ETF 연간 총보수율"),
     "ISA": ("Individual Savings Account", "개인종합자산관리계좌"),
     "IRP": ("Individual Retirement Pension", "개인형 퇴직연금"),
     "DB": ("Defined Benefit", "확정급여형 퇴직연금"),
     "DC": ("Defined Contribution", "확정기여형 퇴직연금"),
-    "CGT": ("Capital Gains Tax", "자산 매각 차익에 대한 세금"),
+    "CGT": ("Capital Gains Tax", "자산 매각 차익에 부과하는 세금"),
     "YTM": ("Yield to Maturity", "채권 만기수익률(IRR 근사)"),
-    "CAPM": ("Capital Asset Pricing Model", "β로 기대수익 설명하는 단일요인 모형"),
-    "WACC": ("Weighted Avg Cost of Capital", "부채·자기자본 가중 할인율"),
-    "ERP": ("Equity Risk Premium", "주식위험프리미엄 E[Rm]−Rf"),
-    "β": ("Beta", "시장 수익률 1% 변화에 대한 민감도"),
+    "CAPM": ("Capital Asset Pricing Model", "β로 기대수익을 설명하는 단일요인 모형"),
+    "WACC": ("Weighted Average Cost of Capital", "부채·자기자본 가중 평균 자본비용"),
+    "ERP": ("Equity Risk Premium", "주식위험프리미엄 E[Rm] − Rf"),
+    "β": ("Beta", "시장 수익률 1% 변화에 대한 자산 수익률 민감도"),
     "IS-LM": ("IS-LM model", "총수요·통화시장 균형 거시 모형"),
     "QE": ("Quantitative Easing", "중앙은행의 양적완화"),
-    "MPT": ("Modern Portfolio Theory", "분산·효율 프론티어 포트 이론"),
+    "MPT": ("Modern Portfolio Theory", "분산·효율 프론티어 포트폴리오 이론"),
     "DCA": ("Dollar-Cost Averaging", "정기·정액 분할 매입"),
-    "EMH": ("Efficient Market Hypothesis", "가격이 정보를 반영한다는 가설"),
+    "EMH": ("Efficient Market Hypothesis", "가격이 이용 가능한 정보를 반영한다는 가설"),
     "APT": ("Arbitrage Pricing Theory", "다요인 자산가격 모형"),
     "SMB": ("Small Minus Big", "소형−대형 규모 팩터"),
-    "HML": ("High Minus Low", "가치−성장 B/M 팩터"),
-    "REIT": ("Real Estate Investment Trust", "부동산 수익증권"),
-    "FOMO": ("Fear Of Missing Out", "소외 불안·충동 매매"),
+    "HML": ("High Minus Low", "가치−성장 장부가/시가 팩터"),
+    "REIT": ("Real Estate Investment Trust", "부동산투자신탁. 부동산 수익을 배분하는 증권"),
+    "FOMO": ("Fear Of Missing Out", "소외 불안·충동 매매 심리"),
     "GPU": ("Graphics Processing Unit", "AI 학습·추론 가속 칩"),
     "HBM": ("High Bandwidth Memory", "GPU 옆 고대역폭 메모리"),
     "CAPEX": ("Capital Expenditure", "설비·데이터센터 등 자본 지출"),
-    "DCF": ("Discounted Cash Flow", "미래 CF 할인해 기업가치 추정"),
+    "DCF": ("Discounted Cash Flow", "미래 현금흐름을 할인해 기업가치를 추정하는 방법"),
+    "DRIP": ("Dividend Reinvestment Plan", "배당금을 자동으로 동일 종목에 재투자하는 제도"),
+    "M&A": ("Mergers & Acquisitions", "기업 합병·인수"),
+    "VC": ("Venture Capital", "스타트업·초기 기업에 투자하는 벤처 자본"),
 }
 
+# Terms relevant to every corpus phase folder (used when no specific extra terms apply)
 PHASE_TERMS: dict[str, list[str]] = {
-    "01-foundations": ["PV", "FV", "PMT", "M", "Bucket", "NPV", "IRR", "TVM"],
-    "02-economics": ["GDP", "CPI", "β", "IS-LM", "QE"],
-    "03-markets": ["ETF", "TER", "PER", "YTM", "PV", "FV"],
-    "04-portfolio": ["Bucket", "DCA", "MPT", "β", "ERP"],
-    "05-behavioral": ["FOMO", "Bucket"],
-    "06-korea-policy": ["ISA", "IRP", "DB", "DC", "CGT"],
-    "07-real-estate": ["REIT", "PV", "IRR"],
-    "08-advanced": ["CAPM", "WACC", "NPV", "IRR", "APT", "EMH", "SMB", "HML"],
-    "09-corporate-finance": ["WACC", "NPV", "IRR", "FCF", "ROIC"],
-    "00-roadmap": ["M", "ISA", "Bucket", "NPV"],
+    "01-foundations": ["PV", "FV", "PMT", "M", "Bucket", "NPV", "IRR", "TVM", "OCF", "FCF", "ROE", "EPS", "EBITDA"],
+    "02-economics": ["GDP", "CPI", "β", "IS-LM", "QE", "CAPM", "ERP"],
+    "03-markets": ["ETF", "TER", "PER", "PBR", "YTM", "PV", "FV", "REIT", "DCA", "ISA", "IRP"],
+    "04-portfolio": ["Bucket", "DCA", "MPT", "β", "ERP", "ETF", "ISA", "IRP", "CAPM", "WACC"],
+    "05-behavioral": ["FOMO", "Bucket", "DCA", "ETF"],
+    "06-korea-policy": ["ISA", "IRP", "DB", "DC", "CGT", "ETF", "FCF"],
+    "07-real-estate": ["REIT", "PV", "IRR", "CAPM", "DCF"],
+    "08-advanced": ["CAPM", "WACC", "NPV", "IRR", "APT", "EMH", "SMB", "HML", "β", "ERP", "DCF"],
+    "09-corporate-finance": ["WACC", "NPV", "IRR", "FCF", "ROIC", "EBITDA", "DCF", "M&A", "VC"],
+    "00-roadmap": ["M", "ISA", "Bucket", "NPV", "ETF", "IRP"],
 }
 
 
@@ -87,33 +96,44 @@ def is_corpus_md(path: Path) -> bool:
 
 
 def terms_for_path(path: Path) -> list[str]:
-    folder = path.parts[0]
-    base = PHASE_TERMS.get(folder, [])
-    name = path.name.lower()
+    # Use relative path to get the phase folder correctly
+    rel = path.relative_to(ROOT) if path.is_absolute() else path
+    folder = rel.parts[0]
+    base = PHASE_TERMS.get(folder, list(TERM_DEFS.keys()))
+    name = rel.name.lower()
+    parts_str = "/".join(rel.parts)
     extra: list[str] = []
-    if "tax" in name or "tax" in path.parts:
-        extra = ["CGT", "ISA"]
+    if "tax" in name or "tax" in parts_str:
+        extra += ["CGT", "ISA", "IRP", "FCF"]
     if "bond" in name:
-        extra = ["YTM", "PV"]
+        extra += ["YTM", "PV", "WACC"]
     if "pension" in name or "irp" in name or "db" in name or "dc" in name:
-        extra = ["DB", "DC", "IRP"]
+        extra += ["DB", "DC", "IRP", "ISA"]
     if "factor" in name:
-        extra = ["SMB", "HML", "APT"]
-    if "sectors" in path.parts:
-        extra = ["GPU", "HBM", "CAPEX", "ETF", "TER"]
+        extra += ["SMB", "HML", "APT", "β"]
+    if "sectors" in parts_str:
+        extra += ["GPU", "HBM", "CAPEX", "ETF", "TER"]
     if "reits" in name or "alternatives" in name:
-        extra = ["REIT", "ETF"]
+        extra += ["REIT", "ETF", "DCF"]
     if "valuation" in name:
-        extra = ["PER", "DCF", "FCF"]
+        extra += ["PER", "PBR", "DCF", "FCF", "EBITDA", "WACC"]
     if "monetary" in name or "qe" in name:
-        extra = ["QE", "GDP", "CPI"]
+        extra += ["QE", "GDP", "CPI"]
     if "asset-prices" in name or "macro-06" in name:
-        extra = ["ERP", "β", "CAPM"]
+        extra += ["ERP", "β", "CAPM"]
+    if "dividend" in name or "buyback" in name:
+        extra += ["FCF", "EPS", "DPS", "DRIP", "ISA", "IRP"]
+    if "financial-statement" in name or "statements" in name:
+        extra += ["EBITDA", "FCF", "ROE", "ROA", "EPS", "PER", "PBR"]
+    if "wacc" in name or "capital-structure" in name:
+        extra += ["WACC", "CAPM", "DCF", "EBITDA"]
+    if "startup" in name or "ma-basics" in name or "vc" in name:
+        extra += ["DCF", "IRR", "WACC", "M&A", "VC"]
     out: list[str] = []
     for t in base + extra:
         if t not in out and t in TERM_DEFS:
             out.append(t)
-    return out[:5]
+    return out[:8]
 
 
 def already_has_box(text: str, term: str) -> bool:

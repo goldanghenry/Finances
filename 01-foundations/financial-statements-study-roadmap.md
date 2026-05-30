@@ -18,7 +18,7 @@
 |------|------|
 | **난이도** | L3 (Deep) — [READER-GUIDE §L등급](../docs/READER-GUIDE.md) |
 | **선수** | [cash-flow-basics](cash-flow-basics.md), [compound-interest-and-time-value](compound-interest-and-time-value.md) |
-| **이번 편에서 쓰는 기호** | 본문 §4·§4a 표 참고 |
+| **이번 편에서 쓰는 기호** | BS 재무상태표, IS 손익계산서, CF 현금흐름표, FCF 잉여현금흐름, ROE 자기자본이익률 — 수식 없음, 약어는 §4a |
 | **복습 한 줄** | — |
 
 
@@ -36,12 +36,20 @@
 
 **정의**: **재무제표 12주 로드맵**은 3대 재무제표 문법부터 DART 공시·주석·FCF·기초 밸류에이션까지 **순서·분량·산출물**을 고정한 **학습 스케줄**이다.
 
+!!! info "PV (Present Value)"
+    미래·과거 현금흐름을 오늘 가치로 환산한 금액.
+
 
 !!! info "Bucket"
     시간·목적별 **자금 슬롯**(0 비상금 → 3 코어 등)
 
 **왜 중요한가**: [semiconductor](../03-markets/sectors/semiconductor.md) 등 **AI 엔지니어 친숙 섹터**도 결국 **영업이익·OCF·순부채**로 귀결된다. 뉴스 “매출 대박”과 **현금흐름·일회성**을 구분하지 못하면 Bucket 4 **리스크 예산**을 초과한다.
 
+
+**이 개념을 모르면 생기는 실수:**
+- 12주 순서를 무시하고 DCF 밸류에이션을 먼저 배우다가 FCF의 의미를 이해하지 못해 공식만 암기했다.
+- "재무제표 볼 필요 없어, ETF만 살 거니까"라고 하다가 실적 시즌에 왜 섹터가 이렇게 움직이는지 이해 못했다.
+- DART와 IR 자료의 차이를 몰라 IR 홍보 자료의 낙관적 전망을 그대로 투자 근거로 삼았다.
 
 ## 2. 선수 지식 / 이후 읽을 것
 
@@ -58,11 +66,17 @@
 
 ## 3. 직관·비유
 
-**손익계산서** = 영수증 합계 — “얼마 벌었나”  
-**재무상태표** = 창고 사진 — “지금 뭘 갖고 있나”  
-**현금흐름표** = 통장 입출금 — “돈이 실제로 움직였나”  
+**손익계산서** = 영수증 합계 — "얼마 벌었나"
 
-**주석** = 영수증 각주(“이번만 특별할인”) — **없이 보면 착각**.
+**재무상태표** = 창고 사진 — "지금 뭘 갖고 있나"
+
+**현금흐름표** = 통장 입출금 — "돈이 실제로 움직였나"
+
+**주석** = 영수증 각주("이번만 특별할인") — **없이 보면 착각**.
+
+**쉽게 말하면**: 12주 로드맵은 "설명서 없이 게임하다가 한참 뒤에 규칙을 알게 되는" 상황을 막아준다. 예를 들어, 직장인 A씨가 반도체 섹터 ETF를 산 뒤 구성 종목의 재무제표를 한 번도 본 적 없다면, 업황이 나빠질 때 "왜 이렇게 빠지지?"를 이해하기 어렵다.
+
+**12주의 목적**: 3표 읽기 → DART 공시 적용 → 기초 밸류에이션까지 순서를 지키는 것이 핵심이다. **"빠르게 IRR·DCF부터"가 아니라, 순서를 지켜야 나중에 개념이 머릿속에서 연결된다.**
 
 
 ## 4. 정식 개념·용어
@@ -98,10 +112,10 @@
 
 ```mermaid
 flowchart TD
-  W1[W1-3_3표_입문] --> W2[W4-5_분석_L4입문]
-  W2 --> W3[W6-8_FCF]
-  W3 --> W4[W9-11_DART]
-  W4 --> W5[W12_밸류에이션]
+  W1["W1-3 3표 입문"] --> W2["W4-5 분석 L4입문"]
+  W2 --> W3["W6-8 FCF"]
+  W3 --> W4["W9-11 DART"]
+  W4 --> W5["W12 밸류에이션"]
 ```
 
 ### 5.1 주차별 상세 스케줄
@@ -135,11 +149,11 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  Intro[intro_L3] --> Analysis[analysis_L4]
-  Intro --> FCF[fcf_L4]
-  Analysis --> Val[equity_valuation]
+  Intro["intro L3"] --> Analysis["analysis L4"]
+  Intro --> FCF["fcf L4"]
+  Analysis --> Val["equity valuation"]
   FCF --> Val
-  Intro --> Dart[dart_L4]
+  Intro --> Dart["dart L4"]
   Dart --> Val
 ```
 
@@ -165,6 +179,8 @@ ROE = \frac{\text{Net Income}}{\text{Sales}} \times \frac{\text{Sales}}{\text{As
 **식 (기호)**: **ROE** = (**Net** **Income**) / (**Sales**) ×(**Sales**) / (**Assets**) ×(**Assets**) / (**Equity**)
 
 
+**식 (기호)**: **ROE** = (**Net** **Income**) / (**Sales**) ×(**Sales**) / (**Assets**) ×(**Assets**) / (**Equity**)
+
 
 **읽는 법**: **ROE**와 **Net**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **FCF (Week 7)**:
@@ -183,6 +199,8 @@ FCF = OCF - CapEx
 
 **식 (기호)**: **FCF** = **OCF** - **CapEx**
 
+
+**식 (기호)**: **FCF** = **OCF** - **CapEx**
 
 
 **읽는 법**: **FCF**와 **OCF**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -205,6 +223,8 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 
 **식 (기호)**: **P**/**E** = (**Price** **per** **share**) / (**EPS**), **P**/**B** = (**Price**) / (**BVPS**)
 
+
+**식 (기호)**: **P**/**E** = (**Price** **per** **share**) / (**EPS**), **P**/**B** = (**Price**) / (**BVPS**)
 
 
 **읽는 법**: **EPS**와 **P**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -246,6 +266,8 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 - 주가 가상 50,000원, EPS 2,500 → P/E **20**  
 - 섹터 평균 P/E 가상 15 → **프리미엄** — [sector-investing-framework](../03-markets/sectors/sector-investing-framework.md) 사이클 맥락
 
+> **해석**: P/E 20이 섹터 평균 15보다 높다는 것은 시장이 이 회사의 **이익 성장**을 더 높게 기대한다는 의미다. 성장이 기대에 못 미치면 프리미엄이 빠르게 수렴해 주가 하락 압력이 생긴다 — 밸류에이션은 숫자가 아니라 **기대와의 비교**다.
+
 
 ## 9. FAQ
 
@@ -272,6 +294,12 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 
 **Q8. 실제 종목 티커?**  
 **A8.** 학습 노트에 **실제 매수 기록** 금지 — [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md).
+
+**Q. 12주 로드맵을 꼭 순서대로 해야 하나요?**  
+**A.** **핵심은:** 재무제표는 세 가지 표가 서로 연결되어 있어, 순서를 지켜야 개념이 머릿속에서 연결된다. 예를 들어, DCF 밸류에이션을 먼저 배우면 FCF의 의미를 충분히 이해하지 못한 채 공식만 외우게 된다. **처음에는 순서를, 복습할 때는 관심 가는 항목을** 먼저 읽는 전략이 효과적이다.
+
+**Q. 저는 ETF만 살 계획인데 이 12주 로드맵이 필요한가요?**  
+**A.** 반드시 필요하지는 않지만, 배워두면 **실적 시즌 뉴스 해석·리밸런싱 판단·ETF 구성종목 이해**가 달라진다. 최소한 1주(재무제표 3표 구조)와 4주(DART 읽기) 정도는 공부해 두면 장기 투자에 도움이 된다.
 
 
 ## 10. 함정·리스크·한계
@@ -348,9 +376,9 @@ P/E = \frac{\text{Price per share}}{EPS},\quad P/B = \frac{\text{Price}}{BVPS}
 
 ```mermaid
 flowchart LR
-  FS[재무제표_12주] --> SEC[섹터_문서]
-  SEC --> IPS[위성_상한_검증]
-  IPS --> Play[ai_engineer_playbook_M7-12]
+  FS["재무제표 12주"] --> SEC["섹터 문서"]
+  SEC --> IPS["위성 상한 검증"]
+  IPS --> Play["ai engineer playbook M7-12"]
 ```
 
 

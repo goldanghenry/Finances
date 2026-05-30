@@ -225,16 +225,16 @@ M3-4, M3-10, C9-2, C9-3 — **4편 L4**.
 
 ```mermaid
 flowchart TD
-  F0[Phase0_기초_가계부] --> F1[Phase1_재무제표]
-  F0 --> E2[Phase2_경제L4]
-  F1 --> M3[Phase3_시장상품]
+  F0["Phase0 기초 가계부"] --> F1["Phase1 재무제표"]
+  F0 --> E2["Phase2 경제L4"]
+  F1 --> M3["Phase3 시장상품"]
   E2 --> M3
-  M3 --> P4[Phase4_포트폴리오]
-  P4 --> K5[Phase5_한국정책]
-  M3 --> S3[Phase3b_섹터]
-  P4 --> A8[Phase8_고급]
-  P4 --> B6[Phase6_행동]
-  K5 --> R0[R0_플레이북_실행]
+  M3 --> P4["Phase4 포트폴리오"]
+  P4 --> K5["Phase5 한국정책"]
+  M3 --> S3["Phase3b 섹터"]
+  P4 --> A8["Phase8 고급"]
+  P4 --> B6["Phase6 행동"]
+  K5 --> R0["R0 플레이북 실행"]
 ```
 
 **병행**: Phase 5(세금)는 Phase 3~4와 **병행**. [office-worker-investing-playbook.md](office-worker-investing-playbook.md)로 1년 실행.

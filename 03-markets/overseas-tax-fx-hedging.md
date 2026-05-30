@@ -47,6 +47,8 @@
 **왜 중요한가**: “QQQ 샀다” 한 줄 뒤에 **W-8BEN 미제출 30% 원천**, **원화 강세로 달러 수익 상쇄**, **환헷지 ETF의 금리차 비용**, **ISA 3년 vs 일반 22% 양도세**가 동시에 작동한다. 이를 분리하지 않으면 **헷지 ETF가 ‘손해’**, **배당 ETF가 ‘이득’**처럼 **잘못된 역사 해석**을 하게 되고, 10~20년 **복리 설계**에서 **실행 레이어**가 자산 선택만큼 커진다. 특히 DB 가입자처럼 **회사 연금 밖**에서 코어를 짜는 경우, [overseas-equities-intro](overseas-equities-intro.md) 입문만으로는 **Part1~3 세금 시리즈**와 **환 노출**을 동시에 다루기 부족하다.
 
 
+**핵심은:** 해외 투자의 세금 구조는 복잡해 보이지만 핵심은 세 레이어입니다: (A) **미국 원천징수**(W-8BEN·15%), (B) **한국 양도세·5월 신고**, (C) **ISA/IRP 세제 혜택**. 이 셋을 분리해서 이해하면, "QQQ 사는데 세금을 어디서 내나요?"라는 질문의 답이 명확해집니다. 대부분의 혼란은 이 세 레이어를 뭉뚱그려서 생깁니다.
+
 ## 2. 선수 지식 / 이후 읽을 것
 
 **선수**:
@@ -76,6 +78,10 @@
 
 **표면 수익 vs 체감 수익**: 브로커 앱의 **달러 수익률**과 **원화 수익률**은 다를 수 있다. 헷지 ETF는 **둘 다 원화에 가깝게** 보이지만 **헷지 비용** 때문에 지수 TR과 **괴리**가 남는다.
 
+
+**쉽게 말하면:** 해외 배당을 받으면 **미국 국세청이 먼저 15%**를 가져가고(W-8BEN 제출 시), **한국에서는 나머지를 정산**합니다. 환헷지 ETF는 "달러 위험을 없애주는 보험"인데, 그 보험료(헷지 비용)가 **미국-한국 금리차**에 따라 달라집니다. 금리차가 크면 헷지 비용이 높아져 헷지 ETF가 비헷지보다 손해일 수 있습니다.
+
+**핵심은:** 세금과 환헷지는 **"어느 게 더 좋다"는 절대 답이 없습니다**. ISA 안에서 운용하느냐, 직접 보유냐, 한국 래핑 ETF냐에 따라 세금 경로가 완전히 달라집니다. 환헷지는 원화 환율 전망이 아닌 **포트폴리오의 환 노출 정책**으로 결정해야 합니다.
 
 ## 4. 정식 개념·용어
 
@@ -133,14 +139,14 @@
 
 ```mermaid
 flowchart TD
-  Div[미국_ETF_배당_지급] --> Broker[중개_브로커_IRS_에이전트]
-  Broker --> Check{W-8BEN_유효?}
-  Check -->|Yes_조약자격| W15[원천_15%_교육]
-  Check -->|No_만료_미제출| W30[원천_30%_등]
-  W15 --> Cash[투자자_입금_달러]
+  Div["미국 ETF 배당 지급"] --> Broker["중개 브로커 IRS 에이전트"]
+  Broker --> Check{"W-8BEN 유효?"}
+  Check -->|"Yes 조약자격"| W15["원천 15% 교육"]
+  Check -->|"No 만료 미제출"| W30["원천 30% 등"]
+  W15 --> Cash["투자자 입금 달러"]
   W30 --> Cash
-  Cash --> KR[한국_5월_금융소득_레이어]
-  KR --> FTC[외국납부세액공제_검토]
+  Cash --> KR["한국 5월 금융소득 레이어"]
+  KR --> FTC["외국납부세액공제 검토"]
 ```
 
 **교육 포인트**:
@@ -155,17 +161,17 @@ flowchart TD
 ```mermaid
 flowchart LR
   subgraph buy [매수]
-    KRW1[원화_환전] --> USD1[달러_매수]
+    KRW1["원화 환전"] --> USD1["달러 매수"]
   end
   subgraph hold [보유]
-    USD1 --> Price[주가_변동]
-    Price --> FX[원달러_변동]
-    Price --> Div2[배당_W-8BEN]
+    USD1 --> Price["주가 변동"]
+    Price --> FX["원달러 변동"]
+    Price --> Div2["배당 W-8BEN"]
   end
   subgraph sell [매도]
-    FX --> KRW2[원화_환전]
-    KRW2 --> CGT[양도차익_Part1]
-    Div2 --> FIT[금융소득_Part2]
+    FX --> KRW2["원화 환전"]
+    KRW2 --> CGT["양도차익 Part1"]
+    Div2 --> FIT["금융소득 Part2"]
   end
 ```
 
@@ -175,15 +181,15 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  Idx[해외_지수_TR_달러] --> Fund[국내_ETF_펀드]
-  Fund --> Rep[실물_또는_합성_복제]
-  Fund --> Hedge[통화_헷지_데스크]
-  Hedge --> Fwd[단기_선도_스왑_롤]
-  Fwd --> Cost[금리차_basis_비용]
-  Cost --> TD[추적_패널티]
-  Rep --> NAV[원화_NAV]
+  Idx["해외 지수 TR 달러"] --> Fund["국내 ETF 펀드"]
+  Fund --> Rep["실물 또는 합성 복제"]
+  Fund --> Hedge["통화 헷지 데스크"]
+  Hedge --> Fwd["단기 선도 스왑 롤"]
+  Fwd --> Cost["금리차 basis 비용"]
+  Cost --> TD["추적 패널티"]
+  Rep --> NAV["원화 NAV"]
   Hedge --> NAV
-  NAV --> KRX[KRX_시세]
+  NAV --> KRX["KRX 시세"]
 ```
 
 **운용 개요**(교육, 상품별 상이):
@@ -197,13 +203,13 @@ flowchart TD
 ```mermaid
 flowchart LR
   subgraph unhedged [비헷지_경로]
-    U1[지수_TR_달러] --> U2[환율_레그]
-    U2 --> U3[원화_총수익]
+    U1["지수 TR 달러"] --> U2["환율 레그"]
+    U2 --> U3["원화 총수익"]
   end
   subgraph hedged [헷지_경로]
-    H1[지수_TR_달러] --> H2[헷지_상쇄]
-    H2 --> H3[원화_근사_TR]
-    H2 --> H4[헷지_비용_차감]
+    H1["지수 TR 달러"] --> H2["헷지 상쇄"]
+    H2 --> H3["원화 근사 TR"]
+    H2 --> H4["헷지 비용 차감"]
     H4 --> H3
   end
 ```
@@ -214,14 +220,14 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  Acct{계좌_유형}
-  Acct -->|ISA_3년| ISA[비과세_한도_Part3]
-  Acct -->|일반| Gen[양도세_22%_Part1]
-  Acct -->|IRP| IRP[이연_Part3]
-  Prod[상품_QQQ_래핑] --> W8[W-8BEN_배당]
-  Prod --> FXpol[헷지_O_X]
+  Acct{"계좌 유형"}
+  Acct -->|"ISA 3년"| ISA["비과세 한도 Part3"]
+  Acct -->|일반| Gen["양도세 22% Part1"]
+  Acct -->|IRP| IRP["이연 Part3"]
+  Prod["상품 QQQ 래핑"] --> W8["W-8BEN 배당"]
+  Prod --> FXpol["헷지 O X"]
   ISA --> Net[손익통산]
-  Gen --> May[5월_신고]
+  Gen --> May["5월 신고"]
 ```
 
 [W-8BEN]은 **계좌와 무관**하게 미국 **배당 원천**에 걸린다(교육). ISA는 **한국 측** 양도·배당 **우대** — [isa](../06-korea-policy/isa.md), [Part3](../06-korea-policy/tax/overseas-stocks-tax-part3-scenarios.md).
@@ -235,14 +241,14 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|            R            | R | 기간당 이자·요구수익률 |
-|            KRW            | KRW | 위 식의 KRW |
-|            unhedged            | unhedged | 위 식의 unhedged |
-|            approx            | approx | 위 식의 approx |
-|            USD            | USD | 위 식의 USD |
-|            asset            | asset | 위 식의 asset |
-|            FX            | FX | 위 식의 FX |
-|            DEPTH            | DEPTH | 위 식의 DEPTH |
+|              R              | R | 기간당 이자·요구수익률 |
+|              KRW              | KRW | 위 식의 KRW |
+|              unhedged              | unhedged | 위 식의 unhedged |
+|              approx              | approx | 위 식의 approx |
+|              USD              | USD | 위 식의 USD |
+|              asset              | asset | 위 식의 asset |
+|              FX              | FX | 위 식의 FX |
+|              DEPTH              | DEPTH | 위 식의 DEPTH |
 
 \[
 R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) - 1
@@ -253,6 +259,8 @@ R_{\text{KRW, unhedged}} \approx (1 + R_{\text{USD asset}})(1 + R_{\text{FX}}) -
 
 **식 (기호)**: **R_KRW**, **unhedged** ≈ (1 + **R_USD** **asset**)(1 + **R_FX**) - 1
 
+
+**식 (기호)**: **R_KRW**, **unhedged** ≈ (1 + **R_USD** **asset**)(1 + **R_FX**) - 1
 
 
 **읽는 법**: **R_**와 **KRW**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -277,6 +285,8 @@ R_{\text{KRW}} \approx R_{\text{USD asset}} + R_{\text{FX}} + R_{\text{USD asset
 
 **식 (기호)**: **R_KRW** ≈ **R_USD** **asset** + **R_FX** + **R_USD** **asset** ·**R_FX**
 
+
+**식 (기호)**: **R_KRW** ≈ **R_USD** **asset** + **R_FX** + **R_USD** **asset** ·**R_FX**
 
 
 **읽는 법**: **R_**와 **R_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -303,6 +313,8 @@ P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sel
 
 **식 (기호)**: **P_buy**,**KRW** = **USD** **amount** ×**e_buy**, **P_sell**,**KRW** = **USD** **amount** ×**e_sell**
 
+
+**식 (기호)**: **P_buy**,**KRW** = **USD** **amount** ×**e_buy**, **P_sell**,**KRW** = **USD** **amount** ×**e_sell**
 
 
 **읽는 법**: **P_**와 **e_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -339,6 +351,9 @@ D_{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 **식 (기호)**: **D_net**, **US** = **D_gross** ×(1 - _WHT)
 
 
+**식 (기호)**: **D_net**, **US** = **D_gross** ×(1 - _WHT)
+
+
 **읽는 법**: **D_gross**에 **(1−τ)**를 곱하면 **세후 배당**이다. \(\tau_{\text{WHT}} = 15\%\) (W-8BEN·조약 자격, 교육) vs \(30\%\) (미적용).
 
 — [Part2](../06-korea-policy/tax/overseas-stocks-tax-part2-dividend.md).
@@ -358,6 +373,8 @@ D_{\text{net, US}} = D_{\text{gross}} \times (1 - \tau_{\text{WHT}})
 **식 (기호)**: 차익_원화 = **P_sell**,**KRW** - **P_buy**,**KRW** - 비용
 
 
+**식 (기호)**: 차익_원화 = **P_sell**,**KRW** - **P_buy**,**KRW** - 비용
+
 
 **읽는 법**: **P_**와 **P_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **유도 (L4)**:
@@ -375,6 +392,8 @@ P_{\text{buy,KRW}} = \text{USD amount} \times e_{\text{buy}}, \quad P_{\text{sel
 
 **식 (기호)**: **P_buy**,**KRW** = **USD** **amount** ×**e_buy**, **P_sell**,**KRW** = **USD** **amount** ×**e_sell**
 
+
+**식 (기호)**: **P_buy**,**KRW** = **USD** **amount** ×**e_buy**, **P_sell**,**KRW** = **USD** **amount** ×**e_sell**
 
 
 **읽는 법**: **P_**와 **e_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -436,6 +455,29 @@ verseas-stocks-tax-part1-cgt.md).
 | **5월** | 종합소득세 — Part1·2·3 |
 | **ISA 만기** | 3년+ — [isa](../06-korea-policy/isa.md) |
 
+
+### 7.5 연간 해외주식 세금 관리 루틴 (교육)
+
+**단계별 연간 루틴 (교육 — 가상)**:
+
+| 시기 | 할 일 | 도구 |
+|------|------|----------------|
+| 연중 | 매 거래 시 **원화 환산 내역** 자동 저장 설정 | 증권사 앱 거래 내역 |
+| 12월 | 손익 실현·손실 통산 전략 점검 | [overseas-stocks-tax-part3](../06-korea-policy/tax/overseas-stocks-tax-part3-scenarios.md) |
+| 1~4월 | 전년도 양도·배당 내역 정리 | 증권사 연간 거래내역서 |
+| 5월 | **종합소득세·양도세 신고** | 홈택스·세무사 |
+| 수시 | W-8BEN 유효기간 확인 (3년) | 증권사 고객센터 |
+
+**환헷지 선택 기준 (교육)**:
+
+| 상황 | 환헷지 고려 이유 | 주의사항 |
+|------|------|----------------|
+| 원화 강세 예상 | 달러 자산 가치 하락 방어 | 예상이 틀릴 수 있음 |
+| 금리차 작은 시기 | 헷지 비용 낮음 | 항상 저렴하지 않음 |
+| 단기 투자 | 환율 변동 노출 기간 짧음 | 헷지 전환 비용 |
+| 장기 코어 | DCA로 환율 평균화 | 비헷지도 합리적 |
+
+**쉽게 말하면:** W-8BEN을 제출하지 않으면 미국 배당에서 30%가 원천징수됩니다. 제출하면 15%입니다. 연 몇 번 클릭으로 배당 수익의 15%를 지키는 셈입니다. 증권사 앱에서 자동 제출 서비스가 있는 경우가 많으니 확인하세요.
 
 ## 8. 숫자 예제 (가상)
 
@@ -515,6 +557,39 @@ verseas-stocks-tax-part1-cgt.md).
 **해석**: [core-satellite](../04-portfolio/core-satellite-framework.md) — **broad 코어 하나** + 계좌·환 정책 명시.
 
 
+### 예제 보강: 환헤징 비용 단계별 계산 (가상, 기호)
+
+**설정 (교육용 기호)**:
+- 투자 원금: **M** (원화)
+- 달러 환전 환율: **e₀** (원/달러, 매수 시점)
+- 매도 시점 환율: **e₁**
+- 지수 수익률(달러 기준): **R_USD**
+- 헷지 비용율: **h** (연 기준)
+- 보유 기간: **T** (년)
+
+**비헷지 원화 수익 계산**:
+
+\[ R_{	ext{원화,비헷지}} pprox (1 + R_{USD})(1 + R_{FX}) - 1 \]
+
+여기서 \(R_{FX} = (e_1 - e_0)/e_0\)
+
+**헷지 원화 수익 계산**:
+
+\[ R_{	ext{원화,헷지}} pprox R_{USD} - h \cdot T \]
+
+**단계별 가상 비교 (교육)**:
+
+| 시나리오 | R_USD | R_FX | h·T | 비헷지 결과 | 헷지 결과 |
+|------|------|------|------|------|----------------|
+| 원화 강세 | +15% | -5% | 1.5% | ≈ +9.3% | ≈ +13.5% |
+| 원화 약세 | +15% | +5% | 1.5% | ≈ +20.8% | ≈ +13.5% |
+| 원화 보합 | +15% | 0% | 1.5% | ≈ +15% | ≈ +13.5% |
+
+**교훈**: 
+- 원화 약세기 → 비헷지가 유리 (달러 강세 수익 추가)
+- 원화 강세기 → 헷지가 유리 (환손실 방어)
+- **헷지는 예측이 아닌 위험 관리** — 어느 방향이 나을지 모를 때 포트폴리오 환 노출 정책으로 결정
+
 ## 9. FAQ
 
 **Q1. W-8BEN을 안 내면 양도세도 30%인가요?**  
@@ -547,6 +622,15 @@ verseas-stocks-tax-part1-cgt.md).
 **Q10. 5월에 환차익만 신고하면 되나요?**  
 **A10.** **양도차익 전체**(주가+환) — 환만 분리 과세 **아님** — [Part1](../06-korea-policy/tax/overseas-stocks-tax-part1-cgt.md) **실지거래가액**.
 
+
+**Q7. W-8BEN은 어떻게 제출하나요?**
+**A.** 국내 증권사 앱에서 **해외주식 메뉴 → W-8BEN 서류** 제출 경로를 찾으면 됩니다. 대부분의 증권사가 앱 내 온라인 제출을 지원합니다. 유효기간이 **3년**이므로 3년마다 갱신해야 합니다. 만료 알림 설정이 없다면 캘린더에 3년 후 알람을 추가하세요.
+
+**Q8. ISA 안에서 해외주식을 사면 W-8BEN이 필요 없나요?**
+**A.** ISA에서 **국내 래핑 ETF**(TIGER/KODEX 미국 S&P 등)를 사는 경우, 개인이 W-8BEN을 별도로 제출할 필요가 없습니다(운용사 레벨에서 처리). 하지만 ISA에서 **미국 주식을 직접** 매수하는 경우(일부 중개형 ISA 지원), W-8BEN이 필요할 수 있습니다. 증권사에 직접 확인하세요.
+
+**Q9. 환헷지 ETF의 헷지 비용은 얼마인가요?**
+**A.** 교육 범위: 한국-미국 기준금리 차이가 클수록 헷지 비용이 높아집니다. 2024~2025년처럼 미국 금리가 한국보다 높은 시기엔 원화 헷지 비용이 연 1~3% 수준(가상 예시)이 될 수 있습니다. 실제 헷지 비용은 ETF 운용보고서의 **추적오차·헷지 비용 공시**에서 확인하세요.
 
 ## 10. 함정·리스크·한계
 

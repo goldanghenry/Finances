@@ -69,16 +69,23 @@
 - R7-2 `real-estate-reits.md` (예정) — 리츠 심화
 
 
-## 블록 3. 직관·비유 — “포트폴리오의 양념·비상식량·냉동고”
+## 블록 3. 직관·비유 — "포트폴리오의 양념·비상식량·냉동고"
 
 **양념(REIT·금 소량)**: 코어 요리(주식·채권)에 **금·리츠 ETF 5%**는 **맛·인플레 대비**용 양념이다. 양념만 **절반** 넣으면 요리가 망가진다 — **대안 합산 상한**이 필요하다.
 
+쉽게 말하면: 삼겹살에 쌈장이 없으면 심심하지만, 쌈장만 먹으면 쓰다. 금·REIT는 포트폴리오에서 그런 역할이다. 5~10% 적당량은 분산 효과가 있지만, 20~30%를 넣으면 오히려 변동성이 커지고 코어 수익에서 멀어진다.
+
 **비상식량(금·달러·단기채)**: 전쟁·금융위기 때 **주식·채권이 동시에** 떨어지면, “비상식량”이 **상대적으로** 덜 떨어질 **수는** 있으나 **항상 오르지는 않는다**(2022: 금도 구간별 혼조).
+
+핵심은: 금은 “위기에 무조건 오른다”는 믿음이 있지만, 달러 강세·실질금리 상승 시 금 가격도 하락할 수 있다. 비상식량은 재난에 대비한 것이지 수익을 낸다는 보장이 없듯, 금은 “헤지”라기보다 “베팅 분산”으로 이해하는 것이 더 정확하다.
 
 **냉동고(PE)**: 사모펀드 지분은 **3~10년 냉동** — 문 열기(환매)가 **제한**된다. 냉동고에 월급의 30%를 넣으면 **생활비 유동성**이 막힌다.
 
+주의할 점: PE나 비상장 투자는 “높은 수익” 서사로 접근하기 쉽지만, 실제로는 비유동성 프리미엄(환매 불가의 대가)이 수익의 상당 부분을 차지한다. 개인이 접근 가능한 크라우드펀딩·벤처펀드는 **전액 손실** 가능성이 있으므로 포트의 극소 비중(1~3%)으로만 다뤄야 한다.
+
 **주유소 간판(유가)**: WTI·브렌트는 **경기·OPEC·정유**의 **간판**이다. ETF로 사면 **실물 유가**가 아니라 **선물·롤** 구조를 산다 — “유가 오르면 ETF도 같은 비율”은 **성립하지 않을 수** 있다.
 
+실제 투자에서는 이렇게 씁니다: USO(미국 유가 ETF)는 근월 선물을 롤(만기 교체)하면서 콘탱고 시장에서 롤 손실이 발생한다. 원유가 연간 +20% 올라도 USO가 +10%에 그치는 구간이 발생하는 이유다. 유가 ETF는 단기 투기 수단이지 코어 장기 투자 대상이 아니다.
 
 ## 블록 4. 정식 개념·용어
 
@@ -111,21 +118,21 @@
 ```mermaid
 flowchart TB
   subgraph assets [REIT_자산]
-    Prop[부동산_포트폴리오]
-    Debt[담보채권_mREIT]
+    Prop["부동산 포트폴리오"]
+    Debt["담보채권 mREIT"]
   end
   subgraph flows [현금흐름]
-    Rent[임대료_NOI]
+    Rent["임대료 NOI"]
     Int[이자수익]
-    Opex[운영비_관리]
+    Opex["운영비 관리"]
   end
-  Rent --> NOI[NOI_FFO]
+  Rent --> NOI["NOI FFO"]
   Int --> NOI
   Opex --> NOI
-  NOI --> Div[배당_의무_비율]
+  NOI --> Div["배당 의무 비율"]
   Div --> Holder[주주]
-  Rate[금리_상승] --> Cap[캡레이트_상향_압력]
-  Cap --> NAV[순자산가치_하락_압력]
+  Rate["금리 상승"] --> Cap["캡레이트 상향 압력"]
+  Cap --> NAV["순자산가치 하락 압력"]
 ```
 
 | 구분 | eREIT (지분) | mREIT (모기지) |
@@ -175,12 +182,12 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-  OPEC[OPEC+_공급] --> Price[유가]
-  Demand[글로벌_수요_GDP] --> Price
-  USD[달러_강세] --> Price
-  Price --> KR[한국_수입_인플레]
-  Price --> Chem[화학_정유_마진]
-  Price --> EV[EV_전환_장기수요]
+  OPEC["OPEC+ 공급"] --> Price[유가]
+  Demand["글로벌 수요 GDP"] --> Price
+  USD["달러 강세"] --> Price
+  Price --> KR["한국 수입 인플레"]
+  Price --> Chem["화학 정유 마진"]
+  Price --> EV["EV 전환 장기수요"]
 ```
 
 | 변수 | 유가에 미치는 방향 (단순화) |
@@ -204,11 +211,11 @@ F \approx S \times e^{(r - y + u)T}
 
 ```mermaid
 flowchart TD
-  Spot[현물_유가_상승] --> Fut[선물_곡선]
+  Spot["현물 유가 상승"] --> Fut["선물 곡선"]
   Fut --> Cont{콘탱고?}
-  Cont -->|예| Roll[롤_비용_누적]
-  Cont -->|아니오_백워| RollGain[롤_이익_가능]
-  Roll --> ETF[상품_ETF_수익_괴리]
+  Cont -->|예| Roll["롤 비용 누적"]
+  Cont -->|"아니오 백워"| RollGain["롤 이익 가능"]
+  Roll --> ETF["상품 ETF 수익 괴리"]
   RollGain --> ETF
 ```
 
@@ -223,11 +230,11 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  LP[LP_연기금_가족사무실] --> Fund[PE_펀드_10년]
-  Fund --> Buy[Buyout_지분]
+  LP["LP 연기금 가족사무실"] --> Fund["PE 펀드 10년"]
+  Fund --> Buy["Buyout 지분"]
   Buy --> Improve[가치제고]
-  Improve --> Exit[IPO_M&A]
-  Exit --> Dist[분배_DPI]
+  Improve --> Exit["IPO M&A"]
+  Exit --> Dist["분배 DPI"]
 ```
 
 | 단계 | 교육 포인트 |
@@ -277,11 +284,11 @@ flowchart LR
 ```mermaid
 flowchart TB
   subgraph normal [정상_국면]
-    S1[주식] ---|rho_낮음| B1[채권]
+    S1[주식] ---|"rho 낮음"| B1[채권]
   end
   subgraph stress [스트레스_국면]
-    S2[주식_하락] --> Both[채권_리츠_동반_약세_가능]
-    G2[금_상대_방어_가능]
+    S2["주식 하락"] --> Both["채권 리츠 동반 약세 가능"]
+    G2["금 상대 방어 가능"]
   end
   normal --> stress
 ```
@@ -315,18 +322,18 @@ flowchart TB
 
 ```mermaid
 flowchart TD
-  NW[순자산_100%]
-  NW --> B3[Bucket3_코어_80to100%]
-  NW --> B4[Bucket4_위성_0to20%]
-  B3 --> CoreStock[주식_QQQ_글로벌]
-  B3 --> CoreBond[채권_듀레이션_관리]
-  B3 --> AltCore[대안_소량_0to10%]
-  AltCore --> REITc[리츠_ETF]
-  AltCore --> Goldc[금_ETF]
-  B4 --> AltSat[대안_위성_합산_5to15%]
-  AltSat --> Oil[유가_ETC]
-  AltSat --> PEs[PE_VC_극소]
-  B4 --> Theme[섹터_QLD_개별주]
+  NW["순자산 100%"]
+  NW --> B3["Bucket3 코어 80~100%"]
+  NW --> B4["Bucket4 위성 0~20%"]
+  B3 --> CoreStock["주식 QQQ 글로벌"]
+  B3 --> CoreBond["채권 듀레이션 관리"]
+  B3 --> AltCore["대안 소량 0~10%"]
+  AltCore --> REITc["리츠 ETF"]
+  AltCore --> Goldc["금 ETF"]
+  B4 --> AltSat["대안 위성 합산 5~15%"]
+  AltSat --> Oil["유가 ETC"]
+  AltSat --> PEs["PE VC 극소"]
+  B4 --> Theme["섹터 QLD 개별주"]
 ```
 
 ### 9.3 [자산배분](../04-portfolio/asset-allocation.md) 60/40과 결합 예
@@ -474,7 +481,6 @@ flowchart TD
 ??? note "정답 힌트"
 
     1. 원금·가격 변동·주식 베타 · 2. 롤 비용·괴리 · 3. 수수료·초기 투자·미실현 · 4. 대안 합산 15% 이하 · 5. 인플레·금리 급등·ρ 붕괴
-
 
 
 ## 연습문제 (L4, 기호)

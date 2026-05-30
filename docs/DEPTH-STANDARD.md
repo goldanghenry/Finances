@@ -47,9 +47,9 @@
 
 ```mermaid
 flowchart LR
-  P1[Pass1_골격_30%] --> V[출처_검증]
-  V --> P2[Pass2_서술_70%]
-  P2 --> G[glossary_§4a_4b]
+  P1["Pass1 골격 30%"] --> V["출처 검증"]
+  V --> P2["Pass2 서술 70%"]
+  P2 --> G["glossary §4a 4b"]
 ```
 
 1. **Pass 1**: 목차, 표, mermaid, 법조문·URL 목록  

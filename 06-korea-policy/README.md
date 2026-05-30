@@ -8,7 +8,7 @@
 flowchart LR
   DB[db-pension] --> IRP[irp]
   IRP --> ISA[isa]
-  ISA --> Tax[tax_overseas_part1]
+  ISA --> Tax["tax overseas part1"]
   Tax --> QQQ[leveraged-etf-qqq-qld]
 ```
 

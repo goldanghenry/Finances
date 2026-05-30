@@ -104,10 +104,10 @@
 
 ```mermaid
 flowchart LR
-  M1[M1-2_거시_ETF_계좌] --> M2[M3-4_DCA_리밸]
-  M2 --> M3[M5-6_재무제표]
-  M3 --> M4[M7-12_섹터_포트]
-  M4 --> Rev[연간_회고]
+  M1["M1-2 거시 ETF 계좌"] --> M2["M3-4 DCA 리밸"]
+  M2 --> M3["M5-6 재무제표"]
+  M3 --> M4["M7-12 섹터 포트"]
+  M4 --> Rev["연간 회고"]
 ```
 
 ### 5.1 월별 학습·실행 매트릭스
@@ -166,6 +166,9 @@ M_{G}=\alpha_{G}\cdot M
 **식 (기호)**: **α_ISA**+**α_P**+**α_G**=1, **M_ISA**=**α_ISA**·**M**, **M_P**=**α_P**·**M**, **M_G**=**α_G**·**M**
 
 
+**식 (기호)**: **α_ISA**+**α_P**+**α_G**=1, **M_ISA**=**α_ISA**·**M**, **M_P**=**α_P**·**M**, **M_G**=**α_G**·**M**
+
+
 **읽는 법**: 세후 **M**을 **α_ISA+α_P+α_G=1**로 나눈다. 
 
 
@@ -185,10 +188,10 @@ M_{G}=\alpha_{G}\cdot M
 
 ```mermaid
 flowchart TD
-  Pay[M_세후_실수령] --> ISA[ISA_alpha_ISA_코어ETF]
-  Pay --> Pen[연금_alpha_P_IRP등]
-  Pay --> Gen[일반_alpha_G_위성여유]
-  ISA --> Hold[3년_유지_손익통산]
+  Pay["M 세후 실수령"] --> ISA["ISA alpha ISA 코어ETF"]
+  Pay --> Pen["연금 alpha P IRP등"]
+  Pay --> Gen["일반 alpha G 위성여유"]
+  ISA --> Hold["3년 유지 손익통산"]
 ```
 
 ## 7. 한국 적용

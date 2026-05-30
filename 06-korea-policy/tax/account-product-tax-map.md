@@ -51,6 +51,17 @@
 
 **계좌 = 용기**, **상품 = 내용물**, **기간 = 뚜껑 잠금 시간**. 같은 물(QQQ)도 **유리병(ISA 3년)** · **냉동고(IRP)** · **종이컵(일반)** 에 따라 **냄새(세금)** 가 다릅니다.
 
+**쉽게 말하면:** 이 문서는 “어느 계좌에 어떤 상품을 넣으면 세금이 어떻게 되는지”를 한눈에 보여주는 **지도**입니다.
+
+**핵심 매트릭스:**
+- **국내 ETF × 일반 계좌**: 매매차익 비과세, 배당 금융소득 합산
+- **해외 ETF × 일반 계좌**: 매매차익 22%, 배당 금융소득 합산 + 미국 원천징수 15%
+- **해외 ETF × ISA**: 3년 후 비과세 한도 + 9.9%, 손익통산 가능
+- **해외 ETF × IRP**: 과세이연, 수령 시 연금소득세 (2025~ 배당 선환급 폐지)
+- **DB 재직 중**: 개인 ETF 매매 없음 → ISA·IRP에서 설계
+
+**예를 들어:** QQQ를 ISA에 3년 보유하면 비과세 한도 내에서 세금 0원, 초과분은 9.9%입니다. 일반 계좌에서 같은 기간 보유하면 매도할 때마다 22% 양도세와 5월 신고 부담이 생깁니다.
+
 
 ## 4. 정식 용어
 
@@ -94,22 +105,22 @@ flowchart LR
     DB[DB적립]
   end
   subgraph yes [개인]
-    ISA[ISA_QQQ]
-    IRP[IRP_QQQ]
-    Gen[일반_위성]
+    ISA["ISA QQQ"]
+    IRP["IRP QQQ"]
+    Gen["일반 위성"]
   end
-  DB -.->|퇴직_이전| IRP
+  DB -.->|"퇴직 이전"| IRP
 ```
 
 ### 5.3 QQQ·QLD
 
 ```mermaid
 flowchart TD
-  Q[QQQ] --> Core[Bucket3_코어]
-  Core --> ISA[ISA_3년]
-  Core --> IRP[IRP_이연]
-  QLD[QLD] --> Sat[Bucket4_위성]
-  Sat --> Warn[비권장_소액]
+  Q[QQQ] --> Core["Bucket3 코어"]
+  Core --> ISA["ISA 3년"]
+  Core --> IRP["IRP 이연"]
+  QLD[QLD] --> Sat["Bucket4 위성"]
+  Sat --> Warn["비권장 소액"]
 ```
 
 | 상품 | 코어 B3 | 위성 B4 | DB 재직 |
@@ -126,14 +137,14 @@ flowchart TD
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|                R                | R | 기간당 이자·요구수익률 |
-|                Delta                | Delta | 위 식의 Delta |
-|                tau                | tau | 위 식의 tau |
-|                after                | after | 위 식의 after |
-|                u                | u | 위 식의 u |
-|                eff                | eff | 위 식의 eff |
-|                approx                | approx | 위 식의 approx |
-|                times                | times | 위 식의 times |
+|                  R                  | R | 기간당 이자·요구수익률 |
+|                  Delta                  | Delta | 위 식의 Delta |
+|                  tau                  | tau | 위 식의 tau |
+|                  after                  | after | 위 식의 after |
+|                  u                  | u | 위 식의 u |
+|                  eff                  | eff | 위 식의 eff |
+|                  approx                  | approx | 위 식의 approx |
+|                  times                  | times | 위 식의 times |
 
 \[
 R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
@@ -144,6 +155,8 @@ R_{\text{after}} \approx R \times (1 - \tau_{\text{eff}})
 
 **식 (기호)**: **R_after** ≈ **R** ×(1 - _eff)
 
+
+**식 (기호)**: **R_after** ≈ **R** ×(1 - _eff)
 
 
 **읽는 법**: **R_**와 **after**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.

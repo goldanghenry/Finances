@@ -145,13 +145,13 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  Draft[§4_본표_초안] --> Pick[§4a_8~15개_선정]
-  Pick --> G{glossary_있음?}
-  G -->|No| Add[glossary_항목_추가]
-  G -->|Yes| Link[양방향_링크]
+  Draft["§4 본표 초안"] --> Pick["§4a 8~15개 선정"]
+  Pick --> G{"glossary 있음?"}
+  G -->|No| Add["glossary 항목 추가"]
+  G -->|Yes| Link["양방향 링크"]
   Add --> Link
-  Link --> Map[§4b_미니맵]
-  Map --> Pass2[Pass2_본문_정합]
+  Link --> Map["§4b 미니맵"]
+  Map --> Pass2["Pass2 본문 정합"]
 ```
 
 1. Pass 1: §4 본표 + §4b 골격  

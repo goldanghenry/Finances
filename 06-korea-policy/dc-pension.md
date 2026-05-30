@@ -39,6 +39,9 @@
 
 **정의**: **확정기여형(DC, Defined Contribution)** 퇴직연금은 사용자가 **정해진 기여금**을 납입하고, **가입자**가 운용 방법을 선택하며, 그 결과가 **개인 계좌**에 적립되는 퇴직연금입니다.
 
+!!! info "ISA (Individual Savings Account)"
+    개인종합자산관리계좌.
+
 
 !!! info "ETF"
     지수·자산 **바구니**를 한 종목처럼 거래
@@ -60,6 +63,12 @@
 ## 3. 직관·비유
 
 DC는 “**회사가 매달 정해진 돈을 넣어 주고, 본인이 그 통장에서 ETF를 고르는**” 구조입니다. DB는 “**회사가 통을 굴리고, 나는 보고만 한다**”입니다.
+
+**쉽게 말하면:** DC는 “**내가 직접 굴리는 퇴직금 계좌**”입니다. 증권사 앱에서 퇴직연금 메뉴를 열면 QQQ·국내 ETF를 직접 고를 수 있습니다. 단, 위험자산 비중 상한(**70%**)을 지켜야 합니다.
+
+**핵심은:** DC 가입자가 흔히 하는 실수는 원리금보장상품(예금·채권)에만 두고 방치하는 것입니다. 운용 결과가 **본인 계좌에 그대로 반영**되므로, 장기 목표에 맞는 **코어 ETF**를 선택하고 **분기 리밸런싱**을 해야 합니다.
+
+**예를 들어:** DC 계좌 1,000만 원에서 위험자산(QQQ 등) 비중이 70%라면, 700만 원은 주식형 ETF, 300만 원은 채권·예금으로 나눕니다. 시장 급등으로 주식 비중이 80%를 넘으면 리밸런싱이 필요합니다.
 
 
 ## 4. 정식 개념·용어
@@ -91,20 +100,20 @@ DC는 “**회사가 매달 정해진 돈을 넣어 주고, 본인이 그 통장
 
 ```mermaid
 flowchart TB
-  Co[회사_기여금] --> Acct[DC_개인계좌]
-  You[가입자_추가납입] --> Acct
-  Acct --> Pick[ETF_펀드_선택]
-  Pick --> Limit{위험자산_70%}
+  Co["회사 기여금"] --> Acct["DC 개인계좌"]
+  You["가입자 추가납입"] --> Acct
+  Acct --> Pick["ETF 펀드 선택"]
+  Pick --> Limit{"위험자산 70%"}
   Limit -->|이내| Hold[보유]
-  Limit -->|초과| Rebal[리밸런싱_필요]
+  Limit -->|초과| Rebal["리밸런싱 필요"]
 ```
 
 ### DB vs DC
 
 ```mermaid
 flowchart LR
-  DB[DB_운용=회사] -.->|본인매매X| X[ETF직접X]
-  DC[DC_운용=가입자] --> O[ETF직접O]
+  DB["DB 운용=회사"] -.->|본인매매X| X[ETF직접X]
+  DC["DC 운용=가입자"] --> O[ETF직접O]
 ```
 
 | 항목 | DB | DC |
@@ -122,14 +131,14 @@ flowchart LR
 |------|------|----------------|
 | 기호 | 이름 | 이 식에서 의미 |
 |------|------|----------------|
-|            w            | w | 위 식의 w |
-|            risk            | risk | 위 식의 risk |
-|            V            | V | 위 식의 V |
-|            stock            | stock | 위 식의 stock |
-|            ETF            | ETF | 위 식의 ETF |
-|            total            | total | 위 식의 total |
-|            DEPTH            | DEPTH | 위 식의 DEPTH |
-|            STANDARD            | STANDARD | 위 식의 STANDARD |
+|              w              | w | 위 식의 w |
+|              risk              | risk | 위 식의 risk |
+|              V              | V | 위 식의 V |
+|              stock              | stock | 위 식의 stock |
+|              ETF              | ETF | 위 식의 ETF |
+|              total              | total | 위 식의 total |
+|              DEPTH              | DEPTH | 위 식의 DEPTH |
+|              STANDARD              | STANDARD | 위 식의 STANDARD |
 
 \[
 w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
@@ -140,6 +149,8 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 
 **식 (기호)**: **w_risk** = (**V_stock** **ETF**) / (**V_total**) ≤ 0.70
 
+
+**식 (기호)**: **w_risk** = (**V_stock** **ETF**) / (**V_total**) ≤ 0.70
 
 
 **읽는 법**: **w_**와 **V_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -157,6 +168,8 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 
 **식 (기호)**: 절세 ≈ (**P_add**, 3{,}000{,}000) ×**r_deduction**
 
+
+**식 (기호)**: 절세 ≈ (**P_add**, 3{,}000{,}000) ×**r_deduction**
 
 
 **읽는 법**: **P_**와 **r_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -297,6 +310,12 @@ w_{\text{risk}} = \frac{V_{\text{stock ETF}}}{V_{\text{total}}} \leq 0.70
 
 **Q10. DB인데 DC 추가납입 300만?**  
 **A10.** **해당 없음** — [db-pension.md](db-pension.md)·개인 **IRP** 검토.
+
+**Q11. DC에서 QQQ를 사면 세금은 어떻게 되나요?**  
+**A11.** DC 계좌 안에서의 매매차익·배당은 **과세이연**됩니다. 즉, 운용 중에는 세금을 내지 않고, **수령 시(연금 또는 일시금)** 연금소득세 등이 적용됩니다. 이는 일반 계좌에서 해외 ETF 매도 시 매년 5월 양도세를 내는 것과 다른 구조입니다.
+
+**Q12. DC 운용에서 실수하면 손실이 생기나요?**  
+**A12.** 네, **운용 결과는 가입자 계좌에 직접 반영**됩니다. DB처럼 회사가 보장해 주지 않습니다. 그래서 ① 위험자산 70% 한도 준수, ② 분기 리밸런싱, ③ 장기 코어 ETF 선택이 중요합니다. 단기 급락에 흔들려 저점에 팔면 손실이 확정됩니다.
 
 
 ## 10. 함정·리스크·한계

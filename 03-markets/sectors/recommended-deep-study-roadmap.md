@@ -49,6 +49,8 @@
 섹터 문서가 6개+로 늘면 **“다 읽어야 하나?”** · **“어디서부터?”** · **“다 사야 하나?”** 혼란이 생깁니다. 로드맵은 **읽기 순서 = 의존성 순서**(반도체 → AI 인프라 → 전력)이며, **읽기 ≠ 매수**를 반복 강조합니다. **10억+ 장기** 경로에서는 **A티어만 ETF 코어(Bucket 3)** 로도 충분하고, **B·C는 위성·커리어 시너지**용입니다. **DB 가입자**는 Week 0에서 **ISA·IRP 슬롯**을 확정하지 않으면 **Week 5 “반도체 ETF 매수”** 가 **실행 불가**입니다.
 
 
+**핵심은:** 섹터 공부를 "뭐부터 읽을까?" 고민하다 시간을 낭비하는 것이 가장 흔한 실수입니다. 의존성 순서(반도체 → AI인프라 → 전력 → 배터리 → 피지컬 AI)를 따르면, 앞 섹터에서 배운 개념이 다음 섹터를 이해하는 빌딩 블록이 됩니다. 반도체 없이 AI 인프라를 공부하면 HBM이 뭔지 모르고 읽게 됩니다. AI 인프라 없이 전력망을 공부하면 "왜 변압기가 갑자기 중요해졌는지"를 맥락 없이 암기하게 됩니다.
+
 ## 2. 선수 지식 / 이후 읽을 것
 
 **선수**:
@@ -71,6 +73,10 @@
 
 **Bucket**: **필수 과목(A)** 은 **교재(ETF)** 로 **Pass/Fail**; **선택 과목(C)** 은 **레포트(개별주)** — **실패(손실)** 해도 **학점(포트)** **20%** 넘기면 **재수강 제한**.
 
+
+**쉽게 말하면:** 섹터 공부를 언어 학습에 비유합니다. 알파벳(기초 경제)을 모르면 단어(반도체 개념)를 외울 수 없고, 단어를 모르면 문장(AI 인프라 밸류체인)을 이해할 수 없습니다. 이 로드맵은 **알파벳 → 단어 → 문장** 순서를 정해주는 커리큘럼입니다.
+
+**핵심은:** 9주 로드맵을 완수하는 것이 목표가 아니라, **로드맵을 반복하는 습관**을 만드는 것이 목표입니다. 분기마다 각 섹터 파일의 §8 예제를 현재 수치로 업데이트하는 것이 진짜 학습입니다.
 
 ## 4. 정식 개념·용어
 
@@ -110,12 +116,12 @@
 ```mermaid
 flowchart TB
   FW[sector-investing-framework]
-  Semi[semiconductor_A]
-  Bat[battery-lfp-ncm-ess_A]
-  AI[ai-infrastructure_A]
-  Grid[power-grid_B]
-  Phys[physical-ai_B]
-  Cyber[cyber_C_선택]
+  Semi["semiconductor A"]
+  Bat["battery-lfp-ncm-ess A"]
+  AI["ai-infrastructure A"]
+  Grid["power-grid B"]
+  Phys["physical-ai B"]
+  Cyber["cyber C 선택"]
   FW --> Semi
   Semi --> AI
   Bat --> Grid
@@ -161,13 +167,13 @@ gantt
 
 ```mermaid
 flowchart LR
-  Read[문서_읽기_L3] --> Note[5단계_노트]
-  Note --> Quiz[섹션12_퀴즈]
-  Quiz --> Pass{80%_이상?}
-  Pass -->|Y| Next[다음_주]
-  Pass -->|N| Retry[FAQ_재독]
+  Read["문서 읽기 L3"] --> Note["5단계 노트"]
+  Note --> Quiz["섹션12 퀴즈"]
+  Quiz --> Pass{"80% 이상?"}
+  Pass -->|Y| Next["다음 주"]
+  Pass -->|N| Retry["FAQ 재독"]
   Retry --> Quiz
-  Next --> Port[코어_위성_기록]
+  Next --> Port["코어 위성 기록"]
 ```
 
 **산출물**: 매주 **1장 밸류체인 mermaid** + **가상 예제 1개** + **bucket 기록**.
@@ -190,6 +196,8 @@ T_{\text{week}} = T_{\text{read}} + T_{\text{note}} + T_{\text{quiz}} \approx 5\
 **식 (기호)**: **T_week** = **T_read** + **T_note** + **T_quiz** ≈ 5~8 시간
 
 
+**식 (기호)**: **T_week** = **T_read** + **T_note** + **T_quiz** ≈ 5~8 시간
+
 
 **읽는 법**: **T_**와 **week**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **9주 총**:
@@ -210,6 +218,8 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 **식 (기호)**: **T_total** ≈ 45~72 시간 ≈ **L3** 섹터 1학기
 
 
+**식 (기호)**: **T_total** ≈ 45~72 시간 ≈ **L3** 섹터 1학기
+
 
 **읽는 법**: **r**와 **n**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 
@@ -227,6 +237,8 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 **식 (기호)**: 학습 **ROI** ≈ (리스크 인지·의사결정 품질) / (45~72h) + 인적자본 시너지
 
+
+**식 (기호)**: 학습 **ROI** ≈ (리스크 인지·의사결정 품질) / (45~72h) + 인적자본 시너지
 
 
 **읽는 법**: **Bucket**와 **Bucket**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -247,6 +259,8 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 **식 (기호)**: 학습 **ROI** ≈ (리스크 인지·의사결정 품질) / (45~72h) + 인적자본 시너지
 
+
+**식 (기호)**: 학습 **ROI** ≈ (리스크 인지·의사결정 품질) / (45~72h) + 인적자본 시너지
 
 
 **읽는 법**: **Bucket**와 **Bucket**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -281,6 +295,21 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 
 **법·정책 근거**: [references/sources.md](../../references/sources.md), [account-product-tax-map.md](../../06-korea-policy/tax/account-product-tax-map.md)
 
+
+### 7.4 한국 투자자 9주 학습 일정표 (교육)
+
+| 주차 | 학습 주제 | 실습 과제 | ISA/DB 연결 |
+|------|------|------|----------------|
+| Week 0 | [sector-investing-framework.md](sector-investing-framework.md) | Bucket 슬롯 확인 | ISA 개설 여부 |
+| Week 1 | [core-satellite-framework.md](../../04-portfolio/core-satellite-framework.md) | 코어·위성 비중 초안 | DB vs ISA/IRP |
+| Week 2~3 | [semiconductor.md](semiconductor.md) | 반도체 ETF TER 비교 | ISA에 ETF 입력 |
+| Week 4 | [ai-infrastructure.md](ai-infrastructure.md) | QQQ vs AI ETF 비교 | 중복 확인 |
+| Week 5 | [battery-lfp-ncm-ess.md](battery-lfp-ncm-ess.md) | LFP vs NCM 기업 분류 | Bucket 4 상한 확인 |
+| Week 6 | [power-grid-electrification.md](power-grid-electrification.md) | 전력 ETF TER | 기존 포트 상관관계 |
+| Week 7~8 | [physical-ai.md](physical-ai.md) | 감속기 수주 공시 확인 | Bucket 4 한도 점검 |
+| Week 9 | 전체 복습 | 5단계 체크리스트 전 섹터 | 분기 리밸런싱 |
+
+**쉽게 말하면:** 각 주차의 "실습 과제"를 실제로 해보는 것이 핵심입니다. 읽기만 하고 실습을 안 하면 2주 뒤 내용이 기억에 남지 않습니다.
 
 ## 8. 숫자 예제 (가상)
 
@@ -323,6 +352,27 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 → **위성 10%** — A티어 **학습 반영**, **올인 아님**.
 
 
+
+### 예제 보강: 학습 진행률 단계별 자기 점검 (기호 활용)
+
+**학습 모듈별 숙달 체크 기준 (교육용)**:
+
+| 모듈 | 핵심 기호 | 숙달 확인 질문 |
+|------|------|----------------|
+| 반도체 | DRAM ASP, HBM attach rate α | HBM 가격 상승 시 SK하이닉스 BPS 영향 설명 가능? |
+| AI 인프라 | CAPEX C, GPU 수요 Q | 빅테크 CAPEX 10% 감소 시 수혜/피해 섹터 구분 가능? |
+| 배터리 | NCM/LFP 원가 P_Li | 리튬 가격 50% 하락 시 LFP vs NCM 영업이익 영향 비교 가능? |
+| 전력망 | ROE r_reg, 수요 성장 g | AI 전력 수요 2배 시 전력망 ETF 구성 종목 변화 설명 가능? |
+| 로봇/피지컬 AI | BOM 원가 C_BOM, 감속기 비중 w_r | 감속기 공급 부족 시 로봇 원가 구조 영향 계산 가능? |
+
+**단계별 학습 투자 로드맵 (자기 평가)**:
+
+1. **P₁ 단계 (기초)**: 각 섹터 수요 드라이버 한 문장 설명 가능
+2. **P₂ 단계 (심화)**: 기호 공식으로 가상 시나리오 수익 계산 가능
+3. **P₃ 단계 (실전)**: 실적 시즌 때 가이던스로 포트폴리오 비중 조정 판단 가능
+
+**교훈**: 섹터 투자는 "어느 산업이 좋다"의 정성 판단에서 **구체적 변수(P, Q, M)**로 수치화해야 실전에서 적용 가능
+
 ## 9. FAQ
 
 **Q1. 9주 꼭 지켜야 하나요?**  
@@ -361,6 +411,15 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 **Q12. L1 primer **있나**?**  
 **A.** [kosdaq-tier-system-primer.md](../kosdaq-tier-system-primer.md) 등 — **L3 전** **L2** [etf-index-funds.md](../etf-index-funds.md).
 
+
+**Q11. 9주 로드맵을 완료하면 섹터 투자를 시작해도 되나요?**
+**A.** 로드맵 완료는 **"투자 준비 완료"가 아니라 "기초 언어 습득"**입니다. 각 섹터에 대해 §8 숫자 예제를 자신만의 가상 케이스로 다시 작성할 수 있고, §9 FAQ에 추가 질문을 붙일 수 있을 때 "기초 완료"입니다. 실제 투자는 개인 목표·리스크 허용도·계좌 설계와 별개입니다.
+
+**Q12. A티어만 공부해도 충분한가요?**
+**A.** 장기 코어(Bucket 3) 투자자에게는 **A티어(반도체·AI인프라·배터리)** 로도 충분합니다. B·C티어는 위성(Bucket 4) 확장 또는 커리어 시너지용입니다. 본인 포트에서 Bucket 4가 5% 이하라면 B·C티어 공부에 많은 시간을 쓰는 것보다 A티어를 깊게 반복하는 편이 더 유효합니다.
+
+**Q13. 로드맵 파일이 업데이트되면 어떻게 알 수 있나요?**
+**A.** 각 파일의 **메타 테이블 "최종 검증일"**을 확인하세요. CAPEX·ASP·수출통제 등 빠르게 변하는 내용은 최신 공시·리포트와 교차하고, 정책 내용은 [references/sources.md](../../references/sources.md)를 갱신일 기준으로 확인하세요.
 
 ## 10. 함정·리스크·한계
 
@@ -511,14 +570,14 @@ T_{\text{total}} \approx 45\text{~}72\ \text{시간} \approx \ \text{L3 섹터 1
 flowchart TB
   subgraph w1 [Week1_확정]
     B0[Bucket0]
-    B2b[ISA_IRP]
+    B2b["ISA IRP"]
     B3[ETF코어]
     B4[위성]
   end
   B2b --> B3
-  B3 --> Afinish[A티어_ETF_목록]
-  B4 --> Blimit[상한20%]
-  DB[Bucket2a_DB] -.->|퇴직후| B2b
+  B3 --> Afinish["A티어 ETF 목록"]
+  B4 --> Blimit["상한20%"]
+  DB["Bucket2a DB"] -.->|퇴직후| B2b
 ```
 
 | 계좌 | 섹터 코어 | 섹터 위성 |

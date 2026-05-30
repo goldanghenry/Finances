@@ -66,8 +66,6 @@
 **DB 가입자**: 회사 구내식당(DB) 밥은 그대로 두고, **집 냉장고(ISA)에 QQQ**를 사 두는 그림 — [db-pension.md](../06-korea-policy/db-pension.md).
 
 
-한국 **DB·ISA·2026 개편** 환경에서 포트폴리오 문서는 **실행 순서**가 핵심입니다. 비중 % 논쟁 이전에 **운용 가능 계좌**와 **bucket 채우기**를 확정하고, QQQ·글로벌·채권 **코어**를 [etf-index-funds.md](../03-markets/etf-index-funds.md) 기준 **저비용**으로 유지하세요. 위성·레버리지·단타는 **0~20%**와 **손실 한도**로 격리하고, [references/sources.md](../references/sources.md)로 제도 변경을 **분기 1회** 확인합니다.
-
 ## 4. 정식 개념·용어
 
 | 용어 | 한글 | English | 정의 |
@@ -103,15 +101,15 @@
 
 ```mermaid
 flowchart TB
-  Total[투자가능_순자산_100%]
-  Total --> Core[코어_80to100%]
-  Total --> Sat[위성_0to20%_상한]
-  Core --> QQQ[QQQ_미국성장]
-  Core --> Global[글로벌_ACWI_VWCE]
-  Core --> Bond[채권_ETF]
-  Sat --> Theme[섹터_개별주]
-  Sat --> QLD_slot[QLD_소액만]
-  Sat --> NXT[장후_단타_한정]
+  Total["투자가능 순자산 100%"]
+  Total --> Core["코어 80~100%"]
+  Total --> Sat["위성 0~20% 상한"]
+  Core --> QQQ["QQQ 미국성장"]
+  Core --> Global["글로벌 ACWI VWCE"]
+  Core --> Bond["채권 ETF"]
+  Sat --> Theme["섹터 개별주"]
+  Sat --> QLD_slot["QLD 소액만"]
+  Sat --> NXT["장후 단타 한정"]
 ```
 
 ### 5.2 계좌·Bucket 배치
@@ -119,17 +117,17 @@ flowchart TB
 ```mermaid
 flowchart LR
   subgraph b2b [Bucket2b]
-    ISA[ISA_중개형]
+    ISA["ISA 중개형"]
     IRP[IRP]
   end
   subgraph b3 [Bucket3_코어]
-    ISA --> C1[QQQ_글로벌_채권]
-    IRP --> C2[장기_적립]
+    ISA --> C1["QQQ 글로벌 채권"]
+    IRP --> C2["장기 적립"]
   end
   subgraph b4 [Bucket4_위성]
-    ISA2[별도또는부계좌] --> S1[테마_QLD]
+    ISA2[별도또는부계좌] --> S1["테마 QLD"]
   end
-  DB[Bucket2a_DB] -.->|운용불가| X[코어_직접불가]
+  DB["Bucket2a DB"] -.->|운용불가| X["코어 직접불가"]
 ```
 
 ### 5.3 코어 vs 위성 판별표
@@ -184,6 +182,8 @@ w_{core} + w_{sat} = 1, \quad 0 \leq w_{sat} \leq 0.20
 **식 (기호)**: **w_core** + **w_sat** = 1, 0 ≤ **w_sat** ≤ 0.20
 
 
+**식 (기호)**: **w_core** + **w_sat** = 1, 0 ≤ **w_sat** ≤ 0.20
+
 
 **읽는 법**: **w_**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
 **위성 초과 시 매도량** (교육용):
@@ -204,6 +204,8 @@ w_{core} + w_{sat} = 1, \quad 0 \leq w_{sat} \leq 0.20
 
 **식 (기호)**: **Δ_sell**,**sat** = **V** ×(**w_sat**,**actual** - **w_sat**,**target**)
 
+
+**식 (기호)**: **Δ_sell**,**sat** = **V** ×(**w_sat**,**actual** - **w_sat**,**target**)
 
 
 **읽는 법**: **lta_**와 **w_**의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 기호 예제를 맞춘다.
@@ -229,6 +231,8 @@ FV_{core} = PMT \times \frac{(1+r)^{n} - 1}{r}
 **식 (기호)**: **FV_core** = **PMT** ×((1+**r**)^**n** - 1) / (**r**)
 
 
+**식 (기호)**: **FV_core** = **PMT** ×((1+**r**)^**n** - 1) / (**r**)
+
 
 **읽는 법**: 매 기간 **PMT**가 **r**로 **n**번 복리·누적되면 **FV**가 된다. 
 
@@ -237,9 +241,6 @@ FV_{core} = PMT \times \frac{(1+r)^{n} - 1}{r}
 위성 손실은 **별도 한도** \(L_{sat}\) (예: 연간 위성 원금의 30%)로 관리.
 
 ---
-
-춘다. [DEPTH-STANDARD](../docs/DEPTH-STANDARD.md) 참고.
-위성 손실은 **별도 한도** \(L_{sat}\) (예: 연간 위성 원금의 30%)로 관리.
 
 
 ## 7. 한국 적용
