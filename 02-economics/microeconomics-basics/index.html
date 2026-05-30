@@ -1,0 +1,5913 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="L3+ 금융·투자 교육 코퍼스">
+      
+      
+      
+        <link rel="canonical" href="https://goldanghenry.github.io/Finances/02-economics/microeconomics-basics/">
+      
+      
+        <link rel="prev" href="../../01-foundations/dividends-buybacks/">
+      
+      
+        <link rel="next" href="../micro-01-consumer-theory/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>미시경제학 기초 — 수요·공급·시장 구조 - 금융·투자 학습 KB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/headings.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/math-fallback.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="금융·투자 학습 KB" class="md-header__button md-logo" aria-label="금융·투자 학습 KB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            금융·투자 학습 KB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              미시경제학 기초 — 수요·공급·시장 구조
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="다크 모드"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="라이트 모드"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/goldanghenry/Finances" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    goldanghenry/Finances
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="금융·투자 학습 KB" class="md-nav__button md-logo" aria-label="금융·투자 학습 KB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    금융·투자 학습 KB
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/goldanghenry/Finances" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    goldanghenry/Finances
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시작
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    시작
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/READER-GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    읽는 법
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00-roadmap/STUDY-START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    공부 시작
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00-roadmap/master-roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    학습 로드맵
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00-roadmap/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    용어 사전
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00-roadmap/required-reading-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    참고 — 필독서 요약
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00-roadmap/office-worker-investing-playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    참고 — 1년 플레이북
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/sources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    출처·공식 링크
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 0 — 돈·가계 기초
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 0 — 돈·가계 기초
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/compound-interest-and-time-value/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    복리와 돈의 시간가치 (Time Value of Money &amp; Compound Interest)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/emergency-fund/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    비상금 (Emergency Fund) — Bucket 0 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/cash-flow-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    현금흐름 기초 — 가계·투자·Bucket 연결
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/household-ledger-practical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    가계부 실전 — 분류·발생·현금·스프레드시트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/debt-and-interest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부채와 이자 — 투자 전 정리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/financial-products-short-term/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    단기 현금 상품 학습 노트 — CMA·MMF·양도성예금증서(RP)·요구불·파킹·Bucket 0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/insurance-risk-transfer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    보험·리스크 전가 — Bucket 0과 투자의 경계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/time-value-npv-irr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NPV·IRR·할인율 — 현금흐름 평가와 밸류에이션 연결
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 1 — 재무제표
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 1 — 재무제표
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/financial-statements-study-roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    재무제표 학습 로드맵 — 12주 스케줄
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/financial-statements-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    재무제표 입문 — 기업 읽기 전 단계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/financial-statements-analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    재무제표 분석 — 비율·이익의 질·섹터 연결 (L4)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/cash-flow-statement-fcf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    현금흐름표·영업현금흐름·잉여현금흐름 (OCF·CAPEX·FCF·FCFF·FCFE)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/reading-annual-reports-dart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    사업보고서·DART 읽기 — 공시·주석·MD&amp;A·IR 실무
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-foundations/dividends-buybacks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    배당 정책과 자사주 매입 — 배당성향·자사 매입·한미 구조 차이·국내 개인 과세·Bucket 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 2 — 경제학 L4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 2 — 경제학 L4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    미시경제학 기초 — 수요·공급·시장 구조
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    미시경제학 기초 — 수요·공급·시장 구조
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        메타
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. 이 편 읽기 전 (5분)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        L4 전공자 심화 — 어디로 가나
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TL;DR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 한 줄 정의 + 왜 중요한가
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 선수 지식 / 이후 읽을 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 직관·비유
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 정식 개념·용어
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 정식 개념·용어">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4a. 핵심 용어 (본문 등장 순)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 메커니즘
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 메커니즘">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 균형과 이동
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 정책·보조금이 미치는 경로
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 수식·모델
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 수식·모델">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 소비자·생산자 잉여 (교육용)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 시장 구조별 가격 결정 (요약)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 한국 적용
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 한국 적용">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 2025년 기준 (확정·일반적 맥락)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 2026년 개편·시행 예정 (해당 시)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 투자 체크리스트 (섹터 리포트용)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-20252026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 2025~2026 한국 미시경제 투자 체크포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 숫자 예제 (가상)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 숫자 예제 (가상)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        예제 1: 리튬 가격 폭락과 소재사 마진 (가상)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        예제 2: HBM — 과점에 가까운 공급 (가상)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        예제 3: 보조금 축소 시 EV 수요 (가상)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        예제 6 — 단계별: 수요·공급 변화가 가격에 미치는 영향
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. FAQ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 함정·리스크·한계
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 심화 읽기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 심화 읽기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 권장 학습 순서 (4주, 가상)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 저장소 bucket 연결
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        연습문제 (L4, 기호)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="연습문제 (L4, 기호)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        해설 키
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 스스로 점검 퀴즈
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../micro-01-consumer-theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    소비자 이론 — 선호·효용·수요·슬루트스키
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../micro-02-production-cost-supply/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    생산·비용·공급 — 생산함수부터 기업 공급곡선
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../micro-03-market-structures-io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시장구조·산업조직 — 경쟁·과점·게임이론
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../micro-04-welfare-externalities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    미시경제 04 — 후생경제·외부성·무역·정책
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../micro-05-sector-applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    미시경제 05 — 섹터 응용: 배터리·반도체·전력·Physical AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macroeconomics-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    거시경제학 기초 — 금리·인플레·경기·환율
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macro-01-gdp-accounts-growth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    거시경제 01 — GDP·국민계정·성장·솔로우
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macro-02-money-inflation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    거시경제 02 — 화폐·인플레이션·기대·피셔
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macro-03-is-lm-ad-as/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IS-LM·AD-AS·재정정책 — 케인즈 교차부터 승수·크라우딩아웃까지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macro-04-monetary-policy-qe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    거시경제 04 — 통화정책·QE/QT·전달경로·실질정책금리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macro-05-open-economy-fx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    거시경제 05 — 개방경제·환율·국제수지·자본흐름
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macro-06-asset-prices-macro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    거시경제 06 — 자산가격·할인율·금리·실질수익·한국 ISA/IRP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 3 — 시장·상품
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 3 — 시장·상품
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/korea-ats-nextrade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    한국 대체거래소(ATS) — 넥스트레이드(NXT) 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/korea-equity-market-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    한국 주식시장 구조 — 코스피·코스닥, 거래 시간(KRX/NXT), 외국인 한도·공매도 입문
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/stocks-equities-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    주식(Equities) 입문 — 소유권·시장·밸류에이션·한국 규칙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/kosdaq-tier-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    코스닥 승강제(세그먼트 제도) — 프리미엄·스탠더드·관리군
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/bonds-fixed-income/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    채권·고정수익 입문 — 이자·금리·듀레이션·포트 역할
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/etf-index-funds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ETF·인덱스 펀드 입문 — 추적·비용·한국 상장·코어 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/us-equity-indices-etf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    미국 주요 지수·ETF — S&amp;P500·나스닥100·다우, SPY/VOO/QQQ, Mag7·래핑·코어 중복
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/korea-vs-us-equities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    한국 vs 미국 주식 — 시장 구조·밸류에이션·세금·계좌·섹터·DB→ISA 코어
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/overseas-equities-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    해외 주식·ETF 입문 — 경로·환율·세금·계좌 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/overseas-tax-fx-hedging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    해외투자 세금·환헷지 심화 — W-8BEN·FX ETF·수익 경로 분해
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/equity-valuation-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    주식 밸류에이션 심화 — DDM·DCF·멀티플·안전마진
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/bonds-fixed-income-deep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    채권·고정수익 심화 — 듀레이션·컨벡시티·신용·YTM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/etf-index-funds-deep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ETF·인덱스 펀드 심화 — 지수 구성·AP·합성 리스크·추적오차
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/market-microstructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시장 미시구조 — 호가·유동성·HFT·KRX·ATS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/order-types-execution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    주문 유형·체결 학습 노트 — 시장가·지정가·STOP·STOP-LIMIT·슬리피지·VWAP·한국 채널(KRX/NXT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/mutual-funds-active/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    액티브 뮤추얼 펀드 — ETF 대비·보수·클로짓 인덱싱·한국 시장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/corporate-governance-minority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    기업지배구조·소수주주 — 의결권·배당·재벌 맥락 (한국)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/alternatives-reits-commodities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    대안투자 — REIT·원자재·PE 개요·상관관계·Bucket 3–4 배치
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/yield-curve-strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    수익률 곡선 전략 심화 — 롤다운·바벌·불렛·플랫닝·스티프닝·듀레이션
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/korea-ats-primer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    넥스트레이드(ATS) 5분 요약 — L1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/kosdaq-tier-system-primer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    코스닥 승강제 5분 요약 — L1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 3b — 섹터
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 3b — 섹터
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/sectors/sector-investing-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    섹터(테마) 투자 — 5단계 공부 프레임워크
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/sectors/recommended-deep-study-roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    섹터 심화 학습 로드맵 — A/B/C 티어·9주 스케줄
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/sectors/battery-lfp-ncm-ess/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2차전지 — LFP vs NCM, ESS 밸류체인·사이클
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/sectors/semiconductor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    반도체 — 메모리·HBM·파운드리·장비 (한국·코어·위성)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/sectors/ai-infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI 인프라 — GPU·HBM·데이터센터·전력·CAPEX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/sectors/physical-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    피지컬 AI — 엠보디드·VLA·감속기·휴머노이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-markets/sectors/power-grid-electrification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    전력망·전기화 — 송전·변압기·ESS·EV·AI DC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 4 — 포트폴리오
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 4 — 포트폴리오
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/time-horizon-and-buckets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    투자 기간과 자금 통(Bucket) — 장투·단투·계좌 슬롯 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/core-satellite-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    코어-위성(Core-Satellite) 프레임워크 — 80/20·QQQ·QLD 배치 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/asset-allocation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자산배분 (Asset Allocation) — 주식·채권·현금·60/40·한국 ISA·DB 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/geographic-diversification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    지역·통화 분산 — 홈 바이어스·QQQ vs 글로벌·환헷지 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/rebalancing-and-dca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    리밸런싱과 DCA — 적립식·밴드·해외 양도세·한국 ISA 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/passive-vs-active/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    패시브 vs 액티브 — 코어 패시브·섹터 공부·액티브 전환 없이 학습하기 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/portfolio-theory-mpt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    포트폴리오 이론 — 평균·분산(MPT)·효율적 투자선·샤프·CAL·접선 포트폴리오
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/leveraged-etf-qqq-qld/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QQQ vs QLD vs TQQQ — 레버리지 ETF와 장기 코어
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/risk-management-portfolio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    포트폴리오 리스크 관리 — 체계적·비체계적·β·MDD·포지션·Kelly·VaR·스트레스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-portfolio/performance-measurement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    성과 측정 — α·β·Sharpe·Sortino·Treynor·추적오차·정보비율·벤치마크
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 5 — 한국 제도·세금
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 5 — 한국 제도·세금
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/tax/investment-tax-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    투자 관련 세금 개요 — 지도와 신고 캘린더
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/tax/overseas-stocks-tax-part1-cgt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    해외주식 양도소득세 Part 1 — 매매차익·신고
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/tax/overseas-stocks-tax-part2-dividend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    해외주식 양도소득세 Part 2 — 배당·금융소득종합과세
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/tax/overseas-stocks-tax-part3-scenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    해외주식 세금 Part 3 — 계좌별 시나리오·의사결정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/tax/account-product-tax-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    계좌×상품×보유기간 세금·역할 매핑
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/tax/domestic-stocks-tax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    국내주식 세금 — KRX·넥스트레이드(NXT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/tax/isa-irp-pension-tax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISA·IRP·연금저축·DC 세제 통합 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/tax/financial-investment-income-tax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    금융소득(이자·배당)과 2,000만 원 종합과세 게이트 — ISA·분리과세·5월 신고 통합 분석
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/db-pension/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DB형 퇴직연금 (확정급여형) 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/irp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IRP (개인형퇴직연금) — DB 가입자 실전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/db-vs-dc-pension/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DB vs DC — 판별·선택·실무 체크리스트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/dc-pension/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DC형 퇴직연금 (확정기여형) 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/isa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISA (개인종합자산관리계좌) 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/isa-irp-practical-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISA·IRP 실무 셋업 — DB 가입자 체크리스트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/pension-savings-account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연금저축 vs IRP 비교 — 세액공제 900만 원, 인출, ETF, DC·DB와의 관계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/youth-leap-account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    청년도약계좌 완전 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-korea-policy/youth-future-savings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    청년미래적금 — 2026 한시·갈아타기·특별중도해지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 6 — 행동금융
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 6 — 행동금융
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-behavioral/investment-journal-psychology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    투자일지와 심리기록 — 템플릿·FOMO 로깅·확증편향 기록·디바이어싱 실무
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-behavioral/behavioral-finance-complete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    행동금융 완전 가이드 — 전망이론·손실회피·편향·디스포지션·디바이어싱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-behavioral/fomo-and-trading-hours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FOMO와 거래시간 확대 (NXT·장후)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 7 — 부동산
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 7 — 부동산
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-real-estate/real-estate-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부동산 투자 기초
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-real-estate/real-estate-reits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    리츠(REIT) 심화: 구조·배당·금리민감도·국내 리츠 ETF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 8 — 심화
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 8 — 심화
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-advanced/market-efficiency-emh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시장 효율성·EMH — 약형·준강형·강형과 한국 논쟁
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-advanced/capm-and-risk-return/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CAPM·위험과 수익 (입문~표준)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-advanced/factor-investing-primer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    팩터 투자 입문
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-advanced/factor-investing-fama-french/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    팩터 투자·Fama-French — FF3·FF5·한국 ETF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-advanced/apt-multi-factor-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APT와 다중요인 자산 가격결정 모델
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-advanced/derivatives-options-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    파생상품·옵션 입문 — 콜·풋·헤지·레버리지·위험
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-advanced/technical-analysis-critical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    기술적 분석(TA) 비판적 입문 — 신호·백테스트·데이터 엔지니어링 관점
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-advanced/quant-investing-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    퀀트 투자 입문 — 팩터·백테스트·과최적화·DART API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase 9 — 기업재무
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Phase 9 — 기업재무
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09-corporate-finance/wacc-capital-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WACC·자본구조 — CAPM·부채비용·M&amp;M·최적 구조 입문
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09-corporate-finance/ma-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    M&amp;A 기초 — 시너지·희석·한국 맥락 (가상 사례)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09-corporate-finance/startup-valuation-vc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    스타트업 밸류에이션·VC — 단계·프리머니·캡테이블·DCF 한계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        메타
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. 이 편 읽기 전 (5분)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        L4 전공자 심화 — 어디로 가나
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TL;DR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 한 줄 정의 + 왜 중요한가
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 선수 지식 / 이후 읽을 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 직관·비유
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 정식 개념·용어
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 정식 개념·용어">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4a. 핵심 용어 (본문 등장 순)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 메커니즘
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 메커니즘">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 균형과 이동
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 정책·보조금이 미치는 경로
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 수식·모델
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 수식·모델">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 소비자·생산자 잉여 (교육용)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 시장 구조별 가격 결정 (요약)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 한국 적용
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 한국 적용">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 2025년 기준 (확정·일반적 맥락)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 2026년 개편·시행 예정 (해당 시)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 투자 체크리스트 (섹터 리포트용)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-20252026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 2025~2026 한국 미시경제 투자 체크포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 숫자 예제 (가상)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 숫자 예제 (가상)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        예제 1: 리튬 가격 폭락과 소재사 마진 (가상)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        예제 2: HBM — 과점에 가까운 공급 (가상)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        예제 3: 보조금 축소 시 EV 수요 (가상)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        예제 6 — 단계별: 수요·공급 변화가 가격에 미치는 영향
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. FAQ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 함정·리스크·한계
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 심화 읽기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 심화 읽기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 권장 학습 순서 (4주, 가상)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 저장소 bucket 연결
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        연습문제 (L4, 기호)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="연습문제 (L4, 기호)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        해설 키
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 스스로 점검 퀴즈
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">미시경제학 기초 — 수요·공급·시장 구조<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>면책</strong>: 본 문서는 교육 목적이며, 특정 개인·법인에 대한 투자·세무·법률 자문이 아닙니다. 제도·세율·상품 조건은 변경될 수 있으므로 실행 전 공식 출처를 확인하세요.</p>
+</blockquote>
+<h2 id="_2">메타<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>최종 검증일</td>
+<td>2026-05-24</td>
+</tr>
+<tr>
+<td>정책·법령 기준일</td>
+<td>2025-12-31 확정, 2026 개편은 본문 표기</td>
+</tr>
+<tr>
+<td>난이도</td>
+<td>L4 (Graduate) — <a href="../../docs/READER-GUIDE/">READER-GUIDE</a></td>
+</tr>
+<tr>
+<td>예상 읽기 시간</td>
+<td>50~65분 (개요만) / L4 전체 <strong>약 15~20h</strong></td>
+</tr>
+<tr>
+<td>관련 bucket</td>
+<td>Bucket 0~1 (경제 문법), 섹터 위성(Bucket 3) 해석</td>
+</tr>
+</tbody>
+</table>
+<h2 id="0-5">0. 이 편 읽기 전 (5분)<a class="headerlink" href="#0-5" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>난이도</strong></td>
+<td>L4 (Graduate) — <a href="../../docs/READER-GUIDE/">READER-GUIDE §L등급</a></td>
+</tr>
+<tr>
+<td><strong>선수</strong></td>
+<td><a href="../../01-foundations/compound-interest-and-time-value/">복리와 화폐의 시간가치</a>, <a href="../../01-foundations/financial-statements-intro/">재무제표 입문</a></td>
+</tr>
+<tr>
+<td><strong>이번 편에서 쓰는 기호</strong></td>
+<td>본문 §4·§4a 표 참고</td>
+</tr>
+<tr>
+<td><strong>복습 한 줄</strong></td>
+<td>L3 선수 편을 먼저 읽으면 수식이 수월함</td>
+</tr>
+</tbody>
+</table>
+<h2 id="l4">L4 전공자 심화 — 어디로 가나<a class="headerlink" href="#l4" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>순서</th>
+<th>문서</th>
+<th>분량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="../micro-01-consumer-theory/">micro-01-consumer-theory</a></td>
+<td>효용·예산·수요 <strong>유도</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="../micro-02-production-cost-supply/">micro-02-production-cost-supply</a></td>
+<td>생산·비용·공급</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="../micro-03-market-structures-io/">micro-03-market-structures-io</a></td>
+<td>독점·Cournot·게임이론</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="../micro-04-welfare-externalities/">micro-04-welfare-externalities</a></td>
+<td>후생·DWL·정책</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="../micro-05-sector-applications/">micro-05-sector-applications</a></td>
+<td>배터리·반도체·투자</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="../">02-economics/README</a> 전체 일정</p>
+<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>수요·공급</strong>이 단기 가격·거래량을 결정하며, 배터리·반도체·전력망 등 <strong>사이클 산업</strong>을 읽는 기본 문법이다.</li>
+<li><strong>한계비용·규모의 경제</strong>가 왜 대형 파운드리·셀 메이저·유틸리티가 유리한지 설명한다.</li>
+<li><strong>과점·독과점</strong>은 마진·가격 결정력을 주지만, 규제·대체재·밸류에이션과 <strong>별개</strong>다.</li>
+<li><strong>외부성·보조금·관세</strong>는 곡선을 <strong>이동</strong>시킨다 — EV·ESS·반도체 정책을 숫자 없이도 해석 가능하게.</li>
+<li>섹터 리포트의 <strong>TAM(총시장)</strong> 만으로 매수하지 말고, <strong>수요곡선의 가격 탄력성·공급 과잉 여부</strong>를 질문한다.</li>
+</ol>
+<h2 id="1">1. 한 줄 정의 + 왜 중요한가<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p><strong>정의</strong>: <strong>미시경제학(Microeconomics)</strong> 은 개별 <strong>소비자·기업·시장</strong>이 한정된 자원 아래에서 선택하고, 그 결과로 <strong>가격·수량·마진</strong>이 어떻게 정해지는지를 다루는 학문이다.</p>
+<div class="admonition info">
+<p class="admonition-title">GDP (Gross Domestic Product)</p>
+<p>일정 기간 국내 총생산.</p>
+</div>
+<p><strong>왜 중요한가</strong>: 투자자에게 미시경제학이 필요한 이유:</p>
+<ul>
+<li><strong>기업 가격 결정력</strong>: 기업이 가격을 올릴 수 있는 조건 — 브랜드, 네트워크 효과, 전환 비용 — 을 이해해야 마진 지속성을 판단할 수 있습니다.</li>
+<li><strong>산업 경쟁 분석</strong>: 신규 경쟁자 진입이 쉬운가? 기존 플레이어가 가격 전쟁을 할 수밖에 없는 구조인가? 이것이 장기 투자 수익률을 결정합니다.</li>
+<li><strong>수요의 가격 탄력성</strong>: AI 반도체 수요는 비탄력적(없으면 안 됨) → 가격을 올려도 수요 유지 → 높은 마진. LFP 배터리 셀은 탄력적(대체재 많음) → 마진 하락 압력.</li>
+</ul>
+<p>주가는 결국 <strong>기대 현금흐름</strong>이지만, 그 현금흐름은 <strong>판매 가격 × 판매량 − 비용</strong>에서 나옵니다. “AI 수요 폭발” 같은 내러티브도 결국 <strong>수요가 얼마나 가격에 민감한지</strong>, <strong>공급이 얼마나 늘 수 있는지</strong>로 검증해야 한다. 본 저장소의 <a href="../../03-markets/sectors/battery-lfp-ncm-ess/">배터리·ESS</a>, <a href="../../03-markets/sectors/semiconductor/">반도체</a> 심화 문서를 읽기 전 <strong>공통 언어</strong>가 된다.</p>
+<h2 id="2">2. 선수 지식 / 이후 읽을 것<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p><strong>선수</strong>:
+- <a href="../../01-foundations/compound-interest-and-time-value/">복리와 화폐의 시간가치</a>
+- <a href="../../01-foundations/financial-statements-intro/">재무제표 입문</a> — 마진·매출을 숫자로 읽기
+- <a href="../../01-foundations/cash-flow-basics/">현금흐름 기초</a></p>
+<p><strong>이후</strong>:
+- <a href="../macroeconomics-basics/">거시경제학 기초</a> — 금리·인플레·경기와 연결
+- <a href="../../03-markets/stocks-equities-intro/">주식 입문</a>
+- <a href="../../03-markets/sectors/sector-investing-framework/">섹터 투자 프레임워크</a>
+- <a href="../../03-markets/sectors/battery-lfp-ncm-ess/">배터리 LFP·NCM·ESS</a>, <a href="../../03-markets/sectors/semiconductor/">반도체</a></p>
+<h2 id="3">3. 직관·비유<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>강의 시작 전 질문</strong> — 이 질문에 바로 답하기 어렵다면, 이 섹션이 당신을 위한 것입니다.
+- "AI 붐으로 수요가 늘어난다는데, 그 수혜가 어느 기업에 얼마나 가는지 어떻게 따지나?"
+- "배터리 가격이 계속 내려가는데 이건 좋은 건가, 나쁜 건가?"
+- "독점 기업 주식은 무조건 좋은 투자인가?"</p>
+</blockquote>
+<p><strong>핵심은:</strong> 미시경제학은 "개별 소비자와 기업이 어떻게 의사결정을 하는가"를 공부합니다. 투자자에게 미시경제학이 중요한 이유: 결국 주가는 기업의 매출과 이익으로 결정되고, 그 매출·이익은 수요·공급·경쟁 구조에 의해 만들어지기 때문입니다.</p>
+<p><strong>경매장</strong>: 참가자(수요)가 많고 물건(공급)이 적으면 낙찰가(가격)가 오른다. 2021~2022년 <strong>리튬·운임</strong> 구간, 2023~2024년 <strong>HBM</strong> 구간이 각각 “경매자가 몰리거나 물량이 막힌” 사례에 가깝다.</p>
+<p><strong>레스토랑 주방</strong>: 손님이 한 명 더 올 때 추가 비용(한계비용)이 낮은 가게는 <strong>가격 인하·프로모션</strong>에도 버틴다. 중국 일부 EV 업체의 <strong>공격적 가격</strong>을 이해할 때 “규모의 경제 + 낮은 한계비용” 프레임이 유용하다.</p>
+<p><strong>아파트 단지 내 편의점</strong>: 단지 밖보다 비싸도 산다 — <strong>지역 독점</strong>에 가깝다. 일부 <strong>장비·소재</strong>는 고객사 전환 비용이 커서 단기적으로 비슷한 힘을 가진다(영구 독점은 아님).</p>
+<p><strong>사이클의 진자</strong>: 배터리·메모리·디스플레이는 “한 번 올리면 영원히 오른다”가 아니라, <strong>고마진에 자본이 몰리면</strong> 공급이 늘고 가격이 내려간다. 미시경제는 그 <strong>진자의 왼쪽(수요 붐)</strong> 과 <strong>오른쪽(공급 과잉)</strong> 을 같은 그림으로 설명한다. 주가 차트만 보면 오른쪽이 왔을 때 “바닥”인지 “더 갈 길”인지 구분이 어렵다. 그래서 <strong>재고·가동률·신규 CAPEX</strong> 같은 <strong>실물 지표</strong>를 미시 질문에 붙인다.</p>
+<p><strong>정책은 곡선을 움직인다</strong>: 전기차 보조금은 소비자에게 “싸진 가격”을 주어 <strong>수요를 밀어 올리고</strong>, 반도체 설비 세액공제는 <strong>공급을 미래에 늘리는</strong> 쪽이다. 같은 “정부 지원”이라도 주가에 미치는 타이밍이 다르다 — 전자는 <strong>매출·주문</strong>에, 후자는 <strong>2~3년 후 공급 과잉</strong>에 반영될 수 있다. <a href="../macroeconomics-basics/">거시</a>의 금리·환율과 겹치면 방향이 더 복잡해진다.</p>
+<hr />
+<p><strong>이 모형이 말하는 것</strong>: 수식은 계산 절차이고, 경제 직관은 「누가 이득·손해를 보는가」「어떤 가정이 깨지면 결론이 뒤집히는가」다. 유도 각 단계마다 <strong>가정</strong>을 한 줄로 적어 본다.</p>
+<h2 id="4">4. 정식 개념·용어<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>한글</th>
+<th>English</th>
+<th>정의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수요</td>
+<td>수요</td>
+<td>Demand</td>
+<td>가격이 낮을수록 사고 싶은 <strong>수량</strong> 관계</td>
+</tr>
+<tr>
+<td>공급</td>
+<td>공급</td>
+<td>Supply</td>
+<td>가격이 높을수록 팔고 싶은 <strong>수량</strong> 관계</td>
+</tr>
+<tr>
+<td>균형</td>
+<td>균형</td>
+<td>Equilibrium</td>
+<td>수요=공급인 <strong>가격·수량</strong></td>
+</tr>
+<tr>
+<td>탄력성</td>
+<td>가격탄력성</td>
+<td>Price elasticity</td>
+<td>가격 1% 변화에 수량이 몇 % 반응하는지</td>
+</tr>
+<tr>
+<td>한계비용</td>
+<td>한계비용</td>
+<td>Marginal cost</td>
+<td>한 단위 <strong>추가</strong> 생산 비용</td>
+</tr>
+<tr>
+<td>규모의 경제</td>
+<td>규모의 경제</td>
+<td>Economies of scale</td>
+<td>규모↑ → 평균비용↓</td>
+</tr>
+<tr>
+<td>소비자·생산자 잉여</td>
+<td>잉여</td>
+<td>Surplus</td>
+<td>거래로 얻는 이득(교육용)</td>
+</tr>
+<tr>
+<td>외부성</td>
+<td>외부성</td>
+<td>Externality</td>
+<td>시장 가격에 안 잡히는 비용·편익(탄소 등)</td>
+</tr>
+<tr>
+<td>과점</td>
+<td>과점</td>
+<td>Oligopoly</td>
+<td>소수 기업이 가격·수량에 영향</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4a">4a. 핵심 용어 (본문 등장 순)<a class="headerlink" href="#4a" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>복습용. 정의는 §4 본표·<a href="../../00-roadmap/glossary/">glossary</a>·본문 <code>!!! info</code> 박스.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>한 줄</th>
+<th>관련 이론</th>
+<th>glossary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수요</td>
+<td>가격이 낮을수록 사고 싶은 <strong>수량</strong> 관계</td>
+<td>§4</td>
+<td><a href="../../00-roadmap/glossary/#수요">glossary</a></td>
+</tr>
+<tr>
+<td>공급</td>
+<td>가격이 높을수록 팔고 싶은 <strong>수량</strong> 관계</td>
+<td>§4</td>
+<td><a href="../../00-roadmap/glossary/#공급">glossary</a></td>
+</tr>
+<tr>
+<td>균형</td>
+<td>수요=공급인 <strong>가격·수량</strong></td>
+<td>§4</td>
+<td><a href="../../00-roadmap/glossary/#균형">glossary</a></td>
+</tr>
+<tr>
+<td>탄력성</td>
+<td>가격 1% 변화에 수량이 몇 % 반응하는지</td>
+<td>§4</td>
+<td><a href="../../00-roadmap/glossary/#탄력성">glossary</a></td>
+</tr>
+<tr>
+<td>한계비용</td>
+<td>한 단위 <strong>추가</strong> 생산 비용</td>
+<td>§4</td>
+<td><a href="../../00-roadmap/glossary/#한계비용">glossary</a></td>
+</tr>
+<tr>
+<td>규모의 경제</td>
+<td>규모↑ → 평균비용↓</td>
+<td>§4</td>
+<td><a href="../../00-roadmap/glossary/#규모의-경제">glossary</a></td>
+</tr>
+<tr>
+<td>소비자·생산자 잉여</td>
+<td>거래로 얻는 이득</td>
+<td>§4</td>
+<td><a href="../../00-roadmap/glossary/#소비자·생산자-잉여">glossary</a></td>
+</tr>
+<tr>
+<td>외부성</td>
+<td>시장 가격에 안 잡히는 비용·편익</td>
+<td>§4</td>
+<td><a href="../../00-roadmap/glossary/#외부성">glossary</a></td>
+</tr>
+<tr>
+<td>과점</td>
+<td>소수 기업이 가격·수량에 영향</td>
+<td>§4</td>
+<td><a href="../../00-roadmap/glossary/#과점">glossary</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="5">5. 메커니즘<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 균형과 이동<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart LR
+  D[수요곡선] --&gt; E["균형 가격 Pstar"]
+  S[공급곡선] --&gt; E
+  E --&gt; Q["균형 수량 Qstar"]</code></pre>
+<ul>
+<li><strong>곡선 위 이동</strong>: 같은 수요·공급에서 <strong>가격만</strong> 변하는 것이 아니라, <strong>다른 가격에서 원하는 수량</strong>이 바뀐다.</li>
+<li><strong>곡선 자체 이동</strong>: 수요 증가(선호·소득·대체재), 공급 증가(기술·투자·규제 완화)는 <strong>새 균형</strong>으로 간다.</li>
+</ul>
+<h3 id="52">5.2 정책·보조금이 미치는 경로<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+  Pol["정책 보조금 관세"] --&gt; Dshift["수요곡선 이동"]
+  Pol --&gt; Sshift["공급곡선 이동"]
+  Dshift --&gt; NewE["새 균형"]
+  Sshift --&gt; NewE
+  NewE --&gt; Margin["기업 마진 변화"]
+  Margin --&gt; Stock["주가 기대 반영"]</code></pre>
+<table>
+<thead>
+<tr>
+<th>충격 유형</th>
+<th>수요·공급</th>
+<th>가격·수량(방향성)</th>
+<th>투자 해석 예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EV 구매 보조금</td>
+<td>수요↑</td>
+<td>가격·판매량↑(단기)</td>
+<td>완성차·배터리 <strong>출하</strong> 민감</td>
+</tr>
+<tr>
+<td>설비 투자 세액공제</td>
+<td>공급↑(장기)</td>
+<td>가격 압력(과잉 시↓)</td>
+<td>장비주 <strong>수주</strong> 선행</td>
+</tr>
+<tr>
+<td>원자재 풍부</td>
+<td>공급↑</td>
+<td>가격↓</td>
+<td>소재사 <strong>마진</strong> 압박</td>
+</tr>
+<tr>
+<td>진입장벽·특허</td>
+<td>공급 제한</td>
+<td>가격·마진 유지 가능</td>
+<td>HBM·일부 장비</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6">6. 수식·모델<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p>선형 수요·공급 (교육용):</p>
+<table>
+<thead>
+<tr>
+<th>기호</th>
+<th>이름</th>
+<th>이 식에서 의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>r</strong></td>
+<td>할인율·수익률</td>
+<td>기간당 이자·요구수익률</td>
+</tr>
+<tr>
+<td><strong>n</strong></td>
+<td>기간</td>
+<td>연·월 등 복리·할인에 쓰는 횟수</td>
+</tr>
+<tr>
+<td><strong>PV</strong></td>
+<td>현재가치</td>
+<td>오늘 시점으로 환산한 금액</td>
+</tr>
+<tr>
+<td><strong>FV</strong></td>
+<td>미래가치</td>
+<td>미래 시점의 목표·결과 금액</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[
+Q_d = a - bP,\quad Q_s = c + dP
+\]</div>
+<p><strong>식 (기호)</strong>: <strong>Q_d</strong> = <strong>a</strong> - <strong>bP</strong>, <strong>Q_s</strong> = <strong>c</strong> + <strong>dP</strong></p>
+<p><strong>식 (기호)</strong>: <strong>Q_d</strong> = <strong>a</strong> - <strong>bP</strong>, <strong>Q_s</strong> = <strong>c</strong> + <strong>dP</strong></p>
+<p><strong>식 (기호)</strong>: <strong>Q_d</strong> = <strong>a</strong> - <strong>bP</strong>, <strong>Q_s</strong> = <strong>c</strong> + <strong>dP</strong></p>
+<p><strong>읽는 법</strong>: <strong>Q_</strong>와 <strong>d</strong>의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 <a href="../../docs/DEPTH-STANDARD/">DEPTH-STANDARD</a> 기호 예제를 맞춘다.
+<strong>유도 (L4)</strong>:
+1. <strong>정의</strong>: <strong>Q_</strong>, <strong>d</strong>, <strong>a</strong>를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
+2. <strong>식 변형</strong>: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 <strong>시점 이동</strong>이 핵심이다.</p>
+<p>균형 가격 <span class="arithmatex">\(P^* = \frac{a-c}{b+d}\)</span>, 균형 수량 <span class="arithmatex">\(Q^* = a - bP^*\)</span>.</p>
+<p><strong>가격탄력성</strong> (수요, 절댓값):</p>
+<table>
+<thead>
+<tr>
+<th>기호</th>
+<th>이름</th>
+<th>이 식에서 의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>r</strong></td>
+<td>할인율·수익률</td>
+<td>기간당 이자·요구수익률</td>
+</tr>
+<tr>
+<td><strong>n</strong></td>
+<td>기간</td>
+<td>연·월 등 복리·할인에 쓰는 횟수</td>
+</tr>
+<tr>
+<td><strong>PV</strong></td>
+<td>현재가치</td>
+<td>오늘 시점으로 환산한 금액</td>
+</tr>
+<tr>
+<td><strong>FV</strong></td>
+<td>미래가치</td>
+<td>미래 시점의 목표·결과 금액</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[
+\varepsilon = \left|\frac{\%\Delta Q}{\%\Delta P}\right|
+\]</div>
+<p><strong>읽는 법</strong>: <strong>Q</strong>와 <strong>P</strong>의 관계를 위 식으로 쓴다. 경제·재무 해석은 변수표 「이 식에서 의미」와 <a href="../../docs/DEPTH-STANDARD/">DEPTH-STANDARD</a> 기호 예제를 맞춘다.
+<strong>유도 (L4)</strong>:
+1. <strong>정의</strong>: <strong>Q</strong>, <strong>P</strong>를 동일 시점·동일 통화로 맞춘다. — 단위 불일치면 식이 무의미해진다.
+2. <strong>식 변형</strong>: 양변을 정리해 목표 변수를 한쪽에 둔다. — 할인·복리는 <strong>시점 이동</strong>이 핵심이다.
+- <span class="arithmatex">\(|\varepsilon| &gt; 1\)</span>: <strong>탄력적</strong> — 가격 인하 시 매출↑ 가능(양적 성장주)<br />
+- <span class="arithmatex">\(|\varepsilon| &lt; 1\)</span>: <strong>비탄력적</strong> — 가격 올려도 수요 잘 안 줄음(필수 소비·전환비용 큰 B2B)</p>
+<p><strong>한계비용과 가격</strong>: 경쟁 시장에서는 장기적으로 <strong>가격 ≈ 한계비용</strong>에 수렴하는 경향(과점·차별화 제외).</p>
+<p><strong>해당 없음 아님</strong>: 섹터 예제·퀴즈에서 위 식을 사용한다.</p>
+<h3 id="61">6.1 소비자·생산자 잉여 (교육용)<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p>균형 거래량 <span class="arithmatex">\(Q^*\)</span>에서:</p>
+<ul>
+<li><strong>소비자 잉여</strong>: 지불 의사 가격과 실제 가격 차이의 합 — “할인 받은 느낌”</li>
+<li><strong>생산자 잉여</strong>: 실제 가격과 한계비용 차이의 합 — “마진”</li>
+</ul>
+<p>독과점·규제가 잉여를 <strong>이전</strong>시키면 정치·규제 리스크로 이어질 수 있다(반독점, 보조금 축소 등).</p>
+<h3 id="62">6.2 시장 구조별 가격 결정 (요약)<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>구조</th>
+<th>가격 결정</th>
+<th>투자 예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>완전경쟁</td>
+<td>한계비용 근처</td>
+<td>원자재·표준화 부품</td>
+</tr>
+<tr>
+<td>과점</td>
+<td>상호 의존·가격 경직</td>
+<td>메모리·일부 장비</td>
+</tr>
+<tr>
+<td>독과점</td>
+<td>공급자 설정력</td>
+<td>희소 HBM·네트워크 효과</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<table>
+<thead>
+<tr>
+<th>열1</th>
+<th>열2</th>
+<th>열3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>완전경쟁</td>
+<td>한계비용 근처</td>
+<td>원자재·표준화 부품</td>
+</tr>
+<tr>
+<td>과점</td>
+<td>상호 의존·가격 경직</td>
+<td>메모리·일부 장비</td>
+</tr>
+<tr>
+<td>독과점</td>
+<td>공급자 설정력</td>
+<td>희소 HBM·네트워크 효과</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7">7. 한국 적용<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<h3 id="71-2025">7.1 2025년 기준 (확정·일반적 맥락)<a class="headerlink" href="#71-2025" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>영역</th>
+<th>미시경제 연결</th>
+<th>저장소 링크</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>전기차·ESS 보조금</td>
+<td>수요곡선 <strong>우이동</strong></td>
+<td><a href="../../03-markets/sectors/battery-lfp-ncm-ess/">배터리</a></td>
+</tr>
+<tr>
+<td>반도체·전력망 투자</td>
+<td>공급·수요 <strong>동시</strong> 확장</td>
+<td><a href="../../03-markets/sectors/semiconductor/">반도체</a>, <a href="../../03-markets/sectors/power-grid-electrification/">전력망</a></td>
+</tr>
+<tr>
+<td>IRA·관세·현지화</td>
+<td><strong>지역별</strong> 공급곡선 분리</td>
+<td><a href="../../03-markets/overseas-equities-intro/">해외 주식 입문</a></td>
+</tr>
+<tr>
+<td>최저임금·노동비</td>
+<td>한계비용↑ → 가격·자동화</td>
+<td><a href="../../03-markets/sectors/physical-ai/">Physical AI</a></td>
+</tr>
+<tr>
+<td>코스닥 승강제</td>
+<td>“시장” 규칙 변화 → <strong>유동성·수요</strong></td>
+<td><a href="../../03-markets/kosdaq-tier-system/">KOSDAQ 승강제</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="72-2026">7.2 2026년 개편·시행 예정 (해당 시)<a class="headerlink" href="#72-2026" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>2025 (확정)</th>
+<th>2026 (시행·논의 시 명시)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>친환경차 보조금</td>
+<td>예산·차종별 상이</td>
+<td>예산 축소·전환 시 <strong>수요곡선 좌이동</strong> 가능 — 공식 고시 확인</td>
+</tr>
+<tr>
+<td>전력·RE100 수요</td>
+<td>데이터센터·ESS 수요 확대</td>
+<td><a href="../../03-markets/sectors/ai-infrastructure/">AI 인프라</a>와 연동</td>
+</tr>
+<tr>
+<td>수출 규제·통상</td>
+<td>특정 품목 <strong>공급 제약</strong></td>
+<td>공급곡선 <strong>좌이동</strong> → 가격·대체재</td>
+</tr>
+</tbody>
+</table>
+<p><strong>법·정책 근거</strong>: 개별 보조금·세액공제는 산업부·환경부·관세청 고시·보도자료. 투자 실행 전 <a href="../../references/sources/">references/sources.md</a>의 공식 URL을 따른다.</p>
+<h3 id="73">7.3 투자 체크리스트 (섹터 리포트용)<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<p>리포트·IR 자료를 읽을 때 아래를 <strong>표에 적어보는</strong> 연습이 L3 학습의 마무리다.</p>
+<table>
+<thead>
+<tr>
+<th>질문</th>
+<th>좋은 답의 방향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수요는 가격에 민감한가?</td>
+<td>탄력성·대체재(가솔린차·LFP 등)</td>
+</tr>
+<tr>
+<td>공급이 2년 내 늘 수 있는가?</td>
+<td>CAPEX·인허가·인력</td>
+</tr>
+<tr>
+<td>마진 정점인가 구조적인가?</td>
+<td>사이클 vs 해자</td>
+</tr>
+<tr>
+<td>정책 의존도는?</td>
+<td>보조금·관세 <strong>이동</strong> 시나리오</td>
+</tr>
+<tr>
+<td>한국 기업 매출의 고객은?</td>
+<td>국내 vs 수출 — <a href="../macroeconomics-basics/">거시</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="74-20252026">7.4 2025~2026 한국 미시경제 투자 체크포인트<a class="headerlink" href="#74-20252026" title="Permanent link">&para;</a></h3>
+<p><strong>쉽게 말하면:</strong> 미시경제학 개념이 현재 한국 투자에 어떻게 적용되는가입니다.</p>
+<table>
+<thead>
+<tr>
+<th>체크포인트</th>
+<th>미시 개념</th>
+<th>투자 시사점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 반도체 수요 탄력성</td>
+<td>비탄력적 → pricing power</td>
+<td>NVIDIA·SK하이닉스 마진 방어</td>
+</tr>
+<tr>
+<td>LFP 배터리 가격 하락</td>
+<td>완전경쟁 수렴</td>
+<td>한국 배터리 차별화 전략 중요성</td>
+</tr>
+<tr>
+<td>국내 플랫폼 광고 시장</td>
+<td>네트워크 효과·진입 장벽</td>
+<td>네이버·카카오 장기 마진 방어력</td>
+</tr>
+<tr>
+<td>조선 수주 사이클</td>
+<td>공급 제한, 수요 복귀</td>
+<td>고선가 지속 → 마진 개선</td>
+</tr>
+<tr>
+<td>원전 재개·에너지 전환</td>
+<td>규제 변화 + 외부성 내부화</td>
+<td>두산에너빌리티·한전 수혜</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8">8. 숫자 예제 (가상)<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>모든 인물·금액·회사명은 가상입니다.</p>
+</blockquote>
+<h3 id="1_1">예제 1: 리튬 가격 폭락과 소재사 마진 (가상)<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>2022 (가상)</th>
+<th>2024 (가상)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>리튬 화합물 가격 지수</td>
+<td>100</td>
+<td>35</td>
+</tr>
+<tr>
+<td>LFP 셀 <strong>한계비용</strong> (가상)</td>
+<td>kg당 85원</td>
+<td>kg당 52원</td>
+</tr>
+<tr>
+<td>완성차 OEM 목표가</td>
+<td>공격적 인하</td>
+<td>유지·추가 인하</td>
+</tr>
+<tr>
+<td><strong>소재사 A</strong> 영업이익률</td>
+<td>18%</td>
+<td>4%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>해석</strong>: 공급 확대(광산·정제) → 원재료 가격↓ → <strong>공급곡선 우이동</strong> → 가격 경쟁. “TAM은 크다”와 별개로 <strong>마진 사이클</strong>이 하락할 수 있다.</p>
+<h3 id="2-hbm">예제 2: HBM — 과점에 가까운 공급 (가상)<a class="headerlink" href="#2-hbm" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값 (가상)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>유효 공급자 수</td>
+<td>3사</td>
+</tr>
+<tr>
+<td>수요 성장 (AI 서버)</td>
+<td>연 +40%</td>
+</tr>
+<tr>
+<td>가격 협상력</td>
+<td>공급자 우위</td>
+</tr>
+<tr>
+<td><strong>파운드리 B</strong> HBM 매출 비중</td>
+<td>22% → 31% (2년)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>해석</strong>: 수요↑ + 공급 제한 → <strong>가격·마진 유지</strong> 가능. 다만 <a href="../../03-markets/sectors/semiconductor/">반도체</a> 문서처럼 <strong>CAPEX·기술 전환</strong> 리스크는 별도.</p>
+<h3 id="3-ev">예제 3: 보조금 축소 시 EV 수요 (가상)<a class="headerlink" href="#3-ev" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>보조금 100% (가상)</th>
+<th>보조금 50% (가상)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4천만 원급 EV 유효 가격</td>
+<td><strong>M</strong></td>
+<td><strong>M</strong></td>
+</tr>
+<tr>
+<td>연간 판매 대수 (시장)</td>
+<td><strong>M</strong> 대</td>
+<td><strong>M</strong> 대</td>
+</tr>
+<tr>
+<td>배터리 업체 <strong>가동률</strong></td>
+<td>92%</td>
+<td>78%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>해석</strong>: 보조금은 <strong>수요곡선 이동</strong>. 주가는 “보조금 뉴스”보다 <strong>가동률·재고·마진 가이던스</strong>에 반응하는 경우가 많다.</p>
+<h3 id="6_1">예제 6 — 단계별: 수요·공급 변화가 가격에 미치는 영향<a class="headerlink" href="#6_1" title="Permanent link">&para;</a></h3>
+<p><strong>상황</strong>: AI 데이터센터 수요 급증으로 HBM 메모리 수요가 D₀에서 D₁으로 증가 (수요 30% 증가)</p>
+<p><strong>단계별 분석:</strong></p>
+<ol>
+<li><strong>공급 탄력성 판단</strong>: HBM 생산은 수율 개선·설비 투자에 수년이 필요 → <strong>공급 비탄력적</strong></li>
+<li><strong>수요 증가 효과</strong>: 비탄력적 공급 + 수요 급증 = 가격 급등</li>
+<li><strong>가격 변화 추정</strong>: 수요 30% 증가, 공급 탄력성 0.3 가정 → 가격 약 +30%/(0.3+1) ≈ <strong>+23%</strong> 상승 (교육용 추정)</li>
+<li><strong>이익 영향</strong>: 가격 +23%, 물량 소폭 증가 → 매출 큰 폭 증가 + 고정비 레버리지 → <strong>영업이익률 급등</strong></li>
+</ol>
+<p><strong>투자 시사점</strong>: HBM 공급이 비탄력적인 지금 수요가 급증하면 가격과 마진이 함께 오릅니다. 공급이 늘어나는 시점(2~3년 후 CAPEX 효과 발현)이 사이클 전환점입니다.</p>
+<h2 id="9-faq">9. FAQ<a class="headerlink" href="#9-faq" title="Permanent link">&para;</a></h2>
+<p><strong>Q1. 미시와 거시의 차이는?</strong><br />
+<strong>A.</strong> 미시는 <strong>개별 시장·기업</strong>; 거시는 <strong>금리·GDP·인플레</strong> 등 전체. 투자에서는 거시가 <strong>밸류에이션 배경</strong>, 미시가 <strong>섹터·종목 실적</strong> 해석에 가깝다. → <a href="../macroeconomics-basics/">macroeconomics-basics</a></p>
+<p><strong>Q2. TAM이 크면 무조건 좋은 주식인가?</strong><br />
+<strong>A.</strong> <strong>아니다.</strong> TAM은 잠재 <strong>수요 상한</strong> 추정이고, 실현은 <strong>가격·점유율·마진·경쟁</strong>에 달린다. 공급 과잉 시 TAM↑와 주가↑가 동시에 오지 않는다.</p>
+<p><strong>Q3. 독과점·과점 기업이면 안전한가?</strong><br />
+<strong>A.</strong> <strong>마진 방어</strong>에는 유리할 수 있으나, <strong>규제·기술 대체·밸류에이션·지정학</strong> 리스크는 별도. “좋은 산업 ≠ 항상 좋은 진입 가격”.</p>
+<p><strong>Q4. 보조금이 줄면 주식을 무조건 팔아야 하나?</strong><br />
+<strong>A.</strong> 교육 프레임만: <strong>수요곡선 좌이동</strong> → 매출·가동률 하향 압력. 포트 전량 매매가 아니라 <a href="../../04-portfolio/asset-allocation/">자산배분</a>·<a href="../../04-portfolio/core-satellite-framework/">코어-위성</a>에서 <strong>비중</strong>을 검토한다.</p>
+<p><strong>Q5. 공급 과잉 사이클은 언제 끝나나?</strong><br />
+<strong>A.</strong> <strong>가격이 한계비용 근처</strong>까지 떨어져 고비용 생산자가 빠지고, CAPEX가 줄며 <strong>공급 증가가 둔화</strong>될 때. 배터리 2023~ 교훈: “바닥”은 재무·재고 데이터로 확인.</p>
+<p><strong>Q6. 주식 차트만 보면 미시경제 안 배워도 되나?</strong><br />
+<strong>A.</strong> 단기 차트는 <strong>심리·유동성</strong> 비중이 크다. 3년+ <strong>위성·섹터</strong> 포지션에는 미시가 <strong>실적 서프라이즈</strong>를 해석하는 데 필요하다.</p>
+<p><strong>Q7. 한국 수출 기업은 미시만 보면 되나?</strong><br />
+<strong>A.</strong> <strong>해외 수요·환율</strong>은 거시·국제 무역 변수. → <a href="../macroeconomics-basics/">거시</a>, <a href="../../03-markets/overseas-equities-intro/">해외 주식</a></p>
+<p><strong>Q8. ESG·탄소 규제는 미시경제 어디에 넣나?</strong><br />
+<strong>A.</strong> <strong>외부성을 내재화</strong>하는 정책 → 비용 곡선 <strong>위이동</strong> 또는 규제 준수 <strong>고정비</strong>. 전력·그리드 투자 수요로 이어질 수 있다.</p>
+<p><strong>Q9. 재고가 쌓이면 미시적으로 무엇을 의미하나?</strong><br />
+<strong>A.</strong> 수요 &lt; 공급 → <strong>가격 하락 압력</strong>·가동률 하향. “실적 서프라이즈” 전에 <strong>재고 주간</strong>을 보는 습관.</p>
+<p><strong>Q10. <a href="../../03-markets/sectors/physical-ai/">physical-ai</a>와 미시의 연결은?</strong><br />
+<strong>A.</strong> 로봇·자동화는 <strong>한계비용(노동)</strong> 을 낮춰 공급 곡선을 우로 — 단기 CAPEX는 고정비↑.
+<strong>Q11. 미시경제학 공부가 실제 종목 분석에 어떻게 연결되나?</strong><br />
+<strong>A11.</strong> 예를 들어: (1) 수요의 가격 탄력성 → 해당 기업이 가격을 올릴 수 있는가 판단, (2) 진입 장벽(규모의 경제·특허) → 경쟁 심화 위험 판단, (3) 공급 탄력성 → 경기 회복 시 공급이 빠르게 늘어나 가격이 내려갈지 판단. 마이클 포터의 5 Forces 분석도 결국 미시경제학의 응용입니다.</p>
+<h2 id="10">10. 함정·리스크·한계<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>TAM 슬라이드만 믿기</strong> — 가격·경쟁·공급 계획 없음  </li>
+<li><strong>사이클 정점 마진</strong>을 구조적 마진으로 착각  </li>
+<li><strong>보조금·관세</strong>를 영구 수요로 가정  </li>
+<li><strong>과점 = 영원한 해자</strong> — 기술 대체(예: LFP vs NCM 전환) 무시  </li>
+<li>미시 모델은 <strong>단기·부분균형</strong> — 금리·환율 충격은 거시와 함께 봐야 함  </li>
+<li>본문 수치·정책은 <strong>시점별 개정</strong> 가능</li>
+</ul>
+<hr />
+<p><strong>Q. 실무에서는?</strong><br />
+교과서 식·기호를 그대로 적용하기 전에 <strong>수수료·세금·데이터 시점</strong>을 분리한다. 숫자는 <a href="../../docs/DEPTH-STANDARD/">DEPTH-STANDARD</a>처럼 기호만 먼저 맞추고, 법령·시장 수치는 §8 표·외부 출처로 갱신한다.</p>
+<h2 id="11">11. 심화 읽기<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../references/sources/">references/sources.md</a> — 산업부·통상·거래소 자료  </li>
+<li><a href="../macroeconomics-basics/">거시경제학 기초</a>  </li>
+<li><a href="../../03-markets/sectors/sector-investing-framework/">섹터 투자 프레임워크</a>  </li>
+<li><a href="../../03-markets/sectors/battery-lfp-ncm-ess/">배터리</a>, <a href="../../03-markets/sectors/semiconductor/">반도체</a>  </li>
+<li><a href="../../00-roadmap/glossary/">00-roadmap/glossary.md</a></li>
+</ul>
+<h3 id="111-4">11.1 권장 학습 순서 (4주, 가상)<a class="headerlink" href="#111-4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>주차</th>
+<th>읽을 문서</th>
+<th>실습</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1주</td>
+<td>본 문서 §1~5</td>
+<td>수요·공급 그림 손으로 그리기</td>
+</tr>
+<tr>
+<td>2주</td>
+<td><a href="../../03-markets/sectors/battery-lfp-ncm-ess/">배터리</a></td>
+<td>예제 1 표를 실제 뉴스에 대입</td>
+</tr>
+<tr>
+<td>3주</td>
+<td><a href="../../03-markets/sectors/semiconductor/">반도체</a></td>
+<td>예제 2 “과점 vs 경쟁” 판별</td>
+</tr>
+<tr>
+<td>4주</td>
+<td><a href="../macroeconomics-basics/">macro</a></td>
+<td>§7.3 체크리스트로 IR 1편 검토</td>
+</tr>
+</tbody>
+</table>
+<h3 id="112-bucket">11.2 저장소 bucket 연결<a class="headerlink" href="#112-bucket" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Bucket</th>
+<th>미시경제 연결</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bucket 0</td>
+<td>경제 문법·용어 — <a href="../../00-roadmap/STUDY-START/">STUDY-START</a></td>
+</tr>
+<tr>
+<td>Bucket 1</td>
+<td>현금흐름·비상금 — 정책 충격 시 지출</td>
+</tr>
+<tr>
+<td>Bucket 3 위성</td>
+<td>섹터·개별 — TAM·마진·공급 질문</td>
+</tr>
+</tbody>
+</table>
+<h2 id="l4_1">연습문제 (L4, 기호)<a class="headerlink" href="#l4_1" title="Permanent link">&para;</a></h2>
+<ol>
+<li>위 §6 주요 식에서 변수 하나를 미지로 두고, 나머지를 기호로 둔 <strong>관계식</strong>을 쓰시오.</li>
+<li>가정이 깨질 때(유동성·세금·다중 IRR 등) 위 식의 <strong>한계</strong>를 기호·부등식으로 서술하시오.</li>
+<li>§8 예제와 동일 기호(M·P·PV 등)로 <strong>부호·단조성</strong>만 검증하는 짧은 논증을 하시오.</li>
+</ol>
+<h3 id="_3">해설 키<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>직전 변수표의 「이 식에서 의미」를 이용해 동일 차원으로 정리한다.</li>
+<li>「가정이 깨지면」 절의 한계 사례와 연결한다.</li>
+<li>숫자 대입 없이 <strong>부호</strong>·<strong>단위</strong> 일치만 확인한다.</li>
+</ol>
+<h2 id="12">12. 스스로 점검 퀴즈<a class="headerlink" href="#12" title="Permanent link">&para;</a></h2>
+<ol>
+<li>공급 곡선이 <strong>우</strong>로 이동하면 균형 <strong>가격</strong>은 일반적으로 어떻게 되는가?  </li>
+<li>EV 구매 보조금 확대는 수요·공급 중 무엇을 주로 이동시키는가?  </li>
+<li><span class="arithmatex">\(|\varepsilon| &gt; 1\)</span>이면 가격 10% 인하 시 매출(가격×수량)은 대체로?  </li>
+<li>HBM처럼 공급자가 적을 때 단기 <strong>마진</strong> 방향성은?  </li>
+<li>TAM이 크다는 말만으로 매수하기 어려운 이유 한 가지는?  </li>
+<li>보조금 축소는 수요곡선을 어느 방향으로 이동시키는가?</li>
+</ol>
+<details class="note">
+<summary>정답 힌트</summary>
+<ol>
+<li>하락(다른 조건 동일) · 2. 수요(유효 가격 하락 효과 포함) · 3. 증가 가능(탄력적) · 4. 공급자 우위로 유지·상승 <strong>가능</strong>(수요 겹칠 때) · 5. 가격·경쟁·마진·공급 과잉 미반영 · 6. 좌(또는 유효 수요 감소)</li>
+</ol>
+</details>
+<p><strong>L3 완료 기준</strong>: <a href="../../docs/TEMPLATE/">TEMPLATE</a> 12블록·검증일 2026-05-24 — <a href="../../docs/DEPTH-STANDARD/">DEPTH-STANDARD</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
